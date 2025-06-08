@@ -2,12 +2,21 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>class アルバム - サンプル</title>
+  <title>class アルバム一覧</title>
   <style>
     body {
-      font-family: "Helvetica Neue", sans-serif;
-      background-color: #fafafa;
-      margin: 20px;
+      font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
+      background-color: #fefefe;
+      padding: 30px;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #aaa;
+      padding-bottom: 4px;
     }
 
     .discography-box {
@@ -18,15 +27,15 @@
       border: 1px solid #ccc;
       border-radius: 12px;
       background-color: #fff;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.04);
     }
 
     .jacket img {
       width: 150px;
       height: 150px;
       object-fit: cover;
-      border: 1px solid #ddd;
       border-radius: 6px;
+      border: 1px solid #ddd;
     }
 
     .detail p {
@@ -41,15 +50,56 @@
       color: #555;
     }
 
-    .tracklist {
-      margin-top: 12px;
-      padding-left: 20px;
-      font-size: 0.9em;
-      color: #444;
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+        padding: 20px;
+      }
+
+      .discography-box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .detail p strong {
+        width: auto;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h2>class アルバムディスコグラフィ（サンプル）</
+  <h1>class アルバム一覧</h1>
 
+  <!-- DuO（画像あり） -->
+  <div class="discography-box" id="duo">
+    <div class="jacket">
+      <img src="../img/duo.jpg" alt="DuO">
+    </div>
+    <div class="detail">
+      <p><strong>タイトル：</strong>DuO</p>
+      <p><strong>発売日：</strong>1993年11月21日</p>
+      <p><strong>品番：</strong>TODT-7302</p>
+      <p><strong>種別：</strong>アルバム</p>
+      <p><strong>名義：</strong>class</p>
+      <p><strong>備考：</strong>全8曲収録。「君だけのDistance」「そばにいたい」など。</p>
+    </div>
+  </div>
+
+  <!-- Mellow Prism（画像なし） -->
+  <div class="discography-box" id="mellow">
+    <div class="jacket">
+      <img src="../img/noimage.gif" alt="No Image">
+    </div>
+    <div class="detail">
+      <p><strong>タイトル：</strong>Mellow Prism</p>
+      <p><strong>発売日：</strong>1993年07月21日</p>
+      <p><strong>品番：</strong>TODT-7201</p>
+      <p><strong>種別：</strong>アルバム</p>
+      <p><strong>名義：</strong>class</p>
+      <p><strong>備考：</strong>デビューアルバム。代表曲「夏の日の1993」収録。</p>
+    </div>
+  </div>
+
+</body>
+</html>
