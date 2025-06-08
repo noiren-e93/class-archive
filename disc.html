@@ -2,109 +2,81 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>class ディスコグラフィ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>class ディスコグラフィ｜この声が消えても、ここにいる</title>
   <style>
     body {
       font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
       background-color: #fefefe;
       color: #222;
-      line-height: 1.8 !important;
-      padding: 30px;
-      font-size: 15px;
-    }
-
-    h1 {
-      font-size: 1.8em;
-      margin-bottom: 0.5em;
-      border-bottom: 2px solid #aaa;
-      padding-bottom: 4px;
+      line-height: 1.7;
+      padding: 2em;
+      font-size: 16px;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     ul.tree {
       list-style-type: none;
-      padding-left: 1.2em;
-      margin-left: 0;
-      border-left: 1px dotted #ccc;
-    }
-
-    .tree li {
-      position: relative;
-      padding-left: 1.2em;
-      margin: 4px 0;
-    }
-
-    .tree li::before {
-      content: "▸";
-      position: absolute;
-      left: 0;
-      color: #888;
-      font-size: 0.9em;
-    }
-
-    .tree a {
-      text-decoration: none;
-      color: #004488;
-    }
-
-    .tree a:hover {
-      text-decoration: underline;
-    }
-
-    .tree ul {
-      margin-left: 1.2em;
       padding-left: 1em;
       border-left: 1px dotted #ccc;
     }
 
+    .tree li {
+      margin: 0.5em 0;
+      padding-left: 1em;
+      position: relative;
+    }
+
+    .tree li::before {
+      content: "";
+      position: absolute;
+      top: 0.6em;
+      left: 0;
+      width: 0.5em;
+      height: 0.5em;
+      background: #666;
+      border-radius: 50%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       body {
-        font-size: 14px;
-        padding: 20px;
+        padding: 1em;
+        font-size: 15px;
+      }
+
+      .tree {
+        padding-left: 0.8em;
+      }
+
+      .tree li {
+        padding-left: 1em;
+      }
+
+      .tree li::before {
+        left: -0.8em;
       }
     }
   </style>
 </head>
 <body>
-
   <h1>class ディスコグラフィ</h1>
-
   <ul class="tree">
-
-    <li><a href="disc/single.html">シングル</a>
-      <ul>
-        <li><a href="disc/single.html#natsunohi1993">夏の日の1993（1993.07.21）</a></li>
-        <li><a href="disc/single.html#kimi">君がいたから（1993.10.21）</a></li>
-      </ul>
-    </li>
-
-    <li><a href="disc/album.html">アルバム</a>
-      <ul>
-        <li><a href="disc/album.html#mellow">Mellow Prism（1993.07.21）</a></li>
-        <li><a href="disc/album.html#duo">DuO（1993.11.21）</a></li>
-      </ul>
-    </li>
-
-    <li><a href="disc/best.html">ベスト・セレクション盤</a>
-      <ul>
-        <li><a href="disc/best.html#classics1">classics one（1994.06.22）</a></li>
-        <li><a href="disc/best.html#best1">Best Selection（1995.05.24）</a></li>
-      </ul>
-    </li>
-
-    <li><a href="disc/solo_h.html">ソロワークス（日浦孝則）</a>
-      <ul>
-        <li><a href="disc/solo_h.html#h_single01">風のように（1995.05.10）</a></li>
-        <li><a href="disc/solo_h.html#h_album01">again（1996.02.21）</a></li>
-      </ul>
-    </li>
-
-    <li><a href="disc/solo_t.html">ソロワークス（津久井克行）</a>
-      <ul>
-        <li><a href="disc/solo_t.html#t_album01">T’s ROOM（1996.11.21）</a></li>
-      </ul>
-    </li>
-
+    <li><a href="disc/single.html">シングル</a></li>
+    <li><a href="disc/album.html">アルバム</a></li>
+    <li><a href="disc/best.html">ベスト・セレクション盤</a></li>
+    <li><a href="disc/solo_h.html">日浦孝則 ソロワークス</a></li>
+    <li><a href="disc/solo_t.html">津久井克行 ソロワークス</a></li>
+    <li><a href="disc/others.html">その他（オムニバス・分類不能）</a></li>
   </ul>
-
 </body>
 </html>
