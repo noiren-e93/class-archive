@@ -1,0 +1,12 @@
+
+.cover img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  opacity: 0.95;
+  filter: contrast(1.05) brightness(0.98);
+  transition: transform 0.3s ease;
+}
