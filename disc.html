@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>class ディスコグラフィ</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #fff;
+      margin: 30px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      border-bottom: 2px solid #888;
+      padding-bottom: 4px;
+    }
+
+    .tree {
+      margin-left: 20px;
+    }
+
+    .tree ul {
+      list-style-type: none;
+      padding-left: 20px;
+      margin: 4px 0;
+      border-left: 1px dotted #ccc;
+    }
+
+    .tree li {
+      margin: 6px 0;
+      position: relative;
+    }
+
+    .tree li::before {
+      content: "├";
+      position: absolute;
+      left: -14px;
+      color: #888;
+    }
+
+    .tree li:last-child::before {
+      content: "└";
+    }
+
+    .tree a {
+      color: #0055aa;
+      text-decoration: none;
+    }
+
+    .tree a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>class ディスコグラフィ（分類一覧）</h1>
+
+  <div class="tree">
+
+    <ul>
+      <li>シングル
+        <ul>
+          <li><a href="disk/single.html#natsunohi1993">夏の日の1993（1993.07.21）</a></li>
+          <li><a href="disk/single.html#kimigaita">君がいたから（1993.10.21）</a></li>
+        </ul>
+      </li>
+
+      <li>アルバム
+        <ul>
+          <li><a href="disk/album.html#mellow">Mellow Prism（1993.07.21）</a></li>
+          <li><a href="disk/album.html#duo">DuO（1993.11.21）</a></li>
+        </ul>
+      </li>
+
+      <li>ベスト・企画盤
+        <ul>
+          <li><a href="disk/best.html#classics1">classics one（1994.06.22）</a></li>
+        </ul>
+      </li>
+
+      <li>ソロ作品
+        <ul>
+          <li>日浦孝則
+            <ul>
+              <li><a href="disk/solo_h.html#h_single01">風のように（1995.05.10）</a></li>
+              <li><a href="disk/solo_h.html#h_album01">アゲイン（1996.02.21）</a></li>
+            </ul>
+          </li>
+          <li>津久井克行
+            <ul>
+              <li><a href="disk/solo_t.html#t_album01">T’s ROOM（1996.11.21）</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+
+</body>
+</html>
 
