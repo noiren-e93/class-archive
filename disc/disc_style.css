@@ -1,171 +1,61 @@
 
+/* 共通ディスコグラフィ用スタイル */
 body {
-  font-family: "Yu Gothic", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fdfdfd;
-  color: #222;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
 }
 
-.entry {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 16px;
-}
-
-h1 {
-  font-size: 24px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
+.entry h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 .info-flex {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 24px;
-  border-bottom: 1px solid #e2e2e2;
-  padding-bottom: 16px;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
 }
 
 .cover img {
   width: 150px;
-  max-width: 100%;
   height: auto;
+  margin-right: 1em;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  opacity: 0.95;
-  filter: contrast(1.05) brightness(0.98);
-  transition: transform 0.3s ease;
-}
-
-.cover img:hover {
-  transform: scale(1.02);
 }
 
 .info h2 {
-  font-size: 20px;
-  margin: 4px 0;
+  font-size: 1.2em;
+  margin: 0 0 0.5em 0;
 }
 
 .meta {
-  font-size: 13px;
-  color: #666;
-  line-height: 1.6;
+  font-size: 0.95em;
+  line-height: 1.5;
 }
 
 .track {
-  margin-bottom: 14px;
-  padding-left: 12px;
-  border-left: 3px solid #ccc;
+  margin-left: 160px;
+  margin-bottom: 1em;
 }
 
 .track-title {
-  font-size: 15px;
   font-weight: bold;
 }
 
-.credit,
-.tieup,
-.note {
-  font-size: 13px;
-  color: #555;
+.credit, .tieup, .note {
+  font-size: 0.9em;
   margin-left: 1em;
-}
-
-.note {
-  font-style: italic;
-  color: #888;
-}
-
-nav.navbar {
-  background: #f5f5f5;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-}
-
-nav.navbar a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
-
-a {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 600px) {
-  .info-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cover img {
-    width: 75%;
-    max-width: 220px;
-  }
-
-  .info, .meta {
-    text-align: center;
-  }
-}
-
-.entry a {
-  text-decoration: none;
-  color: #0077cc;
-}
-.entry a:hover {
-  text-decoration: underline;
+  color: #555;
 }
 
 .section-line {
-  border: 0;
-  height: 2px;
-  background: #ccc;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 24px;
-  padding-bottom: 6px;
-  margin-bottom: 12px;
-}
-
-.section-line {
-  border: 0;
-  height: 2px;
-  background: #ccc;
-  margin-top: 4px;
-  margin-bottom: 20px;
-}
-
-
-.section-line {
-  border: 0;
-  height: 2px;
-  background: #ccc;
-  width: 80%;
-  margin: 10px auto 20px auto;
-}
-
-
-.track {
-  margin-bottom: 18px;
-  padding-left: 12px;
-  border-left: 3px solid #ccc;
-}
-
-.track:last-of-type {
-  margin-bottom: 30px;
-}
-
-
-.cover {
-  margin-top: 8px;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
 }
