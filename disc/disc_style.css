@@ -164,3 +164,8 @@ h1 {
 .track:last-of-type {
   margin-bottom: 30px;
 }
+
+
+.cover {
+  margin-top: 8px;
+}
