@@ -2,100 +2,53 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>class ディスコグラフィ｜この声が消えても、ここにいる</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
-      background-color: #fefefe;
-      color: #222;
-      line-height: 1.7;
-      padding: 2em;
-      font-size: 16px;
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-    ul.tree {
-      list-style-type: none;
-      padding-left: 1em;
-      border-left: 1px dotted #ccc;
-    }
-    .tree li {
-      margin: 0.4em 0;
-      padding-left: 1em;
-      position: relative;
-    }
-    .tree li::before {
-      content: "";
-      position: absolute;
-      top: 0.6em;
-      left: 0;
-      width: 0.5em;
-      height: 0.5em;
-      background: #666;
-      border-radius: 50%;
-    }
-    a {
-      text-decoration: none;
-      color: #0066cc;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      body {
-        padding: 1em;
-        font-size: 15px;
-      }
-      .tree {
-        padding-left: 0.8em;
-      }
-      .tree li {
-        padding-left: 1em;
-      }
-      .tree li::before {
-        left: -0.8em;
-      }
-    }
-  </style>
+  <title>class ディスコグラフィ ｜ この声を未来へ</title>
+  <link rel="stylesheet" href="disc/disc_style.css?v=14" />
 </head>
 <body>
-  <h1>class ディスコグラフィ</h1>
-  <ul class="tree">
-    <li><a href="disc/single.html">シングル</a>
-      <ul class="tree">
-        <li>夏の日の1993（1993.07.21）</li>
-        <li>君がいたから（1993.10.21）</li>
-      </ul>
-    </li>
-    <li><a href="disc/album.html">アルバム</a>
-      <ul class="tree">
-        <li>Mellow Prism（1993.07.21）</li>
-        <li>DuO（1993.11.21）</li>
-      </ul>
-    </li>
-    <li><a href="disc/best.html">ベスト・セレクション盤</a>
-      <ul class="tree">
-        <li>classics one（1994.06.22）</li>
-        <li>Best Selection（1995.05.24）</li>
-      </ul>
-    </li>
-    <li><a href="disc/solo_h.html">ソロワークス（日浦孝則）</a>
-      <ul class="tree">
-        <li>風のように（1995.05.10）</li>
-        <li>again（1996.02.21）</li>
-      </ul>
-    </li>
-    <li><a href="disc/solo_t.html">ソロワークス（津久井克行）</a>
-      <ul class="tree">
-        <li>T’s ROOM（1996.11.21）</li>
-      </ul>
-    </li>
-  </ul>
-  <hr>
-<p style="margin-top: 2em;">
-  → <a href="disc/others.html">オムニバス・カバー関連一覧はこちら</a>
-</p>
+  <div class="entry">
+    <h1>class ディスコグラフィ</h1>
+    <hr class="section-line">
 
+    <ul>
+      <li>シングル
+        <ul>
+          <li><a href="disc/single.html#夏の日の1993">夏の日の1993（1993.07.21）</a></li>
+          <li><a href="disc/single.html#君がいたから">君がいたから（1993.10.21）</a></li>
+        </ul>
+      </li>
+
+      <li>アルバム
+        <ul>
+          <li><a href="disc/album.html#Mellow Prism">Mellow Prism（1993.07.21）</a></li>
+          <li><a href="disc/album.html#DuO">DuO（1993.11.21）</a></li>
+        </ul>
+      </li>
+
+      <li>ベスト・セレクション盤
+        <ul>
+          <li><a href="disc/budget.html#classics one">classics one（1994.06.22）</a></li>
+          <li><a href="disc/budget.html#Best Selection">Best Selection（1995.05.24）</a></li>
+        </ul>
+      </li>
+
+      <li>ソロワークス（日浦孝則）
+        <ul>
+          <li><a href="disc/solo_h.html#風のように">風のように（1995.05.10）</a></li>
+          <li><a href="disc/solo_h.html#again">again（1996.02.21）</a></li>
+        </ul>
+      </li>
+
+      <li>ソロワークス（津久井克行）
+        <ul>
+          <li><a href="disc/solo_t.html#T’s ROOM">T’s ROOM（1996.11.21）</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr class="section-line">
+    <p>→ <a href="disc/others.html">オムニバス・カバー関連一覧はこちら</a></p>
+    <p>→ <a href="index.html">HOMEへ戻る</a></p>
+  </div>
 </body>
 </html>
