@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v28
-   トップ表題と統一スタイル＋カテゴリ表記「｜」付き
+   classディスコグラフィ共通スタイル v29
+   モバイル対応：画像縮小（140px）＋ 縦線「｜」デザイン統一
    ===================== */
 
 body {
@@ -26,7 +26,7 @@ body {
 
 .page-title::before {
   content: "｜";
-  color: #999;
+  color: #888;
   margin-right: 0.3em;
 }
 
@@ -69,7 +69,7 @@ hr {
 }
 
 .cover img {
-  width: 150px;
+  width: 140px;
   height: auto;
   border: 1px solid #ccc;
 }
