@@ -1,5 +1,6 @@
+
 /* =====================
-   classディスコグラフィ共通スタイル v14（調整反映）
+   classディスコグラフィ共通スタイル v15（中央寄せ・行間整備・Version対応）
    ===================== */
 
 body {
@@ -30,7 +31,8 @@ hr {
 }
 
 .entry {
-  margin-bottom: 40px;
+  max-width: 720px;
+  margin: 0 auto 40px auto;
   border-bottom: 1px solid #ccc;
   padding-bottom: 30px;
 }
@@ -54,8 +56,9 @@ hr {
 .meta {
   font-size: 0.95em;
   color: #444;
-  margin-top: 0.2em;
+  margin-top: 0.4em;
   white-space: pre-line;
+  line-height: 1.6;
 }
 
 .meta strong {
@@ -74,8 +77,8 @@ hr {
 
 .track li {
   text-align: left;
-  margin-bottom: 0.8em;
-  line-height: 1.4;
+  margin-bottom: 1.0em;
+  line-height: 1.5;
 }
 
 .track li strong {
@@ -86,10 +89,12 @@ hr {
   font-size: 0.9em;
   color: #666666;
   display: block;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin-top: 0.2em;
 }
 
 .backlink {
   margin-top: 40px;
   font-size: 0.9em;
+  text-align: center;
 }
