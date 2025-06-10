@@ -1,146 +1,77 @@
-
-/* =====================
-   classディスコグラフィ共通スタイル v32
-   - タイアップも .credit と同じフォントサイズ・行間に統一
-   - その他は v31 を踏襲
-   ===================== */
+/* disc_style.css v33 */
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  margin: 2em;
   line-height: 1.6;
-  margin: 20px;
-  background-color: #fff;
-  color: #111;
+  color: #222;
+  background: #fff;
 }
 
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
+  border-left: 6px solid #888;
+  padding-left: 10px;
+  margin-bottom: 1em;
   text-align: left;
-  margin: 2em auto 1.5em auto;
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid #ccc;
-  max-width: 720px;
-  padding-left: 0.5em;
-  border-left: 4px solid #ccc;
 }
 
-h3 {
-  font-size: 1.2em;
-  margin-top: 2em;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2em;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 3em 0 2em 0;
-}
-
-.section-label {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 3em 0 1.5em 0;
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 0.3em;
-  text-align: left;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+.entry-list {
+  width: 100%;
+  max-width: 900px;
 }
 
 .entry {
-  max-width: 720px;
-  margin: 0 auto 40px auto;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 30px;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  width: 720px;
 }
 
 .info-flex {
   display: flex;
-  flex-direction: row;
-  gap: 15px;
+  gap: 20px;
+  margin-bottom: 1em;
 }
 
 .cover img {
   width: 135px;
-  height: auto;
   border: 1px solid #ddd;
 }
 
-.info {
-  flex: 1;
-}
-
-.entry h2 {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 0.4em;
-  border-left: 4px solid #ccc;
-  padding-left: 0.5em;
-}
-
 .meta {
-  font-size: 0.95em;
+  font-size: 0.9em;
   color: #444;
-  margin-top: 0.4em;
-  line-height: 1.4;
-}
-
-.meta .metaline {
-  line-height: 1.4;
-  margin: 0;
-  padding: 0;
-}
-
-.meta-note {
-  display: block;
-  font-weight: bold;
-  color: #222;
-  margin-top: 0.4em;
-  line-height: 1.4;
-}
-
-.track {
-  margin-top: 1em;
+  line-height: 1.6;
 }
 
 .track ul {
-  padding-left: 0;
-  margin: 0;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .track li {
-  text-align: left;
   margin-bottom: 1em;
-  line-height: 1.4;
+  font-size: 0.95em;
 }
 
 .track li strong {
-  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.3em;
 }
 
-.track li .credit {
-  font-size: 0.9em;
-  color: #666666;
-  display: block;
-  line-height: 1.4 !important;
-  margin: 0.1em 0 !important;
+.credit {
+  font-size: 0.85em;
+  color: #666;
 }
 
-.track li .tieup {
-  font-size: 0.9em;
-  color: #666666;
-  display: block;
-  line-height: 1.4 !important;
-  margin: 0.1em 0 !important;
+.tieup {
+  font-size: 0.85em;
+  color: #666;
 }
 
-.backlink {
-  margin-top: 40px;
-  font-size: 0.9em;
-  text-align: center;
+.footer {
+  margin-top: 3em;
 }
