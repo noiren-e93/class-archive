@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v22
-   ヘッダーに背景・枠線・センター装飾（パターンB）
+   classディスコグラフィ共通スタイル v23
+   ヘッダーに subtitle を追加（パターンC）
    ===================== */
 
 body {
@@ -17,11 +17,15 @@ body {
   font-size: 1.5em;
   text-align: center;
   margin: 2em auto 1.5em auto;
-  background-color: #f9f9f9;
-  padding: 0.5em 1em;
-  border: 1px solid #ccc;
-  display: inline-block;
-  border-radius: 6px;
+  font-weight: bold;
+}
+
+.page-title .subtitle {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 0.3em;
+  display: block;
+  font-weight: normal;
 }
 
 h3 {
