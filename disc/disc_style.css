@@ -1,5 +1,6 @@
+
 /* =====================
-   classディスコグラフィ共通スタイル v12 + 左寄せ修正
+   classディスコグラフィ共通スタイル v13（v3構造対応）
    ===================== */
 
 body {
@@ -57,7 +58,6 @@ h3 {
 }
 
 .track {
-  text-align: left;
   margin-top: 1em;
 }
 
@@ -69,8 +69,18 @@ h3 {
 
 .track li {
   text-align: left;
-  margin-bottom: 0.5em;
-  line-height: 1.6;
+  margin-bottom: 1.2em;
+  line-height: 1.5;
+}
+
+.track li strong {
+  font-size: 1em;
+}
+
+.track li .credit {
+  font-size: 0.9em;
+  color: #666666;
+  display: block;
 }
 
 .backlink {
