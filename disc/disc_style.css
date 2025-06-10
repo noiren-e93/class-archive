@@ -1,6 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v15（中央寄せ・行間整備・Version対応）
+   classディスコグラフィ共通スタイル v16
+   中央揃え・行間調整・クレジット詰め・ユニット切替装飾付き
    ===================== */
 
 body {
@@ -15,6 +16,7 @@ body {
 h2 {
   font-size: 1.4em;
   margin-bottom: 0.2em;
+  text-align: center;
 }
 
 h3 {
@@ -27,7 +29,19 @@ h3 {
 hr {
   border: none;
   border-top: 1px solid #ccc;
-  margin: 2em 0;
+  margin: 3em 0 2em 0;
+}
+
+.section-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 3em 0 1.5em 0;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 0.3em;
+  text-align: left;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .entry {
@@ -53,12 +67,20 @@ hr {
   flex: 1;
 }
 
+.entry h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  border-left: 4px solid #ccc;
+  padding-left: 0.5em;
+}
+
 .meta {
   font-size: 0.95em;
   color: #444;
   margin-top: 0.4em;
+  line-height: 1.5;
   white-space: pre-line;
-  line-height: 1.6;
 }
 
 .meta strong {
@@ -77,8 +99,8 @@ hr {
 
 .track li {
   text-align: left;
-  margin-bottom: 1.0em;
-  line-height: 1.5;
+  margin-bottom: 1em;
+  line-height: 1.4;
 }
 
 .track li strong {
@@ -89,8 +111,8 @@ hr {
   font-size: 0.9em;
   color: #666666;
   display: block;
-  line-height: 1.5;
-  margin-top: 0.2em;
+  line-height: 1.4;
+  margin: 0.1em 0;
 }
 
 .backlink {
