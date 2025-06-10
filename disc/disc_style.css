@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v21
-   .metaline追加：改行制御をdiv化で徹底
+   classディスコグラフィ共通スタイル v22
+   ヘッダーに背景・枠線・センター装飾（パターンB）
    ===================== */
 
 body {
@@ -14,9 +14,14 @@ body {
 }
 
 .page-title {
-  font-size: 1.4em;
+  font-size: 1.5em;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin: 2em auto 1.5em auto;
+  background-color: #f9f9f9;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  display: inline-block;
+  border-radius: 6px;
 }
 
 h3 {
