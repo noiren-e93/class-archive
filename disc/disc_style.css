@@ -57,24 +57,24 @@ body {
 
 .track li {
   margin-bottom: 1.2em;
-  font-size: 0.95em;
+  font-size: 1.0em;
 }
 
 .track li strong {
   font-weight: bold;
   display: inline-block;
-  font-size: 0.95em;
+  font-size: 1.0em;
   margin-bottom: 0.3em;
   color: #000;
 }
 
 .credit {
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: #555;
 }
 
 .tieup {
-  font-size: 0.9em;
+  font-size: 0.85em;
   color: #555;
 }
 
