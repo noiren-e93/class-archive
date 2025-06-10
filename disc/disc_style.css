@@ -57,13 +57,13 @@ body {
 
 .track li {
   margin-bottom: 1.2em;
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 .track li strong {
   font-weight: bold;
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.95em;
   margin-bottom: 0.3em;
   color: #000;
 }
