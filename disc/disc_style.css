@@ -1,9 +1,8 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v31
-   - page-title 縦線文字削除、border-leftで統一
-   - tie-up フォント・行間調整
-   - ジャケット画像135pxに拡大
+   classディスコグラフィ共通スタイル v32
+   - タイアップも .credit と同じフォントサイズ・行間に統一
+   - その他は v31 を踏襲
    ===================== */
 
 body {
@@ -132,12 +131,12 @@ hr {
   margin: 0.1em 0 !important;
 }
 
-.track li br {
-  line-height: 1.4;
-  display: block;
-  margin: 0.1em 0 !important;
+.track li .tieup {
   font-size: 0.9em;
-  color: #666;
+  color: #666666;
+  display: block;
+  line-height: 1.4 !important;
+  margin: 0.1em 0 !important;
 }
 
 .backlink {
