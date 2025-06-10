@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v24
-   初回.entryと.page-titleの行間調整（改行を詰める）
+   classディスコグラフィ共通スタイル v25
+   ヘッダー：Aスタイル（下線＋中央揃え）安定型
    ===================== */
 
 body {
@@ -14,22 +14,11 @@ body {
 }
 
 .page-title {
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-align: center;
-  margin: 2em auto 1em auto; /* 下マージンを1emに詰める */
-  font-weight: bold;
-}
-
-.page-title .subtitle {
-  font-size: 0.85em;
-  color: #666;
-  margin-top: 0.3em;
-  display: block;
-  font-weight: normal;
-}
-
-.entry:first-of-type {
-  margin-top: 0 !important; /* 初回だけ詰める */
+  margin-bottom: 1.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #aaa;
 }
 
 h3 {
