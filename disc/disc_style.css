@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v23
-   ヘッダーに subtitle を追加（パターンC）
+   classディスコグラフィ共通スタイル v24
+   初回.entryと.page-titleの行間調整（改行を詰める）
    ===================== */
 
 body {
@@ -16,7 +16,7 @@ body {
 .page-title {
   font-size: 1.5em;
   text-align: center;
-  margin: 2em auto 1.5em auto;
+  margin: 2em auto 1em auto; /* 下マージンを1emに詰める */
   font-weight: bold;
 }
 
@@ -26,6 +26,10 @@ body {
   margin-top: 0.3em;
   display: block;
   font-weight: normal;
+}
+
+.entry:first-of-type {
+  margin-top: 0 !important; /* 初回だけ詰める */
 }
 
 h3 {
