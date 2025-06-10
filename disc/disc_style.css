@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v27
-   トップページと揃えつつ縦線でカテゴリ感を出す
+   classディスコグラフィ共通スタイル v28
+   トップ表題と統一スタイル＋カテゴリ表記「｜」付き
    ===================== */
 
 body {
@@ -14,12 +14,20 @@ body {
 }
 
 .page-title {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: bold;
-  margin: 1.5em 0 1em 0;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #ccc;
   text-align: left;
+  margin: 2em auto 1.5em auto;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #ccc;
+  max-width: 720px;
+  padding-left: 0.5em;
+}
+
+.page-title::before {
+  content: "｜";
+  color: #999;
+  margin-right: 0.3em;
 }
 
 h3 {
