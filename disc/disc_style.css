@@ -1,8 +1,9 @@
-/* disc_style.css v33 */
+/* disc_style.css v34 */
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 2em;
+  margin: 2em auto;
+  max-width: 960px;
   line-height: 1.6;
   color: #222;
   background: #fff;
@@ -20,13 +21,14 @@ body {
 .entry-list {
   width: 100%;
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .entry {
   border-bottom: 1px solid #ccc;
   padding-bottom: 2em;
   margin-bottom: 2em;
-  width: 720px;
+  width: 100%;
 }
 
 .info-flex {
@@ -74,4 +76,5 @@ body {
 
 .footer {
   margin-top: 3em;
+  text-align: center;
 }
