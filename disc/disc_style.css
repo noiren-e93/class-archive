@@ -63,13 +63,13 @@ body {
 .track li strong {
   font-weight: bold;
   display: inline-block;
-  font-size: 0.95em;
+  font-size: 1.1em;
   margin-bottom: 0.3em;
   color: #000;
 }
 
 .credit {
-  font-size: 1em;
+  font-size: 0.85em;
   color: #333;
 }
 
