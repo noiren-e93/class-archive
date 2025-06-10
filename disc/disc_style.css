@@ -85,6 +85,9 @@ body {
 
 /* スマホ向けレスポンシブ対応 */
 @media (max-width: 600px) {
+  .entry {
+    padding: 1em 0;
+  }
   .info-flex {
     display: block;
   }
@@ -92,4 +95,13 @@ body {
     width: 100%;
     margin-bottom: 1em;
   }
+}
+
+
+.entry h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-left: 6px solid #888;
+  padding-left: 10px;
+  margin-bottom: 0.5em;
 }
