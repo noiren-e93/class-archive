@@ -1,7 +1,9 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v30
-   .page-title の縦線を border-left に統一（entry h2と揃える）
+   classディスコグラフィ共通スタイル v31
+   - page-title 縦線文字削除、border-leftで統一
+   - tie-up フォント・行間調整
+   - ジャケット画像135pxに拡大
    ===================== */
 
 body {
@@ -24,8 +26,6 @@ body {
   padding-left: 0.5em;
   border-left: 4px solid #ccc;
 }
-
-/* 削除: .page-title::before */
 
 h3 {
   font-size: 1.2em;
@@ -66,7 +66,7 @@ hr {
 }
 
 .cover img {
-  width: 120px;
+  width: 135px;
   height: auto;
   border: 1px solid #ddd;
 }
@@ -130,6 +130,14 @@ hr {
   display: block;
   line-height: 1.4 !important;
   margin: 0.1em 0 !important;
+}
+
+.track li br {
+  line-height: 1.4;
+  display: block;
+  margin: 0.1em 0 !important;
+  font-size: 0.9em;
+  color: #666;
 }
 
 .backlink {
