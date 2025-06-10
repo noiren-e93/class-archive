@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v26
-   block-title追加：左線＋左寄せ＋大きめ見出し
+   classディスコグラフィ共通スタイル v27
+   トップページと揃えつつ縦線でカテゴリ感を出す
    ===================== */
 
 body {
@@ -15,19 +15,10 @@ body {
 
 .page-title {
   font-size: 1.6em;
-  text-align: center;
-  margin: 1.5em auto;
-  padding-bottom: 0.6em;
+  font-weight: bold;
+  margin: 1.5em 0 1em 0;
+  padding-bottom: 0.3em;
   border-bottom: 1px solid #ccc;
-  font-weight: bold;
-}
-
-.block-title {
-  font-size: 1.8em;
-  font-weight: bold;
-  border-left: 6px solid #bbb;
-  padding-left: 0.6em;
-  margin: 2em 0 1em 0;
   text-align: left;
 }
 
