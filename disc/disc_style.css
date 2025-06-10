@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v17
-   ページタイトル分離・行間微調整・構造破綻防止対応
+   classディスコグラフィ共通スタイル v18
+   meta内の行間CSS制御版（br地獄から脱却）
    ===================== */
 
 body {
@@ -79,11 +79,19 @@ hr {
   font-size: 0.95em;
   color: #444;
   margin-top: 0.4em;
-  line-height: 1.5;
+  line-height: 1.6;
   white-space: pre-line;
 }
 
+.meta .rankline {
+  display: inline-block;
+  margin-top: 0.2em;
+  line-height: 1.4;
+}
+
 .meta strong {
+  display: block;
+  margin-top: 0.6em;
   color: #222;
 }
 
