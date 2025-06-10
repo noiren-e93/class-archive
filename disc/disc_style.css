@@ -1,7 +1,7 @@
 
 /* =====================
-   classディスコグラフィ共通スタイル v18
-   meta内の行間CSS制御版（br地獄から脱却）
+   classディスコグラフィ共通スタイル v19
+   備考の行間ブロック化：.meta-note 対応
    ===================== */
 
 body {
@@ -89,10 +89,12 @@ hr {
   line-height: 1.4;
 }
 
-.meta strong {
+.meta-note {
   display: block;
-  margin-top: 0.6em;
+  font-weight: bold;
   color: #222;
+  margin-top: 0.2em;
+  line-height: 1.4;
 }
 
 .track {
