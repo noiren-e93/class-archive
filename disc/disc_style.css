@@ -83,3 +83,13 @@ body {
   text-decoration: none;
   color: #444;
 }
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.entry {
+  width: 100%;
+  max-width: 800px;
+}
