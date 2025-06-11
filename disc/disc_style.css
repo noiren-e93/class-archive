@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 2em auto;
   max-width: 960px;
-  line-height: 1.6;
+   line-height: 1.4; /* ← 少しだけ詰めた値 */
   color: #222;
   background: #fff;
   padding: 0 1em;
