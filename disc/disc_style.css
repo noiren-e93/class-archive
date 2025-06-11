@@ -100,7 +100,7 @@ body {
 
 hr {
   border: none;
-  border-top: 2px solid red;
-  margin: 2.5em 0;
+  border-top: 1px solid #bbb;
+  margin: 1.5em 0;
   width: 100%;
 }
