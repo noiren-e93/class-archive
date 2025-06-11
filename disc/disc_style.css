@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.6;
   background: #fff;
   color: #000;
 }
@@ -83,4 +83,11 @@ body {
 
 .footer a {
   text-decoration: none;
+}
+
+.credit,
+.tieup {
+  display: block;
+  line-height: 1.4;
+  margin-bottom: 0.2em;
 }
