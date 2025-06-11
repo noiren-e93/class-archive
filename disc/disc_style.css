@@ -35,6 +35,13 @@ body {
   gap: 20px;
   margin-bottom: 1em;
 }
+@media screen and (max-width: 600px) {
+  .track .credit,
+  .track .tieup {
+    font-size: 0.75em !important;
+    line-height: 1.4;
+  }
+}
 
 .cover img {
   width: 135px;
