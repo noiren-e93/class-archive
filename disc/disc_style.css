@@ -85,9 +85,21 @@ body {
   text-decoration: none;
 }
 
-.credit,
+.credit {
+  font-size: 0.85em;
+  line-height: 1.2;
+  margin-bottom: 0.1em;
+  letter-spacing: 0.03em;
+  color: #333366;
+}
+.meta {
+  font-size: 0.95em;
+  font-family: inherit;
+  line-height: 1.6;
+}
 .tieup {
-  display: block;
+  font-size: 0.85em;
   line-height: 1.4;
   margin-bottom: 0.2em;
+  display: block;
 }
