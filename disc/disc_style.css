@@ -110,3 +110,12 @@ body {
   margin-bottom: 0.1em;
   color: #333366;
 }
+
+hr.entry-divider, hr.footer-divider {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 2em 0;
+}
+.track ul li strong {
+  margin-bottom: 0.2em;
+}
