@@ -127,3 +127,8 @@ hr.entry-divider, hr.footer-divider {
 .track ul li strong {
   margin-bottom: 0;
 }
+
+.credit {
+  margin-top: 0;
+  line-height: 1.4;
+}
