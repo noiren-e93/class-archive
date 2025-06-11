@@ -119,3 +119,7 @@ hr.entry-divider, hr.footer-divider {
 .track ul li strong {
   margin-bottom: 0.2em;
 }
+
+.track ul li strong {
+  margin-bottom: 0;
+}
