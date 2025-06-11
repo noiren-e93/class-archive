@@ -98,9 +98,11 @@ body {
   max-width: 800px;
 }
 
-hr {
-  border: none;
+
+
+
+.entry + .entry {
   border-top: 1px solid #bbb;
-  margin: 1.5em 0;
-  width: 100%;
+  margin-top: 2em;
+  padding-top: 2em;
 }
