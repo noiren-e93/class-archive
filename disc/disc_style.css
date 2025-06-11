@@ -103,3 +103,10 @@ body {
   margin-bottom: 0.2em;
   display: block;
 }
+
+.tieup {
+  font-size: 0.85em;
+  line-height: 1.2;
+  margin-bottom: 0.1em;
+  color: #333366;
+}
