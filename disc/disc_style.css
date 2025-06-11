@@ -1,4 +1,4 @@
-/* disc_style.css v36+ - スマホ対応 + 視認性改善 + 縦線 + モバイル画像修正 */
+/* disc_style.css v36+ - スマホ対応 + 視認性改善 + 縦線 + モバイル画像150px */
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -103,7 +103,7 @@ body {
   }
 
   .cover img {
-    width: 135px !important;  /* スマホでも拡大させない */
+    width: 150px !important;  /* ← ここを調整 */
     height: auto;
     margin-bottom: 1em;
   }
