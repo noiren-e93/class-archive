@@ -125,11 +125,12 @@ body {
   margin-left: 0.5em;
 }
 @media screen and (max-width: 768px) {
-  .track .credit,
-  .track .tieup {
+  .credit,
+  .tieup {
     font-size: 0.72em !important;
     line-height: 1.4 !important;
-    color: #444 !important; /* 色も変えて適用確認 */
+    color: #444 !important; /* ← 一時的な視認テスト用 */
     display: inline-block !important;
   }
 }
+
