@@ -57,29 +57,30 @@ body {
   list-style: none;
   padding-left: 0;
 }
-
-h2 {
-  margin-top: 0;
-  margin-bottom: 0.3em;
+.track ul li {
+  line-height: 1.8;
+  margin-bottom: 1.2em;
+}
+.track ul li strong {
+  font-size: 1.05em;
 }
 
 .meta,
 .credit,
 .tieup,
 .note {
-  font-size: 0.95em;
+  font-size: 0.85em;
+}
+
+.credit {
+  letter-spacing: 0.03em;
 }
 
 .note {
   color: #444;
-  margin-top: 0.5em;
+  margin-top: 0.8em;
 }
 
 .footer a {
   text-decoration: none;
-}
-
-.track ul li {
-  line-height: 1.8;
-  margin-bottom: 1.2em;
 }
