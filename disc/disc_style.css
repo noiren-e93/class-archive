@@ -2,14 +2,16 @@
 body {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
     background-color: #fff;
-    color: #222;
+    color: #333;
     margin: 0;
     padding: 1.5em;
+    line-height: 1.7;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 820px;
     margin: auto;
+    padding: 0 1em;
 }
 
 .entry-block {
@@ -19,9 +21,8 @@ body {
 .entry-block h3 {
     font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 0.5em;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.2em;
+    margin-bottom: 0.6em;
+    color: #222;
 }
 
 img {
@@ -32,38 +33,41 @@ img {
 }
 
 .album-meta {
-    margin-bottom: 0.5em;
     font-size: 0.95em;
+    margin-bottom: 0.4em;
+    color: #444;
 }
 
 .album-meta span {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 1.5em;
 }
 
 .note {
     font-size: 0.85em;
-    color: #666;
+    color: #777;
     margin-top: 0.5em;
 }
 
 .track-list {
     list-style: none;
     padding-left: 0;
+    margin-top: 1em;
 }
 
 .track-list li {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.6em;
 }
 
 .track-num {
     font-weight: bold;
+    margin-bottom: 0.2em;
 }
 
-.credit {
+.credit-line {
     font-size: 0.95em;
     color: #444;
-    margin: 0.2em 0;
+    margin-left: 1em;
 }
 
 .tie-up {
