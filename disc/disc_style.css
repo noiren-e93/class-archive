@@ -1,4 +1,4 @@
-/* disc_style.css v36 - スマホ対応 + 視認性改善 + 統一縦線 */
+/* disc_style.css v36+ - スマホ対応 + 視認性改善 + 縦線 + モバイル画像修正 */
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -34,8 +34,6 @@ body {
   display: flex;
   gap: 20px;
   margin-bottom: 1em;
-}
-
 }
 
 .cover img {
@@ -86,6 +84,7 @@ body {
   border-left: 6px solid #888;
   padding-left: 10px;
   margin-bottom: 0.5em;
+  margin-left: 0.5em;
 }
 
 .footer {
@@ -104,7 +103,8 @@ body {
   }
 
   .cover img {
-    width: 100%;
+    width: 135px !important;  /* スマホでも拡大させない */
+    height: auto;
     margin-bottom: 1em;
   }
 
@@ -114,26 +114,13 @@ body {
   }
 }
 
-
-/* 縦線左詰まり防止 */
-.entry h2 {
-  margin-left: 0.5em;
-}
-@media screen and (max-width: 768px) {
-  .credit,
-  .tieup {
-    font-size: 0.72em !important;
-    line-height: 1.4 !important;
-    color: #444 !important; /* ← 一時的な視認テスト用 */
-    display: inline-block !important;
-  }
-}
-
+/* クレジット縮小 */
 @media screen and (max-width: 768px) {
   .credit,
   .tieup {
     font-size: 0.68em !important;
     line-height: 1.4 !important;
     color: #333 !important;
+    display: inline-block;
   }
 }
