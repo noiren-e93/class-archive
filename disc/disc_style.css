@@ -8,15 +8,15 @@ body {
 }
 
 .page-title {
-  font-size: 24px;
-  margin: 2.5em auto 4em;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 3em auto 4em;
   padding-left: 1.5em;
   position: relative;
   width: fit-content;
   text-align: left;
   border-bottom: 2px solid #ccc;
-  font-weight: bold;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 .page-title::before {
@@ -26,7 +26,7 @@ body {
   top: 0;
   width: 6px;
   height: 100%;
-  background: #bbb; /* 少し淡いグレーへ調整 */
+  background: #bbb; /* 淡いグレー */
 }
 
 .entry-list {
@@ -60,7 +60,7 @@ body {
 .meta {
   font-size: 14px;
   color: #444;
-  line-height: 1.5; /* ←元1.4から調整 */
+  line-height: 1.6; /* 元1.4→1.6へ+0.2 */
   margin-bottom: 0.4em;
 }
 
@@ -88,14 +88,14 @@ body {
 .credit {
   font-size: 13px;
   color: #444;
-  line-height: 1.1; /* 行間を詰める */
+  line-height: 1.0; /* より詰める */
   margin-bottom: 0.1em;
 }
 
 .tieup {
   font-size: 13px;
   color: #444;
-  line-height: 1.1; /* 行間を詰める */
+  line-height: 1.0;
   margin-top: 0.1em;
 }
 
