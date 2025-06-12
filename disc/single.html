@@ -4,115 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>class シングル｜この声が消えても、ここにいる</title>
-  <style>
-  
-body {
-  font-family: "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ ProN", Meiryo, sans-serif;
-  margin: 2em auto;
-  max-width: 720px;
-  background: #fff;
-  color: #333;
-  line-height: 1.45;
-}
-.page-title {
-  font-size: 1.7em;
-  border-left: 4px solid #999;
-  padding-left: 0.6em;
-  margin-bottom: 1.4em;
-}
-.entry {
-  margin-bottom: 2.5em;
-}
-.entry .title {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-.entry .meta {
-  font-size: 0.9em;
-  margin-top: 0.4em;
-  margin-bottom: 20px; /* ←ここで行間を確保 */
-  color: #444;
-}
-.entry .note {
-  font-weight: bold;
-  font-size: 0.88em;
-  margin-top: 0.3em;
-}
-.cover img {
-  max-width: 150px;
-  height: auto;
-}
-.info-flex {
-  display: flex;
-  gap: 1.2em;
-  align-items: flex-start;
-}
-.track ul {
-  list-style: none;
-  padding-left: 0;
-}
-.track li {
-  margin-bottom: 1.5em;
-}
-.track .credit {
-  font-size: 0.88em;
-  color: #444;
-  display: block;
-  margin: 0;
-}
-.track .tieup {
-  font-size: 0.88em;
-  color: #444;
-  display: block;
-  margin: 0;
-}
-.footer {
-  font-size: 0.85em;
-  margin-top: 4em;
-  text-align: left;
-}
-.footer a {
-  text-decoration: none;
-  color: #663399;
-}
-
-.entry-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 2em 0 2.5em 0;
-}
-
-.track .credit {
-  font-size: 0.88em;
-  color: #444;
-  display: block;
-  margin: 0;
-}
-.track .tieup {
-  font-size: 0.88em;
-  color: #444;
-  display: block;
-  margin: 0;
-}
-
-.page-title {
-  font-size: 1.7em;
-  border-left: 4px solid #999;
-  padding-left: 0.6em;
-  margin-bottom: 1.5em;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.4em;
-  display: block;
-}
-.meta-top {
-  margin-bottom: 1em; /* ← ここで上下の間隔を調整 */
-}
-
-.meta-bottom {
-  /* 必要なら個別設定も可能 */
-}
-
-  </style>
+  <link rel="stylesheet" href="disc_style.css" />
 </head>
 <body>
 
@@ -123,26 +15,30 @@ body {
 <!-- 1st -->
 <div class="entry">
   <div class="info-flex">
-    <div class="cover"><img src="https://via.placeholder.com/150x210.png?text=1st+Jacket" alt="夏の日の1993" /></div>
-<div class="meta">
-  <div class="meta-top">1993.04.21　APDA-81</div>
-  <div class="meta-bottom">初登場：59位　最高位：3位　登場回数：37週</div>
-</div>
-<div class="note">※[年間15位] 1993年度オリコン</div>
-
-
+    <div class="cover"><img src="img/sg_1st.jpg" alt="夏の日の1993" /></div>
+    <div>
+      <h2 class="title">夏の日の1993</h2>
+      <div class="meta">
+        <div class="meta-top">1993.04.21　APDA-81</div>
+        <div class="meta-bottom">初登場：59位　最高位：3位　登場回数：37週</div>
+      </div>
+      <div class="note"><strong>※[年間15位] 1993年度オリコン</strong></div>
+    </div>
   </div>
   <div class="track">
     <ul>
-      <li><strong>01. 夏の日の1993</strong><br />
-        <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</div>
-        <div class="tieup">※ テレビ朝日系「君といつまでも」OPテーマ / CF「セゾンカード」</div>
+      <li>
+        <strong>01. 夏の日の1993</strong><br />
+        <span class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</span>
+        <span class="tieup">※ テレビ朝日系「君といつまでも」OPテーマ / CF「セゾンカード」</span>
       </li>
-      <li><strong>02. Rainy Day</strong><br />
-        <div class="credit">作詞：松本 一起　作曲：北村 勝彦　編曲：十川 知司</div>
+      <li>
+        <strong>02. Rainy Day</strong><br />
+        <span class="credit">作詞：松本 一起　作曲：北村 勝彦　編曲：十川 知司</span>
       </li>
-      <li><strong>03. 夏の日の1993（Backing Track）</strong><br />
-        <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</div>
+      <li>
+        <strong>03. 夏の日の1993（Backing Track）</strong><br />
+        <span class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</span>
       </li>
     </ul>
   </div>
@@ -153,32 +49,40 @@ body {
 <!-- 2nd -->
 <div class="entry">
   <div class="info-flex">
-    <div class="cover"><img src="https://via.placeholder.com/150x210.png?text=2nd+Jacket" alt="もう君を離さない" /></div>
+    <div class="cover"><img src="img/sg_2nd.jpg" alt="もう君を離さない" /></div>
     <div>
       <h2 class="title">もう君を離さない</h2>
-      <div class="meta">1993.10.18　APDA-92<br />初登場：4位　最高位：4位　登場回数：14週</div>
+      <div class="meta">
+        <div class="meta-top">1993.10.18　APDA-92</div>
+        <div class="meta-bottom">初登場：4位　最高位：4位　登場回数：14週</div>
+      </div>
     </div>
   </div>
   <div class="track">
     <ul>
-      <li><strong>01. もう君を離さない</strong><br />
-        <div class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</div>
-        <div class="tieup">※ テレビ朝日系「女検事の捜査ファイル」主題歌</div>
+      <li>
+        <strong>01. もう君を離さない</strong><br />
+        <span class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</span>
+        <span class="tieup">※ テレビ朝日系「女検事の捜査ファイル」主題歌</span>
       </li>
-      <li><strong>02. サヨナラ</strong><br />
-        <div class="credit">作詞：class　作曲：class　編曲：中村 哲</div>
+      <li>
+        <strong>02. サヨナラ</strong><br />
+        <span class="credit">作詞：class　作曲：class　編曲：中村 哲</span>
       </li>
-      <li><strong>03. もう君を離さない（Backing Track）</strong><br />
-        <div class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</div>
+      <li>
+        <strong>03. もう君を離さない（Backing Track）</strong><br />
+        <span class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</span>
       </li>
     </ul>
   </div>
 </div>
 
+<hr class="entry-hr" />
+
 </div>
 
 <div class="footer">
-  <a href="#">ディスコグラフィー一覧へ戻る</a>
+  <a href="../disc.html">ディスコグラフィー一覧へ戻る</a>
 </div>
 
 </body>
