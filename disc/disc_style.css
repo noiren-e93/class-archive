@@ -21,7 +21,7 @@ body {
     margin-bottom: 1.2em;
     text-align: left;
     padding-left: 0.5em;
-    border-left: 4px solid #999;
+    border-left: 4px solid #999;  /* 左のL字線（｜）のみ表示 */
     position: relative;
 }
 .page-title::after {
@@ -112,10 +112,10 @@ footer {
     color: #666;
 }
 footer a {
-    text-decoration: none;
     color: #663399;
     font-weight: bold;
     margin-right: 1.5em;
+    text-decoration: none; /* 下線を削除 */
 }
 
 /* スマホ対応 */
