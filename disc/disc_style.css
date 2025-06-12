@@ -15,6 +15,8 @@ body {
   width: fit-content;
   text-align: left;
   border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  letter-spacing: 0.03em;
 }
 
 .page-title::before {
@@ -24,7 +26,7 @@ body {
   top: 0;
   width: 6px;
   height: 100%;
-  background: #ccc;
+  background: #bbb; /* 少し淡いグレーへ調整 */
 }
 
 .entry-list {
@@ -58,8 +60,8 @@ body {
 .meta {
   font-size: 14px;
   color: #444;
-  line-height: 1.4;
-  margin-bottom: 0.3em;
+  line-height: 1.5; /* ←元1.4から調整 */
+  margin-bottom: 0.4em;
 }
 
 .note {
@@ -76,7 +78,7 @@ body {
 }
 
 .track li {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.2em;
 }
 
 .track li strong {
@@ -86,14 +88,14 @@ body {
 .credit {
   font-size: 13px;
   color: #444;
-  line-height: 1.2;
+  line-height: 1.1; /* 行間を詰める */
   margin-bottom: 0.1em;
 }
 
 .tieup {
   font-size: 13px;
   color: #444;
-  line-height: 1.2;
+  line-height: 1.1; /* 行間を詰める */
   margin-top: 0.1em;
 }
 
