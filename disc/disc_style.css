@@ -78,7 +78,7 @@ body {
 }
 
 .track li {
-  margin-bottom: 1.2em;
+ margin-bottom: 1.6em; /* ← ほんの少し広げる */
 }
 
 .track li strong {
