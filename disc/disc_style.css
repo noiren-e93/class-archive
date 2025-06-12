@@ -101,24 +101,20 @@ body {
     margin-top: 0.2em;
 }
 
-/* フッター：完全対策済み */
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.5em 0 3em 0;
+/* フッター */
+.footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0 3em 0;
     border-top: 1px solid #ccc;
     font-size: 0.8em;
     color: #666;
-    background-color: #f9f9f9;
 }
-footer a {
-    all: unset;
-    font-weight: bold;
+.footer a {
+    text-decoration: none;
     color: #663399;
-    margin-right: 1.5em;
-    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0.5em;
 }
 
 /* スマホ対応 */
