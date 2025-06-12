@@ -101,8 +101,7 @@ body {
     margin-top: 0.2em;
 }
 
-
-/* フッター */
+/* フッター：クラス対応＆リンクスタイル修正 */
 .footer {
     max-width: 960px;
     margin: 0 auto;
@@ -115,14 +114,13 @@ body {
     align-items: center;
 }
 .footer a {
+    text-decoration: none;
     color: #663399;
     font-weight: bold;
     margin-left: 0.5em;
-    text-decoration: none; /* 下線を消す */
 }
 
 /* スマホ対応 */
-
 @media (max-width: 640px) {
     .info-flex {
         flex-direction: column;
@@ -145,5 +143,4 @@ body {
     .track li .tie-up {
         font-size: 0.78em;
     }
-
 }
