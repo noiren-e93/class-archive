@@ -33,7 +33,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1em;
-  display: block; /* 念のため明示 */
+  display: block;
 }
 
 .entry {
@@ -62,8 +62,8 @@ h2.title {
 .meta {
   font-size: 14px;
   color: #555;
-  margin-bottom: 0.4em;
-  line-height: 1.4;
+  margin-bottom: 0.2em;
+  line-height: 1.2;
 }
 
 .note {
@@ -91,14 +91,14 @@ h2.title {
 .credit {
   font-size: 13px;
   color: #444;
-  line-height: 1.4;
-  margin-bottom: 0.2em;
+  line-height: 1.2;
+  margin-bottom: 0.1em;
 }
 
 .tieup {
   font-size: 13px;
   color: #444;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 0.1em;
 }
 
@@ -111,7 +111,7 @@ hr.entry-hr {
 
 .footer {
   max-width: 800px;
-  margin: 4em auto 5em;
+  margin: 4em auto 7em;
   font-size: 14px;
   color: #666;
   text-align: left;
