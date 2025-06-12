@@ -83,7 +83,7 @@ body {
 
 .track li strong {
   display: block;
-  margin-bottom: 0.6em; /* ← 少しだけ広げる（標準よりやや多め） */
+  margin-bottom: 0.7em; /* ← 少しだけ広げる（標準よりやや多め） */
 }
 
 .credit {
