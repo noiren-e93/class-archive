@@ -2,21 +2,20 @@
 body {
   font-family: "Helvetica Neue", sans-serif;
   color: #333;
-  line-height: 1.5;
-  background: #fff;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .page-title {
   font-size: 24px;
-  margin: 2em auto 2.8em;
-  padding-bottom: 0.4em;
   border-bottom: 2px solid #ccc;
-  width: 90%;
-  max-width: 800px;
+  padding-left: 1.5em; /* 縦線との間隔 */
   position: relative;
-  padding-left: 20px;
+  margin-top: 2em;
+  margin-bottom: 3.5em; /* 余白広めに */
+  display: inline-block;
+  text-align: left;
 }
 
 .page-title::before {
@@ -26,94 +25,70 @@ body {
   top: 0;
   width: 6px;
   height: 100%;
-  background: #ccc;
+  background: #ddd; /* 淡い色へ修正 */
 }
 
 .entry-list {
+  width: 90%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1em;
-  display: block;
+  text-align: left;
 }
 
 .entry {
-  margin-bottom: 2.5em;
-  display: block;
+  margin-bottom: 3em;
 }
 
 .info-flex {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .cover img {
-  width: 150px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-}
-
-h2.title {
-  font-size: 20px;
-  margin: 0 0 0.3em;
+  width: 120px;
+  height: auto;
+  border: 1px solid #ccc;
 }
 
 .meta {
   font-size: 14px;
-  color: #555;
+  line-height: 1.4;
   margin-bottom: 0.2em;
-  line-height: 1.2;
 }
 
 .note {
   font-size: 13px;
-  color: #444;
+  color: #666;
   font-weight: bold;
-  margin-top: 0.3em;
-  line-height: 1.4;
+  margin-top: 0.2em;
 }
 
 .track ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 0.8em;
 }
 
 .track li {
-  margin-bottom: 1.0em;
+  margin-bottom: 1em;
 }
 
-.track li strong {
-  font-weight: bold;
-}
-
-.credit {
+.credit, .tieup {
   font-size: 13px;
   color: #444;
-  line-height: 1.2;
-  margin-bottom: 0.1em;
+  line-height: 1.1; /* 行間詰め */
 }
 
-.tieup {
-  font-size: 13px;
-  color: #444;
-  line-height: 1.2;
-  margin-top: 0.1em;
-}
-
-hr.entry-hr {
+.entry-hr {
   border: none;
   border-top: 1px solid #ccc;
   width: 95%;
-  margin: 2em auto;
+  margin: 3em auto;
 }
 
 .footer {
-  max-width: 800px;
-  margin: 4em auto 7em;
-  font-size: 14px;
-  color: #666;
+  margin-top: 5em;
+  margin-bottom: 7em;
   text-align: left;
-  padding: 0 1em;
+  padding-left: 5%;
+  font-size: 14px;
 }
