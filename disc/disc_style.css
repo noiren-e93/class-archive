@@ -103,27 +103,25 @@ body {
 
 
 /* フッター */
-/* 修正後のCSS */
-
 .footer {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2em 0 3em 0;
-  border-top: 1px solid #ccc;
-  font-size: 0.8em;
-  color: #666;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0 3em 0;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+    color: #666;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-
 .footer a {
-  color: #663399;
-  font-weight: bold;
-  margin-left: 0.5em;
-  text-decoration: none; /* ← これが下線を消す */
+    color: #663399;
+    font-weight: bold;
+    margin-left: 0.5em;
+    text-decoration: none; /* 下線を消す */
 }
 
+/* スマホ対応 */
 
 @media (max-width: 640px) {
     .info-flex {
