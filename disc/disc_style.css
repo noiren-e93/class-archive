@@ -1,0 +1,141 @@
+
+/* 基本設定 */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #222;
+}
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.page-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    border-left: 4px solid #555;
+    border-bottom: 1px solid #aaa;
+    padding-left: 0.5em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.entry {
+    margin-bottom: 2.5em;
+}
+
+.entry + .entry {
+    border-top: 1px solid #ccc;
+    padding-top: 2.5em;
+}
+
+/* ジャケットと情報横並び */
+.info-flex {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 1em;
+}
+
+.jacket img {
+    max-width: 140px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.info-block h2 {
+    font-size: 1.3em;
+    margin: 0 0 0.3em 0;
+}
+
+.meta-top {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.4em;
+}
+
+.meta {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 0.3em;
+}
+
+.note {
+    font-weight: bold;
+    font-size: 0.92em;
+    margin-top: 0.5em;
+    color: #444;
+}
+
+.track {
+    list-style: none;
+    padding-left: 0;
+}
+
+.track li {
+    margin-bottom: 1em;
+}
+
+.track li strong {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.track li .credit {
+    font-size: 0.88em;
+    color: #555;
+    margin-top: -0.3em;
+}
+
+.track li .tie-up {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+}
+
+/* フッター */
+footer {
+    margin-top: 4em;
+    padding: 1em 0;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+    color: #666;
+    text-align: left;
+}
+
+/* スマホ対応 */
+@media (max-width: 640px) {
+    .info-flex {
+        flex-direction: column;
+    }
+
+    .jacket img {
+        max-width: 100%;
+    }
+
+    .page-title {
+        font-size: 1.4em;
+    }
+
+    .info-block h2 {
+        font-size: 1.1em;
+    }
+
+    .track li strong {
+        font-size: 0.95em;
+    }
+
+    .track li .credit {
+        font-size: 0.82em;
+    }
+
+    .track li .tie-up {
+        font-size: 0.78em;
+    }
+}
