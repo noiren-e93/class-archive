@@ -3,6 +3,8 @@
 .container {
   padding-left: 1em;
   padding-right: 1em;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .entry {
