@@ -1,100 +1,136 @@
 
-/* 🍜 うどん定食 ver：柔らかく読みやすいカラートーン＋1.5玉の行間 */
-
-/* 全体中央寄せ＋フォントやわらかめ */
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1em;
-  color: #444;
-}
-
-/* ページ全体上部の余白なし */
+/* 全体ベース */
 body {
-  padding-top: 0;
+  font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* タイトル */
+.page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  border-left: 5px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 0.3em 0.5em;
   margin-top: 0;
-}
-
-/* 表題・見出しのL字線（ふんわりグレー） */
-.page-title,
-.sub-title {
-  border-left: 2px solid #999;
-  border-bottom: 1px solid #ccc;
-  padding-left: 0.5em;
-  padding-bottom: 0.2em;
-  display: block;
-  width: 100%;
-  max-width: 940px;
-  box-sizing: border-box;
-  margin: 0 0 1em;
-}
-
-/* ジャケット画像に柔らかい枠 */
-.jacket img {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* 作品ブロック右側配置 */
-.info-flex {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-}
-
-/* トラックリスト調整 */
-.track {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 12px;
-}
-.track li {
-  margin-bottom: 1em;
-  line-height: 2.0; /* 1.5玉：読みやすく間を広めに */
-}
-
-/* 区切り線 */
-.entry + .entry {
-  border-top: 1px solid #ddd;
-  padding-top: 2em;
-  margin-top: 2em;
-}
-
-/* タイトル（曲名）明示的にやや濃いめ */
-.title {
   color: #222;
 }
 
-/* クレジット・タイアップ：かなり控えめ */
-.credit, .tie-up {
-  color: #888;
-  font-size: 0.85em;
-  line-height: 1.7;
+.sub-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-left: 5px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 0.3em 0.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #222;
 }
 
-/* meta-top・meta：明るめで主張しすぎず */
-.meta-top,
-.meta {
+/* 各エントリ */
+.entry {
+  margin-bottom: 3em;
+}
+
+.info-flex {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.jacket img {
+  width: 180px;
+  border: 1px solid #ccc;
+}
+
+.info-block {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #222;
+}
+
+.meta-top {
   font-size: 0.9em;
-  color: #666;
+  color: #555;
   margin-bottom: 0.2em;
 }
 
-/* 備考：オリコン等も柔らかく */
-.note {
-  color: #666;
-  font-weight: normal;
-}
-
-/* フッターリンク：落ち着いた色に */
-.footer {
-  border-top: 1px solid #ccc;
-  padding-top: 1em;
-  margin-top: 3em;
-  text-align: left;
-}
-.footer a {
-  text-decoration: none;
+.meta {
   font-size: 0.9em;
   color: #555;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.3em;
+}
+
+/* トラックリスト */
+.track {
+  margin-top: 1em;
+  padding-left: 1em;
+  list-style: none;
+}
+
+.track li {
+  margin-bottom: 1em;
+}
+
+.track li strong {
+  display: block;
+  color: #222;
+}
+
+.credit {
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 1em;
+}
+
+.tie-up {
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 1em;
+}
+
+/* フッター */
+.footer {
+  text-align: left;
+  font-size: 0.9em;
+  margin-top: 4em;
+  padding-bottom: 2em;
+}
+
+.footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* 区切り線 */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
 }
