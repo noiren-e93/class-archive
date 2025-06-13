@@ -1,5 +1,5 @@
 
-/* 全体ベース */
+/* --- 共通スタイル（PC基準） --- */
 body {
   font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
   font-size: 16px;
@@ -16,7 +16,6 @@ body {
   padding: 0 1rem;
 }
 
-/* タイトル */
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -38,7 +37,6 @@ body {
   color: #222;
 }
 
-/* 各エントリ */
 .entry {
   margin-bottom: 3em;
 }
@@ -83,7 +81,6 @@ body {
   margin-top: 0.3em;
 }
 
-/* トラックリスト */
 .track {
   margin-top: 1em;
   padding-left: 1em;
@@ -111,7 +108,6 @@ body {
   margin-left: 1em;
 }
 
-/* 区切り線 */
 hr {
   border: none;
   border-top: 1px solid #bbb;
@@ -119,7 +115,6 @@ hr {
   height: 1px;
 }
 
-/* フッター */
 .footer {
   text-align: left;
   font-size: 0.9em;
@@ -134,4 +129,44 @@ hr {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* --- スマホ対応スタイル --- */
+@media screen and (max-width: 768px) {
+  .info-flex {
+    flex-direction: column;
+  }
+
+  .jacket img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1.1em;
+  }
+
+  .meta, .meta-top, .credit, .tie-up, .note {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  .track li {
+    padding-left: 0.2em;
+    line-height: 1.8;
+  }
+
+  .entry {
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+  }
+
+  .page-title {
+    font-size: 1.5em;
+  }
+
+  .sub-title {
+    font-size: 1.1em;
+  }
 }
