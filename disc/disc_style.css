@@ -1,3 +1,4 @@
+
 body {
   font-family: sans-serif;
   font-size: 15px;
@@ -118,6 +119,6 @@ ul.track {
   }
 
   .footer {
-    padding-bottom: 5em;
+    padding-bottom: 3em;
   }
 }
