@@ -1,19 +1,28 @@
+/* disc_style.css - classディスコグラフィ共通スタイル */
 
 body {
   font-family: sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  margin: 0 auto;
-  max-width: 900px;
   padding: 2em;
+  max-width: 900px;
+  margin: auto;
 }
 
+.page-title {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* 各作品ブロック */
 .entry {
-  margin-bottom: 2.5em;
+  margin-bottom: 3em;
   border-bottom: 1px solid #ccc;
   padding-bottom: 2em;
 }
 
+/* ジャケット＋情報ブロック */
 .info-flex {
   display: flex;
   gap: 1.5em;
@@ -39,14 +48,14 @@ body {
 
 .meta {
   font-size: 0.9em;
-  color: #555;
-  margin-bottom: 1em;
+  color: #333;
+  margin-bottom: 0.6em;
 }
 
-ul.track {
+.track {
   list-style: none;
-  padding-left: 0;
-  margin-top: 0.5em;
+  padding: 0;
+  margin: 0.5em 0 0 0;
 }
 
 .track li {
@@ -59,33 +68,31 @@ ul.track {
   margin-bottom: 0.2em;
 }
 
-.credit, .tieup {
+.credit, .tie-up {
   font-size: 0.9em;
-  color: #333;
+  color: #444;
   line-height: 1.5;
 }
 
-.tieup {
-  color: #666;
-}
-
+/* 区切りタイトル */
 .sub-title {
   font-size: 1.3em;
-  font-weight: bold;
-  margin: 3em 0 1em;
-  padding-bottom: 0.2em;
-  border-bottom: 2px solid #aaa;
+  margin: 2em 0 1em 0;
+  padding-left: 0.5em;
+  border-left: 4px solid #888;
+  border-bottom: 1px solid #ccc;
 }
 
+/* フッター */
 .footer {
-  text-align: center;
+  margin-top: 2em;
   padding-bottom: 3em;
+  text-align: center;
   font-size: 0.9em;
   color: #666;
-  margin-top: 2em;
 }
 
-/* --- スマホ対応（600px以下） --- */
+/* スマホ対応 */
 @media screen and (max-width: 600px) {
   .info-flex {
     flex-direction: column;
@@ -99,26 +106,13 @@ ul.track {
 
   .info-block {
     text-align: left;
-    width: 100%;
-  }
-
-  .meta {
-    font-size: 0.95em;
   }
 
   .track li strong {
-    font-size: 1em;
+    font-weight: 500;
   }
 
-  .credit, .tieup {
-    font-size: 0.95em;
-  }
-
-  .sub-title {
-    font-size: 1.2em;
-  }
-
-  .footer {
-    padding-bottom: 3em;
+  .credit, .tie-up {
+    line-height: 1.6;
   }
 }
