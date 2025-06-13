@@ -41,6 +41,7 @@ body {
 
 .info-block {
   flex: 1;
+  padding-right: 1em;
 }
 
 .title {
@@ -49,13 +50,17 @@ body {
 }
 
 .meta-top {
-  font-size: 0.9em;
-  margin-bottom: 0.3em;
+  font-size: 0.95em;
+  font-weight: normal;
+  color: #222;
+  margin-bottom: 0.5em;
 }
 
 .meta {
-  font-size: 0.85em;
-  color: #555;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  color: #333;
+  margin-bottom: 0.5em;
 }
 
 .note {
@@ -83,8 +88,9 @@ ul.track li {
 .credit,
 .tie-up {
   font-size: 0.9em;
-  line-height: 1.4em;
+  line-height: 1.5em;
   color: #333;
+  margin-top: 0.1em;
 }
 
 .sub-title {
@@ -107,22 +113,10 @@ ul.track li {
 .footer a {
   text-decoration: none !important;
   color: inherit !important;
-  text-decoration: none;
-  color: inherit;
 }
 
-/* モバイル表示調整（v11r5） */
+/* モバイル表示調整（v11r9） */
 @media screen and (max-width: 600px) {
-  .sub-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    border-left: 4px solid #ccc;
-    padding-left: 0.5em;
-    background-color: #fefefe;
-  }
-
   .info-flex {
     flex-direction: column;
     align-items: flex-start;
@@ -137,11 +131,18 @@ ul.track li {
   .info-block {
     width: 100%;
     text-align: left;
+    padding-right: 0;
   }
 
-  .entry {
-    width: 100%;
-    overflow-wrap: break-word;
+  .meta-top {
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
+  }
+
+  .meta {
+    font-size: 0.85em;
+    line-height: 1.5em;
+    margin-bottom: 0.4em;
   }
 
   .track li strong {
