@@ -17,14 +17,14 @@
   line-height: 1.8;
 }
 
-/* ④ hr代替：作品ブロックの間に区切り線を挿入 */
+/* ③ 区切り線：entry同士の間に */
 .entry + .entry {
   border-top: 1px solid #aaa;
   padding-top: 2em;
   margin-top: 2em;
 }
 
-/* ⑤ ユニットシングル区切りタイトルのL字装飾 */
+/* ④ ユニット見出し：L字枠 */
 .sub-title {
   border-left: 4px solid #000;
   border-bottom: 2px solid #000;
@@ -32,4 +32,17 @@
   padding-bottom: 0.2em;
   display: inline-block;
   margin: 2em 0 1em;
+}
+
+/* ⑤ クレジット・タイアップ表示を控えめに */
+.credit, .tie-up {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* ⑥ meta-top（発売日＋規格品番）調整 */
+.meta-top {
+  font-size: 0.95em;
+  color: #222;
 }
