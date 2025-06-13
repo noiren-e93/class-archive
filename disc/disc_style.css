@@ -131,35 +131,38 @@ hr {
   text-decoration: underline;
 }
 
-/* --- スマホ対応スタイル --- */
+/* --- スマホ対応：fontサイズバランス完全調整版 --- */
 @media screen and (max-width: 768px) {
   .info-flex {
     flex-direction: column;
   }
 
-  .jacket img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+  .info-block {
+    font-size: 0.95em;
   }
 
   .title {
     font-size: 1.1em;
   }
 
-  .meta, .meta-top, .credit, .tie-up, .note {
+  .meta-top,
+  .meta,
+  .credit,
+  .tie-up,
+  .note {
     font-size: 0.9em;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   .track li {
-    padding-left: 0.2em;
     line-height: 1.8;
+    margin-bottom: 1em;
   }
 
-  .entry {
-    margin-bottom: 3em;
-    padding-bottom: 1em;
+  .jacket img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .page-title {
