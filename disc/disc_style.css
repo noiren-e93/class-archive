@@ -1,78 +1,123 @@
-
-/* 中央寄せとパディング */
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
-  max-width: 900px;
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
   margin: 0 auto;
+  max-width: 900px;
+  padding: 2em;
 }
 
 .entry {
+  margin-bottom: 2.5em;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 1em;
-  margin-bottom: 2em;
+  padding-bottom: 2em;
 }
 
-.footer {
-  margin-top: 3em;
-  padding-top: 1.5em;
-  padding-bottom: 6em;
-  text-align: left;
-  font-size: 0.8em;
-  color: #666;
+.info-flex {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
 }
 
-/* 曲目リスト（番号のみ・マーカーなし） */
-.track {
+.jacket img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+.info-block {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.2em;
+  margin: 0 0 0.3em 0;
+}
+
+.meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+ul.track {
   list-style: none;
   padding-left: 0;
   margin-top: 0.5em;
 }
+
 .track li {
-  margin-bottom: 0.6em;
+  margin-bottom: 1em;
 }
 
-/* スマホ最適化：津久井ソロ＋Yahooニュースハイブリッド */
+.track li strong {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+.credit, .tieup {
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.5;
+}
+
+.tieup {
+  color: #666;
+}
+
+.sub-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 3em 0 1em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #aaa;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 3em;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 2em;
+}
+
+/* --- スマホ対応（600px以下） --- */
 @media screen and (max-width: 600px) {
   .info-flex {
-    display: block !important;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .jacket img {
     max-width: 85%;
-    display: block;
     margin: 0 auto 0.5em auto;
   }
 
   .info-block {
-    width: 100%;
-    font-size: 1em;
-    line-height: 1.7em;
-    padding-left: 1em;
-    padding-right: 1em;
     text-align: left;
+    width: 100%;
   }
 
-  .meta-top,
-  .meta,
-  .credit,
-  .tie-up,
-  .note {
-    font-size: 0.9em;
-    line-height: 1.6em;
-    margin-bottom: 0.5em;
-    color: #333;
+  .meta {
+    font-size: 0.95em;
   }
 
   .track li strong {
-    font-weight: 500;
-    line-height: 1.7em;
+    font-size: 1em;
+  }
+
+  .credit, .tieup {
+    font-size: 0.95em;
+  }
+
+  .sub-title {
+    font-size: 1.2em;
   }
 
   .footer {
-    padding-top: 1.5em;
-    padding-bottom: 6em;
-    font-size: 0.8em;
-    color: #666;
+    padding-bottom: 5em;
   }
 }
