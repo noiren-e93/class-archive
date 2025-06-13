@@ -111,6 +111,14 @@ body {
   margin-left: 1em;
 }
 
+/* 区切り線 */
+hr {
+  border: none;
+  border-top: 1px solid #bbb;
+  margin: 2.5em 0;
+  height: 1px;
+}
+
 /* フッター */
 .footer {
   text-align: left;
@@ -126,11 +134,4 @@ body {
 
 .footer a:hover {
   text-decoration: underline;
-}
-
-/* 区切り線 */
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 2em 0;
 }
