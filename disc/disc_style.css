@@ -1,109 +1,12 @@
-/* =====================
-   classディスコグラフィ共通スタイル v12 + 左寄せ修正
-   ===================== */
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  margin: 20px;
-  background-color: #fff;
-  color: #111;
-}
-
-h2 {
-  font-size: 1.4em;
-  margin-bottom: 0.2em;
-}
-
-h3 {
-  font-size: 1.2em;
-  margin-top: 2em;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2em;
-}
-
-.entry {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 30px;
-}
-
-.info-flex {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.cover img {
-  width: 150px;
-  height: auto;
-  border: 1px solid #ccc;
-}
-
-.info {
-  flex: 1;
-}
-
-.meta {
-  font-size: 0.95em;
-  color: #444;
-  margin-top: 0.2em;
-  white-space: pre-line;
-}
-
-.meta strong {
-  color: #222;
-}
-
-.track {
-  text-align: left;
-  margin-top: 1em;
-}
-
-.track ul {
-  padding-left: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.track li {
-  text-align: left;
-  margin-bottom: 0.5em;
-  line-height: 1.6;
-}
-
-.backlink {
-  margin-top: 40px;
-  font-size: 0.9em;
-}
-
-
-.sub-title {
-  font-size: 1.3em;
-  font-weight: bold;
-  padding-left: 0.5em;
-  border-left: 4px solid #999;
-  position: relative;
-  margin-top: 3em;
-  margin-bottom: 1.5em;
-}
-.sub-title::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid #999;
-  margin-top: 4px;
-}
-
+/* Base styling for container */
 .container {
   max-width: 960px;
-  margin: 0 auto; /* ← これで中央揃えにする */
-  padding: 2em;
+  margin: 0 auto;
+  padding: 1.5em;
 }
 
-/* === Auto-added for final correction === */
-
+/* Title of the page */
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -121,15 +24,29 @@ h3 {
   margin-top: 4px;
 }
 
-.meta-top {
-  font-size: 0.95em;
+/* Song credit and tie-up styles */
+.track li .credit,
+.track li .tie-up {
+  font-size: 0.87em;
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 0.3em;
+  margin-top: -0.2em;
 }
 
-.meta {
-  font-size: 0.9em;
-  color: #555;
-  margin-bottom: 0.2em;
+/* Footer styling */
+.footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 0 5em 0;
+  border-top: 1px solid #ccc;
+  font-size: 0.8em;
+  color: #666;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #663399;
+  font-weight: bold;
+  margin-left: 0.5em;
 }
