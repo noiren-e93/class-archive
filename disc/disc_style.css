@@ -1,23 +1,25 @@
 
-/* 全体中央寄せ＋フォント色やわらかく */
+/* 🍜 うどん定食 ver：柔らかく読みやすいカラートーン＋1.5玉の行間 */
+
+/* 全体中央寄せ＋フォントやわらかめ */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
-  color: #333;
+  color: #444;
 }
 
-/* ページ全体上部の余白をなくす */
+/* ページ全体上部の余白なし */
 body {
   padding-top: 0;
   margin-top: 0;
 }
 
-/* 表題・見出しのL字線（色を少し抑えめ） */
+/* 表題・見出しのL字線（ふんわりグレー） */
 .page-title,
 .sub-title {
-  border-left: 2px solid #666;
-  border-bottom: 1px solid #999;
+  border-left: 2px solid #999;
+  border-bottom: 1px solid #ccc;
   padding-left: 0.5em;
   padding-bottom: 0.2em;
   display: block;
@@ -27,9 +29,9 @@ body {
   margin: 0 0 1em;
 }
 
-/* ジャケット画像に枠 */
+/* ジャケット画像に柔らかい枠 */
 .jacket img {
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
@@ -48,32 +50,43 @@ body {
 }
 .track li {
   margin-bottom: 1em;
-  line-height: 1.9;
+  line-height: 2.0; /* 1.5玉：読みやすく間を広めに */
 }
 
 /* 区切り線 */
 .entry + .entry {
-  border-top: 1px solid #aaa;
+  border-top: 1px solid #ddd;
   padding-top: 2em;
   margin-top: 2em;
 }
 
-/* クレジット・タイアップ：より控えめに */
-.credit, .tie-up {
-  color: #777;
-  font-size: 0.85em;
-  line-height: 1.6;
+/* タイトル（曲名）明示的にやや濃いめ */
+.title {
+  color: #222;
 }
 
-/* meta-top（発売日＋品番）やや控えめ */
+/* クレジット・タイアップ：かなり控えめ */
+.credit, .tie-up {
+  color: #888;
+  font-size: 0.85em;
+  line-height: 1.7;
+}
+
+/* meta-top・meta：明るめで主張しすぎず */
 .meta-top,
 .meta {
   font-size: 0.9em;
-  color: #555;
+  color: #666;
   margin-bottom: 0.2em;
 }
 
-/* フッターリンク：柔らかく */
+/* 備考：オリコン等も柔らかく */
+.note {
+  color: #666;
+  font-weight: normal;
+}
+
+/* フッターリンク：落ち着いた色に */
 .footer {
   border-top: 1px solid #ccc;
   padding-top: 1em;
@@ -83,5 +96,5 @@ body {
 .footer a {
   text-decoration: none;
   font-size: 0.9em;
-  color: #444;
+  color: #555;
 }
