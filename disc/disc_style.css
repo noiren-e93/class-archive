@@ -1,4 +1,4 @@
-/* disc_style.css v20250613r - PC & モバイル両対応 */
+/* disc_style.css v20250613r3 - PC & モバイル両対応（HRはHTMLのみ） */
 
 /* =========================
    基本スタイル（全端末共通）
@@ -41,19 +41,19 @@ body {
 
 .entry {
   margin-bottom: 2.5em;
-  border-bottom: 1px solid #ddd;
   padding-bottom: 1em;
 }
 
 .info-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1.2em;
+  align-items: flex-start;
 }
 
 .jacket img {
   width: 100%;
-  max-width: 140px;
+  max-width: 200px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
@@ -61,6 +61,8 @@ body {
 .info-block {
   flex: 1;
   min-width: 240px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .title {
@@ -95,15 +97,20 @@ ul.track {
 }
 
 ul.track li {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   list-style: none;
+}
+
+ul.track li strong {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .credit,
 .tie-up {
   font-size: 0.9rem;
   color: #555;
-  line-height: 1.4;
+  line-height: 1.6;
   margin-left: 0.5em;
 }
 
@@ -148,12 +155,17 @@ hr {
     max-width: 100%;
     margin: 0 auto;
   }
+  .info-block {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
   .title {
     font-size: 1.1rem;
   }
   .credit,
   .tie-up {
     font-size: 0.95rem;
+    line-height: 1.6;
   }
   .meta,
   .meta-top {
