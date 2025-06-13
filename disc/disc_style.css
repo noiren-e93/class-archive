@@ -1,17 +1,18 @@
 
-/* 全体中央寄せ */
+/* 全体中央寄せ＋フォント色 */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
+  color: #222;
 }
 
-/* 上部の余白を抑える */
+/* ページ全体上部の余白縮小 */
 body {
-  padding-top: 0.5em;
+  padding-top: 0.3em;
 }
 
-/* 表題・ユニット見出しのL字線（色を薄く） */
+/* 表題・見出しのL字装飾：薄めの色に */
 .page-title,
 .sub-title {
   border-left: 2px solid #666;
@@ -22,7 +23,7 @@ body {
   width: 100%;
   max-width: 940px;
   box-sizing: border-box;
-  margin: 2em 0 1em;
+  margin: 1em 0 1em;
 }
 
 /* ジャケット画像に枠 */
