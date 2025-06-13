@@ -98,13 +98,18 @@ ul.track li {
 }
 
 .footer {
-  text-align: center;
+  text-align: left;
   font-size: 0.9em;
   margin-top: 2em;
-  padding-bottom: 3em; /* モバイル対策 */
+  padding-bottom: 4em;
 }
 
-/* モバイル表示調整（v11r4） */
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* モバイル表示調整（v11r5） */
 @media screen and (max-width: 600px) {
   .sub-title {
     font-size: 1.2em;
@@ -147,6 +152,6 @@ ul.track li {
   }
 
   .footer {
-    padding-bottom: 3em;
+    padding-bottom: 4em;
   }
 }
