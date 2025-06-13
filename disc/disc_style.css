@@ -1,10 +1,10 @@
 
-/* 全体中央寄せ＋フォント色 */
+/* 全体中央寄せ＋フォント色やわらかく */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
-  color: #222;
+  color: #333;
 }
 
 /* ページ全体上部の余白縮小 */
@@ -12,7 +12,7 @@ body {
   padding-top: 0.3em;
 }
 
-/* 表題・見出しのL字装飾：薄めの色に */
+/* 表題・見出しのL字線（色を少し抑えめ） */
 .page-title,
 .sub-title {
   border-left: 2px solid #666;
@@ -23,7 +23,7 @@ body {
   width: 100%;
   max-width: 940px;
   box-sizing: border-box;
-  margin: 1em 0 1em;
+  margin: 1.5em 0 1em;
 }
 
 /* ジャケット画像に枠 */
@@ -47,7 +47,7 @@ body {
 }
 .track li {
   margin-bottom: 1em;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 /* 区切り線 */
@@ -57,21 +57,22 @@ body {
   margin-top: 2em;
 }
 
-/* クレジット・タイアップ控えめ */
+/* クレジット・タイアップ：より控えめに */
 .credit, .tie-up {
-  color: #666;
-  font-size: 0.9em;
+  color: #777;
+  font-size: 0.85em;
   line-height: 1.6;
 }
 
-/* meta-top 表示調整 */
-.meta-top {
-  font-size: 0.95em;
-  color: #222;
+/* meta-top（発売日＋品番）やや控えめ */
+.meta-top,
+.meta {
+  font-size: 0.9em;
+  color: #555;
   margin-bottom: 0.2em;
 }
 
-/* フッターリンク：左寄せ・上詰め・下余白 */
+/* フッターリンク：柔らかく */
 .footer {
   border-top: 1px solid #ccc;
   padding-top: 1em;
@@ -81,5 +82,5 @@ body {
 .footer a {
   text-decoration: none;
   font-size: 0.9em;
-  color: #222;
+  color: #444;
 }
