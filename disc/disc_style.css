@@ -6,13 +6,22 @@
   padding: 1em;
 }
 
-/* ページタイトルのL字装飾 */
-.page-title {
+/* ② 上部の余白を抑える */
+body {
+  padding-top: 0.5em;
+}
+
+/* ① ページタイトル・L字装飾をブロック化＋幅制限で右端揃え */
+.page-title,
+.sub-title {
   border-left: 4px solid #000;
   border-bottom: 2px solid #000;
   padding-left: 0.5em;
   padding-bottom: 0.2em;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 940px;
+  box-sizing: border-box;
   margin: 2em 0 1em;
 }
 
@@ -47,17 +56,7 @@
   margin-top: 2em;
 }
 
-/* ユニット見出し */
-.sub-title {
-  border-left: 4px solid #000;
-  border-bottom: 2px solid #000;
-  padding-left: 0.5em;
-  padding-bottom: 0.2em;
-  display: inline-block;
-  margin: 2em 0 1em;
-}
-
-/* クレジット・タイアップ控えめ */
+/* ⑤ クレジット・タイアップ控えめ */
 .credit, .tie-up {
   color: #666;
   font-size: 0.9em;
@@ -68,4 +67,14 @@
 .meta-top {
   font-size: 0.95em;
   color: #222;
+}
+
+/* ③ フッターリンク装飾＆余白調整 */
+.footer {
+  border-top: 1px solid #ccc;
+  padding: 2em 0;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
 }
