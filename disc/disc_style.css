@@ -160,22 +160,22 @@ ul.track li {
 }
 
 
-/* 作品ブロック間の区切り線（全デバイス） */
+/* 作品ブロック間の区切り線（保持） */
 .entry {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1em;
   margin-bottom: 2em;
 }
 
-/* フッター前の区切り線（全デバイス） */
+/* フッターから上の線を削除し、リンク下の余白を拡大 */
 .footer {
-  border-top: 1px solid #ccc;
+  /* border-top 削除 */
   margin-top: 3em;
   padding-top: 1em;
-  padding-bottom: 4em;
+  padding-bottom: 6em;
 }
 
-/* モバイル表示時にも .entry / .footer に明示的に線を維持 */
+/* モバイル表示時にも .entry / .footer を調整 */
 @media screen and (max-width: 600px) {
   .entry {
     border-bottom: 1px solid #ccc;
@@ -184,8 +184,8 @@ ul.track li {
   }
 
   .footer {
-    border-top: 1px solid #ccc;
+    /* border-top 削除 */
     padding-top: 1em;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
   }
 }
