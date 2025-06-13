@@ -1,5 +1,5 @@
 
-/* 共通調整 */
+/* 中央寄せとパディング */
 .container {
   padding-left: 1em;
   padding-right: 1em;
@@ -20,6 +20,16 @@
   text-align: left;
   font-size: 0.8em;
   color: #666;
+}
+
+/* 曲目リスト（番号のみ・マーカーなし） */
+.track {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5em;
+}
+.track li {
+  margin-bottom: 0.6em;
 }
 
 /* スマホ最適化：津久井ソロ＋Yahooニュースハイブリッド */
