@@ -1,191 +1,66 @@
 
-/* 共通スタイル */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #222;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
+/* 共通調整 */
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.page-title {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.25em;
-}
-
-.entry {
-  margin-bottom: 2em;
-}
-
-.info-flex {
-  display: flex;
-  gap: 1em;
-  align-items: flex-start;
-}
-
-.jacket img {
-  max-width: 160px;
-  height: auto;
-  border: 1px solid #ccc;
-}
-
-.info-block {
-  flex: 1;
+  padding-left: 1em;
   padding-right: 1em;
 }
 
-.title {
-  font-size: 1.4em;
-  margin: 0 0 0.3em 0;
-}
-
-.meta-top {
-  font-size: 0.95em;
-  font-weight: normal;
-  color: #222;
-  margin-bottom: 0.5em;
-}
-
-.meta {
-  font-size: 0.9em;
-  line-height: 1.6em;
-  color: #333;
-  margin-bottom: 0.5em;
-}
-
-.note {
-  font-size: 0.85em;
-  color: #444;
-  margin-top: 0.3em;
-}
-
-ul.track {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 1em;
-}
-
-ul.track li {
-  margin-bottom: 1em;
-}
-
-.track li strong {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.2em;
-}
-
-.credit,
-.tie-up {
-  font-size: 0.9em;
-  line-height: 1.5em;
-  color: #333;
-  margin-top: 0.1em;
-}
-
-.sub-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  border-left: 6px solid #ccc;
-  padding-left: 0.5em;
-  background-color: #f9f9f9;
-}
-
-.footer {
-  text-align: left;
-  font-size: 0.9em;
-  margin-top: 2em;
-  padding-bottom: 4em;
-}
-
-.footer a {
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
-/* モバイル表示調整（v11r9） */
-@media screen and (max-width: 600px) {
-  .info-flex {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .jacket img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 0.5em;
-  }
-
-  .info-block {
-    width: 100%;
-    text-align: left;
-    padding-right: 0;
-  }
-
-  .meta-top {
-    font-size: 0.9em;
-    margin-bottom: 0.4em;
-  }
-
-  .meta {
-    font-size: 0.85em;
-    line-height: 1.5em;
-    margin-bottom: 0.4em;
-  }
-
-  .track li strong {
-    font-weight: 500;
-  }
-
-  .credit,
-  .tie-up {
-    line-height: 1.5em;
-  }
-
-  .footer {
-    padding-bottom: 4em;
-  }
-}
-
-
-/* 作品ブロック間の区切り線（保持） */
 .entry {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1em;
   margin-bottom: 2em;
 }
 
-/* フッターから上の線を削除し、リンク下の余白を拡大 */
 .footer {
-  /* border-top 削除 */
   margin-top: 3em;
-  padding-top: 1em;
+  padding-top: 1.5em;
   padding-bottom: 6em;
+  text-align: left;
+  font-size: 0.8em;
+  color: #666;
 }
 
-/* モバイル表示時にも .entry / .footer を調整 */
+/* スマホ最適化：津久井ソロ＋Yahooニュースハイブリッド */
 @media screen and (max-width: 600px) {
-  .entry {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
+  .info-flex {
+    display: block !important;
+  }
+
+  .jacket img {
+    max-width: 85%;
+    display: block;
+    margin: 0 auto 0.5em auto;
+  }
+
+  .info-block {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+  }
+
+  .meta-top,
+  .meta,
+  .credit,
+  .tie-up,
+  .note {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    margin-bottom: 0.5em;
+    color: #333;
+  }
+
+  .track li strong {
+    font-weight: 500;
+    line-height: 1.7em;
   }
 
   .footer {
-    /* border-top 削除 */
-    padding-top: 1em;
+    padding-top: 1.5em;
     padding-bottom: 6em;
+    font-size: 0.8em;
+    color: #666;
   }
 }
