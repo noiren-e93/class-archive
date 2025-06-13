@@ -1,52 +1,35 @@
 
-/* Base styling for container */
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1.5em;
-}
-
-/* Title of the page */
-.page-title {
-  font-size: 1.8em;
-  font-weight: bold;
-  margin-bottom: 1.2em;
-  text-align: left;
-  padding-left: 0.5em;
-  border-left: 4px solid #999;
-  position: relative;
-}
-.page-title::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid #999;
-  margin-top: 4px;
-}
-
-/* Song credit and tie-up styles */
-.track li .credit,
-.track li .tie-up {
-  font-size: 0.87em;
-  color: #555;
-  margin-top: -0.2em;
-}
-
-/* Footer styling */
-.footer {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2em 0 5em 0;
-  border-top: 1px solid #ccc;
-  font-size: 0.8em;
-  color: #666;
+/* ① 作品ブロック右側のinfo配置を安定させる */
+.info-flex {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  gap: 24px;
+  align-items: flex-start;
 }
-.footer a {
-  text-decoration: none;
-  color: #663399;
-  font-weight: bold;
-  margin-left: 0.5em;
+
+/* ② 収録曲リスト：左寄せ＋リストマーカー削除 */
+.track {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+.track li {
+  margin-bottom: 1em;
+  line-height: 1.8;
+}
+
+/* ④ hr代替：作品ブロックの間に区切り線を挿入 */
+.entry + .entry {
+  border-top: 1px solid #aaa;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+/* ⑤ ユニットシングル区切りタイトルのL字装飾 */
+.sub-title {
+  border-left: 4px solid #000;
+  border-bottom: 2px solid #000;
+  padding-left: 0.5em;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  margin: 2em 0 1em;
 }
