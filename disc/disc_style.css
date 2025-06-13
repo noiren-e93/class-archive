@@ -7,9 +7,10 @@
   color: #333;
 }
 
-/* ページ全体上部の余白縮小 */
+/* ページ全体上部の余白をなくす */
 body {
-  padding-top: 0.3em;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /* 表題・見出しのL字線（色を少し抑えめ） */
@@ -23,7 +24,7 @@ body {
   width: 100%;
   max-width: 940px;
   box-sizing: border-box;
-  margin: 1.5em 0 1em;
+  margin: 0 0 1em;
 }
 
 /* ジャケット画像に枠 */
