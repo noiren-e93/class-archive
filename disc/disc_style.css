@@ -1,104 +1,84 @@
+/* =====================
+   classディスコグラフィ共通スタイル v12 + 左寄せ修正
+   ===================== */
 
-/* 共通スタイル */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  color: #222;
-  line-height: 1.8;
-  background: #fff;
-  margin: 0;
-  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #fff;
+  color: #111;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1.5em;
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.2em;
 }
 
-.page-title {
-  font-size: 1.8em;
-  margin-bottom: 1.5em;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5em;
+h3 {
+  font-size: 1.2em;
+  margin-top: 2em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.2em;
 }
 
 .entry {
-  margin-bottom: 3em;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 2em;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
 }
 
 .info-flex {
   display: flex;
-  gap: 1em;
+  flex-direction: row;
+  gap: 15px;
 }
 
-.jacket img {
+.cover img {
   width: 150px;
   height: auto;
   border: 1px solid #ccc;
 }
 
-.info-block {
+.info {
   flex: 1;
-}
-
-.title {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
-.meta-top {
-  font-size: 0.95em;
-  margin-bottom: 0.3em;
-  color: #555;
 }
 
 .meta {
   font-size: 0.95em;
-  color: #555;
+  color: #444;
+  margin-top: 0.2em;
+  white-space: pre-line;
 }
 
-.note {
-  margin-top: 0.5em;
-  font-size: 0.9em;
-  color: #900;
+.meta strong {
+  color: #222;
 }
 
 .track {
+  text-align: left;
   margin-top: 1em;
-  padding-left: 1em;
+}
+
+.track ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .track li {
-  margin-bottom: 1.2em;
+  text-align: left;
+  margin-bottom: 0.5em;
+  line-height: 1.6;
 }
 
-.credit {
-  font-size: 0.9em;
-  color: #444;
-  margin-top: 0.3em;
-}
-
-.tie-up {
-  font-size: 0.9em;
-  color: #0070c0;
-  margin-top: 0.2em;
-}
-
-.footer {
-  margin-top: 3em;
-  text-align: center;
+.backlink {
+  margin-top: 40px;
   font-size: 0.9em;
 }
 
-.footer a {
-  color: #0070c0;
-  text-decoration: none;
-}
 
-/* .sub-title 見出しの区切り用 */
 .sub-title {
   font-size: 1.3em;
   font-weight: bold;
@@ -108,7 +88,6 @@ body {
   margin-top: 3em;
   margin-bottom: 1.5em;
 }
-
 .sub-title::after {
   content: "";
   display: block;
