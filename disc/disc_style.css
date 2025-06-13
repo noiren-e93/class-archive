@@ -1,12 +1,35 @@
 
-/* ① 作品ブロック右側のinfo配置を安定させる */
+/* 全体中央寄せ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* ページタイトルのL字装飾 */
+.page-title {
+  border-left: 4px solid #000;
+  border-bottom: 2px solid #000;
+  padding-left: 0.5em;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  margin: 2em 0 1em;
+}
+
+/* ジャケット画像に枠 */
+.jacket img {
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+/* 作品ブロック右側配置 */
 .info-flex {
   display: flex;
   gap: 24px;
   align-items: flex-start;
 }
 
-/* ② 収録曲リスト：左寄せ＋リストマーカー削除 */
+/* トラックリスト調整 */
 .track {
   list-style: none;
   padding-left: 0;
@@ -17,14 +40,14 @@
   line-height: 1.8;
 }
 
-/* ③ 区切り線：entry同士の間に */
+/* 区切り線 */
 .entry + .entry {
   border-top: 1px solid #aaa;
   padding-top: 2em;
   margin-top: 2em;
 }
 
-/* ④ ユニット見出し：L字枠 */
+/* ユニット見出し */
 .sub-title {
   border-left: 4px solid #000;
   border-bottom: 2px solid #000;
@@ -34,14 +57,14 @@
   margin: 2em 0 1em;
 }
 
-/* ⑤ クレジット・タイアップ表示を控えめに */
+/* クレジット・タイアップ控えめ */
 .credit, .tie-up {
   color: #666;
   font-size: 0.9em;
   line-height: 1.6;
 }
 
-/* ⑥ meta-top（発売日＋規格品番）調整 */
+/* meta-top */
 .meta-top {
   font-size: 0.95em;
   color: #222;
