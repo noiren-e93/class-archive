@@ -1,124 +1,122 @@
-/* ==============================
-   disc_style.css（共通PC＋スマホ対応）
-   ============================== */
+/* disc_style.css v20250613r - PC & モバイル両対応 */
 
+/* =========================
+   基本スタイル（全端末共通）
+========================= */
 body {
-  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #2b2b2b;
-  background-color: #fff;
+  color: #444;
+  background: #fff;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 980px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
 .page-title {
-  font-size: 24px;
+  font-size: 1.8rem;
   font-weight: bold;
   border-left: 4px solid #999;
   border-bottom: 1px solid #999;
-  padding-left: 0.6em;
-  padding-bottom: 0.4em;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  padding: 0.5em 0.5em 0.3em;
+  margin: 1.2em 0 1em;
+  color: #333;
 }
 
 .sub-title {
-  font-size: 18px;
+  font-size: 1.4rem;
   font-weight: bold;
-  border-left: 4px solid #999;
-  border-bottom: 1px solid #999;
-  padding-left: 0.6em;
-  padding-bottom: 0.3em;
-  margin-top: 2.4em;
-  margin-bottom: 1em;
+  border-left: 4px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 0.4em 0.5em 0.2em;
+  margin: 2em 0 1em;
+  color: #333;
 }
 
 .entry {
-  margin-bottom: 2.4em;
+  margin-bottom: 2.5em;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .info-flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
-  align-items: flex-start;
 }
 
 .jacket img {
-  width: 160px;
-  height: auto;
-  border: 1px solid #aaa;
+  width: 100%;
+  max-width: 140px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .info-block {
   flex: 1;
+  min-width: 240px;
 }
 
 .title {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.3em;
+  color: #222;
 }
 
 .meta-top {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 0.3em;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.2em;
 }
 
 .meta {
-  font-size: 14px;
-  color: #555;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5em;
+  white-space: nowrap;
 }
 
 .note {
-  font-size: 13px;
-  color: #666;
+  font-size: 0.85rem;
+  color: #777;
   margin-top: 0.5em;
 }
 
-.track {
+ul.track {
+  padding-left: 1em;
+  margin-top: 0.8em;
+}
+
+ul.track li {
+  margin-bottom: 1em;
   list-style: none;
-  padding-left: 0;
-  margin-top: 1em;
 }
 
-.track li {
-  margin-bottom: 1.5em;
-}
-
-.credit {
-  font-size: 14px;
-  color: #444;
-  margin-top: 0.2em;
-}
-
+.credit,
 .tie-up {
-  font-size: 13px;
-  color: #666;
-  margin-top: 0.2em;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-left: 0.5em;
 }
 
 .footer {
-  text-align: left;
-  font-size: 14px;
   margin-top: 3em;
-  margin-bottom: 2em;
-  border-top: 1px solid #ccc;
-  padding-top: 1em;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
 }
 
 .footer a {
+  color: #666;
   text-decoration: none;
-  color: #444;
 }
 
 .footer a:hover {
@@ -127,45 +125,41 @@ body {
 
 hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ccc;
   margin: 2em 0;
 }
 
-/* ==============================
-   スマホUI対応（画面幅768px以下）
-   ============================== */
-@media screen and (max-width: 768px) {
+/* =========================
+   モバイル向け調整
+========================= */
+@media screen and (max-width: 600px) {
+  .page-title {
+    font-size: 1.5rem;
+    padding: 0.4em 0.6em;
+  }
+  .sub-title {
+    font-size: 1.2rem;
+    padding: 0.3em 0.6em;
+  }
   .info-flex {
     flex-direction: column;
-    align-items: flex-start;
   }
-
   .jacket img {
-    width: 100%;
-    max-width: 280px;
+    max-width: 100%;
     margin: 0 auto;
-    display: block;
   }
-
   .title {
-    font-size: 17px;
+    font-size: 1.1rem;
   }
-
-  .meta-top,
-  .meta,
   .credit,
-  .tie-up,
+  .tie-up {
+    font-size: 0.95rem;
+  }
+  .meta,
+  .meta-top {
+    font-size: 0.85rem;
+  }
   .note {
-    font-size: 13.5px;
-  }
-
-  .footer {
-    text-align: center;
-    font-size: 13px;
-  }
-
-  .page-title,
-  .sub-title {
-    font-size: 20px;
+    font-size: 0.8rem;
   }
 }
