@@ -94,19 +94,37 @@ body {
   color: #555;
 }
 
-/* ===== モバイル対応 ===== */
+/* モバイル表示調整 */
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 15px;
+
+  .sub-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-left: 4px solid #ccc;
+    padding-left: 0.5em;
+    background-color: #fefefe;
   }
-  .jacket img {
-    max-width: 100px;
-  }
+
   .info-flex {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
+
+  .jacket img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+  }
+
   .info-block {
-    text-align: center;
+    width: 100%;
+    text-align: left;
+  }
+
+  .entry {
+    width: 100%;
+    overflow-wrap: break-word;
   }
 }
