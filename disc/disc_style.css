@@ -95,3 +95,10 @@ h3 {
   border-bottom: 1px solid #999;
   margin-top: 4px;
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; /* ← これで中央揃えにする */
+  padding: 2em;
+}
+
