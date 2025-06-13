@@ -1,102 +1,111 @@
 
-/* ===== 全体レイアウト ===== */
+/* 共通スタイル */
 body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background-color: #fff;
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.5;
-  font-size: 16px;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1em;
 }
 
-/* ===== 見出し ===== */
 .page-title {
-  font-size: 24px;
-  margin: 0 0 1em;
-  padding-top: 1em;
-  border-left: 4px solid #999;
-  border-bottom: 1px solid #ccc;
-  padding-left: 0.5em;
-}
-.sub-title {
-  font-size: 20px;
-  margin: 2em 0 1em;
-  border-left: 4px solid #999;
-  border-bottom: 1px solid #ccc;
-  padding-left: 0.5em;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.25em;
 }
 
-/* ===== 各作品エントリ ===== */
 .entry {
   margin-bottom: 2em;
 }
-.entry + .entry {
-  border-top: 1px solid #ddd;
-  padding-top: 1.5em;
-}
+
 .info-flex {
   display: flex;
-  flex-wrap: wrap;
   gap: 1em;
+  align-items: flex-start;
 }
+
 .jacket img {
-  max-width: 120px;
+  max-width: 160px;
   height: auto;
+  border: 1px solid #ccc;
 }
+
 .info-block {
   flex: 1;
-  min-width: 200px;
 }
+
 .title {
-  font-size: 18px;
-  margin: 0 0 0.5em;
+  font-size: 1.4em;
+  margin: 0 0 0.3em 0;
 }
-.meta-top,
+
+.meta-top {
+  font-size: 0.9em;
+  margin-bottom: 0.3em;
+}
+
 .meta {
-  font-size: 14px;
+  font-size: 0.85em;
   color: #555;
 }
 
-/* ===== 収録曲 ===== */
-.track {
+.note {
+  font-size: 0.85em;
+  color: #444;
+  margin-top: 0.3em;
+}
+
+ul.track {
   list-style: none;
   padding-left: 0;
-  margin: 1em 0 0;
-}
-.track li {
-  margin-bottom: 0.5em;
-}
-.credit {
-  font-size: 14px;
-  color: #555;
+  margin-top: 1em;
 }
 
-/* ===== フッター ===== */
+ul.track li {
+  margin-bottom: 1em;
+}
+
+.track li strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.credit,
+.tie-up {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #333;
+}
+
+.sub-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-left: 6px solid #ccc;
+  padding-left: 0.5em;
+  background-color: #f9f9f9;
+}
+
 .footer {
   text-align: center;
-  margin-top: 3em;
-  font-size: 14px;
-  color: #555;
-}
-.footer hr {
-  margin-bottom: 1em;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-.footer a {
-  text-decoration: none;
-  color: #555;
+  font-size: 0.9em;
+  margin-top: 2em;
+  padding-bottom: 3em; /* モバイル対策 */
 }
 
-/* モバイル表示調整 */
+/* モバイル表示調整（v11r4） */
 @media screen and (max-width: 600px) {
-
   .sub-title {
     font-size: 1.2em;
     font-weight: bold;
@@ -126,5 +135,18 @@ body {
   .entry {
     width: 100%;
     overflow-wrap: break-word;
+  }
+
+  .track li strong {
+    font-weight: 500;
+  }
+
+  .credit,
+  .tie-up {
+    line-height: 1.5em;
+  }
+
+  .footer {
+    padding-bottom: 3em;
   }
 }
