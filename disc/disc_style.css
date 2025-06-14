@@ -7,20 +7,6 @@
   margin-bottom: 1em;
 }
 
-/* ✅ フッターリンク（スマホでもタップしやすく） */
-.footer {
-  padding-top: 2em;
-  padding-bottom: 8em; /* スマホで確実にタップできるよう大きめ */
-  text-align: left;
-}
-.footer a {
-  text-decoration: none;
-  font-size: 0.95em;
-  color: #663399;
-  display: inline-block;
-  padding: 0.5em 0;
-}
-
 /* ✅ ジャケット画像と情報の並び（PC横 / スマホ縦） */
 .info-flex {
   display: flex;
@@ -28,13 +14,19 @@
   align-items: flex-start;
   gap: 1.5em;
 }
-
-/* ✅ ジャケット画像サイズ */
+.jacket {
+  flex-shrink: 0;
+}
 .jacket img {
   width: 150px;
 }
 
-/* ✅ 曲目リストのスタイル */
+/* ✅ 情報ブロック（タイトル・ランク・曲目など） */
+.info-block {
+  flex-grow: 1;
+}
+
+/* ✅ 曲目リストのスタイル（黄帯NG構造防止） */
 ul.track {
   list-style: none;
   margin-top: 1em;
@@ -50,22 +42,22 @@ ul.track li {
   color: #444;
 }
 
-/* ✅ 作品タイトルの装飾 */
+/* ✅ 曲タイトル（.title） */
 .title {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 0.2em;
 }
 
-/* ✅ 作品ブロックの間に引く線 */
+/* ✅ 区切り線（.entry間） */
 .section-line {
   margin: 2em 0;
   border: none;
   border-top: 1px solid #ccc;
-  width: 100%;  /* .entry ブロック幅に揃える */
+  width: 100%;
 }
 
-/* ✅ ユニットやベストの区切り見出し */
+/* ✅ ユニット・ベスト区切りタイトル */
 .sub-title {
   font-size: 1.2em;
   font-weight: bold;
@@ -75,7 +67,21 @@ ul.track li {
   padding-left: 0.5em;
 }
 
-/* ✅ スマホ用レスポンシブ対応 */
+/* ✅ フッターリンク（スマホでもタップ可） */
+.footer {
+  padding-top: 2em;
+  padding-bottom: 8em;
+  text-align: left;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 0.95em;
+  color: #663399;
+  display: inline-block;
+  padding: 0.5em 0;
+}
+
+/* ✅ スマホ用レイアウト切り替え */
 @media screen and (max-width: 600px) {
   .info-flex {
     flex-direction: column;
