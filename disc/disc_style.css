@@ -1,125 +1,81 @@
-/* 共通スタイル - disc_style.css */
-
-body {
-  font-family: "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #111;
-  background-color: #fff;
-}
-
 .container {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding-bottom: 6em;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: sans-serif;
 }
 
 .page-title {
-  font-size: 1.6em;
-  font-weight: bold;
-  text-align: left;
-  margin: 1em 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 1em;
 }
 
 .entry {
-  margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .info-flex {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5em;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .jacket img {
-  width: 150px;
-  max-width: 85%;
-  display: block;
-  margin: 0 auto;
+    width: 150px;
+    max-width: 85%;
 }
 
 .info-block {
-  flex: 1;
-  min-width: 250px;
+    flex: 1;
+    min-width: 250px;
 }
 
-.title {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
+.meta-top,
+.meta,
+.note {
+    font-size: 0.9em;
+    margin-bottom: 0.3em;
 }
 
-.meta-top, .meta, .note {
-  font-size: 0.95em;
-  line-height: 1.5;
-  margin-bottom: 0.3em;
+.track {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-ul.track {
-  list-style: none;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding-left: 0;
-}
-
-ul.track li {
-  margin-bottom: 1.2em;
-  text-align: left;
+.track li {
+    margin-bottom: 1.2em;
 }
 
 .credit {
-  font-size: 0.9em;
-  line-height: 1.4;
-  color: #333;
-}
-
-.section-line {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 3em 0;
-  width: 100%;
-}
-
-.sub-title {
-  font-size: 1.3em;
-  font-weight: bold;
-  border-left: 5px solid #666;
-  border-bottom: 2px solid #666;
-  padding-left: 0.5em;
-  margin: 3em 0 1em;
+    font-size: 0.9em;
+    color: #555;
 }
 
 .footer {
-  text-align: left;
-  margin-top: 3em;
-  padding-bottom: 6em;
+    margin-top: 2em;
+    text-align: left;
+    padding-bottom: 6em;
 }
 
 .footer a {
-  text-decoration: none;
-  font-size: 1em;
-  color: #0077cc;
+    text-decoration: none;
 }
 
-/* スマホ表示 */
-@media screen and (max-width: 768px) {
-  .info-flex {
-    flex-direction: column;
-    align-items: center;
-  }
+.title.long-title {
+    font-size: 14px;
+}
 
-  .jacket img {
-    max-width: 85%;
-    margin-bottom: 1em;
-  }
-
-  .info-block {
-    width: 100%;
-  }
-
-  .footer {
-    padding-bottom: 8em;
-  }
+@media (max-width: 600px) {
+    .info-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .jacket img {
+        display: block;
+        margin: auto;
+    }
 }
