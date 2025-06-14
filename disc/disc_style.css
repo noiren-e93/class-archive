@@ -1,5 +1,4 @@
 
-/* 共通スタイル */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -29,80 +28,76 @@ body {
 .info-flex {
   display: flex;
   flex-direction: row;
-  gap: 1em;
-  align-items: flex-start;
+  gap: 1.5em;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.jacket img {
-  width: 150px;
+.cover {
+  flex-shrink: 0;
+}
+.cover img {
+  width: 150px !important;
   height: auto;
+  display: block;
 }
 
-.info-block {
+.info {
   flex: 1;
-  min-width: 240px;
+  min-width: 260px;
 }
 
 .meta-top,
 .meta,
 .note {
   margin: 0.3em 0;
-}
-
-ul.track {
-  list-style: none;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding-left: 0;
-}
-
-ul.track li {
-  margin-bottom: 1.2em;
-  padding-left: 0;
-}
-
-.credit {
   font-size: 0.95em;
-  margin-top: 0.2em;
-  color: #555;
 }
 
-.section-line {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 2em 0;
+.tracks {
+  margin-top: 1.5em;
+}
+
+.track {
+  margin-bottom: 1.2em;
+}
+
+.track-title {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.credit,
+.tieup {
+  font-size: 0.9em;
+  color: #444;
+  margin-left: 1em;
 }
 
 .footer {
   text-align: left;
   padding-bottom: 6em;
+  margin-top: 2em;
 }
 
 .footer a {
   text-decoration: none;
+  font-size: 1em;
   color: #222;
 }
 
-/* 長いタイトル対応 */
-.long-title {
-  font-size: 0.9em;
-}
-
-/* スマホ対応 */
 @media screen and (max-width: 768px) {
   .info-flex {
     flex-direction: column;
     align-items: center;
   }
 
-  .jacket img {
-    max-width: 85%;
+  .cover img {
+    width: 150px !important;
     margin: 0 auto;
-    display: block;
   }
 
-  .info-block {
+  .info {
     width: 100%;
     padding-top: 1em;
   }
