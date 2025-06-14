@@ -1,15 +1,6 @@
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color: #222;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 1em;
 }
@@ -21,88 +12,63 @@ body {
   margin-bottom: 1em;
 }
 
-.entry {
+.entry-list {
   margin-bottom: 2em;
+}
+
+.entry {
+  margin-bottom: 3em;
 }
 
 .info-flex {
   display: flex;
   flex-direction: row;
-  gap: 1.5em;
-  flex-wrap: wrap;
   align-items: flex-start;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
 .jacket {
-  flex-shrink: 0;
+  min-width: 150px;
 }
+
 .jacket img {
-  width: 150px !important;
+  width: 150px;
   height: auto;
   display: block;
 }
 
-.info {
-  flex: 1;
-  min-width: 260px;
+.info-block {
+  flex-grow: 1;
 }
 
-.meta-top,
-.meta,
-.note {
-  margin: 0.3em 0;
+.meta-top, .meta, .note {
+  margin-bottom: 0.5em;
   font-size: 0.95em;
 }
 
-.tracks {
-  margin-top: 1.5em;
+ul.track {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
 }
 
-.track {
+ul.track li {
   margin-bottom: 1.2em;
+  text-align: left;
 }
 
-.track-title {
-  font-weight: bold;
-  margin-bottom: 0.2em;
-}
-
-.credit,
-.tieup {
+.credit {
   font-size: 0.9em;
-  color: #444;
-  margin-left: 1em;
+  color: #555;
 }
 
 .footer {
   text-align: left;
   padding-bottom: 6em;
-  margin-top: 2em;
 }
 
 .footer a {
   text-decoration: none;
-  font-size: 1em;
-  color: #222;
-}
-
-@media screen and (max-width: 768px) {
-  .info-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .jacket img {
-    width: 150px !important;
-    margin: 0 auto;
-  }
-
-  .info {
-    width: 100%;
-    padding-top: 1em;
-  }
-
-  .page-title {
-    font-size: 1.4em;
-  }
 }
