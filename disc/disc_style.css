@@ -33,10 +33,10 @@ body {
   align-items: flex-start;
 }
 
-.cover {
+.jacket {
   flex-shrink: 0;
 }
-.cover img {
+.jacket img {
   width: 150px !important;
   height: auto;
   display: block;
@@ -92,7 +92,7 @@ body {
     align-items: center;
   }
 
-  .cover img {
+  .jacket img {
     width: 150px !important;
     margin: 0 auto;
   }
