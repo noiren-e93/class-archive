@@ -8,10 +8,6 @@ body {
   margin: auto;
 }
 
-.container {
-  padding-bottom: 5em;
-}
-
 .page-title {
   font-size: 22px;
   border-left: 4px solid #000;
@@ -22,15 +18,25 @@ body {
 
 .info-flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1.5em;
   align-items: flex-start;
   margin-bottom: 1.5em;
 }
 
+.cover {
+  flex-shrink: 0;
+}
+
 .cover img {
   width: 150px;
+  height: auto;
   display: block;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
 }
 
 .info h2 {
@@ -70,5 +76,13 @@ body {
 @media screen and (max-width: 600px) {
   .info-flex {
     flex-direction: column;
+  }
+
+  .cover img {
+    width: 150px;
+  }
+
+  .info {
+    margin-top: 1em;
   }
 }
