@@ -66,12 +66,18 @@ ul.track {
 }
 
 ul.track li {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.4em;
   text-align: left;
 }
 
+.track li strong {
+  display: block;
+  font-size: 1.05em;
+  margin-bottom: 0.2em;
+}
+
 .credit {
-  font-size: 0.95em;
+  font-size: 1em;
   color: #444;
   margin-left: 1em;
 }
@@ -89,10 +95,16 @@ ul.track li {
 @media screen and (max-width: 768px) {
   .info-flex {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .jacket {
+    width: auto;
+    margin: 0 auto;
   }
 
   .jacket img {
+    width: 150px;
     margin: 0 auto;
   }
 
@@ -103,5 +115,14 @@ ul.track li {
 
   .page-title {
     font-size: 1.4em;
+  }
+
+  ul.track li {
+    padding-left: 0.2em;
+  }
+
+  .credit {
+    font-size: 1.05em;
+    margin-left: 0.8em;
   }
 }
