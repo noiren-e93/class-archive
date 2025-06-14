@@ -1,91 +1,92 @@
 
-body {
-  font-family: sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  padding: 2em;
-  max-width: 900px;
-  margin: auto;
-}
-
+/* ✅ ページタイトル */
 .page-title {
-  font-size: 22px;
-  border-left: 4px solid #000;
-  border-bottom: 2px solid #000;
-  padding-left: 0.5em;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: left;
   margin-bottom: 1em;
 }
 
+/* ✅ フッターリンク（スマホでもタップしやすく） */
+.footer {
+  padding-top: 2em;
+  padding-bottom: 8em; /* スマホで確実にタップできるよう大きめ */
+  text-align: left;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 0.95em;
+  color: #663399;
+  display: inline-block;
+  padding: 0.5em 0;
+}
+
+/* ✅ ジャケット画像と情報の並び（PC横 / スマホ縦） */
 .info-flex {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 1.5em;
+  flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 1.5em;
+  gap: 1.5em;
 }
 
-.cover {
-  flex-shrink: 0;
-}
-
-.cover img {
+/* ✅ ジャケット画像サイズ */
+.jacket img {
   width: 150px;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
 }
 
-.info {
-  flex: 1;
-  min-width: 0;
+/* ✅ 曲目リストのスタイル */
+ul.track {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
 }
-
-.info h2 {
-  font-size: 18px;
-  margin: 0 0 0.3em 0;
+ul.track li {
+  margin-bottom: 1.2em;
+  text-align: left;
 }
-
-.meta {
-  font-size: 0.9em;
+.credit {
+  font-size: 0.95em;
   color: #444;
 }
 
-.tracks {
-  margin-top: 0.5em;
-}
-
-.track {
-  margin-bottom: 1.5em;
-}
-
-.track-title {
+/* ✅ 作品タイトルの装飾 */
+.title {
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 0.2em;
-  color: #111;
 }
 
-.track-title.long-title {
-  font-size: 14px;
-  line-height: 1.4;
+/* ✅ 作品ブロックの間に引く線 */
+.section-line {
+  margin: 2em 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100%;  /* .entry ブロック幅に揃える */
 }
 
-.credit, .tieup {
-  font-size: 0.85em;
-  color: #666;
+/* ✅ ユニットやベストの区切り見出し */
+.sub-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-left: 4px solid #999;
+  padding-left: 0.5em;
 }
 
+/* ✅ スマホ用レスポンシブ対応 */
 @media screen and (max-width: 600px) {
   .info-flex {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .cover img {
-    width: 150px;
+  .jacket img {
+    max-width: 85%;
+    margin: 0 auto;
   }
-
-  .info {
-    margin-top: 0;
+  .info-block {
+    width: 95%;
+    text-align: left;
   }
 }
