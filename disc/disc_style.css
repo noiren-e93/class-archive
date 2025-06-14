@@ -1,5 +1,16 @@
 
-/* ✅ ページタイトル */
+/* 全体基準 */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: sans-serif;
+  color: #222;
+  background-color: #fff;
+  margin: 0;
+  padding: 1.5em;
+}
+
+/* タイトル */
 .page-title {
   font-size: 1.6em;
   font-weight: bold;
@@ -7,7 +18,7 @@
   margin-bottom: 1em;
 }
 
-/* ✅ ジャケットと情報の横並び */
+/* ジャケット＋情報並び */
 .info-flex {
   display: flex;
   flex-direction: row;
@@ -19,15 +30,24 @@
 }
 .jacket img {
   width: 150px;
-  margin-bottom: 1em; /* ✅ スマホ時も画像下に余白確保 */
+  margin-bottom: 1em;
 }
 
-/* ✅ 右側情報ブロック */
+/* 情報ブロック */
 .info-block {
   flex-grow: 1;
 }
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.meta-top, .meta, .note {
+  font-size: 0.95em;
+  margin-bottom: 0.4em;
+}
 
-/* ✅ 曲目リスト */
+/* 曲目リスト */
 ul.track {
   list-style: none;
   margin-top: 1em;
@@ -35,27 +55,25 @@ ul.track {
   padding-left: 0;
 }
 ul.track li {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.4em;
   text-align: left;
-  width: 100%; /* ✅ スマホでも崩れず左に揃うように */
+  width: 100%;
 }
 .credit {
   font-size: 0.95em;
   color: #444;
+  margin-top: 0.2em;
 }
 
-/* ✅ タイトル下のランク情報など */
-.title {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 0.2em;
-}
+/* 区切り線 */
 .section-line {
   margin: 2em 0;
   border: none;
   border-top: 1px solid #ccc;
   width: 100%;
 }
+
+/* 区切りタイトル */
 .sub-title {
   font-size: 1.2em;
   font-weight: bold;
@@ -65,10 +83,10 @@ ul.track li {
   padding-left: 0.5em;
 }
 
-/* ✅ フッター */
+/* フッター */
 .footer {
   padding-top: 2em;
-  padding-bottom: 8em;
+  padding-bottom: 6em;
   text-align: left;
 }
 .footer a {
@@ -79,7 +97,7 @@ ul.track li {
   padding: 0.5em 0;
 }
 
-/* ✅ スマホUI修正：画像下→情報下へ */
+/* スマホ対応 */
 @media screen and (max-width: 600px) {
   .info-flex {
     flex-direction: column;
