@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>class シングル｜限定版テスト</title>
+  <title>class シングル｜完全修正版</title>
   <style>
     body { font-family: sans-serif; margin: 20px; }
     .container { max-width: 800px; margin: 0 auto; }
@@ -18,10 +18,10 @@
     .tracks { margin-top: 1.2em; padding-left: 0; }
     .track { margin-bottom: 1.5em; }
     .track-title { font-weight: bold; margin-bottom: 0.3em; }
-    .credit, .tieup { font-size: 0.85em; color: #666; text-align: left; display: block; }
-    .sub-title { font-size: 1.2em; font-weight: bold; border-left: 5px solid #333; padding-left: 0.5em; margin-top: 3em; margin-bottom: 1em; }
-    .footer { margin-top: 3em; border-top: 1px solid #ccc; padding-top: 1em; text-align: left; }
-    .entry-divider { margin: 2em 0; }
+    .credit, .tieup, .song-note { font-size: 0.85em; color: #666; text-align: left; display: block; }
+    .subtitle { font-size: 1.2em; font-weight: bold; border-bottom: 1px solid #aaa; padding-bottom: 0.2em; margin-top: 2em; }
+    .footer-link { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ccc; text-align: left; }
+    .footer-link a { text-decoration: none; }
   </style>
 </head>
 <body>
@@ -29,150 +29,311 @@
   <h1 class="page-title">class シングル</h1>
 
   
+    
     <div class="entry">
       <div class="info-flex">
-        <div class="cover"><img src="img/img/img/sg_1st.jpg" alt="cover" /></div>
+        <div class="cover"><img src="img/sg_1st.jpg" alt="cover" /></div>
         <div class="info">
           <h2>夏の日の1993</h2>
-          <div class="meta">34080　APDA-81</div>
+          <div class="meta">1993.04.21　APDA-81</div>
           <div class="meta">初登場：59位　最高位：3位</div>
-          
           <div class="note">※ [年間15位] 1993年度オリコン</div>
-          
         </div>
       </div>
       <div class="tracks">
         
-          <div class="track">
-            <div class="track-title">01. 夏の日の1993</div>
-            <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</div>
-            
-            <div class="tieup">テレビ朝日系「君といつまでも」OPテーマ/CF「セゾンカード」</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">01. 夏の日の1993</div>
+          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</div>
+          <div class="tieup">テレビ朝日系「君といつまでも」OPテーマ/CF「セゾンカード」</div>
+          
+        </div>
         
-          <div class="track">
-            <div class="track-title">02. Rainy Day</div>
-            <div class="credit">作詞：松本 一起　作曲：北村 勝彦　編曲：十川 知司</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">02. Rainy Day</div>
+          <div class="credit">作詞：松本 一起　作曲：北村 勝彦　編曲：十川 知司</div>
+          
+          
+        </div>
         
-          <div class="track">
-            <div class="track-title">03. 夏の日の1993（Backing Track）</div>
-            <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">03. 夏の日の1993（Backing Track）</div>
+          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：十川 知司</div>
+          
+          
+        </div>
         
       </div>
     </div>
-    
-    <hr class="entry-divider" />
-    
-    
   
+    
     <div class="entry">
       <div class="info-flex">
-        <div class="cover"><img src="img/img/img/sg_2nd.jpg" alt="cover" /></div>
+        <div class="cover"><img src="img/sg_2nd.jpg" alt="cover" /></div>
         <div class="info">
           <h2>もう君を離さない</h2>
-          <div class="meta">34260　APDA-92</div>
+          <div class="meta">1993.10.18　APDA-92</div>
           <div class="meta">初登場：4位　最高位：4位</div>
           
         </div>
       </div>
       <div class="tracks">
         
-          <div class="track">
-            <div class="track-title">01. もう君を離さない</div>
-            <div class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</div>
-            
-            <div class="tieup">テレビ朝日系｢女検事の捜査ファイル」主題歌</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">01. もう君を離さない</div>
+          <div class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</div>
+          <div class="tieup">テレビ朝日系｢女検事の捜査ファイル」主題歌</div>
+          
+        </div>
         
-          <div class="track">
-            <div class="track-title">02. サヨナラ</div>
-            <div class="credit">作詞：class　作曲：class　編曲：中村 哲</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">02. サヨナラ</div>
+          <div class="credit">作詞：class　作曲：class　編曲：中村 哲</div>
+          
+          
+        </div>
         
-          <div class="track">
-            <div class="track-title">03. もう君を離さない（Backing Track）</div>
-            <div class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">03. もう君を離さない（Backing Track）</div>
+          <div class="credit">作詞：class　作曲：拓植 由秀　編曲：関根 安里</div>
+          
+          
+        </div>
         
       </div>
     </div>
-    
-    <hr class="entry-divider" />
-    
-    
   
+    
     <div class="entry">
       <div class="info-flex">
-        <div class="cover"><img src="img/" alt="cover" /></div>
+        <div class="cover"><img src="img/sg_3rd.jpg" alt="cover" /></div>
         <div class="info">
-          <h2></h2>
-          <div class="meta">　</div>
-          <div class="meta">初登場：　最高位：</div>
-          
-          <div class="note">※ </div>
+          <h2>Holiday</h2>
+          <div class="meta">1994.03.28　APDA-12</div>
+          <div class="meta">初登場：16位　最高位：16位</div>
           
         </div>
       </div>
       <div class="tracks">
         
+        <div class="track">
+          <div class="track-title">01. Holiday</div>
+          <div class="credit">作詞：class　作曲：class　編曲：class・十川 知司</div>
+          <div class="tieup">関西・フジテレビ系ドラマ「白の条件」 主題歌</div>
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">02. 遠い夏</div>
+          <div class="credit">作詞：横山 武　作曲：class　編曲：有賀 啓雄</div>
+          
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">03. Holiday（Backing Track）</div>
+          <div class="credit">作詞：class　作曲：class　編曲：class・十川 知司</div>
+          
+          
+        </div>
+        
       </div>
     </div>
-    
-    <hr class="entry-divider" />
-    
-    
   
+    
     <div class="entry">
       <div class="info-flex">
-        <div class="cover"><img src="img/img/img/sg_ew.jpg" alt="cover" /></div>
+        <div class="cover"><img src="img/sg_4th.jpg" alt="cover" /></div>
         <div class="info">
-          <h2>Endless World</h2>
-          <div class="meta">34855　APDA-143</div>
+          <h2>永遠の素顔</h2>
+          <div class="meta">1994.05.26　APDA-17</div>
+          <div class="meta">初登場：16位　最高位：16位</div>
+          
+        </div>
+      </div>
+      <div class="tracks">
+        
+        <div class="track">
+          <div class="track-title">01. 永遠の素顔</div>
+          <div class="credit">作詞：朝水 彼方　作曲：太田 美智彦　編曲：松本 晃彦</div>
+          <div class="tieup">カルピス食品工業「カルピスウォーター'94」CMソング</div>
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">02. おやすみ</div>
+          <div class="credit">作詞：class　作曲：class　編曲：class・土師一雄</div>
+          
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">03. 永遠の素顔（Backing Track）</div>
+          <div class="credit">作詞：朝水 彼方　作曲：太田 美智彦　編曲：松本 晃彦</div>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    
+    <div class="entry">
+      <div class="info-flex">
+        <div class="cover"><img src="img/sg_5th.jpg" alt="cover" /></div>
+        <div class="info">
+          <h2>百万本の雨</h2>
+          <div class="meta">1994.10.31　APDA-17</div>
+          <div class="meta">初登場：29位　最高位：29位</div>
+          
+        </div>
+      </div>
+      <div class="tracks">
+        
+        <div class="track">
+          <div class="track-title">01. 百万本の雨</div>
+          <div class="credit">作詞：松本 一起　作曲：太田 美智彦　編曲：松本 晃彦</div>
+          <div class="tieup">テレビ朝日系木曜ドラマ「ママのベッドへいらっしゃい」挿入歌</div>
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">02. 	Melody</div>
+          <div class="credit">作詞：津久井 克行　作曲：津久井 克行　編曲：有賀 啓雄</div>
+          
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">03. 聖夜（L.A.Re-mix）</div>
+          <div class="credit">作詞：日浦 孝則　作曲：日浦 孝則　編曲：瀬尾 一三</div>
+          
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">04. 百万本の雨（Backing Track）</div>
+          <div class="credit">作詞：松本 一起　作曲：太田 美智彦　編曲：松本 晃彦</div>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    
+    <div class="entry">
+      <div class="info-flex">
+        <div class="cover"><img src="img/sg_6th.jpg" alt="cover" /></div>
+        <div class="info">
+          <h2>夏にかかるWedding Song</h2>
+          <div class="meta">1995.05.25　APDA-142</div>
+          <div class="meta">初登場：61位　最高位：61位</div>
+          
+        </div>
+      </div>
+      <div class="tracks">
+        
+        <div class="track">
+          <div class="track-title">01. 夏にかかるWedding Song</div>
+          <div class="credit">作詞：松本 一起　作曲：日浦 孝則　編曲：斎藤 誠</div>
+          <div class="tieup">テレビ朝日系「クイズ21！ジャックをねらえ」EDテーマ</div>
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">02. NO! NO! NO!</div>
+          <div class="credit">作詞：日浦 孝則　作曲：日浦 孝則　編曲：斎藤 誠</div>
+          
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">03. 夏にかかるWedding Song（Backing Track）</div>
+          <div class="credit">作詞：松本 一起　作曲：日浦 孝則　編曲：斎藤 誠</div>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    
+    <div class="entry">
+      <div class="info-flex">
+        <div class="cover"><img src="img/sg_7th.jpg" alt="cover" /></div>
+        <div class="info">
+          <h2>君だけが知ってる</h2>
+          <div class="meta">1995.10.21　APDA-158</div>
           <div class="meta">初登場：–　最高位：–</div>
           
-          <div class="note">※ class・井上武英・KENJIROによるユニットとして発表</div>
+        </div>
+      </div>
+      <div class="tracks">
+        
+        <div class="track">
+          <div class="track-title">01. 君だけが知ってる</div>
+          <div class="credit">作詞：日浦 孝則　作曲：日浦 孝則　編曲：斎藤 誠</div>
+          <div class="tieup">日本テレビ系 「独占!!スポーツ情報」イメージソング</div>
+          
+        </div>
+        
+        <div class="track">
+          <div class="track-title">02. 退屈</div>
+          <div class="credit">作詞：津久井 克行　作曲：津久井 克行　編曲：津久井 克行</div>
+          
+          <div class="song-note">※ 唯一のアルバム未収録曲</div>
+        </div>
+        
+        <div class="track">
+          <div class="track-title">03. 君だけが知ってる（Backing Track）</div>
+          <div class="credit">作詞：日浦 孝則　作曲：日浦 孝則　編曲：斎藤 誠</div>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    
+    <div class="entry">
+      <div class="info-flex">
+        <div class="cover"><img src="img/sg_8th.jpg" alt="cover" /></div>
+        <div class="info">
+          <h2>夏の日の1993～2003 up to date session～</h2>
+          <div class="meta">2003.07.09　COCA-15481</div>
+          <div class="meta">初登場：50位　最高位：50位</div>
           
         </div>
       </div>
       <div class="tracks">
         
-          <div class="track">
-            <div class="track-title">01. Endless World</div>
-            <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：岩戸 崇</div>
-            
-            <div class="tieup">東映映画「きけ、わだつみの声 Last Friends」イメージソング</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">01. 夏の日の1993～2003 up to date session～</div>
+          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：富田素弘</div>
+          <div class="tieup">テレビ朝日系「サタデー総合研究所」エンディングテーマ</div>
+          
+        </div>
         
-          <div class="track">
-            <div class="track-title">02. One More Wonderful</div>
-            <div class="credit">作詞：日浦 孝則　作曲：井上 武英　編曲：岩戸 崇</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">02. 夏の日の・・・・</div>
+          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：富田素弘</div>
+          
+          
+        </div>
         
-          <div class="track">
-            <div class="track-title">03. Endless World（Backing Track）</div>
-            <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：岩戸 崇</div>
-            
-          </div>
+        <div class="track">
+          <div class="track-title">03. 夏の日の1993～2003 up to date session～（TV MIX）</div>
+          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：富田素弘</div>
+          
+          
+        </div>
         
       </div>
     </div>
-    
-    
-    </div>
-    
   
 
-  <div class="footer">
+  <div class="footer-link">
     → <a href="../disc.html">ディスコグラフィ一覧へ戻る</a>
   </div>
 </div>
