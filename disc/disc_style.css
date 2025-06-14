@@ -60,7 +60,7 @@ body {
   font-size: 0.9em;
 }
 
-/* 曲目ブロック */
+/* 曲目 */
 ul.track {
   list-style: none;
   margin-top: 1em;
@@ -111,20 +111,31 @@ hr.section-line {
   margin: 2em 0;
 }
 
-/* スマホ対応 */
+/* スマホ対応：右横構造を維持 */
 @media screen and (max-width: 600px) {
   .info-flex {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1em;
   }
 
   .jacket img {
-    max-width: 85%;
-    margin: 0 auto 1em;
+    width: 140px;
   }
 
   .info-block {
-    width: 100%;
-    text-align: left;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .meta-line, .credit, .tieup {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  .tieup {
+    color: #666;
   }
 }
