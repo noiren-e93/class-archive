@@ -42,6 +42,8 @@ body {
 }
 
 .jacket img {
+  max-width: 150px !important;
+  width: 150px !important;
   width: 150px;
   height: auto;
   display: block;
@@ -103,6 +105,8 @@ ul.track li {
   }
 
   .jacket img {
+  max-width: 150px !important;
+  width: 150px !important;
     width: 150px;
     margin: 0 auto;
   }
