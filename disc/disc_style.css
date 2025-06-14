@@ -7,7 +7,7 @@
   margin-bottom: 1em;
 }
 
-/* ✅ ジャケット画像と情報の並び（PC横 / スマホ縦） */
+/* ✅ ジャケットと情報の横並び */
 .info-flex {
   display: flex;
   flex-direction: row;
@@ -19,14 +19,15 @@
 }
 .jacket img {
   width: 150px;
+  margin-bottom: 1em; /* ✅ スマホ時も画像下に余白確保 */
 }
 
-/* ✅ 情報ブロック（タイトル・ランク・曲目など） */
+/* ✅ 右側情報ブロック */
 .info-block {
   flex-grow: 1;
 }
 
-/* ✅ 曲目リストのスタイル（黄帯NG構造防止） */
+/* ✅ 曲目リスト */
 ul.track {
   list-style: none;
   margin-top: 1em;
@@ -36,28 +37,25 @@ ul.track {
 ul.track li {
   margin-bottom: 1.2em;
   text-align: left;
+  width: 100%; /* ✅ スマホでも崩れず左に揃うように */
 }
 .credit {
   font-size: 0.95em;
   color: #444;
 }
 
-/* ✅ 曲タイトル（.title） */
+/* ✅ タイトル下のランク情報など */
 .title {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 0.2em;
 }
-
-/* ✅ 区切り線（.entry間） */
 .section-line {
   margin: 2em 0;
   border: none;
   border-top: 1px solid #ccc;
   width: 100%;
 }
-
-/* ✅ ユニット・ベスト区切りタイトル */
 .sub-title {
   font-size: 1.2em;
   font-weight: bold;
@@ -67,7 +65,7 @@ ul.track li {
   padding-left: 0.5em;
 }
 
-/* ✅ フッターリンク（スマホでもタップ可） */
+/* ✅ フッター */
 .footer {
   padding-top: 2em;
   padding-bottom: 8em;
@@ -81,7 +79,7 @@ ul.track li {
   padding: 0.5em 0;
 }
 
-/* ✅ スマホ用レイアウト切り替え */
+/* ✅ スマホUI修正：画像下→情報下へ */
 @media screen and (max-width: 600px) {
   .info-flex {
     flex-direction: column;
@@ -89,7 +87,7 @@ ul.track li {
   }
   .jacket img {
     max-width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 1em;
   }
   .info-block {
     width: 95%;
