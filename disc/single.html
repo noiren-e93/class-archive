@@ -1,29 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<style>
-  .cover img {
-    width: 150px;
-  }
-  .track-title, .credit {
-    margin-left: 0;
-    text-align: left;
-  }
-  .meta {
-    display: none;
-  }
-</style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>class シングル｜この声が消えても、ここにいる</title>
-  <!-- CSSキャッシュ対策：バージョン番号付き -->
-  <!-- v106など毎回変えて -->
-<link rel="stylesheet" href="disc_style.css?v=106">
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .page-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .entry {
+      margin-bottom: 3rem;
+    }
+    .info-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .cover {
+      flex: 0 0 auto;
+      width: 150px;
+      margin-right: 1rem;
+    }
+    .cover img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .info {
+      flex: 1 1 0;
+    }
+    .info h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .tracks {
+      margin-left: 150px;
+      padding-top: 0.5rem;
+    }
+    .track {
+      margin-bottom: 0.8rem;
+    }
+    .track-title {
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+    }
+    .credit, .tieup {
+      font-size: 0.9rem;
+      margin-left: 1rem;
+    }
+    .section-line {
+      border: none;
+      border-top: 1px solid #999;
+      margin: 2rem 0;
+    }
+    @media (max-width: 800px) {
+      .info-flex {
+        flex-direction: column;
+      }
+      .tracks {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
 <body>
 <div class="container">
   <h1 class="page-title">class シングル</h1>
   <div class="entry-list">
-
     <div class="entry">
       <div class="info-flex">
         <div class="cover">
@@ -33,7 +97,6 @@
           <h2>この声が消えても、ここにいる</h2>
           <div class="meta">
             1993-07-21 AMDL-5391 class<br />
-            初登場：–　最高位：–　登場回数：–<br /><br />
             <strong>※ ダミーテキスト／情報確認用</strong>
           </div>
         </div>
@@ -50,7 +113,6 @@
         </div>
       </div>
     </div>
-
   </div>
   <hr class="section-line">
   <p>→ <a href="../disc.html">ディスコグラフィ一覧へ戻る</a></p>
