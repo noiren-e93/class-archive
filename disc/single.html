@@ -29,7 +29,7 @@
     }
     .info-flex {
       display: flex;
-      flex-direction: row;
+      flex-direction: row !important;
       align-items: flex-start;
       flex-wrap: wrap;
     }
@@ -45,6 +45,8 @@
     }
     .info {
       flex: 1 1 0;
+      min-width: 0;
+      word-break: break-word;
     }
     .info h2 {
       font-size: 1.3rem;
@@ -73,14 +75,6 @@
       border: none;
       border-top: 1px solid #999;
       margin: 2rem 0;
-    }
-    @media (max-width: 800px) {
-      .info-flex {
-        flex-direction: column;
-      }
-      .tracks {
-        margin-left: 0;
-      }
     }
   </style>
 </head>
