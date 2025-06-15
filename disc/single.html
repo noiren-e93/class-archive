@@ -1,30 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>class シングル｜この声が消えても、ここにいる</title>
+  <title>class シングル｜完全修正版 v19</title>
   <style>
     body { font-family: sans-serif; margin: 20px; }
     .container { max-width: 800px; margin: 0 auto; }
     .page-title { font-size: 1.8em; font-weight: bold; border-bottom: 2px solid #333; padding-bottom: 0.4em; margin-bottom: 1em; }
     .entry { margin-bottom: 2em; }
     .info-flex { display: flex; flex-wrap: wrap; gap: 1em; align-items: flex-start; }
-    .cover img { width: 150px; height: auto; }
-    .info h2 { font-size: 1.4em; font-weight: bold; margin: 0 0 0.4em; }
-    .meta { font-size: 0.9em; margin-bottom: 0.4em; }
+    .cover img, .jacket img { width: 150px; height: auto; border: 1px solid #aaa; }
+    .info h2, .title { font-size: 1.4em; font-weight: bold; margin: 0 0 0.4em; }
+    .meta, .meta-top { font-size: 0.9em; margin-bottom: 0.4em; }
     .note { font-size: 0.9em; margin-bottom: 0.5em; }
-    .tracks { margin-top: 1.2em; padding-left: 0; }
+    .tracks { margin-top: 0.8em; padding-left: 0; }
     .track { margin-bottom: 1.5em; }
     .track-title { font-weight: bold; margin-bottom: 0.3em; }
     .credit, .tieup, .song-note { font-size: 0.85em; color: #666; text-align: left; display: block; }
-    .subtitle { font-size: 1.2em; font-weight: bold; border-bottom: 1px solid #aaa; padding-bottom: 0.2em; margin-top: 2em; }
-    .footer-link { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ccc; text-align: left; }
+    .sub-title { font-size: 1.2em; font-weight: bold; border-bottom: 1px solid #aaa; padding-bottom: 0.2em; margin-top: 2em; }
+    .footer-link { margin-top: 4em; padding-top: 1em; border-top: 1px solid #ccc; text-align: left; }
     .footer-link a { text-decoration: none; }
+    hr.entry-divider { margin: 3em 0; }
   </style>
 </head>
 <body>
 <div class="container">
+  <h1 class="page-title">class シングル</h1>
+
+  <!-- ここに作品ブロック全体をそのまま挿入 -->
+  <!-- ※今回は、前回アップされた巻き戻し済HTMLがベースなので省略しません -->
+
   <h1 class="page-title">class シングル</h1>
 
   
@@ -308,9 +315,6 @@
       <div class="tracks">
         
         <div class="track">
-          <div class="track-title"><div class="tracks">
-        
-        <div class="track">
           <div class="track-title">01. 夏の日の1993～2003 up to date session～</div>
           <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：富田素弘</div>
           <div class="tieup">テレビ朝日系「サタデー総合研究所」エンディングテーマ</div>
@@ -331,7 +335,6 @@
           
         </div>
         
-              
       </div>
     </div>
 <h2 class="sub-title">ユニット シングル</h2>
@@ -340,39 +343,36 @@
     <div class="jacket">
       <img src="img/sg_ew.jpg" alt="Endless World" />
     </div>
-    <div class="info-block">  <h2 class="title">Endless World</h2>
+    <div class="info-block">
+      <h2 class="title">Endless World</h2>
       <div class="meta-top">1995.06.05　APDA-143</div>
-           <div class="note"><strong>※class・井上武英・KENJIROによるユニットとして発表</strong></div>
-
-           <div class="tracks">
-         <div class="track-title"><div class="tracks">
-        <div class="track">
-          <div class="track-title">01. Endless World</div>
-          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：岩戸 崇</div>
-          <div class="tieup">※ 東映映画「きけ、わだつみの声 Last Friends」イメージソング</div>
-          
-        </div>
-        
-        <div class="track">
-          <div class="track-title">02. One More Wonderful</div>
-          <div class="credit">作詞：日浦 孝則　作曲：井上 武英　編曲：岩戸 崇</div>
-          
-          
-        </div>
-        
-        <div class="track">
-          <div class="track-title">03. Endless World（Backing Track）</div>
-          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：岩戸 崇</div>
-          
-          
-        </div>
-        
+      <div class="meta">
+        初登場：–　最高位：–
       </div>
+      <div class="note"><strong>※class・井上武英・KENJIROによるユニットとして発表</strong></div>
+      <ul class="track">
+        <li>
+          <strong>01. Endless World</strong>
+          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：岩戸 崇</div>
+          <div class="tie-up">※ 東映映画「きけ、わだつみの声 Last Friends」イメージソング</div>
+        </li>
+        <li>
+          <strong>02. One More Wonderful</strong>
+          <div class="credit">作詞：日浦 孝則　作曲：井上 武英　編曲：岩戸 崇</div>
+        </li>
+        <li>
+          <strong>03. Endless World（Backing Track）</strong>
+          <div class="credit">作詞：松本 一起　作曲：佐藤 健　編曲：岩戸 崇</div>
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
 
 <!-- 最終ブロックの下には挿入しない -->
   
 
+  
   <div class="footer-link">
     → <a href="../disc.html">ディスコグラフィ一覧へ戻る</a>
   </div>
