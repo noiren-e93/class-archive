@@ -84,12 +84,13 @@ ul.track li .comment {
   text-align: left;
   color: #444;
 }
-</style>
 
 <style>
 .info-flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
+  gap: 1.5em;
 }
 
 .jacket-12cm {
@@ -98,10 +99,13 @@ ul.track li .comment {
 }
 
 .jacket-12cm img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
-.info-block {
+.info-block, .info {
   flex: 1 1 0;
   min-width: 0;
   padding-left: 0;
@@ -110,18 +114,33 @@ ul.track li .comment {
 }
 
 ul.track {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding-left: 0;
   margin-left: 0;
-  list-style: none;
+  text-align: left;
 }
 
 ul.track li {
+  text-align: left;
   text-indent: 0;
   margin-bottom: 1.2em;
-  text-align: left;
+  font-size: 1em;
+  color: #444;
+}
+
+ul.track li .credit,
+ul.track li .tie,
+ul.track li .comment {
+  font-size: 0.85em;
+  color: #888;
+  line-height: 1.4;
+  margin-top: 0.2em;
 }
 </style>
 
+</style>
 </head>
 <body>
 <div class="container">
