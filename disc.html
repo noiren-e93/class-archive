@@ -1,51 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ディスコグラフィ｜この声がきえても、ここにいる</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ディスコグラフィ一覧</title>
   <style>
     body {
       font-family: sans-serif;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 1em;
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #333;
+      background: #fff;
+      margin: 0;
+      padding: 2em 1em;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
     }
     h1 {
       font-size: 1.6em;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    .section a {
+      font-size: 1.1em;
       font-weight: bold;
-      margin-bottom: 1em;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 1em;
-    }
-    a {
       text-decoration: none;
-      color: #0066cc;
+      color: #333;
+      display: block;
+      margin-bottom: 0.4em;
     }
-    a:hover {
-      text-decoration: underline;
+    .sub {
+      font-size: 0.95em;
+      color: #666;
+      padding-left: 1.2em;
+      margin-bottom: 0.2em;
     }
   </style>
 </head>
 <body>
-  <h1>ディスコグラフィ一覧</h1>
-  <ul>
-    <li><a href="disc/single.html">class シングル</a></li>
-    <li><a href="disc/album.html">class アルバム</a></li>
-    <li><a href="disc/budget.html">class ベスト・セレクション</a></li>
-    <li><a href="disc/solo_hs.html">日浦孝則 シングル</a></li>
-    <li><a href="disc/solo_ha.html">日浦孝則 アルバム</a></li>
-    <li><a href="disc/solo_t.html">津久井克行 ソロ</a></li>
-    <li><a href="disc/omnibus.html">オムニバス・参加曲</a></li>
-  </ul>
+  <div class="container">
+    <h1>ディスコグラフィ一覧</h1>
+
+    <div class="section">
+      <a href="disc_single.html">class シングル</a>
+      <div class="sub">オリジナル</div>
+      <div class="sub">ユニット</div>
+    </div>
+
+    <div class="section">
+      <a href="disc_album.html">class アルバム</a>
+      <div class="sub">オリジナル</div>
+      <div class="sub">ベスト</div>
+      <div class="sub">その他</div>
+    </div>
+
+    <div class="section">
+      <a href="disc_lowprice.html">class ベスト・セレクション</a>
+    </div>
+
+    <div class="section">
+      <a href="solo_hs.html">日浦孝則 シングル</a>
+    </div>
+
+    <div class="section">
+      <a href="solo_ha.html">日浦孝則 アルバム</a>
+      <div class="sub">オリジナル</div>
+      <div class="sub">ベスト</div>
+      <div class="sub">ライブ</div>
+    </div>
+
+    <div class="section">
+      <a href="solo_ts.html">津久井克行 アルバム</a>
+    </div>
+
+    <div class="section">
+      <a href="omnibus.html">オムニバス・参加曲</a>
+      <div class="sub">class</div>
+      <div class="sub">日浦孝則</div>
+    </div>
+
+  </div>
 </body>
 </html>
