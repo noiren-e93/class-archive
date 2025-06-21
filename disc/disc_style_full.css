@@ -1,0 +1,138 @@
+
+/* ベーススタイル */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* タイトル */
+.page-title, h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+/* エントリーブロック */
+.entry {
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
+/* 情報部レイアウト：画像＋テキスト横並び */
+.info-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+/* ジャケット画像調整 */
+.jacket img {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0;
+}
+
+.jacket-8cm img {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin: 0;
+}
+
+/* 情報テキストブロック */
+.info-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.meta, .meta-top {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.2em;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #444;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+.track {
+  margin-top: 0.5em;
+}
+
+.track-title {
+  font-weight: bold;
+  margin-top: 0.4em;
+}
+
+.credit, .tie, .comment {
+  font-size: 0.9em;
+  color: #444;
+  line-height: 1.5;
+  margin-left: 1em;
+}
+
+/* サブタイトル（区切り用） */
+.sub-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid #999;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* サブカテゴリー（一覧用） */
+.category {
+  margin-bottom: 2em;
+}
+
+.category a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #1a3d7c;
+  text-decoration: none;
+  margin-bottom: 0.2em;
+}
+
+.subcategory {
+  padding-left: 1.2em;
+  font-size: 0.95em;
+  color: #666;
+  line-height: 1.6em;
+}
+
+/* メディアクエリ：スマホ用レイアウト補正 */
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 1em;
+  }
+  .info-flex {
+    flex-wrap: wrap;
+  }
+  .jacket img,
+  .jacket-8cm img {
+    margin: 0 auto;
+  }
+}
