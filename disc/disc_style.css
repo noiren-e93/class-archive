@@ -1,4 +1,4 @@
-/* disc_style.css - 原点調整版（違和感修正済） */
+/* disc_style.css - 最終整形版（クレジット修正+上下マージン調整） */
 
 body {
   font-family: sans-serif;
@@ -23,7 +23,7 @@ body {
 }
 
 .entry {
-  margin-bottom: 3em;
+  margin: 2.5em 0;  /* 上下均等に */
 }
 
 .info-flex {
@@ -82,8 +82,8 @@ body {
 .credit,
 .tie,
 .comment {
-  font-size: 0.8em;            /* 修正点①：小さく */
-  color: #999;                 /* 修正点②：薄く */
+  font-size: 0.8em !important;   /* 明示指定（上書き防止） */
+  color: #999 !important;        /* 明示指定（上書き防止） */
   line-height: 1.5;
   margin-bottom: 0.3em;
 }
