@@ -1,12 +1,18 @@
-/* === 基本構造 === */
+/* 共通レイアウト */
 body {
-  font-family: sans-serif;
-  margin: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #fdfdfd;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 1em;
 }
+
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -14,85 +20,78 @@ body {
   padding-bottom: 0.4em;
   margin-bottom: 1em;
 }
+
 .entry {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
+
+/* 見出し（サブタイトル） */
+.sub-title {
+  background-color: #f3f3f3;
+  padding: 0.4em 0.6em;
+  border-left: 5px solid #666;
+  font-weight: bold;
+  margin: 2em 0 1em 0;
+  font-size: 1.2em;
+}
+
+/* ジャケット画像 */
+.jacket {
+  width: 150px;
+}
+
+.jacket-8cm {
+  width: 110px;
+}
+
 .info-flex {
   display: flex;
-  flex-wrap: wrap;
   gap: 1em;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.jacket img,
-.jacket-12cm img {
-  width: 150px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-}
-.jacket-8cm img {
-  width: 110px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-}
+
 .info-block {
   flex: 1;
   min-width: 200px;
 }
+
 .title {
-  font-size: 1.4em;
   font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 0.2em;
 }
+
 .meta,
 .meta-top {
   font-size: 0.95em;
-  color: #555;
+  color: #666;
+  margin-bottom: 0.2em;
 }
+
 .note {
   font-size: 0.9em;
   color: #444;
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+}
+
+/* トラック情報 */
+.track {
   margin-top: 0.5em;
 }
-.track {
-  margin-top: 1em;
-}
+
 .track-title {
-  font-weight: bold;
-  margin-top: 0.4em;
+  display: flex;
+  gap: 0.6em;
+  margin-left: 2em;
 }
+
 .credit,
 .tie,
 .comment {
   font-size: 0.9em;
-  color: #666;
+  color: #444;
+  margin-left: 2em;
   line-height: 1.5;
-  margin-left: 1em;
-}
-ul.track {
-  padding-left: 1em;
-}
-ul.track li {
-  margin-bottom: 0.5em;
-}
-hr.entry-divider {
-  margin: 2em 0;
-  border: none;
-  border-top: 1px dashed #aaa;
-}
-
-/* === .work-list スタイル追加 === */
-.work-list li {
-  font-size: 0.95em !important;
-  line-height: 1.6 !important;
-  margin-left: 1.5em !important;
-}
-
-.sub-title {
-  font-size: 1.1em;
-  font-weight: bold;
-  background-color: #f3f3f3;
-  padding: 0.4em 0.8em;
-  border-left: 5px solid #666;
-  margin: 2em 0 1em;
-  color: #222;
 }
