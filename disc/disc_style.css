@@ -67,12 +67,11 @@ body {
   margin-left: 0.4em;
 }
 .credit,
-.tie,
-.comment {
-  font-size: 0.9em;
-  color: #666;
-  margin-left: 0.4em;
-  line-height: 1.5;
+.tie {
+  font-size: 0.8em !important;
+  color: #aaa !important;
+  line-height: 1.3 !important;
+  margin-left: 0.4em !important;
 }
 hr.entry-divider {
   border: none;
