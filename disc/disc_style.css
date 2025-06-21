@@ -1,17 +1,29 @@
 
-.info-flex {
+.track-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: flex-start;
-  gap: 1em;
+  gap: 0.5em;
+  margin-bottom: 0.2em;
 }
 
-.jacket {
-  width: 110px;
+.track-num {
+  min-width: 2.5em;
+  text-align: right;
   flex-shrink: 0;
 }
 
-.info-block {
-  flex: 1;
-  min-width: 0;
+.track-main {
+  flex-grow: 1;
+}
+
+.track li > strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
 }
