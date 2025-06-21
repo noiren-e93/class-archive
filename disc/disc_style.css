@@ -1,67 +1,37 @@
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-}
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.page-title {
-  font-size: 1.8em;
-  font-weight: bold;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.4em;
-  margin-bottom: 1em;
-}
-.entry {
-  margin-bottom: 2em;
-}
-.info-flex {
-  display: flex;
-  gap: 1em;
-  margin-bottom: 0.5em;
-}
-.jacket-8cm {
-  width: 110px;
-}
-.info-block {
-  flex-grow: 1;
-}
-.title {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.meta, .comment {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: 0.2em;
-}
-.track {
-  margin-top: 0.8em;
-  padding-left: 0;
-  list-style: none;
-}
 .track-row {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 0.5em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.4em;
 }
+
 .track-num {
   min-width: 2.5em;
   text-align: right;
   flex-shrink: 0;
 }
+
 .track-main {
   flex-grow: 1;
 }
-.track-main strong {
-  display: block;
-  font-weight: bold;
+
+.track {
+  font-size: 0.95em;
+  margin-top: 0.6em;
+  margin-bottom: 1.0em;
 }
-.credit, .tie {
+
+.credit {
   font-size: 0.9em;
   color: #666;
+  margin-top: 0.2em;
+  line-height: 1.4;
+}
+
+.tie {
+  font-size: 0.9em;
+  color: #999;
+  line-height: 1.4;
 }
