@@ -1,4 +1,47 @@
 
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+.entry {
+  margin-bottom: 2em;
+}
+.info-flex {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+.jacket-8cm {
+  width: 110px;
+}
+.info-block {
+  flex-grow: 1;
+}
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.meta, .comment {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.2em;
+}
+.track {
+  margin-top: 0.8em;
+  padding-left: 0;
+  list-style: none;
+}
 .track-row {
   display: flex;
   flex-direction: row;
@@ -6,24 +49,19 @@
   gap: 0.5em;
   margin-bottom: 0.2em;
 }
-
 .track-num {
   min-width: 2.5em;
   text-align: right;
   flex-shrink: 0;
 }
-
 .track-main {
   flex-grow: 1;
 }
-
-.track li > strong {
-  font-weight: bold;
+.track-main strong {
   display: block;
-  margin-bottom: 0.2em;
-}
-
-.title {
-  font-size: 1.2em;
   font-weight: bold;
+}
+.credit, .tie {
+  font-size: 0.9em;
+  color: #666;
 }
