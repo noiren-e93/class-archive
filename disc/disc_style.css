@@ -1,16 +1,101 @@
 
-.track-row {
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+.entry {
+  margin-bottom: 3em;
+}
+
+.info-flex {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.jacket-8cm img {
+  width: 110px;
+}
+
+.info-block {
+  flex: 1;
+  min-width: 200px;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.meta-top,
+.meta,
+.note {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.2em;
+}
+
+.track {
+  margin-top: 0.5em;
+}
+
+.track-item {
+  display: flex;
   gap: 0.5em;
+  align-items: flex-start;
+  margin-bottom: 0.8em;
+}
+
+.track-no {
+  width: 2em;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.track-content {
+  flex-grow: 1;
+}
+
+.track-title {
+  font-weight: bold;
   margin-bottom: 0.2em;
 }
-.track-num {
-  min-width: 2.5em;
-  text-align: right;
-  flex-shrink: 0;
+
+.credit {
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.4;
 }
-.track-main {
-  flex-grow: 1;
+
+.tie {
+  font-size: 0.85em;
+  color: #666;
+  line-height: 1.4;
+}
+
+h2.sub-title {
+  background-color: #eee;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 6px 10px;
+  margin: 1.5em 0 1em;
+  border-left: 6px solid #666;
 }
