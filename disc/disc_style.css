@@ -1,14 +1,10 @@
-/* ===========================
-   ディスコグラフィ共通CSS
-   モバイルファースト・視認性重視
-=========================== */
-
+/* 共通スタイル */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 2em 1em;
   background: #fff;
-  color: #444;
+  color: #333;
 }
 
 .container {
@@ -22,7 +18,6 @@ h1 {
   border-bottom: 2px solid #333;
   padding-bottom: 0.4em;
   margin-bottom: 1em;
-  color: #222;
 }
 
 .category {
@@ -33,13 +28,9 @@ h1 {
   display: block;
   font-weight: bold;
   font-size: 1.1em;
-  color: #336699;
-  text-decoration: none; /* ❶ リンクの下線を削除 */
+  color: #1a3d7c;
+  text-decoration: none;
   margin-bottom: 0.2em;
-}
-
-.category a:hover {
-  color: #003366;
 }
 
 .subcategory {
@@ -49,24 +40,29 @@ h1 {
   line-height: 1.6em;
 }
 
-/* ジャケット画像 共通構造 */
-.jacket img,
-.jacket-8cm img {
+/* ジャケット画像スタイル */
+.jacket img {
   width: 150px;
   height: auto;
   border: 1px solid #ccc;
-  border-radius: 4px;           /* ❷ 角丸追加 */
+  border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   vertical-align: top;
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    padding: 1em;
-  }
+.jacket-8cm img {
+  width: 110px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+}
 
+/* スマホ表示用 */
+@media screen and (max-width: 800px) {
   .container {
-    padding: 0;
+    padding: 0 1em;
     width: 100%;
   }
 }
