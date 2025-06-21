@@ -42,20 +42,8 @@ body {
   padding-left: 0;
   list-style: none;
 }
-.track-row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 0.5em;
-  margin-bottom: 0.2em;
-}
-.track-num {
-  min-width: 2.5em;
-  text-align: right;
-  flex-shrink: 0;
-}
-.track-main {
-  flex-grow: 1;
+.track li {
+  margin-bottom: 0.6em;
 }
 .track-main strong {
   display: block;
@@ -64,4 +52,5 @@ body {
 .credit, .tie {
   font-size: 0.9em;
   color: #666;
+  line-height: 1.4;
 }
