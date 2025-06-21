@@ -114,3 +114,8 @@ hr.entry-divider {
     margin-left: 0;
   }
 }
+.work-list li {
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-left: 1.5em;
+}
