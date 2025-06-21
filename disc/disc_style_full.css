@@ -1,4 +1,3 @@
-
 /* ベーススタイル */
 body {
   font-family: sans-serif;
@@ -135,4 +134,12 @@ body {
   .jacket-8cm img {
     margin: 0 auto;
   }
+}
+
+/* --- 微調整：左揃え補正 --- */
+.track-title,
+.credit,
+.tie,
+.comment {
+  margin-left: 0.4em;
 }
