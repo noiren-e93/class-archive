@@ -1,76 +1,134 @@
 
-/* 全体レイアウト調整 */
+/* 共通スタイル */
 body {
   font-family: sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 1.5em 1em;
   background: #fff;
   color: #333;
 }
 
 .container {
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
-  padding: 0 1em;
-  box-sizing: border-box;
 }
 
-/* 見出しスタイル */
-h1 {
-  font-size: 1.6em;
+/* 見出し */
+.page-title {
+  font-size: 1.8em;
   font-weight: bold;
   border-bottom: 2px solid #333;
   padding-bottom: 0.4em;
-  margin: 1em 0;
+  margin-bottom: 1em;
 }
 
-.category {
-  margin-bottom: 2em;
-}
-
-.category a {
-  display: block;
+/* サブタイトル（カバー・分類） */
+.sub-title {
+  font-size: 1.2em;
   font-weight: bold;
-  font-size: 1.1em;
-  color: #1a3d7c;
-  text-decoration: none;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.cover-artist {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 1em;
+  color: #555;
+}
+
+.work-list {
+  margin: 0.5em 0 1.5em 1em;
+  font-size: 0.95em;
+  color: #333;
+}
+
+/* 作品ブロック */
+.entry {
+  margin-bottom: 2.5em;
+}
+
+.info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+.info-block {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.jacket {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.jacket-8cm img {
+  width: 143px;
+  height: 280px;
+}
+
+.jacket-12cm img {
+  width: 200px;
+  height: 200px;
+}
+
+/* メタ情報 */
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
   margin-bottom: 0.2em;
 }
 
-.subcategory {
-  padding-left: 1.2em;
+.meta, .meta-top {
   font-size: 0.95em;
-  color: #666;
-  line-height: 1.6em;
+  color: #444;
+  margin-bottom: 0.3em;
 }
 
-/* サブセクションの作品ブロック */
-.entry {
-  margin-bottom: 2em;
-}
-
-.entry-title {
-  background: #f0f0f0;
-  font-weight: bold;
-  padding: 0.5em;
-  border-left: 5px solid #ccc;
+.note {
+  font-size: 0.9em;
+  color: #777;
+  line-height: 1.5em;
   margin-bottom: 0.5em;
 }
 
-/* Various Artists ラベル */
-.va-label {
-  display: inline-block;
+/* 曲リスト */
+.track {
+  margin-top: 1em;
+}
+
+.track-title {
   font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.credit {
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 1em;
+  line-height: 1.4em;
+}
+
+.tie {
   font-size: 0.85em;
-  background: #eee;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  color: #777;
+  margin-left: 1em;
+  line-height: 1.4em;
 }
 
-/* メディアクエリでスマホに最適化 */
+.comment {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0.4em 0 0.4em 1em;
+}
+
+/* メディア対応 */
 @media screen and (max-width: 800px) {
   .container {
     padding: 0 1em;
