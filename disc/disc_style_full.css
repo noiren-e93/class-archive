@@ -112,13 +112,13 @@ a:hover {
 /* --- 曲リスト --- */
 .track {
   margin-top: 0.8em;
-  padding-left: 0.6em;
+  padding-left: 0;
 }
-.track-title {
-  font-weight: bold;
-  font-size: 1em;
-  color: #333;
-  margin-left: 0;
+.track-title,
+.credit,
+.tie,
+.comment {
+  padding-left: 0.4em;
 }
 .credit,
 .tie,
