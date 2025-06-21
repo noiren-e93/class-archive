@@ -3,10 +3,12 @@ body {
   font-family: sans-serif;
   margin: 20px;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -14,43 +16,67 @@ body {
   padding-bottom: 0.4em;
   margin-bottom: 1em;
 }
+
 .entry {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
+
 .info-flex {
   display: flex;
   gap: 1em;
-  margin-bottom: 0.5em;
+  align-items: flex-start;
 }
+
+.jacket {
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 .jacket-8cm {
   width: 110px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .info-block {
   flex-grow: 1;
 }
+
 .title {
   font-size: 1.2em;
   font-weight: bold;
 }
-.meta, .comment {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: 0.2em;
+
+.meta-top,
+.meta,
+.note {
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin: 0.3em 0;
 }
+
 .track {
   margin-top: 0.8em;
-  padding-left: 0;
-  list-style: none;
 }
+
 .track li {
-  margin-bottom: 0.6em;
+  margin-bottom: 1.2em;
 }
-.track-main strong {
-  display: block;
+
+.track li strong {
+  display: inline-block;
   font-weight: bold;
+  margin-bottom: 0.2em;
 }
-.credit, .tie {
-  font-size: 0.9em;
-  color: #666;
-  line-height: 1.4;
+
+.track li .credit,
+.track li .tie {
+  font-size: 0.8em;
+  color: #aaa;
+  line-height: 1.3;
+  margin-top: 0.2em;
 }
