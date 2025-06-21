@@ -1,18 +1,13 @@
-
 body {
   font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  color: #000;
+  margin: 20px;
+  color: #222;
+  line-height: 1.6;
 }
-
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
 }
-
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -20,82 +15,114 @@ body {
   padding-bottom: 0.4em;
   margin-bottom: 1em;
 }
-
 .entry {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
-
 .info-flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 1em;
 }
-
-.jacket-8cm img {
-  width: 110px;
+.jacket {
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.jacket-8cm {
+  width: 110px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 .info-block {
   flex: 1;
-  min-width: 200px;
 }
-
 .title {
   font-size: 1.2em;
   font-weight: bold;
 }
-
-.meta-top,
 .meta,
+.meta-top {
+  font-size: 0.95em;
+  color: #666;
+}
+.meta-top {
+  margin-bottom: 0.2em;
+}
 .note {
   font-size: 0.9em;
-  color: #555;
-  margin-top: 0.2em;
+  color: #666;
 }
-
 .track {
   margin-top: 0.5em;
 }
-
-.track-item {
-  display: flex;
-  gap: 0.5em;
-  align-items: flex-start;
+.track li {
   margin-bottom: 0.8em;
 }
-
-.track-no {
-  width: 2em;
-  flex-shrink: 0;
-  font-weight: bold;
-}
-
-.track-content {
-  flex-grow: 1;
-}
-
 .track-title {
   font-weight: bold;
-  margin-bottom: 0.2em;
+  margin-left: 0.4em;
 }
-
-.credit {
+.credit,
+.tie,
+.comment {
   font-size: 0.9em;
-  color: #333;
-  line-height: 1.4;
-}
-
-.tie {
-  font-size: 0.85em;
   color: #666;
-  line-height: 1.4;
+  margin-left: 0.4em;
+  line-height: 1.5;
+}
+hr.entry-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+.sub-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #333;
+}
+.cover-artist {
+  font-weight: normal;
+  font-size: 1em;
+  color: #333;
+  margin: 0.2em 0 0.2em 0.4em;
+}
+.work-list {
+  padding-left: 1.4em;
+  margin: 0;
 }
 
-h2.sub-title {
-  background-color: #eee;
-  font-weight: bold;
-  font-size: 1.1em;
-  padding: 6px 10px;
-  margin: 1.5em 0 1em;
-  border-left: 6px solid #666;
+@media screen and (max-width: 800px) {
+  .container {
+    margin: 0 10px;
+    width: auto;
+  }
+  .info-flex {
+    flex-direction: column;
+  }
+  .info-block {
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
+  .track {
+    margin-left: 0;
+  }
+}
+.work-list li {
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-left: 1.5em;
+}
+
+
+.work-list li {
+  font-size: 0.95em !important;
+  line-height: 1.6 !important;
+  margin-left: 1.5em !important;
 }
