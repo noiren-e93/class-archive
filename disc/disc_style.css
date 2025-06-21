@@ -1,82 +1,141 @@
 
+/* ベース設定 */
 body {
   font-family: sans-serif;
-  margin: 20px;
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 1.5em;
 }
 
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
+  margin-bottom: 1.2em;
   border-bottom: 2px solid #333;
-  padding-bottom: 0.4em;
-  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  text-align: left;
 }
 
+/* エントリブロック */
 .entry {
   margin-bottom: 3em;
 }
 
+/* フレックス配置 */
 .info-flex {
   display: flex;
-  gap: 1em;
+  flex-wrap: wrap;
+  gap: 1.5em;
   align-items: flex-start;
 }
 
 .jacket {
+  flex-shrink: 0;
+}
+
+.jacket img {
   width: 150px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: block;
 }
 
-.jacket-8cm {
+.jacket-8cm img {
   width: 110px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: block;
 }
 
+/* 情報ブロック */
 .info-block {
-  flex-grow: 1;
+  flex: 1;
+  min-width: 220px;
 }
 
 .title {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
+  margin-bottom: 0.4em;
 }
 
-.meta-top,
-.meta,
-.note {
-  color: #666;
+.meta-top {
   font-size: 0.95em;
-  line-height: 1.4;
-  margin: 0.3em 0;
+  color: #333;
+  margin-bottom: 0.4em;
 }
 
-.track {
-  margin-top: 0.8em;
+.meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 0.6em;
 }
 
-.track li {
-  margin-bottom: 1.2em;
+.note {
+  font-size: 0.85em;
+  color: #777;
+  margin-top: 0.5em;
 }
 
-.track li strong {
-  display: inline-block;
+/* 曲目リスト */
+ul.track {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+
+ul.track li {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.track-title {
   font-weight: bold;
+  font-size: 1em;
   margin-bottom: 0.2em;
 }
 
-.track li .credit,
-.track li .tie {
+.credit {
   font-size: 0.8em;
-  color: #aaa;
-  line-height: 1.3;
+  color: #888;
+  line-height: 1.4;
   margin-top: 0.2em;
+}
+
+/* 区切り線 */
+.entry-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+/* セクション見出し */
+.sub-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-left: 4px solid #666;
+  border-bottom: 1px solid #666;
+  padding-left: 0.5em;
+  margin: 2em 0 1em;
+}
+
+/* フッターリンク */
+.footer {
+  border-top: 1px solid #ccc;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  text-align: left;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95em;
 }
