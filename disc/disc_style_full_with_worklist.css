@@ -86,3 +86,13 @@ hr.entry-divider {
   line-height: 1.6 !important;
   margin-left: 1.5em !important;
 }
+
+.sub-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  padding: 0.4em 0.8em;
+  border-left: 5px solid #666;
+  margin: 2em 0 1em;
+  color: #222;
+}
