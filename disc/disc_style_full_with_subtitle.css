@@ -1,0 +1,98 @@
+/* === 基本構造 === */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+.entry {
+  margin-bottom: 2em;
+}
+.info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.jacket img,
+.jacket-12cm img {
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.jacket-8cm img {
+  width: 110px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.info-block {
+  flex: 1;
+  min-width: 200px;
+}
+.title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.meta,
+.meta-top {
+  font-size: 0.95em;
+  color: #555;
+}
+.note {
+  font-size: 0.9em;
+  color: #444;
+  margin-top: 0.5em;
+}
+.track {
+  margin-top: 1em;
+}
+.track-title {
+  font-weight: bold;
+  margin-top: 0.4em;
+}
+.credit,
+.tie,
+.comment {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.5;
+  margin-left: 1em;
+}
+ul.track {
+  padding-left: 1em;
+}
+ul.track li {
+  margin-bottom: 0.5em;
+}
+hr.entry-divider {
+  margin: 2em 0;
+  border: none;
+  border-top: 1px dashed #aaa;
+}
+
+/* === .work-list スタイル追加 === */
+.work-list li {
+  font-size: 0.95em !important;
+  line-height: 1.6 !important;
+  margin-left: 1.5em !important;
+}
+
+.sub-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #eef3f7;
+  padding: 0.4em 0.8em;
+  border-left: 5px solid #339;
+  margin: 2em 0 1em;
+  color: #222;
+}
