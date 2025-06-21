@@ -74,21 +74,20 @@ a:hover {
 .title {
   font-size: 1.3em;
   font-weight: bold;
-  color: #222 !important;
+  color: #222;
   margin-bottom: 0.3em;
 }
-.meta-top {
-  color: #666;
-  margin-top: 0.3em;
-}
+.meta-top,
 .meta {
   color: #666;
+  font-size: 0.9em;
   margin-top: 0.2em;
 }
 .note {
   font-size: 0.85em;
-  color: #666 !important;
-  margin-top: 0.4em;
+  color: #666;
+  margin-top: 0.5em;
+  line-height: 1.4;
 }
 
 /* --- ジャケット画像 --- */
@@ -117,19 +116,16 @@ a:hover {
 .track-title {
   font-weight: bold;
   font-size: 1em;
-  color: #333 !important;
+  color: #333;
+  margin-left: 0.4em;
 }
-.credit {
-  font-size: 0.85em;
-  color: #888 !important;
-  line-height: 1.5;
-  margin-left: 0.2em;
-}
-.tie {
-  font-size: 0.85em;
-  color: #999 !important;
-  margin-left: 0.2em;
-  line-height: 1.4;
+.credit,
+.tie,
+.comment {
+  font-size: 0.8em;
+  color: #999;
+  line-height: 1.6;
+  margin-left: 0.4em;
 }
 
 /* --- 区切り線 --- */
@@ -210,7 +206,7 @@ ul.work-list li {
   }
   .jacket,
   .jacket-8cm {
-    margin: 0 auto;
+    margin: 0;
   }
   .container,
   .sub-title,
