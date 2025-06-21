@@ -112,12 +112,13 @@ a:hover {
 /* --- 曲リスト --- */
 .track {
   margin-top: 0.8em;
+  padding-left: 0.6em;
 }
 .track-title {
   font-weight: bold;
   font-size: 1em;
   color: #333;
-  margin-left: 0.4em;
+  margin-left: 0;
 }
 .credit,
 .tie,
@@ -125,7 +126,7 @@ a:hover {
   font-size: 0.8em;
   color: #999;
   line-height: 1.6;
-  margin-left: 0.4em;
+  margin-left: 0;
 }
 
 /* --- 区切り線 --- */
@@ -206,9 +207,7 @@ ul.work-list li {
   }
   .jacket,
   .jacket-8cm {
-    margin: 0 !important;
-    align-self: flex-start;
-    float: left;
+    margin: 0 auto;
   }
   .container,
   .sub-title,
