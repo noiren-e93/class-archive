@@ -102,7 +102,7 @@ ul.track li {
   margin-bottom: 0.2em;
 }
 
-.credit {
+.credit, .tie {
   font-size: 0.8em;
   color: #888;
   line-height: 1.4;
@@ -138,4 +138,11 @@ ul.track li {
   text-decoration: none;
   color: #444;
   font-size: 0.95em;
+}
+
+/* スマホ横並び防止 */
+@media (max-width: 600px) {
+  .info-flex {
+    flex-direction: column;
+  }
 }
