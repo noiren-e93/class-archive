@@ -1,15 +1,15 @@
-
-/* 共通設定 */
+/* 共通ディスコグラフィスタイル */
 body {
   font-family: sans-serif;
   margin: 20px;
   line-height: 1.6;
-  letter-spacing: 0.02em;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -18,76 +18,84 @@ body {
   margin-bottom: 1em;
 }
 
-/* エントリ構造 */
-.entry {
-  margin-bottom: 3em;
+.sub-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
+
+.entry {
+  margin-bottom: 2em;
+}
+
 .info-flex {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 1em;
   align-items: flex-start;
 }
-.jacket img,
+
+.jacket img {
+  width: 110px;
+  height: auto;
+}
+
 .jacket-8cm img {
   width: 110px;
+  height: auto;
 }
+
 .info-block {
   flex: 1;
+  min-width: 200px;
 }
+
 .title {
-  font-size: 1.4em;
   font-weight: bold;
-  margin-bottom: 0.3em;
-}
-.meta-top,
-.meta {
-  font-size: 0.95em;
-  color: #333;
+  font-size: 1.2em;
   margin-bottom: 0.2em;
 }
-.note {
+
+.meta-top {
   font-size: 0.9em;
-  color: #666;
-  margin-top: 0.3em;
+  margin-bottom: 0.2em;
 }
-ul.track {
-  margin-top: 1em;
-  padding-left: 0;
-  list-style: none;
+
+.meta {
+  font-size: 0.9em;
+  color: #333;
 }
-ul.track li {
-  margin-bottom: 1em;
-}
-.track-title {
-  font-weight: bold;
-}
-.credit,
-.tie {
+
+.note {
   font-size: 0.9em;
   color: #555;
   margin-top: 0.3em;
 }
-.comment {
-  font-size: 0.9em;
-  color: #999;
-  margin-top: 0.3em;
-}
-.entry-divider {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 2em 0;
+
+.track {
+  margin-top: 0.8em;
+  padding-left: 1.2em;
 }
 
-/* モバイル対応 */
-@media (max-width: 600px) {
-  .info-flex {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-  .jacket img,
-  .jacket-8cm img {
-    width: 100%;
-    height: auto;
-  }
+.track li {
+  margin-bottom: 0.6em;
+}
+
+.track-title {
+  font-weight: bold;
+}
+
+.credit, .tie, .comment {
+  font-size: 0.85em;
+  color: #555;
+  line-height: 1.4;
+}
+
+.footer {
+  font-size: 0.9em;
+  margin-top: 3em;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+  text-align: center;
 }
