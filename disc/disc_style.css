@@ -1,5 +1,5 @@
 
-/* ベース設定（0.02emの世界） */
+/* ベース設定（BELIEVE準拠＋スマホ妥協） */
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -43,9 +43,10 @@ body {
 }
 
 .jacket img {
-  width: 150px;
+  width: 140px;
   height: auto;
   display: block;
+  max-width: 100%;
 }
 
 .jacket-8cm img {
@@ -63,6 +64,7 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-bottom: 0.4em;
+  word-break: keep-all;
 }
 
 .meta-top {
@@ -136,7 +138,7 @@ ul.track li {
   font-size: 0.95em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .info-flex {
     flex-direction: column;
   }
