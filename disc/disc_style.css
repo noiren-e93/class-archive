@@ -1,145 +1,117 @@
 
-/* ベース設定（BELIEVE準拠＋スマホ妥協） */
+/* 基本レイアウト */
 body {
-  font-family: sans-serif;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 20px;
   color: #222;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 400;
+  background: #fff;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 1.5em;
 }
 
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
-  margin-bottom: 1.2em;
   border-bottom: 2px solid #333;
-  padding-bottom: 0.3em;
-  text-align: left;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
 }
 
+/* .entry セクション */
 .entry {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .info-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5em;
-  align-items: flex-start;
+  gap: 1em;
 }
 
 .jacket {
+  width: 110px;
   flex-shrink: 0;
 }
 
-.jacket img {
-  width: 140px;
-  height: auto;
-  display: block;
-  max-width: 100%;
-}
-
-.jacket-8cm img {
-  width: 110px;
-  height: auto;
-  display: block;
+.jacket-8cm {
+  width: 90px;
+  flex-shrink: 0;
 }
 
 .info-block {
   flex: 1;
-  min-width: 220px;
+  min-width: 0;
 }
 
 .title {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: bold;
-  margin-bottom: 0.4em;
-  word-break: keep-all;
+  margin-bottom: 0.3em;
 }
 
+.meta,
 .meta-top {
+  color: #666;
   font-size: 0.95em;
-  color: #333;
-  margin-bottom: 0.4em;
-}
-
-.meta {
-  font-size: 0.9em;
-  color: #555;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.3em;
 }
 
 .note {
-  font-size: 0.85em;
-  color: #777;
-  margin-top: 0.5em;
+  color: #555;
+  font-size: 0.9em;
+  margin-bottom: 0.6em;
 }
 
 ul.track {
   list-style: none;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding-left: 0;
+  padding: 0;
+  margin: 1em 0 0 0;
 }
 
 ul.track li {
   margin-bottom: 1em;
-  text-align: left;
 }
 
 .track-title {
   font-weight: bold;
-  font-size: 1em;
+}
+
+.credit,
+.tie,
+.comment {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.6;
   margin-bottom: 0.2em;
 }
 
-.credit, .tie {
-  font-size: 0.8em;
-  color: #888;
-  line-height: 1.4;
-  margin-top: 0.2em;
-}
-
-.entry-divider {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 2em 0;
-}
-
+/* セクション見出し */
 .sub-title {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
-  border-left: 4px solid #666;
-  border-bottom: 1px solid #666;
-  padding-left: 0.5em;
-  margin: 2em 0 1em;
+  margin: 2em 0 1em 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.2em;
 }
 
-.footer {
-  border-top: 1px solid #ccc;
-  padding-top: 2em;
-  padding-bottom: 4em;
-  text-align: left;
-}
+/* メディアクエリでPC時にサイズアップ可能 */
+@media screen and (min-width: 768px) {
+  .jacket {
+    width: 150px;
+  }
 
-.footer a {
-  text-decoration: none;
-  color: #444;
-  font-size: 0.95em;
-}
+  .jacket-8cm {
+    width: 110px;
+  }
 
-@media (max-width: 480px) {
-  .info-flex {
-    flex-direction: column;
+  .credit,
+  .tie,
+  .comment {
+    font-size: 0.95em;
   }
 }
