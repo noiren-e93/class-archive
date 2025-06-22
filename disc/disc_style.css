@@ -58,7 +58,8 @@ body {
 .title {
   font-weight: bold;
   font-size: 1.2em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2em;  
+  padding-left: 1.2em;
 }
 
 .meta-top {
