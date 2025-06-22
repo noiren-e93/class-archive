@@ -39,7 +39,11 @@ body {
   align-items: flex-start;
 }
 
-.jacket img,
+.jacket img {
+  width: 110px;
+  height: auto;
+}
+
 .jacket-8cm img {
   width: 110px;
   height: auto;
@@ -79,14 +83,14 @@ body {
 }
 
 .track li {
+  margin-bottom: 0.6em;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 0.6em;
 }
 
 .track-title {
-  font-weight: bold;
   display: inline;
+  font-weight: bold;
 }
 
 .credit {
