@@ -1,3 +1,4 @@
+
 /* 共通ディスコグラフィスタイル */
 body {
   font-family: sans-serif;
@@ -77,18 +78,18 @@ body {
 
 .track {
   margin-top: 0.8em;
-  padding-left: 1.2em;   /* 意図的に残す：安定表示のため */
   list-style: none;
-  padding-left: 0;       /* 上書きだけど、これで安定するならOK */
+  padding-left: 0;
 }
-
-
 
 .track li {
   margin-bottom: 0.6em;
+  list-style: none;
+  padding-left: 0;
 }
 
 .track-title {
+  display: inline;
   font-weight: bold;
 }
 
