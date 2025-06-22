@@ -44,9 +44,11 @@ body {
 }
 
 .jacket-8cm img {
-  width: 110px;
+  width: 143px;  /* ←本来の8cmサイズ */
   height: auto;
-  }
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 
 .info-block {
   flex: 1;
