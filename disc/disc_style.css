@@ -1,12 +1,8 @@
 
-/* 基本レイアウト */
+/* 共通スタイル */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: sans-serif;
   margin: 20px;
-  color: #222;
-  background: #fff;
 }
 
 .container {
@@ -22,7 +18,6 @@ body {
   margin-bottom: 1em;
 }
 
-/* .entry セクション */
 .entry {
   margin-bottom: 2em;
 }
@@ -38,80 +33,49 @@ body {
   flex-shrink: 0;
 }
 
-.jacket-8cm {
-  width: 90px;
-  flex-shrink: 0;
-}
-
 .info-block {
   flex: 1;
-  min-width: 0;
+  min-width: 200px;
 }
 
 .title {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bold;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
 }
 
 .meta,
-.meta-top {
-  color: #666;
+.meta-top,
+.note {
   font-size: 0.95em;
   margin-bottom: 0.3em;
 }
 
 .note {
   color: #555;
-  font-size: 0.9em;
-  margin-bottom: 0.6em;
 }
 
-ul.track {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0 0 0;
-}
-
-ul.track li {
-  margin-bottom: 1em;
+.track {
+  margin-top: 1em;
 }
 
 .track-title {
   font-weight: bold;
-}
-
-.credit,
-.tie,
-.comment {
-  font-size: 0.9em;
-  color: #666;
-  line-height: 1.6;
   margin-bottom: 0.2em;
 }
 
-/* セクション見出し */
-.sub-title {
-  font-size: 1.4em;
-  font-weight: bold;
-  margin: 2em 0 1em 0;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2em;
+.credit,
+.tie {
+  font-size: 0.95em;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  word-break: keep-all;
+  color: #444;
 }
 
-/* メディアクエリでPC時にサイズアップ可能 */
-@media screen and (min-width: 768px) {
-  .jacket {
-    width: 150px;
-  }
-
-  .jacket-8cm {
-    width: 110px;
-  }
-
-  .credit,
-  .tie,
-  .comment {
-    font-size: 0.95em;
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .info-flex {
+    flex-direction: column;
   }
 }
