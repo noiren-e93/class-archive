@@ -2,6 +2,8 @@
 /* ベース設定 */
 body {
   font-family: sans-serif;
+  font-size: 1em;
+  letter-spacing: -0.01em;
   line-height: 1.6;
   color: #222;
   margin: 0;
@@ -48,7 +50,7 @@ body {
 }
 
 .jacket-8cm img {
-  width: 115px;
+  width: 110px;
   height: auto;
   display: block;
 }
@@ -56,7 +58,8 @@ body {
 /* 情報ブロック */
 .info-block {
   flex: 1;
-  min-width: 220px;
+  min-width: auto;
+  width: 100%;
 }
 
 .title {
@@ -81,18 +84,18 @@ body {
   font-size: 0.85em;
   color: #777;
   margin-top: 0.5em;
+  letter-spacing: -0.015em;
 }
 
 /* 曲目リスト */
 ul.track {
   list-style: none;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul.track li {
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
   text-align: left;
 }
 
@@ -103,10 +106,11 @@ ul.track li {
 }
 
 .credit, .tie {
-  font-size: 0.8em;
+  font-size: 0.75em;
   color: #888;
   line-height: 1.4;
   margin-top: 0.2em;
+  letter-spacing: -0.02em;
 }
 
 /* 区切り線 */
@@ -140,9 +144,9 @@ ul.track li {
   font-size: 0.95em;
 }
 
-/* スマホ横並び防止 */
+/* スマホ最終調整 */
 @media (max-width: 600px) {
-  .info-flex {
-    flex-direction: column;
+  .jacket img {
+    width: 110px;
   }
 }
