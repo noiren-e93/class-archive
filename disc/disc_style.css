@@ -77,9 +77,11 @@ body {
 
 .track {
   margin-top: 0.8em;
-  padding-left: 1.2em;   /* ← これで左インデントを固定 */
-  list-style: none;      /* ← ポチ（・）を非表示に */
+  padding-left: 1.2em;   /* 意図的に残す：安定表示のため */
+  list-style: none;
+  padding-left: 0;       /* 上書きだけど、これで安定するならOK */
 }
+
 
 
 .track li {
