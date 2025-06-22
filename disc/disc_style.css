@@ -111,10 +111,4 @@ body {
   padding-top: 1em;
   text-align: center;
 }
-img.jacket-8cm {
-  width: 110px;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
+
