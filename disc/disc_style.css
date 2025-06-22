@@ -1,14 +1,15 @@
 
-/* ベース設定 */
+/* ベース設定（0.02emの世界） */
 body {
   font-family: sans-serif;
-  font-size: 1em;
-  letter-spacing: -0.01em;
-  line-height: 1.6;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
   color: #222;
   margin: 0;
   padding: 0;
   background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
 }
 
 .container {
@@ -26,12 +27,10 @@ body {
   text-align: left;
 }
 
-/* エントリブロック */
 .entry {
   margin-bottom: 3em;
 }
 
-/* フレックス配置 */
 .info-flex {
   display: flex;
   flex-wrap: wrap;
@@ -55,11 +54,9 @@ body {
   display: block;
 }
 
-/* 情報ブロック */
 .info-block {
   flex: 1;
-  min-width: auto;
-  width: 100%;
+  min-width: 220px;
 }
 
 .title {
@@ -84,18 +81,17 @@ body {
   font-size: 0.85em;
   color: #777;
   margin-top: 0.5em;
-  letter-spacing: -0.015em;
 }
 
-/* 曲目リスト */
 ul.track {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
 }
 
 ul.track li {
-  margin: 0 0 1em 0;
+  margin-bottom: 1em;
   text-align: left;
 }
 
@@ -106,21 +102,18 @@ ul.track li {
 }
 
 .credit, .tie {
-  font-size: 0.75em;
+  font-size: 0.8em;
   color: #888;
   line-height: 1.4;
   margin-top: 0.2em;
-  letter-spacing: -0.02em;
 }
 
-/* 区切り線 */
 .entry-divider {
   border: none;
   border-top: 1px solid #ccc;
   margin: 2em 0;
 }
 
-/* セクション見出し */
 .sub-title {
   font-size: 1.2em;
   font-weight: bold;
@@ -130,7 +123,6 @@ ul.track li {
   margin: 2em 0 1em;
 }
 
-/* フッターリンク */
 .footer {
   border-top: 1px solid #ccc;
   padding-top: 2em;
@@ -144,9 +136,8 @@ ul.track li {
   font-size: 0.95em;
 }
 
-/* スマホ最終調整 */
 @media (max-width: 600px) {
-  .jacket img {
-    width: 110px;
+  .info-flex {
+    flex-direction: column;
   }
 }
