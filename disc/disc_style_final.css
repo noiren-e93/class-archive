@@ -151,11 +151,13 @@ h2.sub-title {
 }
 
 ul.work-list {
-  margin-top: 0.3em;     /* ← またはここを減らす */
-  margin-bottom: 1em;
-  line-height: 1.6;
-  list-style: none;
+  margin-left: 1.5em;      /* ← 見出しから右にずらす調整値（必要に応じて増減OK） */
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  line-height: 1.5;        /* ← 行間はやや詰め気味で視認性をキープ */
+  font-size: 1em;
+  list-style: none;        /* ← 黒丸を非表示でスッキリ */
 }
 
   .cover-artist {
