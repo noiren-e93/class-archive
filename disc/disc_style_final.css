@@ -73,7 +73,10 @@ body {
 
 .info-block {
   flex-grow: 1;
+  padding-top: 0.2em;
+  padding-bottom: 0.4em;
 }
+
 
 .title {
   font-size: 1.2em;
