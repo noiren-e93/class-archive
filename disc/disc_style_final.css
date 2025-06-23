@@ -153,15 +153,15 @@ h2.sub-title {
 
 
 ul.work-list {
-  margin-left: 1.5em;      /* ← 見出しから右にずらす調整値（必要に応じて増減OK） */
+  margin-left: 1.5em;      /* 親見出しとの階層差を明確に */
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 1em;
-  line-height: 1.5;        /* ← 行間はやや詰め気味で視認性をキープ */
-  font-size: 1em;
-  list-style: none;        /* ← 黒丸を非表示でスッキリ */
+  line-height: 1.5;        /* 行間は詰めすぎず、読みやすく */
+  font-size: 0.95em;       /* やや控えめな文字サイズに調整 */
+  color: #444;             /* 真っ黒ではなく、柔らかめの濃グレーで統一感 */
+  list-style: none;
 }
-
   .cover-artist {
     margin-left: 1em;
      font-size: 0.9em;
