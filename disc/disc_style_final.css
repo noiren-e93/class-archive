@@ -125,11 +125,29 @@ ul.track li {
 }
 
 .footer-link {
-  font-size: 1em;
+  font-size: 0.95em;
   margin: 2em 0 0 0;
-  padding-bottom: 6em;
-  text-align: left;
+  padding-bottom: 6em;  /* スマホベゼル対策 */
+  text-align: center;
+  color: #555;
 }
+
+.footer-link a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+/* PCでは余白を減らす */
+@media screen and (min-width: 768px) {
+  .footer-link {
+    padding-bottom: 2em;
+  }
+}
+
 
 h2.sub-title {
   border-left: 4px solid #ccc;           /* グレーを薄く＋幅を控えめに */
