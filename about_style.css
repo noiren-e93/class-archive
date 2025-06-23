@@ -1,0 +1,170 @@
+/* === About Page – Calm, Readable Version === */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 14.5px;
+p { margin-bottom: 1.2em; }
+  line-height: 1.85;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #444;
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2.2em 1.5em;
+  background: #fcfcfc;
+  box-shadow: none;
+}
+h1, h2 {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+.unit-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #999;
+  display: inline-block;
+  padding-bottom: 0.2em;
+}
+.quote-block {
+  font-style: normal;
+  text-align: left;
+  font-size: 1em;
+  color: #555;
+  margin: 1.8em 0;
+  line-height: 1.85;
+  font-style: italic;
+  color: #666;
+  margin: 2em 0 1.5em;
+  text-align: center;
+}
+.note-block {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 2em;
+  text-align: center;
+}
+.member-profile table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 2em 0;
+}
+.member-profile th {
+  font-size: 1.1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #bbb;
+}
+.member-profile td {
+  padding: 0.6em 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+.member-profile .label {
+  font-weight: bold;
+  background-color: #f5f5f5;
+  width: 34%;
+}
+.member-profile .left, .member-profile .right {
+  width: 33%;
+}
+.profile-biography {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  margin-top: 3em;
+}
+.bio-block {
+  flex: 1 1 48%;
+  font-size: 1em;
+  line-height: 1.85;
+  background-color: #fdfdfd;
+  padding: 1.6em;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.03);
+}
+.bio-block h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
+  color: #444;
+}
+.section-title {
+  margin-bottom: 1.2em;
+  margin-top: 3em;
+  font-size: 1.3em;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 0.3em;
+  text-align: center;
+  color: #444;
+}
+.qa-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+}
+.qa-table th,
+.qa-table td {
+    padding: 0.7em;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+
+  padding: 0.7em 0.5em;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.96em;
+}
+.qa-table th.label,
+.qa-table td.label {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  width: 34%;
+}
+.qa-table .left,
+.qa-table .right {
+  width: 33%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  .profile-biography {
+    flex-direction: column;
+  }
+  .qa-table thead {
+    display: none;
+  }
+  .qa-table tr {
+    display: block;
+    margin-bottom: 1.2em;
+    padding: 1em;
+    background: #fefefe;
+    box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    border-radius: 6px;
+
+    display: block;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+  }
+  .qa-table td {
+    padding: 0.7em;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+
+    display: block;
+    text-align: left;
+    padding: 0.5em;
+  }
+  .qa-table td.label {
+    background: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+  }
+}
