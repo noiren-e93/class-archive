@@ -29,11 +29,10 @@ body {
 .info-flex {
   display: flex;
   gap: 1.5em;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;           /* ← wrapをnowrapに必ず！ */
   align-items: flex-start;
-  justify-content: center;   /* ← 追加 */
+  justify-content: flex-start; /* ← center→flex-startに */
 }
-
 
 .jacket {
   flex-shrink: 0;
