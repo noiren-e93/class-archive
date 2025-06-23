@@ -31,7 +31,9 @@ body {
   gap: 1.5em;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;   /* ← 追加 */
 }
+
 
 .jacket {
   flex-shrink: 0;
