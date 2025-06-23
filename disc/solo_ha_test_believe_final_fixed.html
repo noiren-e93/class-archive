@@ -30,12 +30,12 @@
       margin-bottom: 2em;
     }
 
-    .info-flex {
-      display: flex;
-      gap: 1.5em;
-      flex-wrap: nowrap;
-      align-items: flex-start;
-    }
+.info-flex {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap; /* ← ここ修正 */
+  align-items: flex-start;
+}
 
     .jacket img {
       width: 125px;
@@ -134,7 +134,7 @@
     <div class="credit">作詞：池永 康記　作曲：日浦 孝則　編曲：杉山TOM</div>
   </li>
   <li>
-    <strong>05. NOTHING</strong>
+<ul class="track"><ul></ul></ul>    <strong>05. NOTHING</strong>
     <div class="credit">作詞：岩里 祐穂　作曲：中崎 英也　編曲：杉山TOM</div>
   </li>
   <li>
@@ -208,6 +208,7 @@
     <div class="credit">作詞：池永 康記　作曲：日浦 孝則　編曲：梁 邦彦</div>
   </li>
 </ul>
+
 </div>
 </div>
 <hr class="entry-divider"/>
