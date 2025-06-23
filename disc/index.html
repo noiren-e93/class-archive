@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>class ディスコグラフィ｜この声が消えても、ここにいる</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
+      background-color: #fefefe;
+      color: #222;
+      line-height: 1.7;
+      font-size: 16px;
+      margin: 0;
+      padding: 1em;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      font-weight: bold;
+      border-bottom: 2px solid #aaa;
+      padding-bottom: 0.3em;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .category {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    .category a {
+      font-weight: 600;
+      font-size: 1.1em;
+      color: #222;
+      display: block;
+      margin-bottom: 0.3em;
+    }
+
+    .subcategory {
+      padding-left: 1.5em;
+      font-size: 0.95em;
+      color: #666;
+      line-height: 1.6em;
+      position: relative;
+      margin-top: 0.2em;
+    }
+
+    .subcategory::before {
+      content: "\2022";
+      position: absolute;
+      left: 0.5em;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 15px;
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>ディスコグラフィ一覧</h1>
+
+  <div class="category">
+    <a href="single.html">class シングル</a>
+    <div class="subcategory">オリジナル</div>
+    <div class="subcategory">ユニット</div>
+  </div>
+
+  <div class="category">
+    <a href="album.html">class アルバム</a>
+    <div class="subcategory">オリジナル</div>
+    <div class="subcategory">ベスト</div>
+    <div class="subcategory">その他</div>
+  </div>
+
+  <div class="category">
+    <a href="budget.html">class ベスト・セレクション</a>
+  </div>
+
+  <div class="category">
+    <a href="solo_hs.html">日浦孝則 シングル</a>
+  </div>
+
+  <div class="category">
+    <a href="solo_ha.html">日浦孝則 アルバム</a>
+    <div class="subcategory">オリジナル</div>
+    <div class="subcategory">ベスト</div>
+    <div class="subcategory">ライブ</div>
+  </div>
+
+  <div class="category">
+    <a href="solo_t.html">津久井克行 アルバム</a>
+  </div>
+
+  <div class="category">
+    <a href="omnibus.html">オムニバス・カバー曲</a>
+    <div class="subcategory">class</div>
+    <div class="subcategory">日浦孝則</div>
+  </div>
+
+  <div class="footer" style="margin-top: 2em;">
+    <a href="../index.html">トップページへ戻る</a>
+  </div>
+</body>
+</html>
