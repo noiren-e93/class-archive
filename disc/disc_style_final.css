@@ -29,26 +29,45 @@ body {
 .info-flex {
   display: flex;
   gap: 1.5em;
-  flex-wrap: nowrap;           /* ← wrapをnowrapに必ず！ */
+  flex-wrap: nowrap;           /* wrapは必ずnowrap */
   align-items: flex-start;
-  justify-content: flex-start; /* ← center→flex-startに */
+  justify-content: flex-start; /* center→flex-startに修正 */
 }
 
-.jacket {
+.jacket,
+.jacket-8cm {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
 }
 
-/* 初期：PC用（150px） */
 .jacket img {
   width: 150px;
   height: auto;
-  display: block;
 }
 
-/* スマホ表示時（〜767px）：125pxに縮小 */
+.jacket-8cm img {
+  width: 110px; /* 8cmは幅110pxに設定 */
+  height: auto;
+}
+
 @media screen and (max-width: 767px) {
-  .jacket img {
+  .jacket,
+  .jacket-8cm {
     width: 125px;
+    height: 125px;
+  }
+  .jacket img,
+  .jacket-8cm img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover; /* 画像の比率崩れ防止 */
   }
 }
 
@@ -97,12 +116,14 @@ ul.track li {
 }
 
 .entry-divider {
+  margin: 2em 0;
   border: none;
   border-top: 1px solid #ccc;
-  margin: 2em 0;
 }
 
 .footer-link {
+  font-size: 1em;
+  margin: 2em 0 0 0;
   padding-bottom: 6em;
   text-align: left;
 }
@@ -129,17 +150,6 @@ h2.sub-title {
   color: #2a2a2a;
 }
 
-h2.sub-title {
-  border-left: 6px solid #aaa;
-  background-color: #f5f5f5;
-  padding: 0.4em 0.6em;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #555;
-}
-
 ul.work-list {
   margin-left: 1.5em;
   margin-bottom: 1.2em;
@@ -159,16 +169,4 @@ ul.work-list {
   font-size: 0.9em;
   color: #888;
   margin-top: 2em;
-}
-
-.footer-link {
-  font-size: 1em;
-  margin: 2em 0 0 0;
-  text-align: left;
-}
-
-hr.entry-divider {
-  margin: 2em 0 2em 0;
-  border: none;
-  border-bottom: 1px solid #ccc;
 }
