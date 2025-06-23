@@ -1,5 +1,5 @@
+/* disc_style_final.css 修正版：スマホとPCで画像幅切替＋構造調整済 */
 
-/* disc_style_final.css 修正版 */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -28,19 +28,27 @@ body {
 
 .info-flex {
   display: flex;
-  gap: 1em;
-  flex-wrap: nowrap;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .jacket {
-  width: 110px;
   flex-shrink: 0;
 }
 
+/* 初期：PC用（150px） */
 .jacket img {
-  width: 100%;
+  width: 150px;
   height: auto;
   display: block;
+}
+
+/* スマホ表示時（〜767px）：125pxに縮小 */
+@media screen and (max-width: 767px) {
+  .jacket img {
+    width: 125px;
+  }
 }
 
 .info-block {
@@ -66,14 +74,16 @@ body {
   line-height: 1.4;
 }
 
-.track {
+ul.track {
+  list-style: none;
   margin-top: 1em;
-  padding-left: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
 }
 
-.track-title {
-  font-weight: bold;
-  margin-bottom: 0.2em;
+ul.track li {
+  margin-bottom: 1.2em;
+  text-align: left;
 }
 
 .credit,
@@ -89,4 +99,9 @@ body {
   border: none;
   border-top: 1px solid #ccc;
   margin: 2em 0;
+}
+
+.footer-link {
+  padding-bottom: 6em;
+  text-align: left;
 }
