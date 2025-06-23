@@ -1,7 +1,8 @@
-/* === About Page Specific Styles === */
+/* === About Page Optimized CSS === */
 body {
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  line-height: 1.7;
+  line-height: 1.75;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -69,9 +70,9 @@ h1, h2 {
 .bio-block {
   flex: 1 1 48%;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.7;
   background-color: #fafafa;
-  padding: 1.5em;
+  padding: 1.7em;
   border-radius: 6px;
   box-shadow: 0 0 6px rgba(0,0,0,0.05);
 }
@@ -110,6 +111,9 @@ h1, h2 {
   width: 33%;
 }
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 14.5px;
+  }
   .profile-biography {
     flex-direction: column;
   }
