@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>class アバウト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2em;
+      background: #fff;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #222;
+    }
+    .unit-title {
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #666;
+      display: inline-block;
+      padding-bottom: 0.2em;
+    }
+    .quote-block {
+      font-style: italic;
+      color: #555;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    .note-block {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 2em;
+      text-align: center;
+    }
+
+    .member-profile table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      margin: 2em 0;
+    }
+    .member-profile th {
+      font-size: 1.2em;
+      padding-bottom: 0.5em;
+      border-bottom: 2px solid #666;
+    }
+    .member-profile td {
+      padding: 0.6em 0.5em;
+      border-bottom: 1px solid #ccc;
+    }
+    .member-profile .label {
+      font-weight: bold;
+      background-color: #f0f0f0;
+      width: 34%;
+    }
+    .member-profile .left, .member-profile .right {
+      width: 33%;
+    }
+
+    .profile-biography {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2em;
+      margin-top: 3em;
+    }
+    .bio-block {
+      flex: 1 1 48%;
+      font-size: 1em;
+      line-height: 1.6;
+      background-color: #fafafa;
+      padding: 1.5em;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+    .bio-block h2 {
+      margin-top: 0;
+      font-size: 1.3em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+
+    .section-title {
+      margin-top: 3em;
+      font-size: 1.4em;
+      border-bottom: 2px solid #666;
+      padding-bottom: 0.3em;
+      text-align: center;
+    }
+    .qa-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5em;
+    }
+    .qa-table th,
+    .qa-table td {
+      padding: 0.8em 0.5em;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    .qa-table th.label,
+    .qa-table td.label {
+      background-color: #f0f0f0;
+      font-weight: bold;
+      width: 34%;
+    }
+    .qa-table .left,
+    .qa-table .right {
+      width: 33%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .profile-biography {
+        flex-direction: column;
+      }
+      .qa-table thead {
+        display: none;
+      }
+      .qa-table tr {
+        display: block;
+        margin-bottom: 1em;
+        border-bottom: 2px solid #ccc;
+      }
+      .qa-table td {
+        display: block;
+        text-align: left;
+        padding: 0.5em;
+      }
+      .qa-table td.label {
+        background: #f0f0f0;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1 class="unit-title">classとは</h1>
+  <p>一方がハモリ、一方がメインという形式のデュオではなく、<br>双方がメインボーカルを取れる本格的な日本にはないスタイルのデュオを目指し、<br>1992年9月、プロデューサーの発案により日浦孝則と津久井克行が引き合わされて誕生した。</p>
+  <p>出逢った翌日からデモ制作を開始し、一緒に歌った瞬間、<br>「こんなコーラスは初めて」と互いに驚いたという逸話がある。</p>
+  <div class="quote-block">『津久井の声は、自分の多重録音やバンドのメンバーよりもハモリやすくて驚いた』（日浦）<br>『今どっちがメロディで、どっちがハモリか分からなくなる“トリックハーモニー”は武器になると思った』（津久井）</div>
+  <p>以降、ミリオンヒット「夏の日の1993」を含む数々の楽曲を発表し、<br>新しいタイプのデュオとしての存在を確立していく。</p>
+  <p class="note-block">※なお、ユニット名「class」はラテン語「CRAS」（明日、始まり）に由来。<br>「今日より明日がいいものになるように」という思いと、<br>中高時代のクラスメイトのようにスタッフ・ファンと一緒に歩むという願いが込められている。</p>
+
+  <div class="member-profile">
+    <table class="profile-table">
+      <thead>
+        <tr>
+          <th class="left-name">津久井克行</th>
+          <th></th>
+          <th class="right-name">日浦孝則</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="left">左</td><td class="label">立ち位置</td><td class="right">右</td></tr>
+        <tr><td class="left">1959年10月13日</td><td class="label">誕生日</td><td class="right">1960年1月17日</td></tr>
+        <tr><td class="left">群馬県桐生市</td><td class="label">出身地</td><td class="right">広島県</td></tr>
+        <tr><td class="left">AB型</td><td class="label">血液型</td><td class="right">B型</td></tr>
+        <tr><td class="left">天秤座</td><td class="label">星座</td><td class="right">山羊座</td></tr>
+        <tr><td class="left">2009年10月2日 永眠（享年49歳）</td><td class="label">備考</td><td class="right">―</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="profile-biography">
+    <div class="bio-block">
+      <h2>津久井克行</h2>
+      <p>群馬県桐生市出身。織物業の街で、繊維素材を扱う家に生まれる。剣道に打ち込んだ学生時代、音楽室から流れたビートルズに心を奪われたのが音楽への入口だった。ギターを独学し、ディープ・パープルやジェフ・ベックに憧れ、バイトでレスポールを手に入れた。</p>
+      <p>次第にソウルやAORに傾倒。地元でのバンド活動を経て25歳で上京。横浜の米軍キャンプやライブハウスでR&Bカバーを歌う中、プロデューサーに見い出されclass結成へ。ファッションセンスに優れ、マイペースで温かい人柄が多くの人に愛された。</p>
+    </div>
+    <div class="bio-block">
+      <h2>日浦孝則</h2>
+      <p>広島県・瀬戸内海の小島に生まれる。人口500人、公共施設は小学校だけという自然豊かな環境で育ち、少年時代はミカン山でラジカセから流れる洋楽を聞いて過ごす。中学でギターを手にし、変声期の声の変化を経て、ニューミュージックに導かれた。</p>
+      <p>高校ではロック、大学ではフュージョンに触れ、プロギタリストを志して関西から上京。テイチクより一度ソロデビューを果たすも、再びアマチュアに戻りながらも粘り強く活動。class結成後は類まれな声と表現力で中心的な存在として活躍を続ける。</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Q&A（classmate会報より）</h2>
+  <table class="qa-table">
+    <thead>
+      <tr><th class="left">津久井克行</th><th class="label">カテゴリ</th><th class="right">日浦孝則</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="left">脱いだ服をたたむ几帳面ぶり</td><td class="label">くせ</td><td class="right">太陽を見るとくしゃみ</td></tr>
+      <tr><td class="left">明るい子が好き</td><td class="label">タイプ</td><td class="right">キャピキャピした子が良い</td></tr>
+      <tr><td class="left">群馬県・桐生市</td><td class="label">出身</td><td class="right">広島県・瀬戸内の島</td></tr>
+      <tr><td class="left">絵画を描く</td><td class="label">趣味</td><td class="right">映画、Mac、ワイン</td></tr>
+      <tr><td class="left">ジャックダニエル</td><td class="label">好きなお酒</td><td class="right">上善如水</td></tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
