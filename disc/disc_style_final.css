@@ -151,13 +151,12 @@ h2.sub-title {
 }
 
 ul.work-list {
-  list-style: disc outside;
-  margin-left: 1.5em;
+  list-style: none;
+  margin-left: 0;
   padding-left: 0;
   margin-bottom: 1em;
   line-height: 1.6;
 }
-
 
   .cover-artist {
     margin-left: 1em;
