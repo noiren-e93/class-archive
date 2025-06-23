@@ -61,12 +61,14 @@ body {
   .jacket,
   .jacket-8cm {
     width: 125px;
-    
+    height: auto;
+object-fit: contain;
+ display: block;
   }
   .jacket img,
   .jacket-8cm img {
     width: 125px;
-    height: 125px;
+    height: auto;
     object-fit: cover; /* 画像の比率崩れ防止 */
   }
 }
