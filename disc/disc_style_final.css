@@ -127,8 +127,8 @@ ul.track li {
 .footer-link {
   font-size: 0.95em;
   margin: 2em 0 0 0;
-  padding-bottom: 6em;  /* スマホベゼル対策 */
-  text-align: center;
+  padding-bottom: 6em;
+  text-align: left;        /* ← 中央から左寄せに変更 */
   color: #555;
 }
 
@@ -141,13 +141,11 @@ ul.track li {
   text-decoration: underline;
 }
 
-/* PCでは余白を減らす */
 @media screen and (min-width: 768px) {
   .footer-link {
     padding-bottom: 2em;
   }
 }
-
 
 h2.sub-title {
   border-left: 4px solid #ccc;           /* グレーを薄く＋幅を控えめに */
