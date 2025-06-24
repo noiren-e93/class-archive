@@ -143,3 +143,25 @@ strong {
   margin-top: 2em;
   text-align: right;
 }
+.footer-link {
+  font-size: 0.95em;
+  margin: 2em 0 0 0;
+  padding-bottom: 6em; /* スマホ下部ベゼル対策 */
+  text-align: left;
+  color: #555;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-link {
+    padding-bottom: 2em;
+  }
+}
