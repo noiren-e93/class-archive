@@ -153,3 +153,17 @@
   line-height: 1.5;
   color: #444;
 }
+@media screen and (max-width: 767px) {
+  .profile-entry {
+    flex-direction: column; /* 横並び→縦並びに */
+    align-items: center;
+  }
+  .profile-image img {
+    width: 100%;
+    max-width: 150px; /* 画面幅に応じて縮小 */
+  }
+  .profile-info {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
