@@ -1,52 +1,14 @@
-/* ==============================================
-   about_style.css（再構築ベースCSS）
-   用途：プロフィールページ／Q&A表示用（スマホ最適化）
-   ============================================== */
-
-/* ▼ 全体レイアウトと共通設定 ▼ */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-  padding: 2em;
-  background-color: #fff;
-  color: #222;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1em;
-}
-
-h1, h2 {
-  color: #111;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-
-/* ▼ 導入文ブロック（引用） ▼ */
-.quote-block {
-  margin-bottom: 2em;
-  padding-left: 1em;
-  border-left: 4px solid #ccc;
-  color: #555;
-}
-
-/* ▼ プロフィール横並び構成 ▼ */
+/* ▼ プロフィール画像＋表の横並び構成（レスポンシブ対応） ▼ */
 .profile-entry {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   margin-bottom: 2em;
-  align-items: flex-start;
 }
 
-.profile-image img {
-  width: 150px;
-  height: auto;
-  border-radius: 4px;
+.profile-image {
+  flex: 0 0 160px;
+  max-width: 160px;
 }
 
 .profile-info {
@@ -57,72 +19,65 @@ h1, h2 {
 .profile-info table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.95em;
 }
 
 .profile-info th {
   width: 5em;
+  padding: 0.2em 0.4em;
   text-align: left;
-  padding: 0.3em 0.5em;
   font-weight: bold;
   color: #333;
 }
 
 .profile-info td {
-  padding: 0.3em 0.5em;
+  padding: 0.2em 0.4em;
   color: #333;
 }
 
-/* ▼ Q&A セクション ▼ */
-.qa-section {
-  margin-top: 3em;
-}
-
-.qa-divider {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 1.5em 0;
-}
-
-.qa-block {
-  margin-bottom: 1.5em;
-}
-
-.qa-label {
-  font-weight: bold;
-  color: #111;
-  margin-bottom: 0.3em;
-}
-
-.qa-answer {
-  padding-left: 1em;
-}
-
-.qa-line {
-  margin-bottom: 0.4em;
-}
-
-.qa-person.hiura {
-  color: #004080;
-  font-weight: bold;
-  margin-right: 0.3em;
-}
-
-.qa-person.tsukui {
-  color: #800000;
-  font-weight: bold;
-  margin-right: 0.3em;
-}
-
-/* ▼ レスポンシブ対応 ▼ */
 @media (max-width: 600px) {
   .profile-entry {
     flex-direction: column;
   }
+
   .profile-image {
     margin-bottom: 1em;
   }
-  .container {
-    padding: 0 1em;
-  }
+}
+
+/* --- セクション区切り調整 --- */
+.container > div {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+}
+
+/* --- プロフィール名前見出し --- */
+.profile-name {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+
+/* --- Q&A調整 --- */
+.qa-label {
+  font-weight: normal;
+  color: #444;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+.qa-person.hiura {
+  color: #c33;
+  font-weight: bold;
+}
+
+.qa-person.tsukui {
+  color: #339;
+  font-weight: bold;
+}
+
+.qa-block {
+  margin-bottom: 1.5em;
 }
