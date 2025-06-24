@@ -351,8 +351,7 @@ strong {
 .timeline-date {
   min-width: 6em;
   text-align: right;
-  font-weight: bold;
-  color: #444;
+   color: #444;
   padding-right: 1em;
 }
 .timeline-content {
