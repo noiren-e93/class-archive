@@ -1,27 +1,27 @@
-/* disc_style_final.css 修正版：スマホとPCで画像幅切替＋構造調整済＋視認性・調和調整済 */
-
+/* 基本ボディ設定 */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
- color: #444; /* → #555 または #4a4a4a 程度に変更 */
-  font-size: 0.93em;         /* 少し控えめで読みやすく */
-   line-height: 1.75;
-  }
+  color: #444; /* 少し濃いグレー寄り */
+  font-size: 0.93em; /* 控えめで読みやすいサイズ */
+  line-height: 1.75; /* 行間広め */
+}
 
+/* 全体コンテナ */
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
-
 @media screen and (min-width: 768px) {
   .container {
-    padding: 40px;
+    padding: 40px; /* PC時は余白増やす */
   }
 }
 
+/* ページタイトル */
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -30,24 +30,27 @@ body {
   margin-bottom: 1em;
 }
 
+/* 作品エントリーブロック */
 .entry {
   margin-bottom: 2.2em;
 }
 
+/* 画像＋情報横並び */
 .info-flex {
   display: flex;
   gap: 1.5em;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* wrap禁止 */
   align-items: flex-start;
   justify-content: flex-start;
 }
 
+/* ジャケット画像枠装飾 */
 .jacket,
 .jacket-8cm {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  flex-shrink: 0;
+  flex-shrink: 0; /* 画像縮小禁止 */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -55,16 +58,17 @@ body {
   background: #f9f9f9;
 }
 
+/* 画像サイズ（PC時） */
 .jacket img {
   width: 150px;
   height: auto;
 }
-
 .jacket-8cm img {
   width: 110px;
   height: auto;
 }
 
+/* スマホ時サイズ調整 */
 @media screen and (max-width: 767px) {
   .jacket,
   .jacket-8cm {
@@ -81,24 +85,28 @@ body {
   }
 }
 
+/* 情報ブロック */
 .info-block {
   flex-grow: 1;
   padding-top: 0.2em;
   padding-bottom: 0.4em;
 }
 
+/* タイトル */
 .title {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 0.3em;
 }
 
+/* メタ情報 */
 .meta-top,
 .meta {
   font-size: 0.9em;
   margin-bottom: 0.2em;
 }
 
+/* ノート */
 .note {
   font-size: 0.93em;
   color: #888;
@@ -106,18 +114,19 @@ body {
   line-height: 1.4;
 }
 
+/* 曲目リスト */
 ul.track {
   list-style: none;
   margin-top: 1em;
   margin-bottom: 1em;
   padding-left: 0;
 }
-
 ul.track li {
   margin-bottom: 1.2em;
   text-align: left;
 }
 
+/* クレジット・タイアップ・コメント */
 .credit,
 .tie,
 .comment {
@@ -127,12 +136,14 @@ ul.track li {
   line-height: 1.4;
 }
 
+/* 区切り線 */
 .entry-divider {
   margin: 2em 0;
   border: none;
   border-top: 1px solid #ccc;
 }
 
+/* フッターリンク */
 .footer-link {
   font-size: 0.95em;
   margin: 2em 0 0 0;
@@ -140,22 +151,20 @@ ul.track li {
   text-align: left;
   color: #555;
 }
-
 .footer-link a {
   text-decoration: none;
   color: #555;
 }
-
 .footer-link a:hover {
   text-decoration: underline;
 }
-
 @media screen and (min-width: 768px) {
   .footer-link {
     padding-bottom: 2em;
   }
 }
 
+/* 小見出しh2 */
 h2.sub-title {
   border-left: 4px solid #ccc;
   background-color: #f5f5f5;
@@ -167,6 +176,7 @@ h2.sub-title {
   color: #444;
 }
 
+/* 色付きサブタイトル */
 .sub-colored {
   background-color: #f7f7f7;
   border-left: 4px solid #aaa;
@@ -178,6 +188,7 @@ h2.sub-title {
   color: #444;
 }
 
+/* オムニバス用リスト */
 ul.work-list {
   margin-left: 1.5em;
   padding-left: 0;
@@ -189,6 +200,7 @@ ul.work-list {
   list-style: none;
 }
 
+/* カバーアーティスト名 */
 .cover-artist {
   margin-left: 1em;
   font-size: 0.9em;
@@ -201,94 +213,86 @@ ul.work-list {
   color: #666;
 }
 
+/* Q&Aセクション関連（必要な場合） */
 .qa-section {
   margin-top: 3em;
 }
-
 .qa-divider {
   border: none;
   border-top: 1px solid #ccc;
   margin: 1.5em 0;
 }
-
 .qa-block {
   margin-bottom: 1.8em;
 }
-
 .qa-label {
   font-weight: normal;
   font-size: 1em;
   color: #444;
   margin-bottom: 0.3em;
 }
-
 .qa-answer {
   padding-left: 1em;
 }
-
 .qa-line {
   margin: 0.3em 0;
-line-height: 1.7;
+  line-height: 1.7;
   font-size: 0.93em;
 }
-
 .qa-person {
   font-weight: 600;
   margin-right: 0.5em;
 }
-
 .qa-person.hiura {
   color: #c44;
 }
-
 .qa-person.tsukui {
   color: #339;
 }
-
 strong {
   font-weight: 600;
 }
+
+/* セクション */
 .section {
   margin-top: 2em;
   margin-bottom: 1.5em;
 }
-
 .section-title {
   font-size: 1.05em;
   font-weight: 500;
   color: #333;
   margin-bottom: 0.6em;
 }
+
+/* Q&A個別ブロック */
 .qa-block {
   margin-bottom: 1.2em;
   padding-bottom: 0.6em;
   border-bottom: 1px dotted #ccc;
 }
-
 .qa-label {
   font-size: 1em;
   font-weight: bold;
   color: #444;
   margin-bottom: 0.3em;
 }
-
 .qa-answer {
   margin-left: 0.5em;
 }
-
 .qa-line {
   margin: 0.2em 0;
 }
-
 .qa-person.hiura {
   color: #c44;
   font-weight: normal;
 }
-
 .qa-person.tsukui {
   color: #339;
   font-weight: normal;
 }
+
+/* フッターナビ */
 .footer-nav {
   margin-top: 3em;
   padding: 1em 0;
@@ -297,26 +301,24 @@ strong {
   text-align: center;
   color: #555;
 }
-
 .footer-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .footer-nav li {
   display: inline-block;
   margin: 0 1em;
 }
-
 .footer-nav a {
   color: #555;
   text-decoration: none;
 }
-
 .footer-nav a:hover {
   text-decoration: underline;
 }
+
+/* 卒業ページ用 */
 .graduation .page-title {
   font-size: 1.6em;
   font-weight: 600;
@@ -324,7 +326,6 @@ strong {
   text-align: left;
   margin-bottom: 1.2em;
 }
-
 .graduation .section-title {
   font-size: 1.05em;
   font-weight: 500;
@@ -332,7 +333,6 @@ strong {
   margin-top: 2.2em;
   margin-bottom: 0.6em;
 }
-
 .graduation-container {
   color: #444;
   line-height: 1.85;
@@ -340,13 +340,14 @@ strong {
   font-weight: 400;
   font-size: 0.95em;
 }
+
+/* タイムラインアイテム */
 .timeline-item {
   display: flex;
   align-items: flex-start;
   margin-bottom: 0.8em;
   line-height: 1.6;
 }
-
 .timeline-date {
   min-width: 6em;
   text-align: right;
@@ -354,7 +355,6 @@ strong {
   color: #444;
   padding-right: 1em;
 }
-
 .timeline-content {
   flex: 1;
   text-align: left;
