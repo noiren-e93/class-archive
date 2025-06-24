@@ -317,3 +317,34 @@ strong {
 .footer-nav a:hover {
   text-decoration: underline;
 }
+ /* graduation.html 専用スタイル */
+.graduation-container {
+  max-width: 700px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.graduation .page-title {
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  color: #444;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
+}
+
+.graduation p {
+  margin-bottom: 1.5em;
+  font-size: 0.95em;
+  line-height: 1.75;
+  color: #333;
+}
+
+.graduation .final-line {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 2em;
+  text-align: right;
+}
