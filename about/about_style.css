@@ -358,4 +358,8 @@ padding-right: 0.5em; /* ← 調整幅を少し狭くする */
   flex: 1;
   text-align: left;
   color: #444;
+  .timeline-content {
+  text-indent: -0.2em;
+}
+
 }
