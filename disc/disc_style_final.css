@@ -157,7 +157,7 @@ h2.sub-title {
   background-color: #f5f5f5;             /* やや明るいグレー背景で柔らかく */
   padding: 0.3em 0.6em;                  /* 上下の詰め感を強調 */
   margin-top: 1.2em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.8em;
   font-size: 1.05em;                     /* 少し控えめなサイズに調整 */
   font-weight: 500;                      /* 太字すぎない中間の強調（やや優しい） */
   color: #444;                           /* 黒に近すぎず、目に優しいグレー */
