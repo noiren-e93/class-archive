@@ -181,3 +181,46 @@ h1, h2 {
   background-color: #ffeaea;
   color: #660000;
 }
+.profile-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.profile-image {
+  flex: 0 0 160px;
+  max-width: 160px;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profile-info table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.profile-info th {
+  text-align: left;
+  font-weight: bold;
+  padding: 0.2em 0.4em;
+  color: #333;
+  width: 5em;
+}
+
+.profile-info td {
+  padding: 0.2em 0.4em;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .profile-entry {
+    flex-direction: column;
+  }
+  .profile-image {
+    margin-bottom: 1em;
+  }
+}
