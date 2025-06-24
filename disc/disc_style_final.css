@@ -58,20 +58,31 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .jacket,
   .jacket-8cm {
     width: 125px;
     height: auto;
-object-fit: contain;
- display: block;
+    object-fit: contain;
+    display: block;
   }
-  .jacket img,
   .jacket-8cm img {
     width: 125px;
     height: auto;
-    object-fit: cover; /* 画像の比率崩れ防止 */
+    object-fit: cover;
+  }
+
+  .jacket {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .jacket img {
+    width: 140px;
+    height: auto;
+    object-fit: cover;
   }
 }
+
 
 .info-block {
   flex-grow: 1;
