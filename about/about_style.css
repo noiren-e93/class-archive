@@ -5,10 +5,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  color: #000;
+ color: #444; /* → #555 または #4a4a4a 程度に変更 */
   font-size: 0.93em;         /* 少し控えめで読みやすく */
-  line-height: 1.7;
-}
+   line-height: 1.75;
+  }
 
 .container {
   max-width: 800px;
@@ -228,7 +228,7 @@ ul.work-list {
 
 .qa-line {
   margin: 0.3em 0;
-  line-height: 1.6;
+line-height: 1.7;
   font-size: 0.93em;
 }
 
