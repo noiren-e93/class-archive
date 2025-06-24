@@ -244,3 +244,6 @@ ul.work-list {
 .qa-person.tsukui {
   color: #339;  /* 津久井：落ち着いた青系 */
 }
+strong {
+  font-weight: 600;
+}
