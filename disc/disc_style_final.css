@@ -59,7 +59,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .jacket img {
-    width: 125px;
+    width: 120px;
     height: auto;
     object-fit: cover;
     display: block;
@@ -94,7 +94,7 @@ body {
   font-size: 0.9em;
   color: #555;
   margin-top: 0.5em;
-  line-height: 1.4;
+  line-height: 1.1;
 }
 
 ul.track {
