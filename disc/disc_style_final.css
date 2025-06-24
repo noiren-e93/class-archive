@@ -53,33 +53,22 @@ body {
 }
 
 .jacket-8cm img {
-  width: 110px; /* 8cmは幅110pxに設定 */
+  width: 110px;
   height: auto;
 }
 
 @media screen and (max-width: 767px) {
-  .jacket-8cm {
-    width: 125px;
+  .jacket img {
+    width: 140px;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
   }
   .jacket-8cm img {
     width: 125px;
     height: auto;
     object-fit: cover;
-  }
-
-  .jacket {
-    width: 140px;
-    height: auto;
-    object-fit: contain;
     display: block;
-  }
-  .jacket img {
-    width: 140px;
-    height: auto;
-    object-fit: cover;
   }
 }
 
