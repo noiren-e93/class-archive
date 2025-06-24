@@ -71,12 +71,12 @@ body {
     display: block;
   }
 }
+
 .info-block {
   flex-grow: 1;
   padding-top: 0.2em;
   padding-bottom: 0.4em;
 }
-
 
 .title {
   font-size: 1.2em;
@@ -91,8 +91,8 @@ body {
 }
 
 .note {
-  font-size: 0.8em;
-  color: #666;
+  font-size: 0.9em;
+  color: #555;
   margin-top: 0.5em;
   line-height: 1.4;
 }
@@ -112,15 +112,15 @@ ul.track li {
 .credit,
 .tie,
 .comment {
-  font-size: 0.85em;
+  font-size: 0.8em;
   color: #777;
   margin-bottom: 0.4em;
   line-height: 1.4;
 }
 .note {
   font-size: 0.9em;
-  color: #777;
-  margin-top: 2em;
+  color: #666;
+  margin-top: 1em;
 }
 
 .entry-divider {
@@ -133,8 +133,8 @@ ul.track li {
   font-size: 0.95em;
   margin: 2em 0 0 0;
   padding-bottom: 6em;
-  text-align: left;        /* ← 中央から左寄せに変更 */
-  color: #555;
+  text-align: left;        /* ← 左寄せ右上に配置 */
+  color: #444;
 }
 
 .footer-link a {
@@ -162,7 +162,6 @@ h2.sub-title {
   font-weight: 500;                      /* 太字すぎない中間の強調（やや優しい） */
   color: #444;                           /* 黒に近すぎず、目に優しいグレー */
 }
-
 
 .sub-colored {
   background-color: #f7f7f7;        /* もう少し明るめのグレー */
@@ -196,4 +195,3 @@ ul.work-list {
     margin-bottom: 0.3em;
      color: #666;
   }
-
