@@ -248,3 +248,14 @@ ul.work-list {
 strong {
   font-weight: 600;
 }
+.section {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+
+.section-title {
+  font-size: 1.05em;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.6em;
+}
