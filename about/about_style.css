@@ -259,3 +259,33 @@ strong {
   color: #333;
   margin-bottom: 0.6em;
 }
+.qa-block {
+  margin-bottom: 1.2em;
+  padding-bottom: 0.6em;
+  border-bottom: 1px dotted #ccc;
+}
+
+.qa-label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 0.3em;
+}
+
+.qa-answer {
+  margin-left: 0.5em;
+}
+
+.qa-line {
+  margin: 0.2em 0;
+}
+
+.qa-person.hiura {
+  color: #c44;
+  font-weight: normal;
+}
+
+.qa-person.tsukui {
+  color: #339;
+  font-weight: normal;
+}
