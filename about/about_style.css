@@ -81,3 +81,32 @@
 .qa-block {
   margin-bottom: 1.5em;
 }
+
+/* --- プロフィール左右構造調整 --- */
+.profile-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.profile-entry.reverse {
+  flex-direction: row-reverse;
+}
+
+.profile-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.profile-image {
+  flex: 0 0 auto;
+}
+
+.profile-info {
+  flex: 1 1 auto;
+  min-width: 240px;
+}
