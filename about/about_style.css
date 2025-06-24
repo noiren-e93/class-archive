@@ -370,7 +370,10 @@ padding-right: 0.5em; /* ← 調整幅を少し狭くする */
     font-size: 0.96em;
   }
   .timeline-content {
-    font-size: 0.96em;
+    font-size: 0.8em;
+  } 
+ .timeline-date {
+    font-size: 0.8em;
   }
 }
 
