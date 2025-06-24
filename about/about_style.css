@@ -141,3 +141,43 @@ h1, h2 {
     text-align: center;
   }
 }
+
+.qa-block {
+  margin-bottom: 1.8em;
+}
+
+.qa-label {
+  font-weight: bold;
+  background-color: #eee;
+  padding: 0.4em 0.6em;
+  margin-bottom: 0.3em;
+  display: inline-block;
+  font-size: 1em;
+  border-left: 4px solid #999;
+}
+
+.qa-answer {
+  padding-left: 0.6em;
+  line-height: 1.7;
+}
+
+.qa-line {
+  margin-bottom: 0.4em;
+}
+
+.qa-person {
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.qa-person.hiura {
+  background-color: #dceeff;
+  color: #004466;
+}
+
+.qa-person.tsukui {
+  background-color: #ffeaea;
+  color: #660000;
+}
