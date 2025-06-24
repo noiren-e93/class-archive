@@ -53,13 +53,13 @@ body {
 }
 
 .jacket-8cm img {
-  width: 110px;
+  width: 120px;
   height: auto;
 }
 
 @media screen and (max-width: 767px) {
   .jacket img {
-    width: 140px;
+    width: 135px;
     height: auto;
     object-fit: cover;
     display: block;
@@ -71,8 +71,6 @@ body {
     display: block;
   }
 }
-
-
 .info-block {
   flex-grow: 1;
   padding-top: 0.2em;
