@@ -110,3 +110,46 @@
   flex: 1 1 auto;
   min-width: 240px;
 }
+
+/* --- プロフィール表示に関する構造調整（作品ブロックと統一） --- */
+.profile-entry {
+  margin-bottom: 3em;
+}
+
+.profile-flex {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.profile-flex.reverse {
+  flex-direction: row-reverse;
+}
+
+.profile-image {
+  width: 150px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-info {
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+.bio-official p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #444;
+}
