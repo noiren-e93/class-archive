@@ -200,3 +200,45 @@ ul.work-list {
   color: #888;
   margin-top: 2em;
 }
+.qa-section {
+  margin-top: 3em;
+}
+
+.qa-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+.qa-block {
+  margin-bottom: 1.8em;
+}
+
+.qa-label {
+  font-weight: normal;
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 0.3em;
+}
+
+.qa-answer {
+  padding-left: 1em;
+}
+
+.qa-line {
+  margin: 0.3em 0;
+  line-height: 1.6;
+}
+
+.qa-person {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.qa-person.hiura {
+  color: #c44;  /* 日浦：静かな赤系 */
+}
+
+.qa-person.tsukui {
+  color: #339;  /* 津久井：落ち着いた青系 */
+}
