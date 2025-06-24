@@ -6,6 +6,8 @@ body {
   padding: 0;
   background-color: #fff;
   color: #000;
+  font-size: 0.95em;         /* ← 少し下げるだけでグッと読みやすく */
+  line-height: 1.7;          /* ← 行間はキープして読みやすく */
 }
 
 .container {
