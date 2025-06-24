@@ -15,11 +15,15 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 40px; /* PC時は余白増やす */
+@media screen and (min-width: 801px) {
+  body {
+    font-size: 0.96em;
+  }
+  .timeline-content {
+    font-size: 0.96em;
   }
 }
+
 
 /* ページタイトル */
 .page-title {
