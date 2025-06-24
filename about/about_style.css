@@ -1,20 +1,59 @@
-/* --- ベーススタイル（スマホファースト） --- */
+/* --- disc_style.css --- */
 body {
   font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
   font-size: 16px;
-  line-height: 1.7;
   background-color: #fefefe;
   color: #222;
   margin: 0;
   padding: 0;
 }
 
-/* --- コンテナ（PCでは最大800pxで中央寄せ） --- */
 .container {
-  width: 100%;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 1em;
   box-sizing: border-box;
+}
+
+.entry {
+  margin-bottom: 3em;
+}
+
+.info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.info-block {
+  flex: 1;
+  min-width: 200px;
+}
+
+.jacket {
+  flex-shrink: 0;
+  width: 150px;
+}
+
+.jacket img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.meta-top {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 0.5em;
 }
