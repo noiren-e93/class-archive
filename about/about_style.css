@@ -352,7 +352,7 @@ strong {
   min-width: 6em;
   text-align: right;
    color: #444;
-  padding-right: 1em;
+padding-right: 0.5em; /* ← 調整幅を少し狭くする */
 }
 .timeline-content {
   flex: 1;
