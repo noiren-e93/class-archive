@@ -1,169 +1,20 @@
-/* ▼ プロフィール画像＋表の横並び構成（レスポンシブ対応） ▼ */
-.profile-entry {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin-bottom: 2em;
-}
-
-.profile-image {
-  flex: 0 0 160px;
-  max-width: 160px;
-}
-
-.profile-info {
-  flex: 1;
-  min-width: 200px;
-}
-
-.profile-info table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.profile-info th {
-  width: 5em;
-  padding: 0.2em 0.4em;
-  text-align: left;
-  font-weight: bold;
-  color: #333;
-}
-
-.profile-info td {
-  padding: 0.2em 0.4em;
-  color: #333;
-}
-
-@media (max-width: 600px) {
-  .profile-entry {
-    flex-direction: column;
-  }
-
-  .profile-image {
-    margin-bottom: 1em;
-  }
-}
-
-/* --- セクション区切り調整 --- */
-.container > div {
-  margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid #ddd;
-}
-
-/* --- プロフィール名前見出し --- */
-.profile-name {
-  font-size: 1.4em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.5em;
+/* --- ベーススタイル（スマホファースト） --- */
+body {
+  font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: #fefefe;
   color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-/* --- Q&A調整 --- */
-.qa-label {
-  font-weight: normal;
-  color: #444;
-  font-size: 1em;
-  margin-bottom: 0.3em;
-}
-
-.qa-person.hiura {
-  color: #c33;
-  font-weight: bold;
-}
-
-.qa-person.tsukui {
-  color: #339;
-  font-weight: bold;
-}
-
-.qa-block {
-  margin-bottom: 1.5em;
-}
-
-/* --- プロフィール左右構造調整 --- */
-.profile-entry {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 2em;
-}
-
-.profile-entry.reverse {
-  flex-direction: row-reverse;
-}
-
-.profile-image img {
-  width: 150px;
-  height: auto;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.profile-image {
-  flex: 0 0 auto;
-}
-
-.profile-info {
-  flex: 1 1 auto;
-  min-width: 240px;
-}
-
-/* --- プロフィール表示に関する構造調整（作品ブロックと統一） --- */
-.profile-entry {
-  margin-bottom: 3em;
-}
-
-.profile-flex {
-  display: flex;
-  gap: 1.5em;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.profile-flex.reverse {
-  flex-direction: row-reverse;
-}
-
-.profile-image {
-  width: 150px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  flex-shrink: 0;
-}
-
-.profile-image img {
-  display: block;
+/* --- コンテナ（PCでは最大800pxで中央寄せ） --- */
+.container {
   width: 100%;
-  height: auto;
-}
-
-.profile-info {
-  flex-grow: 1;
-  min-width: 200px;
-}
-
-.bio-official p {
-  margin-top: 0.6em;
-  margin-bottom: 0.6em;
-  font-size: 0.95em;
-  line-height: 1.5;
-  color: #444;
-}
-@media screen and (max-width: 767px) {
-  .profile-entry {
-    flex-direction: column; /* 横並び→縦並びに */
-    align-items: center;
-  }
-  .profile-image img {
-    width: 100%;
-    max-width: 150px; /* 画面幅に応じて縮小 */
-  }
-  .profile-info {
-    width: 100%;
-    padding: 0 10px;
-  }
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  box-sizing: border-box;
 }
