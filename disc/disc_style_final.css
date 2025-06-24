@@ -117,6 +117,11 @@ ul.track li {
   margin-bottom: 0.4em;
   line-height: 1.4;
 }
+.note {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 2em;
+}
 
 .entry-divider {
   margin: 2em 0;
@@ -170,7 +175,6 @@ h2.sub-title {
   color: #444;                     /* 黒に近いけど馴染む濃グレー */
 }
 
-
 ul.work-list {
   margin-left: 1.5em;      /* 親見出しとの階層差を明確に */
   padding-left: 0;
@@ -193,8 +197,3 @@ ul.work-list {
      color: #666;
   }
 
-.note {
-  font-size: 0.9em;
-  color: #888;
-  margin-top: 2em;
-}
