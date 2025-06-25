@@ -60,12 +60,11 @@ body {
 /* スマホ用：必ず後ろに書く */
 @media screen and (max-width: 767px) {
   .jacket img {
-    width: 110px !important; /* ← 最終手段で !important */
+    width: 110px !important;
     height: auto;
     object-fit: cover;
     display: block;
   }
-}
   .jacket-8cm img {
     width: 125px;
     height: auto;
