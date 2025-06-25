@@ -175,7 +175,7 @@ ul.work-list {
 /* スマホ用：必ず後ろに書く */
 @media screen and (max-width: 767px) {
   .jacket img {
-    width: 112px !important;
+    width: 111px !important;
     height: auto;
     object-fit: cover;
     display: block;
