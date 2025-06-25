@@ -175,7 +175,7 @@ ul.work-list {
 /* スマホ用：必ず後ろに書く */
 @media screen and (max-width: 767px) {
   .jacket img {
-    width: 110px !important;
+    width: 115px !important;
     height: auto;
     object-fit: cover;
     display: block;
@@ -192,15 +192,5 @@ ul.work-list {
 @media screen and (min-width: 768px) {
   .footer-link {
     padding-bottom: 2em;
-  }
-}
-
-
-@media screen and (max-width: 767px) {
-  .jacket img,
-  img.jacket {
-    width: 88px !important;
-    border: 3px solid #f00 !important;
-    background: #ff0 !important;
   }
 }
