@@ -90,13 +90,13 @@ background: #f8f8f8;
 .setlist li {
   margin-bottom: 0.4em;
 }
-.info-block {
-  background: #fff;
-  padding: 0.8em;
-  border: 1px solid #eee;
-  border-radius: 4px;
-}
 
+.info-block {
+  background: #fff;               /* セットリストと合わせた白背景 */
+  padding: 0.8em;                 /* 内側に余白を持たせて読みやすく */
+  border: 1px solid #eee;         /* ごく薄いグレーでボックス感を出す */
+  border-radius: 4px;             /* 軽い角丸で柔らかい印象に */
+}
 
 @media screen and (max-width: 800px) {
   body {
