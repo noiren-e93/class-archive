@@ -20,8 +20,9 @@ body {
 .tour-title {
   font-weight: bold;
   font-size: 1.2em;
-  margin-bottom: 1em;
-  letter-spacing: 0.03em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
 }
 .tour-columns {
   display: flex;
@@ -53,6 +54,10 @@ body {
 }
 .setlist {
   font-size: 0.93em;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 0.8em 1em;
+  border-radius: 4px;
 }
 .setlist-title {
   font-weight: bold;
