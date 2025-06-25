@@ -8,12 +8,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .container {
   max-width: 800px;
   width: 100%;
 }
-
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
@@ -22,10 +20,8 @@ body {
   margin-bottom: 1em;
   color: #222;
 }
-
 .entry {
   margin-bottom: 2.2em;
-
 }
 .title {
   font-size: 1.2em;
@@ -33,30 +29,28 @@ body {
   margin-bottom: 1em;
   color: #222;
 }
-
 .info-flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5em;
-  flex-wrap: nowrap;           /* wrapは必ずnowrap */
   align-items: flex-start;
-  justify-content: flex-start; /* center→flex-startに修正 */
+  justify-content: flex-start;
 }
-
 .info-block {
-  flex-grow: 1;
-  padding-top: 0.2em;
-  padding-bottom: 0.4em;
+  flex: 1 1 35%;
+  background: #fff;
+  padding: 0.8em;
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
-
 .setlist {
-  flex: 1 1 40%;
+  flex: 1 1 60%;
   font-size: 0.95em;
   background: #fdfdfd;
   border: 1px solid #ddd;
   padding: 1em;
   border-radius: 4px;
 }
-
 .setlist-title {
   font-weight: bold;
   font-size: 1em;
@@ -64,32 +58,36 @@ body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.3em;
 }
-
+.setlist ol {
+  padding-left: 1.2em;
+  margin: 0;
+}
+.setlist li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
 .live-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1em;
   table-layout: fixed;
 }
-
 .live-table td {
   border: 1px solid #ccc;
   padding: 0.4em 0.5em;
   font-size: 0.9em;
   vertical-align: top;
 }
-
 .date-cell {
   width: 5.2em;
   text-align: center;
   white-space: nowrap;
 }
-
 .comment {
   font-size: 0.9em;
   color: #333;
+  margin-bottom: 1.5em;
 }
-
 @media screen and (max-width: 800px) {
   .info-flex {
     flex-direction: column;
