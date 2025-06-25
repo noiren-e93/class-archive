@@ -59,7 +59,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .jacket img {
-    width: 115px;
+    width: 110px;
     height: auto;
     object-fit: cover;
     display: block;
@@ -115,12 +115,7 @@ ul.track li {
   font-size: 0.75em;
   color: #777;
   margin-bottom: 0.4em;
-  line-height: 1em;
-}
-.note {
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 1em;
+  line-height: 1.1em;
 }
 
 .entry-divider {
