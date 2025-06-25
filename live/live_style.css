@@ -84,3 +84,199 @@ body {
     flex-direction: column;
   }
 }
+/修正版：スマホとPCで画像幅切替＋構造調整済 */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+.entry {
+  margin-bottom: 2.2em;
+}
+
+.info-flex {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: nowrap;           /* wrapは必ずnowrap */
+  align-items: flex-start;
+  justify-content: flex-start; /* center→flex-startに修正 */
+}
+
+.info-block {
+  flex-grow: 1;
+  padding-top: 0.2em;
+  padding-bottom: 0.4em;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.meta-top,
+.meta {
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+  line-height: 1.1;
+}
+
+ul.track {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+
+ul.track li {
+  margin-bottom: 1.2em;
+  text-align: left;
+}
+
+.credit,
+.tie,
+.comment {
+  font-size: 0.75em;
+  color: #777;
+  margin-bottom: 0.4em;
+  line-height: 1.1em;
+}
+
+.entry-divider {
+  margin: 2em 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer-link {
+  font-size: 1.2em;
+  margin: 2em 0 0 0;
+  padding-bottom: 6em;
+  text-align: left;        /* ← 左右上に配置 */
+  color: #444;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+h2.sub-title {
+  border-left: 4px solid #ccc;           /* グレーを薄く＋幅を控えめに */
+  background-color: #f5f5f5;             /* やや明るいグレー背景で柔らかく */
+  padding: 0.3em 0.6em;                  /* 上下の詰め感を強調 */
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+  font-size: 1.05em;                     /* 少し控えめなサイズに調整 */
+  font-weight: 500;                      /* 太字すぎない中間の強調（やや優しい） */
+  color: #444;                           /* 黒に近すぎず、目に優しいグレー */
+}
+
+.sub-colored {
+  background-color: #f7f7f7;        /* もう少し明るめのグレー */
+  border-left: 4px solid #aaa;     /* 控えめで柔らかい印象のライン */
+  border-bottom: none;             /* 下線は削除しスッキリさせる（任意） */
+  padding: 0.3em 0.8em;
+  margin-top: 1.5em;               /* セクション間の空きも控えめに */
+  font-size: 1.1em;                /* 全体と馴染む適度な強調 */
+  font-weight: 500;                /* 太すぎず、柔らかい中間強調 */
+  color: #444;                     /* 黒に近いけど馴染む濃グレー */
+}
+
+ul.work-list {
+  margin-left: 1.5em;      /* 親見出しとの階層差を明確に */
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  line-height: 1.5;        /* 行間は詰めすぎず、読みやすく */
+  font-size: 0.95em;       /* やや控えめな文字サイズに調整 */
+  color: #444;             /* 真っ黒ではなく、柔らかめの濃グレーで統一感 */
+  list-style: none;
+}
+  .cover-artist {
+    margin-left: 1em;
+     font-size: 0.9em;
+    font-weight: 400;
+    background-color: #f3f3f3;
+    padding: 0.2em 0.6em;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+     color: #666;
+  }
+
+.jacket,
+.jacket-8cm {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.jacket img {
+  width: 150px;
+  height: auto;
+}
+
+.jacket-8cm img {
+  width: 130px;
+  height: auto;
+}
+
+
+
+/* スマホ用：必ず後ろに書く */
+@media screen and (max-width: 767px) {
+  .jacket img {
+    width: 111px !important;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+  .jacket-8cm img {
+    width: 125px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-link {
+    padding-bottom: 2em;
+  }
+}
