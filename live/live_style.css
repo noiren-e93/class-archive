@@ -34,17 +34,19 @@ h1 {
 }
 .tour-columns {
   display: flex;
-  gap: 2em;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 1.5em;
 }
+
 .tour-left {
-  flex: 0 0 50%;
-  min-width: 300px;
+  flex: 1 1 55%;
 }
+
 .tour-right {
-  flex: 1;
-  min-width: 280px;
+  flex: 1 1 40%;
 }
+
 .tour-schedule {
   width: 100%;
   border-collapse: collapse;
