@@ -194,3 +194,13 @@ ul.work-list {
     padding-bottom: 2em;
   }
 }
+
+
+@media screen and (max-width: 767px) {
+  .jacket img,
+  img.jacket {
+    width: 88px !important;
+    border: 3px solid #f00 !important;
+    background: #ff0 !important;
+  }
+}
