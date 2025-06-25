@@ -70,10 +70,11 @@ h1 {
 }
 .setlist {
   font-size: 1em;
-  background: #fdfdfd;
+background: #f8f8f8;
   border: 1px solid #ddd;
   padding: 1em;
   border-radius: 4px;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 .setlist-title {
   font-weight: bold;
