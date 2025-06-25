@@ -1,4 +1,4 @@
-/* disc_style_final.css 修正版：スマホとPCで画像幅切替＋構造調整済 */
+/修正版：スマホとPCで画像幅切替＋構造調整済 */
 
 body {
   font-family: sans-serif;
@@ -59,7 +59,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .jacket img {
-    width: 120px;
+    width: 115px;
     height: auto;
     object-fit: cover;
     display: block;
@@ -112,10 +112,10 @@ ul.track li {
 .credit,
 .tie,
 .comment {
-  font-size: 0.8em;
+  font-size: 0.75em;
   color: #777;
   margin-bottom: 0.4em;
-  line-height: 1.4;
+  line-height: 1em;
 }
 .note {
   font-size: 0.9em;
@@ -130,10 +130,10 @@ ul.track li {
 }
 
 .footer-link {
-  font-size: 0.95em;
+  font-size: 1.2em;
   margin: 2em 0 0 0;
   padding-bottom: 6em;
-  text-align: left;        /* ← 左寄せ右上に配置 */
+  text-align: left;        /* ← 左右上に配置 */
   color: #444;
 }
 
