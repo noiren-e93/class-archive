@@ -34,44 +34,7 @@ body {
   justify-content: flex-start; /* center→flex-startに修正 */
 }
 
-.jacket,
-.jacket-8cm {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  flex-shrink: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f9f9f9;
-}
 
-.jacket img {
-  width: 150px;
-  height: auto;
-}
-
-.jacket-8cm img {
-  width: 130px;
-  height: auto;
-}
-
-/* スマホ用：必ず後ろに書く */
-@media screen and (max-width: 767px) {
-  .jacket img {
-    width: 110px !important;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
-  .jacket-8cm img {
-    width: 125px;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
-}
 
 .info-block {
   flex-grow: 1;
@@ -191,3 +154,44 @@ ul.work-list {
     margin-bottom: 0.3em;
      color: #666;
   }
+
+.jacket,
+.jacket-8cm {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.jacket img {
+  width: 150px;
+  height: auto;
+}
+
+.jacket-8cm img {
+  width: 130px;
+  height: auto;
+}
+
+
+/* スマホ用：必ず後ろに書く */
+@media screen and (max-width: 767px) {
+  .jacket img {
+    width: 110px !important;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+  .jacket-8cm img {
+    width: 125px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
