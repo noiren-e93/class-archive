@@ -1,0 +1,43 @@
+body {
+  font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
+  color: #333;
+  background: #fff;
+  padding: 1.5em;
+  font-size: 0.93em;
+  line-height: 1.6;
+}
+.live-block {
+  border-top: 1px solid #ccc;
+  margin-top: 2em;
+  padding-top: 1.5em;
+}
+.tour-title, .event-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.6em;
+}
+.tour-schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+.tour-schedule th, .tour-schedule td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+.tour-notes, .event-meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 1em;
+}
+.setlist ol {
+  padding-left: 1.2em;
+}
+.setlist li {
+  margin-bottom: 0.3em;
+}
+.event-date {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 0.2em;
+}
