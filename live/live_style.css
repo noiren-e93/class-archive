@@ -2,9 +2,9 @@ body {
   font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
   color: #333;
   background: #fff;
-  padding: 1.5em;
+  padding: 2em 1.5em;
   font-size: 0.93em;
-  line-height: 1.6;
+  line-height: 1.7;
   display: flex;
   justify-content: center;
 }
@@ -12,19 +12,26 @@ body {
   max-width: 800px;
   width: 100%;
 }
+h1 {
+  font-size: 1.4em;
+  margin-bottom: 1.4em;
+  color: #222;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.4em;
+}
 .live-block {
   border-top: 1px solid #ccc;
   margin-top: 2em;
-  padding-top: 1.5em;
+  padding-top: 2em;
 }
 .tour-title {
   font-weight: 600;
-  font-size: 1.35em;
-  margin-bottom: 1.4em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 0.4em;
-  letter-spacing: 0.04em;
-  color: #111;
+  padding-bottom: 0.3em;
+  color: #222;
 }
 .tour-columns {
   display: flex;
@@ -47,30 +54,30 @@ body {
 }
 .tour-schedule td {
   border: 1px solid #ccc;
-  padding: 0.3em 0.5em;
-  font-size: 0.88em;
+  padding: 0.4em 0.5em;
+  font-size: 0.9em;
   vertical-align: top;
 }
 .tour-schedule td:first-child {
-  width: 5em;
+  width: 5.2em;
   text-align: center;
   white-space: nowrap;
 }
 .tour-notes {
-  font-size: 0.88em;
-  color: #555;
+  font-size: 0.9em;
+  color: #333;
 }
 .setlist {
   font-size: 0.93em;
-  background: #f9f9f9;
-  border: 1px solid #eee;
-  padding: 0.8em 1em;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 1em;
   border-radius: 4px;
 }
 .setlist-title {
   font-weight: bold;
   font-size: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.3em;
 }
@@ -79,7 +86,7 @@ body {
   margin: 0;
 }
 .setlist li {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
 }
 @media screen and (max-width: 800px) {
   .tour-columns {
