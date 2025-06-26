@@ -179,7 +179,7 @@ hr {
   margin-bottom: 0.8em;
 }
 
-/* ===== レスポンシブ対応 ===== */
+/* ===== レスポンシブ対応（800px以下） ===== */
 @media screen and (max-width: 800px) {
   body {
     font-size: 0.90em;
@@ -210,37 +210,55 @@ hr {
     font-size: 0.92em;
   }
 }
+
+/* ===== プロフィール・ジャケットエリア ===== */
 .profile-flex {
   display: flex;
   align-items: flex-start;
   gap: 2.4em;
   margin: 1.5em 0 2.4em 0;
-  flex-wrap: wrap; /* スマホ時は自動で縦並び */
+  flex-wrap: wrap;
 }
-.profile-photo img {
-  width: 200px;
-  max-width: 30vw;
+.profile-photo img,
+.jacket img {
+  width: 180px;
+  max-width: 38vw;
+  height: auto;
   border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(120,120,120,0.09);
+  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
   display: block;
   background: #fafafa;
 }
+.info-flex {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  margin: 2em 0 1em 0;
+  flex-wrap: wrap;
+}
+.info-block {
+  flex: 1 1 220px;
+  min-width: 150px;
+}
+
+/* ===== プロフィールテーブル ===== */
 .profile-table {
   border-collapse: collapse;
   background: #fafafa;
-  min-width: 210px;
+  width: auto;
+  max-width: 320px;
+  min-width: 160px;
+  table-layout: fixed;
   font-size: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   box-shadow: 0 1px 5px rgba(180,180,180,0.07);
 }
 .profile-table th, .profile-table td {
   border: 1px solid #ddd;
   padding: 0.7em 1.1em;
   text-align: left;
-  font-weight: 500;
-  color: #444;
-  background: none;
+  word-break: break-all;
+  white-space: normal;
 }
 .profile-table th {
   background: #f4f4f4;
@@ -251,47 +269,15 @@ hr {
 .profile-table td {
   background: #fff;
   font-weight: 400;
+  color: #444;
 }
-@media (max-width: 700px) {
-  .profile-flex {
-    flex-direction: column;
-    gap: 1.2em;
-    align-items: stretch;
-  }
-  .profile-photo img {
-    width: 90vw;
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .profile-table {
-    min-width: 0;
-    width: 100%;
-  }
-}
-.info-flex {
-  display: flex;
-  gap: 2em;
-  align-items: flex-start;
-  margin: 2em 0 1em 0;
-  flex-wrap: wrap; /* スマホで自動縦並び */
-}
-.jacket img {
-  width: 180px;
-  max-width: 32vw;
-  border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
-  background: #fafafa;
-  display: block;
-}
-.info-block {
-  flex: 1 1 220px;
-  min-width: 150px;
-}
+
+/* ===== メタ情報テーブル ===== */
 .meta-top table {
   border-collapse: collapse;
   background: #fafafa;
   min-width: 220px;
+  width: 100%;
   font-size: 1em;
   margin: 0;
   box-shadow: 0 1px 5px rgba(180,180,180,0.07);
@@ -314,6 +300,7 @@ hr {
   font-weight: 400;
 }
 
+/* ===== Q&Aエリア ===== */
 .qa-section {
   margin-top: 3em;
   margin-bottom: 2em;
@@ -330,13 +317,11 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0 2em 0;
 }
-
 .qa-block {
   margin-bottom: 1.6em;
   padding-bottom: 0.6em;
   border-bottom: 1px dotted #ddd;
 }
-
 .qa-label {
   font-size: 1em;
   font-weight: 600;
@@ -344,108 +329,63 @@ hr {
   margin-bottom: 0.3em;
   letter-spacing: 0.02em;
 }
-
 .qa-answer {
   padding-left: 0.5em;
 }
-
 .qa-line {
   margin: 0.16em 0;
   line-height: 1.7;
   font-size: 0.98em;
 }
-
 .qa-person {
   font-weight: 600;
   margin-right: 0.5em;
 }
-
 .qa-person.hiura {
   color: #c44;
-  font-weight: 600;
 }
-
 .qa-person.tsukui {
   color: #339;
-  font-weight: 600;
-}
-.profile-table {
-  width: auto;
-  max-width: 320px;
-  min-width: 160px;
-  table-layout: fixed;
-}
-.profile-table {
-  width: auto;
-  max-width: 320px;
-  min-width: 160px;
-  table-layout: fixed;
-}
-.jacket img {
-  width: 180px;
-  max-width: 38vw;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
-@media (max-width: 700px) {
-  .jacket img {
-    width: 100%;
-    max-width: 240px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
-.profile-table th,
-.profile-table td {
-  word-break: break-all;
-  white-space: normal;
-}
+/* ===== レスポンシブ：700px以下 ===== */
 @media (max-width: 700px) {
-  .info-flex {
-    flex-direction: column;
-    gap: 0.9em;   /* ← gapを小さく！ */
-    align-items: stretch;
-  }
-}
-@media (max-width: 700px) {
-  .info-flex {
-    flex-direction: column;
-    gap: 0.9em;   /* ← gapを小さく！ */
-    align-items: stretch;
-  }
-}
-@media (max-width: 700px) {
-  .info-flex {
-    flex-direction: column;
-    gap: 0.9em;   /* ← gapを小さく！ */
-    align-items: stretch;
-  }
-}
-
-@media (max-width: 700px) {
-  .qa-section { margin-top: 2em; margin-bottom: 1.3em; }
-  .qa-block { margin-bottom: 1em; }
-  .qa-divider { margin: 0.7em 0 1.3em 0; }
-  }
-@media (max-width: 700px) {
-  .info-flex {
+  .profile-flex {
     flex-direction: column;
     gap: 1.2em;
     align-items: stretch;
   }
+  .profile-photo img,
   .jacket img {
-    width: 90vw;
-    max-width: 320px;
+    width: 100%;
+    max-width: 260px;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
   }
+  .profile-table,
   .meta-top table {
     min-width: 0;
     width: 100%;
   }
+  .info-flex {
+    flex-direction: column;
+    gap: 0.9em;
+    align-items: stretch;
+  }
+  .qa-section {
+    margin-top: 2em;
+    margin-bottom: 1.3em;
+  }
+  .qa-block {
+    margin-bottom: 1em;
+  }
+  .qa-divider {
+    margin: 0.7em 0 1.3em 0;
+  }
 }
+
+/* ===== レスポンシブ：1200px以上 ===== */
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 980px;
@@ -453,33 +393,8 @@ hr {
     padding-right: 0;
   }
 }
-.jacket img,
-.profile-photo img {
-  width: 180px;
-  max-width: 38vw;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
-@media (max-width: 700px) {
-  .jacket img,
-  .profile-photo img {
-    width: 100%;
-    max-width: 260px;   /* ←ここがポイント！ */
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
-}
-@media (max-width: 700px) {
-  .info-flex {
-    flex-direction: column;
-    gap: 0.9em;   /* ← gapを小さく！ */
-    align-items: stretch;
-  }
-}
 
-/* ===== その他微調整 ===== */
+/* ===== プレースホルダー調整 ===== */
 ::-webkit-input-placeholder { color: #aaa; }
 ::-moz-placeholder { color: #aaa; }
 :-ms-input-placeholder { color: #aaa; }
