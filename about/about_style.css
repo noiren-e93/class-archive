@@ -1,26 +1,27 @@
-/* ===== 共通ボディ設定 ===== */
-body {
-  font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
-  color: #444;
+/* ===== ベーススタイル（全ページ共通） ===== */
+html, body {
+  font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', 'Yu Gothic', 'Helvetica Neue', sans-serif;
+  font-size: 16px;    /* rem, em指定の基準に */
+  color: #222;
   background: #fff;
-  font-size: 0.93em;
-  line-height: 1.75;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
 
-/* ===== コンテナ中央寄せ・左右余白 ===== */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 28px 5vw 32px 5vw;
-  background: #fff;
+/* ===== レイアウト・余白（中央揃え、最大幅） ===== */
+body {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5em 5vw 2.5em 5vw;
+  box-sizing: border-box;
 }
 
-/* ===== ページ表題 ===== */
-.page-title {
+/* ===== ページ表題・TOP表題（完全統一用！） ===== */
+.main-title, .page-title {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
-  font-size: 2.0rem;
+  font-size: 2.0rem;            /* ← ここが全ての基準！ */
   font-weight: 700;
   border-bottom: 2px solid #555;
   padding-bottom: 0.35em;
@@ -29,55 +30,140 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ===== 年・セクション見出し ===== */
-.section-title,
-h2.section-title,
-h2.sub-title {
+/* サブキャプション（トップ下など） */
+.sub-caption, .caption {
+  font-size: 1em;
+  color: #888;
+  margin: 0.4em 0 1.6em 0;
+  line-height: 1.4;
+}
+
+/* ===== リンク ===== */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+a:hover {
+  text-decoration: underline;
+  color: #222;
+}
+
+/* ===== 見出し・セクション ===== */
+h2, .section-title {
+  font-size: 1.13em;
+  font-weight: 600;
   border-left: 4px solid #ccc;
   background: #f7f7f7;
-  padding: 0.18em 0.7em;
-  font-size: 1.08em;
-  font-weight: 600;
+  padding: 0.22em 0.75em;
+  margin: 2.2em 0 0.7em 0;
   color: #444;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  letter-spacing: 0.06em;
-  display: block;
-}
-.section-title, h2.section-title {
-  margin-top: 2.2em;
-  margin-bottom: 0.7em;
-}
-
-
-/* ===== 小見出し・サブセクション ===== */
-h3, h4, .year-block {
-  font-size: 1em;
-  font-weight: 500;
-  color: #555;
-  margin-top: 1.4em;
-  margin-bottom: 0.3em;
   letter-spacing: 0.04em;
 }
 
-/* ===== 段落余白・行間 ===== */
+/* ===== 段落 ===== */
 p {
-  margin-top: 0.2em;
-  margin-bottom: 1.2em;
+  margin: 0 0 1.4em 0;
   line-height: 1.8;
+  font-size: 1em;
 }
 
-/* ===== 強調 ===== */
-strong, b {
-  font-weight: 700;
-  color: #232323;
+/* ===== テーブル（プロフィール/汎用） ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  background: #fafafa;
+  font-size: 1em;
 }
-em {
-  font-style: italic;
-  color: #666;
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.7em 1em;
+  text-align: left;
+}
+th {
+  background: #f4f4f4;
+  font-weight: 600;
+  color: #444;
+}
+td {
+  color: #444;
+  background: #fff;
 }
 
-/* ===== タイムライン（年表） ===== */
+/* プロフィールテーブルだけ幅制限 */
+.profile-table, .meta-top table {
+  width: auto;
+  max-width: 320px;
+  min-width: 160px;
+  table-layout: fixed;
+}
+
+/* テーブルセル折返し */
+.profile-table th, .profile-table td,
+.meta-top th, .meta-top td {
+  word-break: break-all;
+  white-space: normal;
+}
+
+/* ===== 画像枠（プロフィール写真・ジャケット） ===== */
+.jacket, .profile-photo {
+  margin-bottom: 1.2em;
+}
+.jacket img, .profile-photo img {
+  width: 180px;
+  max-width: 38vw;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
+  background: #fafafa;
+}
+
+@media (max-width: 700px) {
+  .jacket img, .profile-photo img {
+    width: 100%;
+    max-width: 240px;
+    max-height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+  }
+}
+
+/* ===== フレックス横並び（画像＋プロフィール表） ===== */
+.info-flex, .profile-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;  /* スマホ時は自動で縦並び */
+}
+@media (max-width: 700px) {
+  .info-flex, .profile-flex {
+    flex-direction: column;
+    gap: 1em;
+    align-items: stretch;
+  }
+}
+
+/* ===== Q&A ===== */
+.qa-section { margin: 3em 0 2em 0; }
+.qa-section h2 { font-size: 1.15em; margin-bottom: 0.9em; }
+.qa-divider { border: none; border-top: 1px solid #ccc; margin: 1em 0 2em 0; }
+.qa-block { margin-bottom: 1.6em; padding-bottom: 0.6em; border-bottom: 1px dotted #ddd; }
+.qa-label { font-size: 1em; font-weight: 600; color: #2a2a2a; margin-bottom: 0.3em; }
+.qa-answer { padding-left: 0.5em; }
+.qa-line { margin: 0.16em 0; line-height: 1.7; font-size: 0.98em; }
+.qa-person { font-weight: 600; margin-right: 0.5em; }
+.qa-person.hiura { color: #c44; }
+.qa-person.tsukui { color: #339; }
+@media (max-width: 700px) {
+  .qa-section { margin: 2em 0 1.3em 0; }
+  .qa-block { margin-bottom: 1em; }
+  .qa-divider { margin: 0.7em 0 1.3em 0; }
+}
+
+/* ===== タイムライン ===== */
 .timeline-item {
   display: flex;
   align-items: flex-start;
@@ -98,75 +184,12 @@ em {
   flex: 1;
   color: #444;
 }
-
-/* ===== 引用・注記 ===== */
-blockquote,
-.note {
-  background: #f9f9f9;
-  border-left: 4px solid #ccc;
-  margin: 1.3em 0;
-  padding: 0.9em 1.3em;
-  color: #666;
-  font-size: 0.95em;
-}
-
-/* ===== リスト ===== */
-ul, ol {
-  margin: 1.1em 0 1.2em 1.5em;
-  padding: 0;
-  line-height: 1.7;
-  font-size: 0.97em;
-  color: #444;
-}
-li {
-  margin-bottom: 0.5em;
-}
-
-/* ===== テーブル ===== */
-table {
-  border-collapse: collapse;
-  margin: 1.5em 0;
-  width: 100%;
-  font-size: 0.95em;
-  background: #fafafa;
-}
-th, td {
-  border: 1px solid #ddd;
-  padding: 0.6em 0.9em;
-  text-align: left;
-}
-th {
-  background: #f4f4f4;
-  font-weight: 600;
-  color: #444;
-}
-td {
-  color: #444;
-}
-
-/* ===== リンク ===== */
-a {
-  color: #3778c2;
-  text-decoration: underline;
-  transition: color 0.16s;
-}
-a:hover,
-a:focus {
-  color: #111;
-  text-decoration: underline;
-}
-
-/* ===== 区切り線 ===== */
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 2.2em 0 1.8em 0;
+@media (max-width: 700px) {
+  .timeline-item { font-size: 0.94em; }
 }
 
 /* ===== フッター・サブノート ===== */
-.footer-link,
-.footer-nav,
-.footer-note {
+.footer-link, .footer-nav, .footer-note {
   margin-top: 2.8em;
   font-size: 0.95em;
   text-align: center;
@@ -174,250 +197,7 @@ hr {
   border-top: 1px solid #eee;
   padding-top: 1.2em;
 }
-
-/* ===== サブキャプションなど小さめ文字 ===== */
-.caption,
-.sub-caption {
-  font-size: 0.95em;
-  color: #888;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-
-/* ===== レスポンシブ対応（800px以下） ===== */
-@media screen and (max-width: 800px) {
-  body {
-    font-size: 0.90em;
-  }
-  .container {
-    padding: 18px 3vw 26px 3vw;
-  }
-  .page-title {
-    font-size: 1.28em;
-    padding-bottom: 0.26em;
-    margin-bottom: 0.8em;
-  }
-  .section-title,
-  h2.section-title,
-  h2.sub-title {
-    font-size: 1.01em;
-    margin-top: 1.7em;
-    margin-bottom: 0.4em;
-    padding: 0.12em 0.55em;
-  }
-  .footer-link,
-  .footer-nav, .footer-note {
-    margin-top: 1.7em;
-    padding-top: 0.6em;
-    font-size: 0.92em;
-  }
-  table {
-    font-size: 0.92em;
-  }
-}
-
-/* ===== プロフィール・ジャケットエリア ===== */
-.profile-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 2.4em;
-  margin: 1.5em 0 2.4em 0;
-  flex-wrap: wrap;
-}
-.profile-photo img,
-.jacket img {
-  width: 180px;
-  max-width: 38vw;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
-  display: block;
-  background: #fafafa;
-}
-.info-flex {
-  display: flex;
-  gap: 2em;
-  align-items: flex-start;
-  margin: 2em 0 1em 0;
-  flex-wrap: wrap;
-}
-.info-block {
-  flex: 1 1 220px;
-  min-width: 150px;
-}
-.profile-table {
-  width: auto;
-  max-width: 320px;
-  min-width: 160px;
-  table-layout: fixed;
-}
-
-/* ===== プロフィールテーブル ===== */
-.profile-table {
-  border-collapse: collapse;
-  background: #fafafa;
-  width: auto;
-  max-width: 320px;
-  min-width: 160px;
-  table-layout: fixed;
-  font-size: 1em;
-  margin: 0;
-  box-shadow: 0 1px 5px rgba(180,180,180,0.07);
-}
-.profile-table th, .profile-table td {
-  border: 1px solid #ddd;
-  padding: 0.7em 1.1em;
-  text-align: left;
-  word-break: break-all;
-  white-space: normal;
-}
-.profile-table th {
-  background: #f4f4f4;
-  width: 4.7em;
-  font-weight: 600;
-  color: #444;
-}
-.profile-table td {
-  background: #fff;
-  font-weight: 400;
-  color: #444;
-}
-
-/* ===== メタ情報テーブル ===== */
-.meta-top table {
-  border-collapse: collapse;
-  background: #fafafa;
-  min-width: 220px;
-  width: 100%;
-  font-size: 1em;
-  margin: 0;
-  box-shadow: 0 1px 5px rgba(180,180,180,0.07);
-}
-.meta-top th, .meta-top td {
-  border: 1px solid #ddd;
-  padding: 0.7em 1.2em;
-  text-align: left;
-  font-weight: 500;
-  color: #444;
-  background: none;
-}
-.meta-top th {
-  background: #f4f4f4;
-  width: 4.5em;
-  font-weight: 600;
-}
-.meta-top td {
-  background: #fff;
-  font-weight: 400;
-}
-
-/* ===== Q&Aエリア ===== */
-.qa-section {
-  margin-top: 3em;
-  margin-bottom: 2em;
-}
-.qa-section h2 {
-  font-size: 1.15em;
-  font-weight: 700;
-  color: #444;
-  letter-spacing: 0.03em;
-  margin-bottom: 0.9em;
-}
-.qa-divider {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 1em 0 2em 0;
-}
-.qa-block {
-  margin-bottom: 1.6em;
-  padding-bottom: 0.6em;
-  border-bottom: 1px dotted #ddd;
-}
-.qa-label {
-  font-size: 1em;
-  font-weight: 600;
-  color: #2a2a2a;
-  margin-bottom: 0.3em;
-  letter-spacing: 0.02em;
-}
-.qa-answer {
-  padding-left: 0.5em;
-}
-.qa-line {
-  margin: 0.16em 0;
-  line-height: 1.7;
-  font-size: 0.98em;
-}
-.qa-person {
-  font-weight: 600;
-  margin-right: 0.5em;
-}
-.qa-person.hiura {
-  color: #c44;
-}
-.qa-person.tsukui {
-  color: #339;
-}
-
-/* ===== レスポンシブ：700px以下 ===== */
 @media (max-width: 700px) {
-  .profile-flex {
-    flex-direction: column;
-    gap: 1.2em;
-    align-items: stretch;
-  }
-  .profile-photo img,
-  .jacket img {
-    width: 100%;
-    max-width: 260px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
-  .profile-table,
-  .meta-top table {
-    min-width: 0;
-    width: 100%;
-  }
-  .info-flex {
-    flex-direction: column;
-    gap: 0.9em;
-    align-items: stretch;
-  }
-  .qa-section {
-    margin-top: 2em;
-    margin-bottom: 1.3em;
-  }
-  .qa-block {
-    margin-bottom: 1em;
-  }
-  .qa-divider {
-    margin: 0.7em 0 1.3em 0;
-  }
+  body { padding: 1.1em 1vw; font-size: 15px; }
+  .footer-link, .footer-nav, .footer-note { margin-top: 1.7em; padding-top: 0.6em; font-size: 0.92em; }
 }
-@media (max-width: 700px) {
-  .jacket img {
-    width: 100%;
-    max-width: 240px;
-    max-height: 260px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    object-fit: cover;
-  }
-}
-
-/* ===== レスポンシブ：1200px以上 ===== */
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 980px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* ===== プレースホルダー調整 ===== */
-::-webkit-input-placeholder { color: #aaa; }
-::-moz-placeholder { color: #aaa; }
-:-ms-input-placeholder { color: #aaa; }
-::placeholder { color: #aaa; }
