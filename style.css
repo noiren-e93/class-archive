@@ -20,6 +20,7 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
 }
 
+/* ページタイトル */
 .page-title {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
   font-size: 2.0rem;
