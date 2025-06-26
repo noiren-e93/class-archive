@@ -5,22 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>class ライブデータ｜この声が消えても、ここにいる</title>
   <link rel="stylesheet" href="live_style.css?v=20240628">
+  <style>
+    body {
+      font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
+      color: #333;
+      background: #fff;
+      padding: 2em 1em;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .page-title {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 1.4em;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .year-band {
+      font-weight: bold;
+      background: #f0f0f0;
+      padding: 0.4em 0.6em;
+      border-left: 4px solid #999;
+      margin: 2em 0 1em;
+      color: #333;
+    }
+    .entry {
+      margin-bottom: 2em;
+    }
+    .title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      border-left: 4px solid #aaa;
+      padding-left: 0.6em;
+    }
+    .info-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+    }
+    .info-block {
+      flex: 1 1 55%;
+    }
+    .setlist {
+      flex: 1 1 40%;
+      background: #fdfdfd;
+      border: 1px solid #ccc;
+      padding: 1em;
+      border-radius: 4px;
+    }
+    .setlist-title {
+      font-weight: bold;
+      font-size: 0.95em;
+      margin-bottom: 0.5em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .setlist ol {
+      columns: 2;
+      margin: 0;
+      padding-left: 1.2em;
+    }
+    .setlist li {
+      margin-bottom: 0.4em;
+    }
+    .live-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1em;
+      table-layout: auto;
+    }
+    .live-table td {
+      border: 1px solid #ccc;
+      padding: 0.4em 0.6em;
+      font-size: 0.8em;
+      vertical-align: top;
+    }
+    .live-table td:first-child {
+      width: 6em;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .comment {
+      font-size: 0.88em;
+      color: #555;
+    }
+
+    @media screen and (max-width: 800px) {
+      .info-flex {
+        flex-direction: column;
+      }
+      .setlist ol {
+        columns: 1;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1 class="page-title">class ライブデータ</h1>
+
+    <div class="year-band">1993年</div>
 
     <div class="entry">
       <div class="title">WELCOME to the CLASSMATE '93</div>
       <div class="info-flex">
         <div class="info-block">
           <table class="live-table">
-            <tr><td class="date-cell">11月25日</td><td>名古屋クラブクアトロ</td></tr>
-            <tr><td class="date-cell">11月26日</td><td>心斎橋筋ニューオーサカホール</td></tr>
-            <tr><td class="date-cell">11月29日</td><td>アートフォーラム</td></tr>
-            <tr><td class="date-cell">12月04日</td><td>福岡ビブレ</td></tr>
-            <tr><td class="date-cell">12月06日</td><td>仙台ビジネスメンセンター</td></tr>
-            <tr><td class="date-cell">12月07日</td><td>札幌メッセホール</td></tr>
+            <tr><td>11月25日</td><td>名古屋クラブクアトロ</td></tr>
+            <tr><td>11月26日</td><td>心斎橋筋ニューオーサカホール</td></tr>
+            <tr><td>11月29日</td><td>アートフォーラム</td></tr>
+            <tr><td>12月04日</td><td>福岡ビブレ</td></tr>
+            <tr><td>12月06日</td><td>仙台ビジネスメンセンター</td></tr>
+            <tr><td>12月07日</td><td>札幌メッセホール</td></tr>
           </table>
           <p class="comment">
             音楽雑誌「GB」と連動企画のclass初のトーク＆ライブ。<br>
