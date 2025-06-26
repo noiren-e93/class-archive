@@ -44,6 +44,11 @@ h2.sub-title {
   letter-spacing: 0.06em;
   display: block;
 }
+.section-title, h2.section-title {
+  margin-top: 2.2em;
+  margin-bottom: 0.7em;
+}
+
 
 /* ===== 小見出し・サブセクション ===== */
 h3, h4, .year-block {
@@ -239,6 +244,12 @@ hr {
 .info-block {
   flex: 1 1 220px;
   min-width: 150px;
+}
+.profile-table {
+  width: auto;
+  max-width: 320px;
+  min-width: 160px;
+  table-layout: fixed;
 }
 
 /* ===== プロフィールテーブル ===== */
