@@ -2,48 +2,188 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>class ライブデータ｜この声が消えても、ここにいる</title>
-  <link rel="stylesheet" href="live_style.css?v=20240629">
+  <meta name="viewport" content="width=800,maximum-scale=1,user-scalable=yes">
+  <title>WELCOME to the CLASSMATE '93｜class ライブアーカイブ</title>
+  <style>
+    html, body {
+      background: #fafbfc;
+      color: #232323;
+      font-family: 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+      font-size: 17px;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 0 32px 0;
+    }
+    .tour-block {
+      margin-bottom: 3em;
+    }
+    .tour-title {
+      background: #3d4043;
+      color: #f7f7f7;
+      font-weight: bold;
+      font-size: 1.16em;
+      padding: 0.62em 1.2em;
+      border-radius: 10px;
+      margin-bottom: 1.2em;
+      letter-spacing: 0.03em;
+      box-shadow: 0 1px 5px rgba(60,60,60,0.07);
+      display: inline-block;
+    }
+    .tour-columns {
+      display: flex;
+      gap: 2.1em;
+      max-width: 800px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    @media (max-width: 800px) {
+      html, body {
+        font-size: 15px;
+      }
+      .container {
+        padding: 20px 0 40px 0;
+      }
+      .tour-columns {
+        flex-direction: column;
+        gap: 2.3em;
+      }
+    }
+    .tour-info {
+      flex: 1 1 310px;
+      min-width: 210px;
+      font-size: 1em;
+    }
+    .tour-year {
+      font-weight: bold;
+      margin-bottom: 0.2em;
+      color: #444;
+      letter-spacing: 0.06em;
+    }
+    .live-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.7em;
+      background: none;
+    }
+    .live-table td {
+      border-bottom: 1px solid #e3e3e3;
+      padding: 0.44em 0.6em 0.44em 0;
+      font-size: 1em;
+    }
+    .live-table .date {
+      width: 4em;
+      color: #888;
+      text-align: right;
+      padding-right: 0.75em;
+      white-space: nowrap;
+      font-feature-settings: "pnum";
+    }
+    .live-table .venue {
+      word-break: keep-all;
+    }
+    .tour-note {
+      margin-top: 0.7em;
+      color: #555;
+      font-size: 0.97em;
+      line-height: 1.6;
+    }
+    .setlist {
+      background: #fcfcfc;
+      border: 1px solid #e5e5e5;
+      border-radius: 13px;
+      padding: 1.2em 1.1em 1em 1.1em;
+      font-size: 0.98em;
+      min-width: 220px;
+      box-shadow: 0 2px 9px rgba(0,0,0,0.04);
+      margin-top: 0;
+    }
+    .setlist-title {
+      font-weight: bold;
+      margin-bottom: 0.6em;
+      font-size: 1.08em;
+      letter-spacing: 0.02em;
+      color: #434649;
+    }
+    .setlist ol {
+      margin: 0;
+      padding-left: 1.3em;
+    }
+    .setlist li {
+      margin-bottom: 0.47em;
+      line-height: 1.5;
+      font-size: 1em;
+    }
+    .setlist em {
+      font-style: italic;
+      color: #717171;
+      letter-spacing: 0.01em;
+    }
+    /* フッターや全体下余白も調整 */
+    .footer {
+      margin-top: 4em;
+      text-align: left;
+      color: #aaa;
+      font-size: 0.98em;
+      padding-bottom: 4em;
+    }
+    .footer a {
+      color: #888;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1 class="page-title">class ライブデータ</h1>
-    <div class="entry">
-      <div class="tour-title highlighted-title">WELCOME to the CLASSMATE '93</div>
+    <div class="tour-block">
+      <div class="tour-title">WELCOME to the CLASSMATE '93</div>
       <div class="tour-columns">
-        <div class="tour-left">
+        <div class="tour-info">
           <div class="tour-year">1993年</div>
-          <table class="tour-schedule">
-            <tr><td>11/25</td><td>名古屋クラブクアトロ</td></tr>
-            <tr><td>11/26</td><td>心斎橋筋ニューオーサカホール</td></tr>
-            <tr><td>11/29</td><td>アートフォーラム</td></tr>
-            <tr><td>12/04</td><td>福岡ビブレ</td></tr>
-            <tr><td>12/06</td><td>仙台ビジネスメンセンター</td></tr>
-            <tr><td>12/07</td><td>札幌メッセホール</td></tr>
+          <table class="live-table">
+            <tbody>
+              <tr><td class="date">11/25</td><td class="venue">名古屋クラブクアトロ</td></tr>
+              <tr><td class="date">11/26</td><td class="venue">心斎橋筋ニューオーサカホール</td></tr>
+              <tr><td class="date">11/29</td><td class="venue">アートフォーラム</td></tr>
+              <tr><td class="date">12/04</td><td class="venue">福岡ビブレ</td></tr>
+              <tr><td class="date">12/06</td><td class="venue">仙台ビジネスメンセンター</td></tr>
+              <tr><td class="date">12/07</td><td class="venue">札幌メッセホール</td></tr>
+            </tbody>
           </table>
-          <p class="tour-notes">音楽雑誌「GB」と連動企画のclass初のトーク＆ライブ。<br>
-          落ち着いた演出でトークも交えた構成となりました。</p>
-        </div>
-        <div class="tour-right">
-          <div class="setlist">
-            <div class="setlist-title">SETLIST</div>
-            <ol>
-              <li>夏の日の1993</li>
-              <li>Day By Day</li>
-              <li>Rainy Day</li>
-              <li><em>Acoustic</em></li>
-              <li>Mrs Robinson</li>
-              <li>September True Love</li>
-              <li><em>Talk Session（ゲスト：俵／小原）</em></li>
-              <li>もう君を離さない</li>
-              <li>セピア色の微笑み</li>
-              <li>もうひとつの未来</li>
-              <li>ENCORE：聖夜</li>
-            </ol>
+          <div class="tour-note">
+            音楽雑誌「GB」と連動企画のclass初のトーク＆ライブ。<br>
+            落ち着いた演出でトークも交えた構成となりました。
           </div>
         </div>
+        <div class="setlist" role="region" aria-label="セットリスト">
+          <div class="setlist-title">SETLIST</div>
+          <ol>
+            <li>夏の日の1993</li>
+            <li>Day By Day</li>
+            <li>Rainy Day</li>
+            <li><em>Acoustic</em></li>
+            <li>Mrs Robinson</li>
+            <li>September True Love</li>
+            <li><em>Talk Session（ゲスト：依ノ小原）</em></li>
+            <li>もう君を離さない</li>
+            <li>セピア色の微笑み</li>
+            <li>もうひとつの未来</li>
+            <li>ENCORE：聖夜</li>
+          </ol>
+        </div>
       </div>
+    </div>
+    <div class="footer">
+      <a href="../live/index.html">ライブアーカイブTOPへ戻る</a>
     </div>
   </div>
 </body>
