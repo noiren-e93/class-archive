@@ -6,211 +6,7 @@
   <title>class ライブデータ｜class ライブアーカイブ</title>
   <!-- Google Fonts（Noto Sans JP）を全ページで統一 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      background: #fff;
-      color: #232323;
-      font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
-      font-size: 0.9em;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 28px 5vw 22px 5vw;
-      background: #fff;
-    }
-    .page-title {
-      font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
-      font-size: 1.8em;
-      font-weight: bold;
-      border-bottom: 2px solid #333;
-      padding-bottom: 0.4em;
-      margin-bottom: 1em;
-      line-height: 1.15;
-      letter-spacing: 0.02em;
-    }
-    /* ---以下、既存ライブページ用CSS--- */
-    .tour-block {
-      margin-bottom: 2em;
-    }
-    .tour-title {
-      background: #3d4043;
-      color: #f7f7f7;
-      font-weight: bold;
-      font-size: 1.07em;
-      padding: 0.42em 1.2em;
-      border-radius: 8px;
-      margin-bottom: 1.05em;
-      letter-spacing: 0.06em;
-      display: block;
-      box-shadow: 0 1px 6px rgba(60,60,60,0.06);
-      text-align: left;
-      margin-left: 0;
-    }
-    .tour-columns {
-      display: flex;
-      gap: 1.1em;
-      width: 100%;
-      flex-wrap: wrap;
-      align-items: flex-start;
-    }
-    .tour-info {
-      flex: 1 1 150px;
-      min-width: 90px;
-      font-size: 1em;
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .tour-year {
-      position: relative;
-      color: #444;
-      font-size: 0.97em;
-      letter-spacing: 0.04em;
-      margin-bottom: 0.16em;
-      padding-left: 1.1em;
-      display: block;
-    }
-    .tour-year::before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0.1em;
-      top: 0.11em;
-      width: 0.22em;
-      height: 1.13em;
-      background: #bbb;
-      border-radius: 0.14em;
-    }
-    .live-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 0.5em;
-      background: none;
-      line-height: 1.2;
-    }
-    .live-table td {
-      border-bottom: 1px solid #ededed;
-      padding: 0.28em 0.1em 0.28em 0;
-      font-size: 1em;
-    }
-    .live-table .date {
-      width: 3.4em;
-      color: #888;
-      text-align: right;
-      padding-right: 0.4em;
-      white-space: nowrap;
-      font-feature-settings: "pnum";
-      font-size: 0.99em;
-    }
-    .live-table .venue {
-      word-break: keep-all;
-    }
-    .tour-note {
-      margin-top: 0.6em;
-      color: #555;
-      font-size: 0.99em;
-      line-height: 1.6;
-      margin-bottom: 0.3em;
-    }
-    .setlist {
-      background: linear-gradient(160deg, #f8f9fa 70%, #f2f2f6 100%);
-      border: 1px solid #ebebeb;
-      border-radius: 15px;
-      padding: 1.06em 2.5em 1.06em 2.5em;
-      font-size: 1em;
-      max-width: 520px;
-      min-width: 120px;
-      box-shadow: 0 3px 20px rgba(120,120,120,0.07);
-      margin-top: 0;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
-      transition: box-shadow 0.18s;
-    }
-    .setlist-title {
-      font-weight: bold;
-      margin-bottom: 0.7em;
-      font-size: 1.06em;
-      letter-spacing: 0.12em;
-      color: #434649;
-      border-bottom: 1.5px solid #eee;
-      padding-bottom: 0.33em;
-      margin-left: -0.15em;
-      margin-right: -0.15em;
-    }
-    .setlist ol {
-      margin: 0;
-      padding-left: 1.25em;
-      font-variant-numeric: tabular-nums;
-    }
-    .setlist li {
-      margin-bottom: 0.31em;
-      min-height: 1.7em;
-      line-height: 1.62;
-      font-size: 1em;
-      letter-spacing: 0.01em;
-    }
-    .setlist em {
-      font-style: italic;
-      color: #717171;
-      letter-spacing: 0.01em;
-    }
-    .setlist li:last-child {
-      font-weight: bold;
-      color: #646464;
-    }
-    .footer {
-      margin-top: 2.8em;
-      text-align: left;
-      color: #aaa;
-      font-size: 1em;
-      padding-bottom: 2.4em;
-    }
-    .footer a {
-      color: #888;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-      color: #444;
-    }
-    @media (max-width: 800px) {
-      html, body {
-        font-size: 0.87em;
-      }
-      .container {
-        padding: 12px 5vw 30px 5vw;
-      }
-      .page-title {
-        font-size: 1.26em;
-        padding-bottom: 0.35em;
-        margin-bottom: 0.85em;
-      }
-      .tour-columns {
-        flex-direction: column;
-        gap: 1.05em;
-      }
-      .tour-info {
-        min-width: 0;
-        padding-left: 0;
-        padding-right: 0;
-      }
-      .setlist {
-        min-width: 0;
-        max-width: 98vw;
-        padding: 1.06em 6vw;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .footer {
-        margin-top: 2.3em;
-        padding-bottom: 2em;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="live_style.css?v=20240628">
 </head>
 <body>
   <div class="container">
@@ -223,12 +19,30 @@
           <div class="tour-year">1993年</div>
           <table class="live-table">
             <tbody>
-              <tr><td class="date">11/25</td><td class="venue">名古屋クラブクアトロ</td></tr>
-              <tr><td class="date">11/26</td><td class="venue">心斎橋筋ニューオーサカホール</td></tr>
-              <tr><td class="date">11/29</td><td class="venue">アートフォーラム</td></tr>
-              <tr><td class="date">12/04</td><td class="venue">福岡ビブレ</td></tr>
-              <tr><td class="date">12/06</td><td class="venue">仙台ビジネスメンセンター</td></tr>
-              <tr><td class="date">12/07</td><td class="venue">札幌メッセホール</td></tr>
+              <tr>
+                <td class="date">11/25</td>
+                <td class="venue">名古屋クラブクアトロ</td>
+              </tr>
+              <tr>
+                <td class="date">11/26</td>
+                <td class="venue">心斎橋筋ニューオーサカホール</td>
+              </tr>
+              <tr>
+                <td class="date">11/29</td>
+                <td class="venue">アートフォーラム</td>
+              </tr>
+              <tr>
+                <td class="date">12/04</td>
+                <td class="venue">福岡ビブレ</td>
+              </tr>
+              <tr>
+                <td class="date">12/06</td>
+                <td class="venue">仙台ビジネスメンセンター</td>
+              </tr>
+              <tr>
+                <td class="date">12/07</td>
+                <td class="venue">札幌メッセホール</td>
+              </tr>
             </tbody>
           </table>
           <div class="tour-note">
@@ -245,7 +59,7 @@
             <li><em>Acoustic</em></li>
             <li>Mrs Robinson</li>
             <li>September True Love</li>
-            <li><em>Talk Session（ゲスト：依ノ小原）</em></li>
+            <li><em>Talk Session（ゲスト：俵／小原）</em></li>
             <li>もう君を離さない</li>
             <li>セピア色の微笑み</li>
             <li>もうひとつの未来</li>
@@ -254,7 +68,7 @@
         </div>
       </div>
     </div>
-    <!-- ここに他ツアーも連続OK -->
+    <!-- 他ツアー追加時もこのブロックを繰り返しOK -->
     <div class="footer">
       <a href="../live/index.html">ライブアーカイブTOPへ戻る</a>
     </div>
