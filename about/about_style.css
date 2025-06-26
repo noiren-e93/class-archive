@@ -16,6 +16,7 @@ body {
   padding: 20px;
 }
 
+/* ページタイトル */
 .page-title {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
   font-size: 2.0rem;
