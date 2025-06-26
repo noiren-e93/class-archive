@@ -29,20 +29,24 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ===== セクションタイトル（理念・運営指針など） ===== */
+/* ===== 年・セクション見出し ===== */
 .section-title,
-h2.section-title {
+h2.section-title,
+h2.sub-title {
+  border-left: 4px solid #ccc;
+  background: #f7f7f7;
+  padding: 0.18em 0.7em;
   font-size: 1.08em;
   font-weight: 600;
   color: #444;
   margin-top: 2em;
   margin-bottom: 0.5em;
   letter-spacing: 0.06em;
+  display: block;
 }
 
-/* ===== サブタイトル・小見出し ===== */
-h3,
-h4 {
+/* ===== 小見出し・サブセクション ===== */
+h3, h4, .year-block {
   font-size: 1em;
   font-weight: 500;
   color: #555;
@@ -66,6 +70,28 @@ strong, b {
 em {
   font-style: italic;
   color: #666;
+}
+
+/* ===== タイムライン（年表） ===== */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.8em;
+  font-size: 0.98em;
+  line-height: 1.72;
+}
+.timeline-date {
+  color: #888;
+  font-size: 0.97em;
+  min-width: 6em;
+  text-align: right;
+  padding-right: 1em;
+  font-feature-settings: "pnum";
+  font-weight: 500;
+}
+.timeline-content {
+  flex: 1;
+  color: #444;
 }
 
 /* ===== 引用・注記 ===== */
@@ -133,6 +159,7 @@ hr {
 }
 
 /* ===== フッター・サブノート ===== */
+.footer-link,
 .footer-nav,
 .footer-note {
   margin-top: 2.8em;
@@ -166,11 +193,14 @@ hr {
     margin-bottom: 0.8em;
   }
   .section-title,
-  h2.section-title {
+  h2.section-title,
+  h2.sub-title {
     font-size: 1.01em;
     margin-top: 1.7em;
     margin-bottom: 0.4em;
+    padding: 0.12em 0.55em;
   }
+  .footer-link,
   .footer-nav, .footer-note {
     margin-top: 1.7em;
     padding-top: 0.6em;
