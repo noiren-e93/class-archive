@@ -1,8 +1,9 @@
+
 body {
   font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
   color: #333;
   background: #fff;
-  padding: 2em 1em;
+  padding: 2em 1.5em;
   font-size: 1em;
   line-height: 1.7;
   display: flex;
@@ -14,29 +15,35 @@ body {
 }
 .page-title {
   font-size: 1.8em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-  border-bottom: 1px solid #aaa;
+  margin-bottom: 1.6em;
+  color: #222;
+  font-weight: 600;
   padding-bottom: 0.3em;
+  border-bottom: 1px solid #aaa;
 }
 .tour-title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.2em;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.6em;
+}
+.tour-title.highlighted-title {
+  background-color: #333;
+  color: white;
+  padding: 0.4em 0.8em;
+  display: inline-block;
+  border-radius: 4px;
 }
 .tour-columns {
   display: flex;
   flex-direction: row;
-  gap: 2em;
   flex-wrap: wrap;
+  gap: 1.5em;
 }
-.info-block {
-  flex: 1 1 50%;
+.tour-left {
+  flex: 1 1 55%;
 }
-.tour-year {
-  font-weight: bold;
-  font-size: 1em;
-  margin-bottom: 0.4em;
+.tour-right {
+  flex: 1 1 40%;
 }
 .tour-schedule {
   width: 100%;
@@ -45,44 +52,42 @@ body {
 }
 .tour-schedule td {
   border-bottom: 1px solid #ccc;
-  padding: 0.3em 0.6em;
+  padding: 0.4em 0.5em;
   font-size: 0.88em;
+  vertical-align: top;
 }
 .tour-schedule td:first-child {
   width: 4.5em;
-  text-align: right;
-  white-space: nowrap;
+  text-align: center;
 }
 .tour-notes {
-  font-size: 0.88em;
-  color: #444;
+  font-size: 0.9em;
+  color: #333;
 }
 .setlist {
-  flex: 1 1 45%;
+  font-size: 1em;
   background: #fdfdfd;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #ddd;
   padding: 1em;
+  border-radius: 4px;
 }
 .setlist-title {
   font-weight: bold;
   font-size: 1em;
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 0.3em;
   margin-bottom: 0.6em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
 }
 .setlist ol {
-  margin: 0;
   padding-left: 1.2em;
+  margin: 0;
 }
 .setlist li {
   margin-bottom: 0.4em;
-  font-size: 0.95em;
 }
 @media screen and (max-width: 800px) {
   body {
-    font-size: 1.05em;
-    padding: 1em;
+    font-size: 1.06em;
   }
   .tour-columns {
     flex-direction: column;
