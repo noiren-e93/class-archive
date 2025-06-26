@@ -381,11 +381,47 @@ hr {
   min-width: 160px;
   table-layout: fixed;
 }
+.jacket img {
+  width: 180px;
+  max-width: 38vw;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+@media (max-width: 700px) {
+  .jacket img {
+    width: 100%;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .profile-table th,
 .profile-table td {
   word-break: break-all;
   white-space: normal;
+}
+@media (max-width: 700px) {
+  .info-flex {
+    flex-direction: column;
+    gap: 0.9em;   /* ← gapを小さく！ */
+    align-items: stretch;
+  }
+}
+@media (max-width: 700px) {
+  .info-flex {
+    flex-direction: column;
+    gap: 0.9em;   /* ← gapを小さく！ */
+    align-items: stretch;
+  }
+}
+@media (max-width: 700px) {
+  .info-flex {
+    flex-direction: column;
+    gap: 0.9em;   /* ← gapを小さく！ */
+    align-items: stretch;
+  }
 }
 
 @media (max-width: 700px) {
@@ -415,6 +451,31 @@ hr {
     max-width: 980px;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+.jacket img,
+.profile-photo img {
+  width: 180px;
+  max-width: 38vw;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+@media (max-width: 700px) {
+  .jacket img,
+  .profile-photo img {
+    width: 100%;
+    max-width: 260px;   /* ←ここがポイント！ */
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .info-flex {
+    flex-direction: column;
+    gap: 0.9em;   /* ← gapを小さく！ */
+    align-items: stretch;
   }
 }
 
