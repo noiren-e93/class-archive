@@ -68,12 +68,12 @@ body {
   border-collapse: collapse;
   margin-bottom: 1em;
   background: #fff;
-  font-size: 0.97em;
+  font-size: 0.9em;
 }
 .tour-schedule td, .live-table td {
   border-bottom: 1px solid #ccc;
   padding: 0.42em 0.6em;
-  font-size: 0.97em;
+  font-size: 0.9em;
   vertical-align: top;
   color: #444;
 }
@@ -86,8 +86,8 @@ body {
 
 /* ===== ツアーノート ===== */
 .tour-notes {
-  font-size: 0.95em;
-  color: #555;
+  font-size: 0.8em;
+  color: #666;
   margin-top: 0.8em;
   margin-bottom: 0.3em;
   line-height: 1.7;
