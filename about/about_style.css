@@ -369,17 +369,18 @@ hr {
   color: #339;
   font-weight: 600;
 }
+.profile-table {
+  width: auto;
+  max-width: 320px;
+  min-width: 160px;
+  table-layout: fixed;
+}
 
 @media (max-width: 700px) {
   .qa-section { margin-top: 2em; margin-bottom: 1.3em; }
   .qa-block { margin-bottom: 1em; }
   .qa-divider { margin: 0.7em 0 1.3em 0; }
-}
-
-
-
-
-
+  }
 @media (max-width: 700px) {
   .info-flex {
     flex-direction: column;
@@ -397,7 +398,6 @@ hr {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 980px;
