@@ -43,11 +43,10 @@
       width: 100%;
       flex-wrap: wrap;
       align-items: flex-start;
-      /* max-widthは削除（親.containerが制御） */
     }
     @media (max-width: 800px) {
       html, body {
-        font-size: 0.85em;
+        font-size: 1em; /* ←スマホ時は大きめで */
       }
       .container {
         padding: 12px 0 36px 0;
