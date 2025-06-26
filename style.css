@@ -13,13 +13,6 @@ body {
   margin-right: auto;
 }
 
-/* --- 見出し --- */
-h1, h2, h3 {
-  color: #333;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
 /* ページタイトル */
 .page-title {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
@@ -41,53 +34,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* --- ツリー形式リスト --- */
-ul.tree {
-  list-style-type: none;
-  padding-left: 1em;
-  border-left: 1px dotted #ccc;
-}
-.tree li {
-  position: relative;
-  margin: 0.5em 0;
-  padding-left: 1em;
-}
-.tree li::before {
-  content: "";
-  position: absolute;
-  top: 0.6em;
-  left: 0;
-  width: 0.4em;
-  height: 0.4em;
-  background-color: #666;
-  border-radius: 50%;
-}
-
-/* --- ディスコグラフィカード（オプション） --- */
-.discography-box {
-  display: flex;
-  gap: 20px;
-  margin: 1.5em 0;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
-}
-.jacket img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-}
-.detail p {
-  margin: 0.3em 0;
-}
-.detail p strong {
-  display: inline-block;
-  width: 80px;
-  color: #555;
-}
 
 /* --- スマホ対応 --- */
 @media (max-width: 600px) {
@@ -95,21 +41,4 @@ ul.tree {
     font-size: 15px;
     padding: 1em;
   }
-  .discography-box {
-    flex-direction: column;
-    align-items: center;
-  }
-  .jacket img {
-    width: 100px;
-    height: 100px;
-  }
-  .tree {
-    padding-left: 0.5em;
-  }
-  .tree li {
-    padding-left: 0.8em;
-  }
-  .tree li::before {
-    left: -0.8em;
-  }
-}
+
