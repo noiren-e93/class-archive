@@ -1,22 +1,28 @@
-/* === Discography Index (disc/index.html) Specific Styles === */
-body {
-  font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
-  background-color: #fefefe;
+
+/* ===== ベーススタイル（全ページ共通） ===== */
+html, body {
+  font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', 'Yu Gothic', 'Helvetica Neue', sans-serif;
+  font-size: 16px;    /* rem, em指定の基準に */
   color: #222;
+  background: #fff;
   line-height: 1.7;
-  font-size: 16px;
   margin: 0;
-  padding: 1em;
+  padding: 0;
+}
+
+/* ===== レイアウト・余白（中央揃え、最大幅） ===== */
+body {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  padding: 2.5em 5vw 2.5em 5vw;
   box-sizing: border-box;
 }
 
-/* ページタイトル */
-.page-title {
+/* ===== ページ表題・TOP表題（完全統一用！） ===== */
+.main-title, .page-title {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
-  font-size: 2.0rem;
+  font-size: 2.0rem;            /* ← ここが全ての基準！ */
   font-weight: 700;
   border-bottom: 2px solid #555;
   padding-bottom: 0.35em;
@@ -25,47 +31,174 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* サブキャプション（トップ下など） */
+.sub-caption, .caption {
+  font-size: 1em;
+  color: #888;
+  margin: 0.4em 0 1.6em 0;
+  line-height: 1.4;
+}
+
+/* ===== リンク ===== */
 a {
   color: #0066cc;
   text-decoration: none;
+  transition: color 0.18s;
 }
-
 a:hover {
   text-decoration: underline;
-}
-
-.category {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-.category a {
-  font-weight: 600;
-  font-size: 1.1em;
   color: #222;
+}
+
+/* ===== 見出し・セクション ===== */
+h2, .section-title {
+  font-size: 1.13em;
+  font-weight: 600;
+  border-left: 4px solid #ccc;
+  background: #f7f7f7;
+  padding: 0.22em 0.75em;
+  margin: 2.2em 0 0.7em 0;
+  color: #444;
+  letter-spacing: 0.04em;
+}
+
+/* ===== 段落 ===== */
+p {
+  margin: 0 0 1.4em 0;
+  line-height: 1.8;
+  font-size: 1em;
+}
+
+/* ===== テーブル（プロフィール/汎用） ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  background: #fafafa;
+  font-size: 1em;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.7em 1em;
+  text-align: left;
+}
+th {
+  background: #f4f4f4;
+  font-weight: 600;
+  color: #444;
+}
+td {
+  color: #444;
+  background: #fff;
+}
+
+/* プロフィールテーブルだけ幅制限 */
+.profile-table, .meta-top table {
+  width: auto;
+  max-width: 320px;
+  min-width: 160px;
+  table-layout: fixed;
+}
+
+/* テーブルセル折返し */
+.profile-table th, .profile-table td,
+.meta-top th, .meta-top td {
+  word-break: break-all;
+  white-space: normal;
+}
+
+/* ===== 画像枠（プロフィール写真・ジャケット） ===== */
+.jacket, .profile-photo {
+  margin-bottom: 1.2em;
+}
+.jacket img, .profile-photo img {
+  width: 180px;
+  max-width: 38vw;
+  height: auto;
   display: block;
-  margin-bottom: 0.3em;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
+  background: #fafafa;
 }
 
-.subcategory {
-  padding-left: 1.5em;
-  font-size: 0.95em;
-  color: #666;
-  line-height: 1.6em;
-  position: relative;
-  margin-top: 0.2em;
-}
-
-.subcategory::before {
-  content: "\2022";
-  position: absolute;
-  left: 0.5em;
-  color: #aaa;
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 15px;
-    padding: 1em;
+@media (max-width: 700px) {
+  .jacket img, .profile-photo img {
+    width: 100%;
+    max-width: 240px;
+    max-height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
   }
+}
+
+/* ===== フレックス横並び（画像＋プロフィール表） ===== */
+.info-flex, .profile-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;  /* スマホ時は自動で縦並び */
+}
+@media (max-width: 700px) {
+  .info-flex, .profile-flex {
+    flex-direction: column;
+    gap: 1em;
+    align-items: stretch;
+  }
+}
+
+/* ===== Q&A ===== */
+.qa-section { margin: 3em 0 2em 0; }
+.qa-section h2 { font-size: 1.15em; margin-bottom: 0.9em; }
+.qa-divider { border: none; border-top: 1px solid #ccc; margin: 1em 0 2em 0; }
+.qa-block { margin-bottom: 1.6em; padding-bottom: 0.6em; border-bottom: 1px dotted #ddd; }
+.qa-label { font-size: 1em; font-weight: 600; color: #2a2a2a; margin-bottom: 0.3em; }
+.qa-answer { padding-left: 0.5em; }
+.qa-line { margin: 0.16em 0; line-height: 1.7; font-size: 0.98em; }
+.qa-person { font-weight: 600; margin-right: 0.5em; }
+.qa-person.hiura { color: #c44; }
+.qa-person.tsukui { color: #339; }
+@media (max-width: 700px) {
+  .qa-section { margin: 2em 0 1.3em 0; }
+  .qa-block { margin-bottom: 1em; }
+  .qa-divider { margin: 0.7em 0 1.3em 0; }
+}
+
+/* ===== タイムライン ===== */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.8em;
+  font-size: 0.98em;
+  line-height: 1.72;
+}
+.timeline-date {
+  color: #888;
+  font-size: 0.97em;
+  min-width: 6em;
+  text-align: right;
+  padding-right: 1em;
+  font-feature-settings: "pnum";
+  font-weight: 500;
+}
+.timeline-content {
+  flex: 1;
+  color: #444;
+}
+@media (max-width: 700px) {
+  .timeline-item { font-size: 0.94em; }
+}
+
+/* ===== フッター・サブノート ===== */
+.footer-link, .footer-nav, .footer-note {
+  margin-top: 2.8em;
+  font-size: 0.95em;
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 1.2em;
+}
+@media (max-width: 700px) {
+  body { padding: 1.1em 1vw; font-size: 15px; }
+  .footer-link, .footer-nav, .footer-note { margin-top: 1.7em; padding-top: 0.6em; font-size: 0.92em; }
 }
