@@ -149,11 +149,16 @@
         padding-left: 0;
         padding-right: 0;
       }
-      .setlist {
-        min-width: 0;
-        max-width: 100%;
-        padding: 1em 6vw 1em 6vw; /* ←セットリスト側余白を最大化 */
-      }
+@media (max-width: 800px) {
+  .setlist {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 460px;
+    padding: 1em 6vw;
+    text-align: left;
+  }
+}
+
       .tour-title {
         font-size: 1em;
         padding: 0.38em 0.7em;
