@@ -313,6 +313,73 @@ hr {
   background: #fff;
   font-weight: 400;
 }
+
+.qa-section {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+.qa-section h2 {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.9em;
+}
+.qa-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1em 0 2em 0;
+}
+
+.qa-block {
+  margin-bottom: 1.6em;
+  padding-bottom: 0.6em;
+  border-bottom: 1px dotted #ddd;
+}
+
+.qa-label {
+  font-size: 1em;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.02em;
+}
+
+.qa-answer {
+  padding-left: 0.5em;
+}
+
+.qa-line {
+  margin: 0.16em 0;
+  line-height: 1.7;
+  font-size: 0.98em;
+}
+
+.qa-person {
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.qa-person.hiura {
+  color: #c44;
+  font-weight: 600;
+}
+
+.qa-person.tsukui {
+  color: #339;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .qa-section { margin-top: 2em; margin-bottom: 1.3em; }
+  .qa-block { margin-bottom: 1em; }
+  .qa-divider { margin: 0.7em 0 1.3em 0; }
+}
+
+
+
+
+
 @media (max-width: 700px) {
   .info-flex {
     flex-direction: column;
