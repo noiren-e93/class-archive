@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>WELCOME to the CLASSMATE '93｜class ライブアーカイブ</title>
+  <title>class ライブデータ｜class ライブアーカイブ</title>
   <style>
     html, body {
       background: #fff;
@@ -17,8 +17,18 @@
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 28px 5vw 22px 5vw; /* 画面幅対応・全端末で自然 */
+      padding: 28px 5vw 22px 5vw;
       background: #fff;
+    }
+    /* 共通ページ表題 */
+    .page-title {
+      font-size: 1.8em;
+      font-weight: bold;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.4em;
+      margin-bottom: 1em;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
     }
     .tour-block {
       margin-bottom: 2em;
@@ -52,11 +62,24 @@
       padding-right: 0;
     }
     .tour-year {
-      font-weight: bold;
-      margin-bottom: 0.16em;
+      position: relative;
       color: #444;
       font-size: 0.97em;
       letter-spacing: 0.04em;
+      margin-bottom: 0.16em;
+      padding-left: 1.1em;
+      display: block;
+    }
+    .tour-year::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0.1em;
+      top: 0.11em;
+      width: 0.22em;
+      height: 1.13em;
+      background: #bbb;
+      border-radius: 0.14em;
     }
     .live-table {
       width: 100%;
@@ -87,7 +110,7 @@
       color: #555;
       font-size: 0.99em;
       line-height: 1.6;
-      margin-bottom: 0.3em; /* セットリスト上の空白を最短に */
+      margin-bottom: 0.3em;
     }
     .setlist {
       background: linear-gradient(160deg, #f8f9fa 70%, #f2f2f6 100%);
@@ -158,6 +181,11 @@
       .container {
         padding: 12px 5vw 30px 5vw;
       }
+      .page-title {
+        font-size: 1.26em;
+        padding-bottom: 0.35em;
+        margin-bottom: 0.85em;
+      }
       .tour-columns {
         flex-direction: column;
         gap: 1.05em;
@@ -183,6 +211,7 @@
 </head>
 <body>
   <div class="container">
+    <h1 class="page-title">class ライブデータ</h1>
     <div class="tour-block">
       <div class="tour-title">WELCOME to the CLASSMATE '93</div>
       <div class="tour-columns">
