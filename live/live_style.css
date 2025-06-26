@@ -1,8 +1,9 @@
+
 body {
   font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
   color: #333;
   background: #fff;
-  padding: 2em 1.5em;
+  padding: 2em 1em;
   font-size: 0.95em;
   line-height: 1.7;
   display: flex;
@@ -15,86 +16,85 @@ body {
 .page-title {
   font-size: 1.8em;
   font-weight: bold;
-  border-bottom: 2px solid #aaa;
+  border-bottom: 2px solid #ccc;
   padding-bottom: 0.4em;
-  margin-bottom: 1em;
-  color: #222;
+  margin-bottom: 1.5em;
 }
-.entry {
-  margin-bottom: 2.2em;
-}
-.title {
-  font-size: 1.2em;
+.tour-title {
   font-weight: 600;
+  font-size: 1.2em;
   margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.4em;
   color: #222;
 }
-.info-flex {
+.tour-columns {
   display: flex;
+  gap: 2em;
   flex-wrap: wrap;
-  gap: 1.5em;
-  align-items: flex-start;
-  justify-content: space-between;
 }
-.info-block {
+.tour-left {
   flex: 1 1 55%;
-  background: #fff;
-  padding: 0.8em;
-  border: 1px solid #eee;
-  border-radius: 4px;
+}
+.tour-right {
+  flex: 1 1 40%;
+}
+.year-band {
+  font-size: 1em;
+  font-weight: bold;
+  border-left: 4px solid #aaa;
+  padding-left: 0.6em;
+  margin-bottom: 1.2em;
+  color: #444;
+}
+.tour-schedule {
+  width: 100%;
+  border-spacing: 0.4em 0.2em;
+  border-collapse: separate;
+}
+.tour-schedule td {
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  padding: 0.5em 0.8em;
+  font-size: 0.88em;
+}
+.tour-notes {
+  font-size: 0.88em;
+  margin-top: 1em;
+  color: #444;
 }
 .setlist {
-  flex: 1 1 40%;
-  font-size: 0.9em;
   background: #fdfdfd;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   padding: 1em;
-  border-radius: 4px;
 }
 .setlist-title {
   font-weight: bold;
   font-size: 1em;
-  margin-bottom: 0.6em;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.6em;
 }
-.setlist ol {
+.setlist-columns {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
   padding-left: 1.2em;
-  margin: 0;
-  column-count: 2;
-  column-gap: 1.2em;
 }
-.setlist li {
-  margin-bottom: 0.4em;
-  line-height: 1.5;
-}
-.live-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1em;
-  table-layout: fixed;
-}
-.live-table td {
-  border: 1px solid #ccc;
-  padding: 0.3em 0.5em;
-  font-size: 0.8em;
-  vertical-align: top;
-}
-.date-cell {
-  width: 5.2em;
-  text-align: center;
-  white-space: nowrap;
-}
-.comment {
-  font-size: 0.85em;
-  color: #333;
-  margin-bottom: 1.5em;
+.setlist-columns li {
+  margin-bottom: 0.5em;
+  break-inside: avoid;
 }
 @media screen and (max-width: 800px) {
-  .info-flex {
+  body {
+    font-size: 1.05em;
+    padding: 1.5em 1em;
+  }
+  .tour-columns {
     flex-direction: column;
   }
-  .setlist ol {
-    column-count: 1;
+  .setlist-columns {
+    columns: 1;
   }
 }
