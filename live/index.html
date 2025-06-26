@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=800,maximum-scale=1,user-scalable=yes">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>WELCOME to the CLASSMATE '93｜class ライブアーカイブ</title>
   <style>
     html, body {
@@ -40,10 +40,10 @@
     .tour-columns {
       display: flex;
       gap: 1.3em;
-      max-width: 800px;
-      margin: 0 auto;
+      width: 100%;
       flex-wrap: wrap;
       align-items: flex-start;
+      /* max-widthは削除（親.containerが制御） */
     }
     @media (max-width: 800px) {
       html, body {
