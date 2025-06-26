@@ -210,6 +210,65 @@ hr {
     font-size: 0.92em;
   }
 }
+.profile-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4em;
+  margin: 1.5em 0 2.4em 0;
+  flex-wrap: wrap; /* スマホ時は自動で縦並び */
+}
+.profile-photo img {
+  width: 200px;
+  max-width: 30vw;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(120,120,120,0.09);
+  display: block;
+  background: #fafafa;
+}
+.profile-table {
+  border-collapse: collapse;
+  background: #fafafa;
+  min-width: 210px;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: 0 1px 5px rgba(180,180,180,0.07);
+}
+.profile-table th, .profile-table td {
+  border: 1px solid #ddd;
+  padding: 0.7em 1.1em;
+  text-align: left;
+  font-weight: 500;
+  color: #444;
+  background: none;
+}
+.profile-table th {
+  background: #f4f4f4;
+  width: 4.7em;
+  font-weight: 600;
+  color: #444;
+}
+.profile-table td {
+  background: #fff;
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  .profile-flex {
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: stretch;
+  }
+  .profile-photo img {
+    width: 90vw;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-table {
+    min-width: 0;
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .container {
