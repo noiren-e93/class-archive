@@ -16,13 +16,16 @@ body {
 }
 
 .page-title {
-  font-size: clamp(1.3em, 4.5vw, 1.6em);
+  font-size: 1.6em;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   line-height: 1.4;
-  white-space: nowrap;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
   margin: 2em 0 1em 0;
+  font-family: "Yu Gothic", "Noto Sans JP", sans-serif;
 }
+
 
 hr.entry-divider {
   margin: 2em 0;
