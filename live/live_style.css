@@ -61,22 +61,23 @@
 }
 
 .live .setlist {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.3em 1em 1.1em 1em;
-  margin: 2em 0 0 0;
-  box-shadow: 0 2px 8px #eee;
-  line-height: 1.5;
+  background: #fcfcfc;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 1em 0.9em 0.7em 0.9em;
+  margin: 1.5em 0 0 0;
+  /* box-shadow: 0 2px 8px #eee; ← 削除 */
 }
+
 .live .setlist-title {
   font-weight: bold;
-  font-size: 1.08em;
+  font-size: 1.04em;
   margin-bottom: 0.6em;
   color: #222;
   letter-spacing: 0.04em;
   line-height: 1.35;
 }
+
 
 .live .track {
   list-style: decimal inside;
