@@ -1,23 +1,39 @@
-/* disc_index_style.css */
+/* disc_index_style.css：修正版（視覚トーン調整＋余白補正） */
+
+.page-title {
+  font-weight: normal; /* ← 太さを抑える */
+  font-size: 1.6em;
+  border-bottom: 1px solid #999;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+.page-sub {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 2em;
+}
 
 .disc-section {
-  font-size: 1.1em;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
+  font-size: 1.05em;
+  margin-top: 2.5em;
+  margin-bottom: 0.4em;
+  font-weight: normal; /* ← 抑えた強調 */
+  color: #222;
 }
 
 .disc-nav {
   list-style: none;
-  padding-left: 1em;
-  margin-bottom: 1.5em;
+  padding-left: 1.2em; /* ← 微調整 */
+  margin-bottom: 1.8em;
 }
 
 .disc-nav li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 0.95em;
 }
 
 .footer-link {
-  margin-top: 3em;
+  margin-top: 4em;
   font-size: 0.9em;
 }
