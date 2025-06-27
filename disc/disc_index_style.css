@@ -1,9 +1,9 @@
-/* disc_index_style.css：中央揃え構造に戻し、視覚トーンを統一 */
+/* disc_index_style.css */
 
 .container {
   margin: 0 auto;
-  text-align: left; /* ← 中のテキストは左寄せに戻す */
-  font-family: "Yu Gothic", "游ゴシック Medium", "Noto Sans JP", sans-serif; /* ← トップと統一 */
+  text-align: left;
+  font-family: "Yu Gothic", "游ゴシック Medium", "Noto Sans JP", sans-serif;
 }
 
 .page-title {
@@ -11,11 +11,12 @@
   border-bottom: 1px solid #999;
   margin-top: 2.8em;
   margin-bottom: 1em;
+  color: #222;
 }
 
 .page-sub {
   font-size: 0.95em;
-  color: #444;
+  color: #222;
   margin-bottom: 2em;
 }
 
@@ -41,4 +42,5 @@
 .footer-link {
   margin-top: 4em;
   font-size: 0.9em;
+  color: #222;
 }
