@@ -1,7 +1,7 @@
 /* ===== ベーススタイル（全ページ共通） ===== */
 html, body {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', 'Yu Gothic', 'Helvetica Neue', sans-serif;
-  font-size: 16px;    /* rem, em指定の基準に */
+  font-size: 16px;
   color: #222;
   background: #fff;
   line-height: 1.7;
@@ -18,10 +18,17 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 28px 5vw 32px 5vw;
+  background: #fff;
+}
+
 /* ===== ページ表題・TOP表題（完全統一用！） ===== */
 .main-title, .page-title {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
-  font-size: 2.0rem;            /* ← ここが全ての基準！ */
+  font-size: 2.0rem;
   font-weight: 700;
   border-bottom: 2px solid #555;
   padding-bottom: 0.35em;
@@ -120,30 +127,25 @@ td {
   background: #fafafa;
 }
 
-@media (max-width: 700px) {
-  .jacket img, .profile-photo img {
-    width: 100%;
-    max-width: 240px;
-    max-height: 260px;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-  }
-}
-
 /* ===== フレックス横並び（画像＋プロフィール表） ===== */
 .info-flex, .profile-flex {
   display: flex;
   align-items: flex-start;
   gap: 2em;
-  flex-wrap: wrap;  /* スマホ時は自動で縦並び */
+  flex-wrap: wrap;
 }
-@media (max-width: 700px) {
-  .info-flex, .profile-flex {
-    flex-direction: column;
-    gap: 1em;
-    align-items: stretch;
-  }
+.info-block {
+  flex: 1 1 200px;
+  min-width: 150px;
+  padding-top: 0.1em;
+  padding-bottom: 0.4em;
+}
+.title {
+  font-size: 1.13em;
+  font-weight: bold;
+  margin-bottom: 0.45em;
+  color: #222;
+  letter-spacing: 0.02em;
 }
 
 /* ===== Q&A ===== */
@@ -157,11 +159,6 @@ td {
 .qa-person { font-weight: 600; margin-right: 0.5em; }
 .qa-person.hiura { color: #c44; }
 .qa-person.tsukui { color: #339; }
-@media (max-width: 700px) {
-  .qa-section { margin: 2em 0 1.3em 0; }
-  .qa-block { margin-bottom: 1em; }
-  .qa-divider { margin: 0.7em 0 1.3em 0; }
-}
 
 /* ===== タイムライン ===== */
 .timeline-item {
@@ -184,9 +181,6 @@ td {
   flex: 1;
   color: #444;
 }
-@media (max-width: 700px) {
-  .timeline-item { font-size: 0.94em; }
-}
 
 /* ===== フッター・サブノート ===== */
 .footer-link, .footer-nav, .footer-note {
@@ -197,7 +191,44 @@ td {
   border-top: 1px solid #eee;
   padding-top: 1.2em;
 }
+
+/* ====== レスポンシブ：スマホ時の余白・画像・テーブル・フレックス ====== */
 @media (max-width: 700px) {
   body { padding: 1.1em 1vw; font-size: 15px; }
+  .container {
+    padding: 18px 4vw 26px 4vw;
+  }
+  .jacket img, .profile-photo img {
+    width: 88vw;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+  .info-flex, .profile-flex {
+    flex-direction: column;
+    gap: 1em;
+    align-items: stretch;
+  }
+  .profile-table {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .profile-table th,
+  .profile-table td {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+    font-size: 1em;
+  }
+  .meta-top, .profile-table {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .qa-section { margin: 2em 0 1.3em 0; }
+  .qa-block { margin-bottom: 1em; }
+  .qa-divider { margin: 0.7em 0 1.3em 0; }
+  .timeline-item { font-size: 0.94em; }
   .footer-link, .footer-nav, .footer-note { margin-top: 1.7em; padding-top: 0.6em; font-size: 0.92em; }
 }
