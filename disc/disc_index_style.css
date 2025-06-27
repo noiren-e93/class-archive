@@ -1,5 +1,9 @@
 /* disc_index_style.css */
 
+.container {
+  text-align: center; /* 中央揃え化の主軸 */
+}
+
 .page-title {
   font-weight: normal;
   border-bottom: 1px solid #999;
@@ -23,7 +27,7 @@
 
 .disc-nav {
   list-style: none;
-  padding-left: 1.2em;
+  padding-left: 0;
   margin-bottom: 1.8em;
 }
 
