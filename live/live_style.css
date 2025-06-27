@@ -1,4 +1,4 @@
-/* live_style.css - classライブページ専用（basic.css競合ゼロ） */
+/* live_style.css - 行間改善版 */
 
 .live .container {
   max-width: 800px;
@@ -13,7 +13,7 @@
   font-size: 1.6em;
   font-weight: bold;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.35;
   font-family: "Yu Gothic", "Noto Sans JP", sans-serif;
 }
 
@@ -26,7 +26,7 @@
   padding-left: 0.55em;
   border-bottom: 1px solid #ddd;
   background: none;
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 .live .tour-year {
@@ -34,6 +34,7 @@
   font-weight: bold;
   color: #444;
   font-size: 1em;
+  line-height: 1.35;
 }
 
 .live .live-table {
@@ -48,13 +49,14 @@
   color: #222;
   font-size: 1em;
   vertical-align: top;
+  line-height: 1.5;
 }
 
 .live .tour-note,
 .live .note {
   font-size: 0.9em;
   color: #666;
-  line-height: 1.8;
+  line-height: 1.5;
   margin: 1em 0 1.2em 0;
 }
 
@@ -65,6 +67,7 @@
   padding: 1.3em 1em 1.1em 1em;
   margin: 2em 0 0 0;
   box-shadow: 0 2px 8px #eee;
+  line-height: 1.5;
 }
 .live .setlist-title {
   font-weight: bold;
@@ -72,6 +75,7 @@
   margin-bottom: 0.6em;
   color: #222;
   letter-spacing: 0.04em;
+  line-height: 1.35;
 }
 
 .live .track {
@@ -80,10 +84,10 @@
   padding: 0;
 }
 .live .track li {
-  margin-bottom: 0.65em;
+  margin-bottom: 0.55em;
   color: #222;
   font-size: 1em;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .live .entry-divider {
