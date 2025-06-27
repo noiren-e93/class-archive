@@ -1,43 +1,28 @@
-/* ─── live_style.css ─── */
+/* live_style.css - liveページ専用（basic.cssとは完全に分離） */
 
-/* 1) ページタイトルの余白／下線を basic.css と同一に（.live スコープ内のみ） */
 .live .page-title {
   margin: 2em 0 0.2em 0;
   padding-bottom: 0.3em;
   border-bottom: 2px solid #ccc;
-}
-
-/* 2) ライブ日程テーブルをライン形式に */
-.live .live-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.live .live-table td {
-  padding: 0.5em 0;
-  border-bottom: 1px solid #eee;
-}
-
-/* 3) セットリストをカード化 */
-.live .setlist {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin-top: 1.5em;
-  border-radius: 4px;
-}
-.live .setlist-title {
+  font-size: 1.6em;
   font-weight: bold;
+  text-align: left;
+  font-family: "Yu Gothic", "Noto Sans JP", sans-serif;
+  line-height: 1.4;
+}
+
+.live .sub-title {
+  margin: 1.8em 0 0.8em 0;
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #222;
+  border-left: 4px solid #bbb;
+  padding-left: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.live .tour-year {
   margin-bottom: 0.5em;
-}
-
-/* 4) .entry 間の余白 */
-.live .entry + .entry {
-  margin-top: 2em;
-}
-
-/* 5) entry ごとに区切り線（basic.css の .entry-divider を利用） */
-.live .entry-divider {
-  margin: 2em 0;
-  border: none;
-  border-top: 1px solid #ccc;
-}
+  font-weight: bold;
+  color: #444;
+  font-size: 
