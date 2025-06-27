@@ -1,207 +1,69 @@
-/* ===== ベーススタイル（全ページ共通） ===== */
-html, body {
-  font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', 'Yu Gothic', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+/* base.css - プロジェクト共通の基本スタイル */
+
+body {
+  font-family: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #222;
+  line-height: 1.6;
   background: #fff;
-  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
 
-/* ===== レイアウト・余白（中央揃え、最大幅） ===== */
-body {
-  max-width: 1080px;         /* ← PC時の最大幅を広く */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2.5em 3vw 2.5em 3vw; /* ← PC時の左右余白もやや広く */
-  box-sizing: border-box;
-  background: #fff;
-}
-
 .container {
-  max-width: 1000px;         /* ← 本文ブロックの最大幅（推奨960〜1100px） */
+  max-width: 800px;
   margin: 0 auto;
-  padding: 28px 3vw 32px 3vw; /* ← 左右余白3vwで広々 */
-  background: #fff;
+  padding: 1.5em 1em;
 }
 
-/* ===== ページ表題・TOP表題（完全統一用！） ===== */
-.main-title, .page-title {
-  font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 700;
-  border-bottom: 2px solid #555;
-  padding-bottom: 0.35em;
-  margin-bottom: 1.1em;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.page-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 2em auto 1em auto;
+  font-weight: bold;
 }
 
-/* サブキャプション（トップ下など） */
-.sub-caption, .caption {
-  font-size: 1em;
-  color: #888;
-  margin: 0.4em 0 1.6em 0;
-  line-height: 1.4;
+hr.entry-divider {
+  margin: 2em 0;
+  border: none;
+  border-top: 1px solid #ccc;
 }
 
-/* ===== リンク ===== */
 a {
-  color: #0066cc;
+  color: #336699;
   text-decoration: none;
-  transition: color 0.18s;
 }
+
 a:hover {
   text-decoration: underline;
-  color: #222;
 }
 
-/* ===== 見出し・セクション ===== */
-h2, .section-title {
-  font-size: 1.13em;
-  font-weight: 600;
-  border-left: 4px solid #ccc;
-  background: #f7f7f7;
-  padding: 0.22em 0.75em;
-  margin: 2.2em 0 0.7em 0;
-  color: #444;
-  letter-spacing: 0.04em;
+.footer-link {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 3em;
+  color: #666;
 }
 
-/* ===== 段落 ===== */
-p {
-  margin: 0 0 1.4em 0;
-  line-height: 1.8;
-  font-size: 1em;
-}
-
-/* ===== テーブル（プロフィール/汎用） ===== */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1.5em 0;
-  background: #fafafa;
-  font-size: 1em;
-}
-th, td {
-  border: 1px solid #ddd;
-  padding: 0.7em 1em;
-  text-align: left;
-}
-th {
-  background: #f4f4f4;
-  font-weight: 600;
-  color: #444;
-}
-td {
-  color: #444;
-  background: #fff;
-}
-
-/* プロフィールテーブルだけ幅制限 */
-.profile-table, .meta-top table {
-  width: auto;
-  max-width: 320px;
-  min-width: 160px;
-  table-layout: fixed;
-}
-
-/* テーブルセル折返し */
-.profile-table th, .profile-table td,
-.meta-top th, .meta-top td {
-  word-break: break-all;
-  white-space: normal;
-}
-
-/* ===== 画像枠（プロフィール写真・ジャケット） ===== */
-.jacket, .profile-photo {
-  margin-bottom: 1.2em;
-}
-.jacket img, .profile-photo img {
-  width: 180px;
-  max-width: 38vw;
+img {
+  max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
-  background: #fafafa;
+  margin: 0 auto;
 }
 
-/* ===== フレックス横並び（画像＋プロフィール表） ===== */
-.info-flex, .profile-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 2em;
-  flex-wrap: wrap;
-}
-.info-block {
-  flex: 1 1 200px;
-  min-width: 150px;
-  padding-top: 0.1em;
-  padding-bottom: 0.4em;
-}
-.title {
-  font-size: 1.13em;
-  font-weight: bold;
-  margin-bottom: 0.45em;
-  color: #222;
-  letter-spacing: 0.02em;
+.note {
+  font-size: 0.9em;
+  color: #666;
 }
 
+.quote {
+  font-size: 0.85em;
+  color: #555;
+  text-align: left;
+}
 
-/* ===== フッター・サブノート ===== */
-.footer-link, .footer-nav, .footer-note {
-  margin-top: 2.8em;
-  font-size: 0.95em;
-  text-align: center;
+.updated {
+  font-size: 0.8em;
   color: #888;
-  border-top: 1px solid #eee;
-  padding-top: 1.2em;
-}
-
-/* ====== レスポンシブ：スマホ時の余白・画像・テーブル・フレックス ====== */
-@media (max-width: 700px) {
-  body {
-    padding: 0;
-    font-size: 15px;
-  }
- .container {
-    padding: 16px 4vw 28px 4vw;
-    max-width: 100vw;
-  }
-}
-  .jacket img, .profile-photo img {
-    width: 88vw;
-    max-width: 230px;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 260px;
-    object-fit: cover;
-  }
-  .info-flex, .profile-flex {
-    flex-direction: column;
-    gap: 1em;
-    align-items: stretch;
-  }
-  .profile-table {
-    width: 100%;
-    min-width: 0;
-    max-width: 100vw;
-  }
-  .profile-table th,
-  .profile-table td {
-    padding-left: 0.9em;
-    padding-right: 0.9em;
-    font-size: 1em;
-  }
-  .meta-top, .profile-table {
-    padding-left: 4vw;
-    padding-right: 4vw;
-  }
-  .qa-section { margin: 2em 0 1.3em 0; }
-  .qa-block { margin-bottom: 1em; }
-  .qa-divider { margin: 0.7em 0 1.3em 0; }
-  .timeline-item { font-size: 0.94em; }
-  .footer-link, .footer-nav, .footer-note { margin-top: 1.7em; padding-top: 0.6em; font-size: 0.92em; }
+  text-align: right;
 }
