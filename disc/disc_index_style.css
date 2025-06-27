@@ -1,10 +1,9 @@
-/* disc_index_style.css：修正版（視覚トーン調整＋余白補正） */
+/* disc_index_style.css */
 
 .page-title {
-  font-weight: normal; /* ← 太さを抑える */
-  font-size: 1.6em;
+  font-weight: normal;
   border-bottom: 1px solid #999;
-  padding-bottom: 0.3em;
+  margin-top: 2.8em;
   margin-bottom: 1em;
 }
 
@@ -18,13 +17,13 @@
   font-size: 1.05em;
   margin-top: 2.5em;
   margin-bottom: 0.4em;
-  font-weight: normal; /* ← 抑えた強調 */
+  font-weight: normal;
   color: #222;
 }
 
 .disc-nav {
   list-style: none;
-  padding-left: 1.2em; /* ← 微調整 */
+  padding-left: 1.2em;
   margin-bottom: 1.8em;
 }
 
