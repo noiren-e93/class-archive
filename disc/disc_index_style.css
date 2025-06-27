@@ -1,7 +1,9 @@
-/* disc_index_style.css */
+/* disc_index_style.css：中央揃え構造に戻し、視覚トーンを統一 */
 
 .container {
-  text-align: center; /* 中央揃え化の主軸 */
+  margin: 0 auto;
+  text-align: left; /* ← 中のテキストは左寄せに戻す */
+  font-family: "Yu Gothic", "游ゴシック Medium", "Noto Sans JP", sans-serif; /* ← トップと統一 */
 }
 
 .page-title {
@@ -27,7 +29,7 @@
 
 .disc-nav {
   list-style: none;
-  padding-left: 0;
+  padding-left: 1.2em;
   margin-bottom: 1.8em;
 }
 
