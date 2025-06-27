@@ -44,3 +44,11 @@
   font-size: 0.9em;
   color: #222;
 }
+a {
+  color: #2a4a7b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
