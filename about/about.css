@@ -173,7 +173,7 @@ a:hover {
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.6em;                /* 行内の間隔 */
+  gap: 0.6em;
   margin-bottom: 1em;
   font-size: 0.98em;
   line-height: 1.72;
@@ -181,16 +181,33 @@ a:hover {
 }
 
 .timeline-date {
-  min-width: 7em;            /* 日付列の幅固定で折り返さない */
+  min-width: 7em;
   text-align: right;
   font-weight: 600;
   color: #666;
   padding-right: 0.8em;
-  white-space: nowrap;       /* 改行禁止：←これが今回の重要ポイント！ */
+  white-space: nowrap;
 }
 
 .timeline-content {
   flex: 1;
   color: #222;
   white-space: normal;
+}
+
+/* ===== セクション見出し（年代） ===== */
+.sub-colored {
+  background-color: #f7f7f7;
+  border-left: 4px solid #aaa;
+  border-bottom: none;
+  padding: 0.3em 0.8em;
+  margin-top: 1.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #444;
+}
+
+/* ===== daysページ専用：表題の上余白調整 ===== */
+body.days .page-title {
+  margin-top: 1.8em;
 }
