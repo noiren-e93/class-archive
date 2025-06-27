@@ -218,16 +218,16 @@ a:hover {
   margin-bottom: 2.6em;
 }
 .event-year {
-  font-size: 1.08em;
+  background: #bbb;  /* ←薄いグレー */
+  color: #333;
+  font-size: 1.07em;
   font-weight: 600;
-  color: #fff;
-  background: #888;
-  padding: 0.23em 1em 0.23em 0.9em;
-  border-radius: 8px 8px 0 0;
+  padding: 0.21em 1em 0.21em 0.9em;
+  border-radius: 7px 7px 0 0;
   margin-bottom: 0;
   letter-spacing: 0.03em;
   display: inline-block;
-  margin-top: 2.4em;
+  margin-top: 2.2em;
 }
 
 .event-list {
@@ -236,11 +236,12 @@ a:hover {
 .event-row {
   display: flex;
   gap: 1.3em;
-  background: #fafbfc;
-  border-bottom: 1.5px solid #eee;
-  padding: 1.25em 0 1.25em 0;
+  background: #fff; /* ←濃い色やグレー感を全て白に */
+  border-bottom: 1px solid #eaeaea;
+  padding: 1.18em 0 1.18em 0;
   align-items: flex-start;
 }
+
 .event-date {
   min-width: 7em;
   font-weight: 600;
@@ -270,15 +271,15 @@ a:hover {
 }
 .event-setlist {
   flex: 0 0 210px;
-  background: linear-gradient(160deg, #f8f9fa 70%, #f2f2f6 100%);
-  border: 1px solid #ebebeb;
-  border-radius: 11px;
-  box-shadow: 0 3px 14px rgba(120,120,120,0.05);
-  font-size: 0.98em;
+  background: #fafafa;  /* ←ごく淡いグレー */
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(180,180,180,0.04);
+  font-size: 0.97em;
   color: #333;
   margin-left: 0.4em;
   padding: 0.85em 1.2em;
-  min-width: 135px;
+  min-width: 120px;
   max-width: 220px;
 }
 .event-setlist ol, .event-setlist ul {
