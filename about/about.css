@@ -2,10 +2,9 @@
 
 .container {
   margin: 0 auto;
-  padding-top: 0;
+  padding: 1.2em 3vw 32px 3vw;
   text-align: left;
 }
-
 .entry {
   margin-bottom: 3em;
 }
