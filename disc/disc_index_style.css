@@ -1,10 +1,15 @@
 /* disc_index_style.css */
 
-.container {
-  margin: 0 auto;
+body {
   color: #111;
-  text-align: left;
   font-family: "Yu Gothic", "游ゴシック Medium", "Noto Sans JP", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+  text-align: left;
 }
 
 .disc-section {
@@ -31,8 +36,9 @@
   font-size: 0.9em;
   color: #222;
 }
+
 a {
- color: #2c4a85;
+  color: #2c4a85;
   text-decoration: none;
 }
 
