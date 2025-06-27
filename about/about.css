@@ -1,9 +1,22 @@
+/* ===== 基本レイアウト・調和調整 ===== */
 .container {
   margin: 0 auto;
-  padding: 1.2em 3vw 32px 3vw;
+  padding: 2em 3vw 32px 3vw;  /* ✅ 表題の余白をトップページと統一 */
   text-align: left;
 }
 
+/* ===== 卒業ページ専用：フォントトーン統一 ===== */
+body.graduation {
+  font-family: "Yu Gothic", "Noto Sans JP", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.8;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== 通常構造 ===== */
 .entry {
   margin-bottom: 3em;
 }
@@ -82,6 +95,7 @@
   line-height: 1.8;
 }
 
+/* ===== Q&A 表示 ===== */
 .qa-section {
   margin: 3em 0 2em 0;
 }
@@ -135,6 +149,7 @@
   color: #336699;
 }
 
+/* ===== フッター ===== */
 .footer-link {
   margin-top: 3em;
   font-size: 0.95em;
@@ -151,18 +166,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-/* graduation ページ用調整（共通調和向け） */
-body.graduation {
-  font-family: "Yu Gothic", "Noto Sans JP", "Segoe UI", sans-serif;
-  font-size: 1rem;
-  color: #222;
-  line-height: 1.8;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  padding-top: 2em; /* ページ表題の視覚位置を調和 */
 }
