@@ -1,10 +1,11 @@
-/* about.css（軽量構成・basic.cssと競合しない差分定義） */
+/* about.css（構造軽量・調和済み・完成形） */
 
 .container {
   margin: 0 auto;
-  padding: 1.2em 3vw 32px 3vw;
+  padding: 1.2em 3vw 32px 3vw; /* ✅ 表題が沈まず・詰まらずの最適配置 */
   text-align: left;
 }
+
 .entry {
   margin-bottom: 3em;
 }
