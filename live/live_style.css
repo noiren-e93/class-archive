@@ -1,4 +1,4 @@
-/* live_style.css - 行間改善版 */
+/* live_style.css - classライブページ専用（basic.css競合ゼロ・地味＆統一感重視・最終版） */
 
 .live .container {
   max-width: 800px;
@@ -18,19 +18,19 @@
 }
 
 .live .sub-title {
-  margin: 2em 0 1em 0;
+  margin: 1.8em 0 0.9em 0;
   font-size: 1.17em;
   font-weight: bold;
   color: #222;
   border-left: 4px solid #bbb;
-  padding-left: 0.55em;
+  padding-left: 0.5em;
   border-bottom: 1px solid #ddd;
   background: none;
   line-height: 1.35;
 }
 
 .live .tour-year {
-  margin: 0.5em 0 1em 0;
+  margin: 0.5em 0 0.9em 0;
   font-weight: bold;
   color: #444;
   font-size: 1em;
@@ -40,11 +40,11 @@
 .live .live-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0.4em 0 1.2em 0;
+  margin: 0.4em 0 1.1em 0;
   background: #fff;
 }
 .live .live-table td {
-  padding: 0.55em 1.1em;
+  padding: 0.5em 1.1em;
   border-bottom: 1px solid #eee;
   color: #222;
   font-size: 1em;
@@ -57,7 +57,7 @@
   font-size: 0.9em;
   color: #666;
   line-height: 1.5;
-  margin: 1em 0 1.2em 0;
+  margin: 0.9em 0 1.1em 0;
 }
 
 .live .setlist {
@@ -66,7 +66,6 @@
   border-radius: 3px;
   padding: 1em 0.9em 0.7em 0.9em;
   margin: 1.5em 0 0 0;
-  /* box-shadow: 0 2px 8px #eee; ← 削除 */
 }
 
 .live .setlist-title {
@@ -74,48 +73,3 @@
   font-size: 1.04em;
   margin-bottom: 0.6em;
   color: #222;
-  letter-spacing: 0.04em;
-  line-height: 1.35;
-}
-
-
-.live .track {
-  list-style: decimal inside;
-  margin: 0.8em 0 0.7em 0;
-  padding: 0;
-}
-.live .track li {
-  margin-bottom: 0.55em;
-  color: #222;
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-.live .entry-divider {
-  margin: 2em 0;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-
-.live .footer-link {
-  text-align: center;
-  font-size: 0.9em;
-  margin-top: 3em;
-  color: #666;
-}
-.live .footer-link a {
-  color: #336699;
-  text-decoration: none;
-  margin: 0 1em;
-}
-.live .footer-link a:hover {
-  text-decoration: underline;
-}
-
-/* レスポンシブ補助 */
-@media (max-width: 600px) {
-  .live .container { padding: 1.5em 0.4em; }
-  .live .setlist { padding: 0.8em 0.5em 0.7em 0.5em; }
-  .live .live-table td { padding: 0.55em 0.5em; }
-  .live .sub-title { font-size: 1em; padding-left: 0.33em; }
-}
