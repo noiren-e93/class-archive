@@ -11,17 +11,18 @@ html, body {
 
 /* ===== レイアウト・余白（中央揃え、最大幅） ===== */
 body {
-  max-width: 960px;
+  max-width: 1080px;         /* ← PC時の最大幅を広く */
   margin-left: auto;
   margin-right: auto;
-  padding: 2.5em 5vw 2.5em 5vw;
+  padding: 2.5em 3vw 2.5em 3vw; /* ← PC時の左右余白もやや広く */
   box-sizing: border-box;
+  background: #fff;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;         /* ← 本文ブロックの最大幅（推奨960〜1100px） */
   margin: 0 auto;
-  padding: 28px 5vw 32px 5vw;
+  padding: 28px 3vw 32px 3vw; /* ← 左右余白3vwで広々 */
   background: #fff;
 }
 
@@ -194,9 +195,16 @@ td {
 
 /* ====== レスポンシブ：スマホ時の余白・画像・テーブル・フレックス ====== */
 @media (max-width: 700px) {
-  body { padding: 1.1em 1vw; font-size: 15px; }
+  body {
+    padding: 0;
+    font-size: 15px;
+  }
   .container {
-    padding: 18px 4vw 26px 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 18px;
+    padding-bottom: 26px;
+    max-width: 100vw;
   }
   .jacket img, .profile-photo img {
     width: 88vw;
