@@ -19,17 +19,24 @@ body {
   box-sizing: border-box;
 }
 
-/* ===== ページ表題（完全統一） ===== */
-.page-title, .main-title {
+/* ===== ページ表題・TOP表題（完全統一用！） ===== */
+.main-title, .page-title {
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
   font-size: 2.0rem;
   font-weight: 700;
-  color: #222;
   border-bottom: 2px solid #555;
   padding-bottom: 0.35em;
   margin-bottom: 1.1em;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+/* サブキャプション（トップ下など） */
+.sub-caption, .caption {
+  font-size: 1em;
+  color: #888;
+  margin: 0.4em 0 1.6em 0;
+  line-height: 1.4;
 }
 
 /* ===== ツアーブロック見出し ===== */
