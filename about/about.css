@@ -167,23 +167,30 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+/* ===== タイムライン横並び表示の補強 ===== */
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 0.8em;
+  gap: 0.6em;                /* 行内の間隔 */
+  margin-bottom: 1em;
   font-size: 0.98em;
   line-height: 1.72;
+  flex-wrap: nowrap;
 }
 
 .timeline-date {
-  min-width: 7em;          /* 横幅確保 */
+  min-width: 7em;            /* 日付列の幅固定で折り返さない */
+  text-align: right;
   font-weight: 600;
   color: #666;
-  padding-right: 1em;
-  text-align: right;
+  padding-right: 0.8em;
+  white-space: nowrap;       /* 改行禁止：←これが今回の重要ポイント！ */
 }
 
 .timeline-content {
   flex: 1;
   color: #222;
+  white-space: normal;
 }
