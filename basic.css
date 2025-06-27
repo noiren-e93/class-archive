@@ -67,21 +67,17 @@ img {
   font-size: 0.9em;
   color: #666;
 }
-
-.quote {
-  font-size: 0.85em;
-  color: #555;
-  text-align: left;
-}
-
 .updated {
   font-size: 0.8em;
   color: #888;
   text-align: right;
 }
+
 .quote-block {
   text-align: left;
   margin-top: 2em;
   border-top: 1px solid #ccc;
   padding-top: 1em;
+  font-size: 0.85em;
+  color: #555;
 }
