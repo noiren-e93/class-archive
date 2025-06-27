@@ -149,39 +149,6 @@ td {
   letter-spacing: 0.02em;
 }
 
-/* ===== Q&A ===== */
-.qa-section { margin: 3em 0 2em 0; }
-.qa-section h2 { font-size: 1.15em; margin-bottom: 0.9em; }
-.qa-divider { border: none; border-top: 1px solid #ccc; margin: 1em 0 2em 0; }
-.qa-block { margin-bottom: 1.6em; padding-bottom: 0.6em; border-bottom: 1px dotted #ddd; }
-.qa-label { font-size: 1em; font-weight: 600; color: #2a2a2a; margin-bottom: 0.3em; }
-.qa-answer { padding-left: 0.5em; }
-.qa-line { margin: 0.16em 0; line-height: 1.7; font-size: 0.98em; }
-.qa-person { font-weight: 600; margin-right: 0.5em; }
-.qa-person.hiura { color: #c44; }
-.qa-person.tsukui { color: #339; }
-
-/* ===== タイムライン ===== */
-.timeline-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 0.8em;
-  font-size: 0.98em;
-  line-height: 1.72;
-}
-.timeline-date {
-  color: #888;
-  font-size: 0.97em;
-  min-width: 6em;
-  text-align: right;
-  padding-right: 1em;
-  font-feature-settings: "pnum";
-  font-weight: 500;
-}
-.timeline-content {
-  flex: 1;
-  color: #444;
-}
 
 /* ===== フッター・サブノート ===== */
 .footer-link, .footer-nav, .footer-note {
