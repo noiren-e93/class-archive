@@ -1,4 +1,10 @@
-/* live_style.css - classライブページ専用（basic.css競合回避） */
+/* live_style.css - classライブページ専用（basic.css競合ゼロ） */
+
+.live .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+}
 
 .live .page-title {
   margin: 2em 0 0.2em 0;
@@ -13,17 +19,18 @@
 
 .live .sub-title {
   margin: 2em 0 1em 0;
-  font-size: 1.15em;
+  font-size: 1.17em;
   font-weight: bold;
   color: #222;
   border-left: 4px solid #bbb;
   padding-left: 0.55em;
   border-bottom: 1px solid #ddd;
   background: none;
+  line-height: 1.45;
 }
 
 .live .tour-year {
-  margin: 0.4em 0 0.8em 0;
+  margin: 0.5em 0 1em 0;
   font-weight: bold;
   color: #444;
   font-size: 1em;
@@ -32,11 +39,11 @@
 .live .live-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0.5em 0 1.2em 0;
+  margin: 0.4em 0 1.2em 0;
   background: #fff;
 }
 .live .live-table td {
-  padding: 0.55em 1em;
+  padding: 0.55em 1.1em;
   border-bottom: 1px solid #eee;
   color: #222;
   font-size: 1em;
@@ -76,6 +83,7 @@
   margin-bottom: 0.65em;
   color: #222;
   font-size: 1em;
+  line-height: 1.7;
 }
 
 .live .entry-divider {
@@ -90,10 +98,18 @@
   margin-top: 3em;
   color: #666;
 }
+.live .footer-link a {
+  color: #336699;
+  text-decoration: none;
+  margin: 0 1em;
+}
+.live .footer-link a:hover {
+  text-decoration: underline;
+}
 
-/* レスポンシブ最適化 */
+/* レスポンシブ補助 */
 @media (max-width: 600px) {
-  .live .container { padding: 1.5em 0.5em; }
+  .live .container { padding: 1.5em 0.4em; }
   .live .setlist { padding: 0.8em 0.5em 0.7em 0.5em; }
   .live .live-table td { padding: 0.55em 0.5em; }
   .live .sub-title { font-size: 1em; padding-left: 0.33em; }
