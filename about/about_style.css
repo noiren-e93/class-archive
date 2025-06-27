@@ -194,10 +194,19 @@ td {
 
 /* ====== レスポンシブ：スマホ時の余白・画像・テーブル・フレックス ====== */
 @media (max-width: 700px) {
-  body { padding: 1.1em 1vw; font-size: 15px; }
-  .container {
-    padding: 18px 4vw 26px 4vw;
+  body {
+    padding: 0;
+    font-size: 15px;
   }
+  .container {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 18px;
+    padding-bottom: 26px;
+    max-width: 100vw;
+  }
+}
+
   .jacket img, .profile-photo img {
     width: 88vw;
     max-width: 230px;
