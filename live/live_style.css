@@ -96,7 +96,7 @@ body {
 /* ===== セットリスト ===== */
 .setlist {
   font-size: 1em;
-  background: linear-gradient(160deg, #f8f9fa 70%, #f2f2f6 100%);
+  background: linear-gradient(160deg, #f8f9fa 70%, #fafafa 100%);
   border: 1px solid #ebebeb;
   padding: 1em 1.5em 1em 1.5em;
   border-radius: 11px;
@@ -110,7 +110,7 @@ body {
 }
 .setlist-title {
   font-weight: bold;
-  font-size: 1.03em;
+  font-size: 1em;
   margin-bottom: 0.6em;
   border-bottom: 1px solid #eee;
   padding-bottom: 0.3em;
