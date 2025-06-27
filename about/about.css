@@ -167,3 +167,23 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.8em;
+  font-size: 0.98em;
+  line-height: 1.72;
+}
+
+.timeline-date {
+  min-width: 7em;          /* 横幅確保 */
+  font-weight: 600;
+  color: #666;
+  padding-right: 1em;
+  text-align: right;
+}
+
+.timeline-content {
+  flex: 1;
+  color: #222;
+}
