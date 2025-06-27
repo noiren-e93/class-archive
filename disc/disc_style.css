@@ -182,7 +182,6 @@ ul.work-list {
     object-fit: cover;
     display: block;
   }
-}
   .jacket-8cm img {
     width: 125px;
     height: auto;
@@ -190,6 +189,7 @@ ul.work-list {
     display: block;
   }
 }
+
 
 @media screen and (min-width: 768px) {
   .footer-link {
