@@ -152,3 +152,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* graduation ページ用調整（共通調和向け） */
+body.graduation {
+  font-family: "Yu Gothic", "Noto Sans JP", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.8;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 2em; /* ページ表題の視覚位置を調和 */
+}
