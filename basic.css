@@ -93,7 +93,7 @@ img {
   gap: 1.3em;
   margin: 2em 0 1em 0;
   flex-wrap: nowrap;  /* 折り返し禁止 */
-  font-size: 1em;
+  font-size: 0.9em;
   color: #888;
   padding-left: 0.1em; /* ページ端にベタ付かない微調整（必要なら） */
 }
