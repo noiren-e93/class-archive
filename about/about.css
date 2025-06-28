@@ -225,7 +225,7 @@ body.graduation {
   align-items: flex-start;
   gap: 0.8em;
   margin-bottom: 1em;
-  font-size: 0.9em;
+  font-size: 0.85em;
   line-height: 1.1;
 }
 
@@ -243,7 +243,6 @@ body.graduation {
   white-space: normal;   /* 折り返しOK */
   text-align: left;
 }
-
 
 /* ===== セクション見出し（年代） ===== */
 .sub-colored {
