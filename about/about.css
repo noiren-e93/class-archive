@@ -226,7 +226,7 @@ body.graduation {
   gap: 0.6em;
   margin-bottom: 1em;
   font-size: 0.9em;
-  line-height: 1.2;
+  line-height: 1;
   flex-wrap: nowrap;
 }
 
