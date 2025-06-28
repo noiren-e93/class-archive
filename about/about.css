@@ -53,6 +53,13 @@ body.graduation {
   letter-spacing: 0.02em;
 }
 
+.profile-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6em;
+  margin: 2em 0;
+}
+
 .profile-table {
   width: auto;
   max-width: 320px;
