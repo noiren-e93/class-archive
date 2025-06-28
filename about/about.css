@@ -56,27 +56,35 @@ body.graduation {
 .profile-flex {
   display: flex;
   align-items: flex-start;
-  gap: 1.6em;
+  gap: 1.3em;  /* 画像とテーブルの間隔 */
   margin: 2em 0;
+}
+
+.profile-photo {
+  width: 160px;     /* ← 画像を大きく */
+  max-width: 42vw;  /* 画面幅の最大42%までOK */
+  height: auto;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(120,120,120,0.10);
+  flex-shrink: 0;   /* 画像を縮めない */
+  background: #fafafa;
 }
 
 .profile-table {
   width: auto;
-  max-width: 320px;
-  min-width: 160px;
-  table-layout: fixed;
-  border-collapse: collapse;
-  margin-top: 1em;
+  min-width: 80px;     /* 最小幅 */
+  max-width: 130px;    /* 最大幅を小さく */
+  font-size: 0.96em;   /* 少しだけ小さく */
+  margin-top: 0.2em;
 }
 
 .profile-table th,
 .profile-table td {
   border: 1px solid #ddd;
-  padding: 0.3em 0.7em;  /* ←ここの数値を小さくする（例: 0.2em 0.5em でもOK） */
+  padding: 0.15em 0.55em;  /* 縦横余白を小さく */
   text-align: left;
   word-break: break-all;
-  white-space: normal;
-  font-size: 1em;
+  font-size: 0.96em;
 }
 
 .profile-table th {
@@ -89,6 +97,7 @@ body.graduation {
   color: #444;
   background: #fff;
 }
+
 
 .bio-official {
   margin-top: 1.5em;
