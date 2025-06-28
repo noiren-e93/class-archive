@@ -82,3 +82,19 @@ img {
   font-size: 0.85em;
   color: #555;
 }
+.quiet-menu {
+  text-align: center;
+  margin: 1.2em 0 1.5em 0;
+  font-size: 0.97em;
+  color: #888;
+}
+.quiet-menu a {
+  color: #555;
+  text-decoration: none;
+  padding: 0 0.6em;
+  transition: color 0.18s;
+}
+.quiet-menu a:hover {
+  color: #1c4e7d;
+  text-decoration: underline;
+}
