@@ -53,36 +53,51 @@ body.graduation {
   letter-spacing: 0.02em;
 }
 
-/* ---- 左寄せ・横並びプロフィール用 ---- */
 .profile-flex {
   display: flex;
   align-items: flex-start;
   gap: 2em;
-  max-width: 480px;
-  margin: 2.4em 0 1.2em 0;
+  margin: 2em 0 2.5em 0;
+  justify-content: flex-start;  /* 左寄せ固定 */
 }
+
 .profile-photo {
-  width: 200px;
+  width: 120px;
   height: auto;
   border-radius: 0.5em;
   flex-shrink: 0;
+  display: block;
 }
+
 .profile-table {
   border-collapse: collapse;
-  min-width: 130px;
+  min-width: 150px;
+  margin: 0;
   font-size: 1em;
-  margin-top: 0.2em;
+  background: none;
+  box-shadow: none;
 }
-.profile-table th, .profile-table td {
+
+.profile-table th,
+.profile-table td {
   border: none;
-  padding: 0.35em 1em 0.35em 0;
+  padding: 0.25em 1em 0.25em 0;
   text-align: left;
   font-weight: normal;
+  font-size: 1.06em;
 }
+
 .profile-table th {
   font-weight: bold;
   color: #222;
+  width: 5em;
+  padding-right: 1em;
+  vertical-align: top;
+  background: none;
 }
+
+
+
 
 .bio-official {
   margin-top: 1.5em;
@@ -217,16 +232,15 @@ body.days .page-title {
   .profile-flex {
     flex-direction: column;
     align-items: flex-start;
-    max-width: 95vw;
     gap: 0.6em;
   }
   .profile-photo {
-    width: 110px;
-    margin-bottom: 0.3em;
+    width: 90px;
+    margin-bottom: 0.2em;
   }
   .profile-table {
     min-width: 0;
-    width: 100%;
-    font-size: 0.97em;
+    width: auto;
+    font-size: 0.98em;
   }
 }
