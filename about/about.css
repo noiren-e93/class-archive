@@ -226,14 +226,14 @@ body.graduation {
   gap: 0.6em;
   margin-bottom: 1em;
   font-size: 0.85em;
-  line-height: 0.9;
+  line-height: 0.8;
   flex-wrap: nowrap;
 }
 
 .timeline-date {
   min-width: 7em;
   text-align: right;
-  font-weight: 600;
+
   color: #666;
   padding-right: 0.8em;
   white-space: nowrap;
