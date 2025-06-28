@@ -199,12 +199,12 @@ body.days .page-title {
     gap: 0.6em;
   }
   .profile-photo {
-    width: 110px;    /* スマホ時は少し小さく */
-    max-width: 60vw;
+    width: 120px;
+    margin-bottom: 0.3em;
   }
   .profile-table {
-    min-width: 70px;
-    max-width: 120px;
-    font-size: 0.94em;
+    min-width: 0;
+    width: 100%;
+    font-size: 0.97em;
   }
 }
