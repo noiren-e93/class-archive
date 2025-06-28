@@ -53,50 +53,14 @@ body.graduation {
   letter-spacing: 0.02em;
 }
 
-.profile-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.3em;  /* 画像とテーブルの間隔 */
-  margin: 2em 0;
-}
-
-.profile-photo {
-  width: 160px;     /* ← 画像を大きく */
-  max-width: 42vw;  /* 画面幅の最大42%までOK */
-  height: auto;
-  border-radius: 0.5em;
-  box-shadow: 0 2px 8px rgba(120,120,120,0.10);
-  flex-shrink: 0;   /* 画像を縮めない */
-  background: #fafafa;
-}
-
-.profile-table {
-  width: auto;
-  min-width: 80px;     /* 最小幅 */
-  max-width: 130px;    /* 最大幅を小さく */
-  font-size: 0.96em;   /* 少しだけ小さく */
-  margin-top: 0.2em;
-}
-
-.profile-table th,
-.profile-table td {
-  border: 1px solid #ddd;
-  padding: 0.15em 0.55em;  /* 縦横余白を小さく */
-  text-align: left;
-  word-break: break-all;
-  font-size: 0.96em;
-}
-
-.profile-table th {
-  background: #f4f4f4;
-  font-weight: 600;
-  color: #444;
-}
-
-.profile-table td {
-  color: #444;
-  background: #fff;
-}
+<div class="profile-flex">
+  <img src="img/hiura.jpg" alt="日浦孝則" class="profile-photo">
+  <table class="profile-table">
+    <tr><th>誕生日</th><td>1960/01/17</td></tr>
+    <tr><th>出身地</th><td>広島県</td></tr>
+    <tr><th>血液型</th><td>B</td></tr>
+  </table>
+</div>
 
 
 .bio-official {
