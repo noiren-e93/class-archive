@@ -54,29 +54,6 @@ body.graduation {
   letter-spacing: 0.02em;
 }
 
-/* ===== プロフィール ===== */
-
-.profile-flex {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.1em;
-  margin: 2em 0 2.5em 0;
-  width: 100%;
-  text-align: left;     /* ← 追加：全要素を左寄せ基準に */
-}
-
-.profile-photo {
-  width: 220px;
-  height: auto;
-  border-radius: 0.5em;
-  flex-shrink: 0;
-  display: block;
-  object-fit: cover;
-  background: #fafafa;
-  margin-left: 0;       /* ← 追加：画像も左端揃え */
-}
-
 
 /* ===== 基本レイアウト・調和調整 ===== */
 .container {
@@ -140,12 +117,11 @@ body.graduation {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.1em;
+  gap: 0.7em;
   margin: 2em 0 2.5em 0;
   width: 100%;
-  text-align: left;     /* ← 追加：全要素を左寄せ基準に */
+  text-align: left;
 }
-
 .profile-photo {
   width: 220px;
   height: auto;
@@ -154,30 +130,27 @@ body.graduation {
   display: block;
   object-fit: cover;
   background: #fafafa;
-  margin-left: 0;       /* ← 追加：画像も左端揃え */
+  margin-left: 0;
 }
-
 .profile-table {
-  width: auto;           /* テーブル自体の幅を中身にフィットさせる */
-  min-width: 0;          /* 必要以上に横幅を広げない */
-  flex: 0 0 auto;        /* 拡大・縮小せず、必要な分だけ */
-  margin: 0;             /* 余白一切なし */
+  flex: 0 0 auto !important;
+  width: max-content !important;
+  min-width: 0 !important;
+  margin: 0 !important;
   text-align: left;
-  align-self: flex-start; /* 画像上端に合わせる */
-  box-shadow: none;
-  background: none;
+  align-self: flex-start;
   border-collapse: collapse;
+  background: none;
+  box-shadow: none;
 }
-
 .profile-table th,
 .profile-table td {
   border: none;
-  padding: 0.1em 0.7em 0.1em 0; /* ← 右余白も必要最小限に */
+  padding: 0.1em 0.7em 0.1em 0;
   text-align: left;
   font-weight: normal;
   font-size: 1.06em;
 }
-
 .profile-table th {
   font-weight: bold;
   color: #222;
@@ -186,7 +159,6 @@ body.graduation {
   vertical-align: top;
   background: none;
 }
-
 /* ===== 本人紹介文 ===== */
 .bio-official {
   margin-top: 1.5em;
