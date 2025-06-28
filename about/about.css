@@ -79,15 +79,16 @@ body.graduation {
 }
 
 .profile-table {
-  border-collapse: collapse;
-  min-width: 150px;
-  margin: 0 0 0 0;      /* ← 左寄せ固定 */
-  font-size: 1em;
+  width: auto;           /* テーブル自体の幅を中身にフィットさせる */
+  min-width: 0;          /* 必要以上に横幅を広げない */
+  flex: 0 0 auto;        /* 拡大・縮小せず、必要な分だけ */
+  margin: 0;             /* 余白一切なし */
+  text-align: left;
+  align-self: flex-start; /* 画像上端に合わせる */
   box-shadow: none;
   background: none;
-  text-align: left;     /* ← セルの中身も左寄せ */
+  border-collapse: collapse;
 }
-
 .profile-table th,
 .profile-table td {
   border: none;
