@@ -223,27 +223,28 @@ body.graduation {
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.6em;
+  gap: 0.8em;
   margin-bottom: 1em;
-  font-size: 0.85em;
-  line-height: 1;
-  flex-wrap: nowrap;
+  font-size: 0.98em;
+  line-height: 1.72;
 }
 
 .timeline-date {
-  min-width: 7em;
-  text-align: right;
-
+  width: 4.2em;          /* 必要に応じて「4em」「4.5em」などに調整。幅は固定推奨 */
+  text-align: left;      /* ←左寄せ */
+  font-weight: 600;
   color: #666;
-  padding-right: 0.8em;
-  white-space: nowrap;
+  white-space: nowrap;   /* 日付は1行で */
+  flex-shrink: 0;        /* 幅を縮めない */
 }
 
 .timeline-content {
-  flex: 1;
+  flex: 1;               /* 残り幅を全部使う */
   color: #222;
-  white-space: normal;
+  white-space: normal;   /* 折り返しOK */
+  text-align: left;
 }
+
 
 /* ===== セクション見出し（年代） ===== */
 .sub-colored {
