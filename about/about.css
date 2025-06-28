@@ -172,7 +172,7 @@ body.graduation {
 .profile-table th,
 .profile-table td {
   border: none;
-  padding: 0.25em 1em 0.25em 0;
+  padding: 0.1em 0.7em 0.1em 0; /* ← 右余白も必要最小限に */
   text-align: left;
   font-weight: normal;
   font-size: 1.06em;
