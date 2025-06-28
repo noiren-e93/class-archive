@@ -55,30 +55,37 @@ body.graduation {
 }
 
 /* ===== プロフィール ===== */
+
 .profile-flex {
   display: flex;
   align-items: flex-start;
-  gap: 1.1em;        /* ← ここを縮小 */
-  margin: 2em 0 2.5em 0;
   justify-content: flex-start;
+  gap: 1.1em;
+  margin: 2em 0 2.5em 0;
   width: 100%;
+  text-align: left;     /* ← 追加：全要素を左寄せ基準に */
 }
+
 .profile-photo {
-  width: 160px;      /* ← ここを拡大（必要なら180pxまで可） */
-  max-height: 200px; /* 縦画像でも崩れ防止 */
+  width: 160px;
+  max-height: 200px;
   height: auto;
   border-radius: 0.5em;
   flex-shrink: 0;
   display: block;
   object-fit: cover;
   background: #fafafa;
+  margin-left: 0;       /* ← 追加：画像も左端揃え */
 }
+
 .profile-table {
   border-collapse: collapse;
   min-width: 150px;
-  margin: 0;
+  margin: 0 0 0 0;      /* ← 左寄せ固定 */
   font-size: 1em;
   box-shadow: none;
+  background: none;
+  text-align: left;     /* ← セルの中身も左寄せ */
 }
 
 .profile-table th,
@@ -96,6 +103,7 @@ body.graduation {
   width: 5em;
   padding-right: 1em;
   vertical-align: top;
+  background: none;
 }
 
 /* ===== 本人紹介文 ===== */
@@ -233,16 +241,19 @@ body.days .page-title {
     align-items: flex-start;
     gap: 0.7em;
     width: 100%;
+    text-align: left;
   }
   .profile-photo {
-    width: 120px;      /* ← スマホでは従来通り */
-    max-width: 85vw;
+    width: 120px;
+    margin-left: 0;
     margin-bottom: 0.4em;
     max-height: 160px;
   }
-}  .profile-table {
+  .profile-table {
     min-width: 0;
     width: auto;
     font-size: 0.98em;
+    margin-left: 0;
+    text-align: left;
   }
 }
