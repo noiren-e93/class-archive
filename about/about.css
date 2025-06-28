@@ -434,8 +434,8 @@ body.days .page-title {
 
 /* ====== モバイル調整 ====== */
 @media (max-width: 600px) {
-  .container {
-    padding: 1.2em 2vw 18px 2vw;
+.container {
+    padding: 1.2em 5vw 18px 5vw;   /* ←左右を2vw→5vwに拡大（推奨） */
     max-width: 100vw;
   }
   .profile-flex {
@@ -457,5 +457,12 @@ body.days .page-title {
     font-size: 0.98em;
     margin-left: 0;
     text-align: left;
+  }
+ .sub-colored,
+  .timeline-item,
+  .qa-section,
+  .bio-official {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
   }
 }
