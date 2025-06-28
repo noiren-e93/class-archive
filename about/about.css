@@ -68,7 +68,6 @@ body.graduation {
 
 .profile-photo {
   width: 220px;
-  max-height: auto;
   height: auto;
   border-radius: 0.5em;
   flex-shrink: 0;
