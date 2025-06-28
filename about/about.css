@@ -62,7 +62,7 @@ body.graduation {
   margin: 2.4em 0 1.2em 0;
 }
 .profile-photo {
-  width: 120px;
+  width: 160px;
   height: auto;
   border-radius: 0.5em;
   flex-shrink: 0;
@@ -221,7 +221,7 @@ body.days .page-title {
     gap: 0.6em;
   }
   .profile-photo {
-    width: 98px;
+    width: 110px;
     margin-bottom: 0.3em;
   }
   .profile-table {
