@@ -435,7 +435,7 @@ body.days .page-title {
 /* ====== モバイル調整 ====== */
 @media (max-width: 600px) {
 .container {
-   padding: 1.2em 2vw 18px 2vw;
+     padding: 1.2em 5vw 18px 5vw;   /* ←左右を2vw→5vwに拡大（推奨） */
     max-width: 100vw;
   }
   .profile-flex {
