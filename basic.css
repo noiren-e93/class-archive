@@ -33,6 +33,16 @@ body {
   margin-top: 0.3em;
   margin-bottom: 2em;
 }
+.divider {
+  color: #bbb;
+  padding: 0 0.2em;
+  font-weight: normal;
+}
+hr {
+  margin: 1.1em 0 1.1em 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
 
 hr.entry-divider {
   margin: 2em 0;
@@ -67,38 +77,29 @@ img {
   font-size: 0.9em;
   color: #666;
 }
-.updated {
-  font-size: 0.8em;
-  color: #888;
-  text-align: right;
-}
-.workman-menu {
-  text-align: left;
-  margin: 1.2em 0 1em 0;
+
+
+
+.quiet-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em 0 1em 0;
+  flex-wrap: nowrap; /* 折り返し禁止 */
   font-size: 1em;
-  color: #2d5a8c;
-  letter-spacing: 0.04em;
-  padding-left: 0.5em;
-  user-select: text; /* コピーもOK */
+  color: #888;
 }
-.workman-menu a {
-  color: #2d5a8c;
+
+.quiet-menu a {
+  color: #356;
+  text-decoration: none;
+  padding: 0 0.1em;
+  white-space: nowrap; /* 強制1行 */
+  font-size: 1em;
+}
+
+.quiet-menu a:hover {
+  color: #214c8a;
   text-decoration: underline;
-  padding: 0 0.4em 0 0;
-  transition: color 0.18s;
-  font-weight: 500;
 }
-.workman-menu a:hover,
-.workman-menu a:focus {
-  color: #17406d;
-}
-.divider {
-  color: #bbb;
-  padding: 0 0.2em;
-  font-weight: normal;
-}
-hr {
-  margin: 1.1em 0 1.1em 0;
-  border: none;
-  border-top: 1px solid #ccc;
-}
+
