@@ -29,15 +29,6 @@ body.graduation {
   flex-wrap: wrap;
 }
 
-.jacket img {
-  width: 180px;
-  max-width: 38vw;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
-  background: #fafafa;
-}
 
 .info-block {
   flex: 1 1 200px;
@@ -84,16 +75,6 @@ body.graduation {
   align-items: flex-start;
   gap: 2em;
   flex-wrap: wrap;
-}
-
-.jacket img {
-  width: 180px;
-  max-width: 38vw;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(120,120,120,0.10);
-  background: #fafafa;
 }
 
 .info-block {
