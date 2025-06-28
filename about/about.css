@@ -220,18 +220,18 @@ body.days .page-title {
 }
 
 @media (max-width: 600px) {
-  .info-flex {
+  .profile-flex {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.7em;
+    gap: 0.6em;
   }
-  .jacket img {
-    width: 90px;
-    margin-bottom: 0.3em;
+  .profile-photo {
+    width: 110px;    /* スマホ時は少し小さく */
+    max-width: 60vw;
   }
   .profile-table {
-    width: 100%;
-    min-width: 0;
-    font-size: 0.97em;
+    min-width: 70px;
+    max-width: 120px;
+    font-size: 0.94em;
   }
 }
