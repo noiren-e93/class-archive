@@ -225,14 +225,13 @@ body.graduation {
   align-items: flex-start;
   gap: 0.8em;
   margin-bottom: 1em;
-  font-size: 0.98em;
-  line-height: 1.72;
+  font-size: 0.9em;
+  line-height: 1.1;
 }
 
 .timeline-date {
   width: 4.2em;          /* 必要に応じて「4em」「4.5em」などに調整。幅は固定推奨 */
   text-align: left;      /* ←左寄せ */
-  font-weight: 600;
   color: #666;
   white-space: nowrap;   /* 日付は1行で */
   flex-shrink: 0;        /* 幅を縮めない */
