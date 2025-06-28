@@ -79,27 +79,24 @@ img {
 }
 
 
-
 .quiet-menu {
   display: flex;
-  justify-content: center;
-  gap: 1.5em;
+  justify-content: flex-start;  /* 左寄せ */
+  gap: 1.3em;
   margin: 2em 0 1em 0;
-  flex-wrap: nowrap; /* 折り返し禁止 */
+  flex-wrap: nowrap;  /* 折り返し禁止 */
   font-size: 1em;
   color: #888;
+  padding-left: 0.1em; /* ページ端にベタ付かない微調整（必要なら） */
 }
-
 .quiet-menu a {
   color: #356;
   text-decoration: none;
   padding: 0 0.1em;
-  white-space: nowrap; /* 強制1行 */
+  white-space: nowrap;
   font-size: 1em;
 }
-
 .quiet-menu a:hover {
   color: #214c8a;
   text-decoration: underline;
 }
-
