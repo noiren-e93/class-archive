@@ -58,15 +58,14 @@ body.graduation {
 .profile-flex {
   display: flex;
   align-items: flex-start;
-  gap: 2em;
+  gap: 1.1em;        /* ← ここを縮小 */
   margin: 2em 0 2.5em 0;
   justify-content: flex-start;
   width: 100%;
 }
-
 .profile-photo {
-  width: 120px;
-  max-height: 160px;
+  width: 160px;      /* ← ここを拡大（必要なら180pxまで可） */
+  max-height: 200px; /* 縦画像でも崩れ防止 */
   height: auto;
   border-radius: 0.5em;
   flex-shrink: 0;
@@ -74,7 +73,6 @@ body.graduation {
   object-fit: cover;
   background: #fafafa;
 }
-
 .profile-table {
   border-collapse: collapse;
   min-width: 150px;
@@ -237,12 +235,12 @@ body.days .page-title {
     width: 100%;
   }
   .profile-photo {
-    width: 120px;
+    width: 120px;      /* ← スマホでは従来通り */
     max-width: 85vw;
     margin-bottom: 0.4em;
     max-height: 160px;
   }
-  .profile-table {
+}  .profile-table {
     min-width: 0;
     width: auto;
     font-size: 0.98em;
