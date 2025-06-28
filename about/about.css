@@ -53,15 +53,36 @@ body.graduation {
   letter-spacing: 0.02em;
 }
 
-<div class="profile-flex">
-  <img src="img/hiura.jpg" alt="日浦孝則" class="profile-photo">
-  <table class="profile-table">
-    <tr><th>誕生日</th><td>1960/01/17</td></tr>
-    <tr><th>出身地</th><td>広島県</td></tr>
-    <tr><th>血液型</th><td>B</td></tr>
-  </table>
-</div>
-
+/* ---- 左寄せ・横並びプロフィール用 ---- */
+.profile-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  max-width: 480px;
+  margin: 2.4em 0 1.2em 0;
+}
+.profile-photo {
+  width: 120px;
+  height: auto;
+  border-radius: 0.5em;
+  flex-shrink: 0;
+}
+.profile-table {
+  border-collapse: collapse;
+  min-width: 130px;
+  font-size: 1em;
+  margin-top: 0.2em;
+}
+.profile-table th, .profile-table td {
+  border: none;
+  padding: 0.35em 1em 0.35em 0;
+  text-align: left;
+  font-weight: normal;
+}
+.profile-table th {
+  font-weight: bold;
+  color: #222;
+}
 
 .bio-official {
   margin-top: 1.5em;
