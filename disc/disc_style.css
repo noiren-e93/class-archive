@@ -31,9 +31,9 @@ body {
 .info-flex {
   display: flex;
   gap: 1.5em;
-  flex-wrap: nowrap;           /* wrapは必ずnowrap */
+  flex-wrap: nowrap;
   align-items: flex-start;
-  justify-content: flex-start; /* center→flex-startに修正 */
+  justify-content: flex-start;
 }
 
 .info-block {
@@ -150,39 +150,40 @@ ul.work-list {
   color: #666;
 }
 
-.jacket,
-.jacket-8cm {
+/* ==== ジャケット画像幅（imgにjacketクラス直付け専用） ==== */
+img.jacket {
+  width: 150px;
+  height: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  flex-shrink: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
   background: #f9f9f9;
+  display: block;
 }
 
-.jacket img {
-  width: 150px;
-  height: auto;
-}
-
-.jacket-8cm img {
+/* 8cmジャケット用（必要なら追加で使えます） */
+img.jacket-8cm {
   width: 130px;
   height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  object-fit: cover;
+  background: #f9f9f9;
+  display: block;
 }
 
-/* スマホ用：必ず後ろに書く！@media内はカッコ・インデント厳守 */
+/* ===== スマホ幅時に画像幅切替 ===== */
 @media screen and (max-width: 767px) {
-  .jacket img {
+  img.jacket {
     width: 111px !important;
     height: auto;
     object-fit: cover;
     display: block;
   }
-  .jacket-8cm img {
-    width: 125px;
+  img.jacket-8cm {
+    width: 125px !important;
     height: auto;
     object-fit: cover;
     display: block;
