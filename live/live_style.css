@@ -45,11 +45,17 @@
 }
 .live .live-table td {
   padding: 0.5em 1.1em;
-  border-bottom: none;
+  border-bottom: 1px solid #eee;    /* デフォは下線あり */
   color: #222;
   font-size: 0.9em;
   vertical-align: top;
   line-height: 1.1;
+}
+/* 会場欄が空欄のとき、その行のすべてのセルから下線を消す */
+.live .live-table td.venue.empty,
+.live .live-table td.venue.empty + td,
+.live .live-table td.venue.empty ~ td {
+  border-bottom: none !important;
 }
 
 .live .live-table td:not(:first-child) {
