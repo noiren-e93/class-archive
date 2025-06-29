@@ -102,7 +102,6 @@
 }
 
 .live .setlist:empty { display: none; }
-}
 
 .live .live-table td:not(:first-child) {
   border-bottom: 1px solid #eee;  /* 本文側だけに線 */
