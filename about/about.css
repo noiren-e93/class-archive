@@ -30,17 +30,6 @@
   letter-spacing: 0.02em;
 }
 
-/* ===== 卒業ページ専用：フォントトーン統一 ===== */
-body.graduation {
-  font-family: "Yu Gothic", "Noto Sans JP", "Segoe UI", sans-serif;
-  font-size: 1rem;
-  color: #222;
-  line-height: 1.8;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
-
 /* ===== プロフィール ===== */
 .profile-flex {
   display: flex;
@@ -173,6 +162,17 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+/* ===== graduation統一トーン ===== */
+body.graduation {
+  font-family: "Yu Gothic", "Noto Sans JP", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.8;
+  background: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 /* ===== タイムライン横並び表示の補強 ===== */
