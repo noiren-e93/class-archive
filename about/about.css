@@ -232,26 +232,32 @@ body.days .page-title {
     padding: 1.2em 5vw 18px 5vw;
     max-width: 100vw;
   }
-  .profile-flex {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.7em;
-    width: 100%;
-    text-align: left;
-  }
-  .profile-photo {
-    width: 120px;
-    margin-left: 0;
-    margin-bottom: 0.4em;
-    max-height: none;
-  }
-  .profile-table {
-    min-width: 0;
-    width: auto;
-    font-size: 0.9em;
-    margin-left: 0;
-    text-align: left;
-  }
+.profile-flex {
+  display: flex;
+  flex-direction: row;  /* 常に横並び */
+  align-items: flex-start;
+  gap: 0.7em;
+  margin: 2em 0 2.5em 0;
+  width: 100%;
+  min-width: 0;
+  text-align: left;
+}
+.profile-photo {
+  width: 120px;
+  max-height: auto;
+  border-radius: 0.5em;
+  object-fit: cover;
+  background: #fafafa;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.profile-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
   .sub-colored,
   .timeline-item,
   .qa-section,
