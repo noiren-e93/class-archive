@@ -54,7 +54,7 @@
 /* 日付列だけ狭く */
 .live .live-table td:first-child {
   padding-left: 0.5em;
-  padding-right: 0.6em;    /* ← ここを詰める！ */
+  padding-right: 0.8em;    /* ← ここを詰める！ */
   width: 3.5em;            /* ← 最小幅に。3.2em〜3.8emで調整OK */
   min-width: 0;
   white-space: nowrap;     /* 日付が折り返されないように */
