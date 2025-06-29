@@ -241,12 +241,12 @@ body.days .page-title {
     width: 120px;
     margin-left: 0;
     margin-bottom: 0.4em;
-    max-height: 160px;
+    max-height: none;
   }
   .profile-table {
     min-width: 0;
     width: auto;
-    font-size: 0.98em;
+    font-size: 0.9em;
     margin-left: 0;
     text-align: left;
   }
@@ -254,8 +254,8 @@ body.days .page-title {
   .timeline-item,
   .qa-section,
   .bio-official {
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+  padding-left: 0.3em;
+padding-right: 0.3em;
   }
 }
 
