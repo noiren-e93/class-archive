@@ -471,3 +471,9 @@ body.days .page-title {
     padding-right: 0.3em;
   }
 }
+@media (max-width: 700px) {
+  .timeline-item {
+    margin-left: -3vw;   /* お好みで -2vw, -4vw なども可 */
+    max-width: 98vw;     /* はみ出し防止 */
+  }
+}
