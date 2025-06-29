@@ -71,7 +71,7 @@
 
 .live .setlist-title {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.95em;
   margin-bottom: 0.35em;
   color: #222;
   letter-spacing: 0.04em;
@@ -108,11 +108,11 @@
     margin: 1.1em 0 0 0;
   }
   .live .setlist-title {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-bottom: 0.4em;
   }
   .live .track {
-    font-size: 0.98em;
+    font-size: 0.9em;
     margin-top: 0.3em;
     margin-bottom: 0.1em;
   }
