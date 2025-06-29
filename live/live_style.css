@@ -45,11 +45,16 @@
 }
 .live .live-table td {
   padding: 0.5em 1.1em;
-  border-bottom: none;   /* ← 一旦リセット */
+  border-bottom: none;
   color: #222;
   font-size: 0.9em;
   vertical-align: top;
   line-height: 1.1;
+}
+
+.live .live-table td:not(:first-child) {
+  border-bottom: 1px solid #eee;
+  /* display: none; ← これは絶対NG! */
 }
 /* 日付列だけ狭く */
 .live .live-table td:first-child {
@@ -90,7 +95,9 @@
 }
 .live .live-table td:not(:first-child) {
   border-bottom: 1px solid #eee;  /* 本文側だけに線 */
-}  
+}
+
+
 @media (max-width: 600px) {
   .live .container { padding: 1.2em 0.8em; }
   .live .page-title { font-size: 1.2em; margin-top: 1em; }
