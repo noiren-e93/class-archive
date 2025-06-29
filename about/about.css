@@ -140,7 +140,7 @@
 .qa-person {
   font-weight: bold;
   display: inline-block;
-  min-width: 6em;
+  min-width: 4em;
 }
 .qa-person.hiura {
   color: #c44;
