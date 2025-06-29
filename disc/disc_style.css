@@ -177,13 +177,13 @@ img.jacket-8cm {
 /* ===== スマホ幅時に画像幅切替 ===== */
 @media screen and (max-width: 767px) {
   img.jacket {
-    width: 118px !important;
+    width: 118px;
     height: auto;
     object-fit: cover;
     display: block;
   }
   img.jacket-8cm {
-    width: 125px !important;
+    width: 125px;
     height: auto;
     object-fit: cover;
     display: block;
