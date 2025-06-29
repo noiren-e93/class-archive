@@ -72,7 +72,7 @@
   align-items: flex-start;
 }
 .profile-label {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 0.5em;
   letter-spacing: 0.05em;
@@ -80,12 +80,14 @@
 }
 .profile-table th,
 .profile-table td {
+  font-size: 1em;
   border: none;
   padding: 0.25em 1em 0.25em 0;
   text-align: left;
   font-weight: normal;
 }
 .profile-table th {
+  font-size: 1em;
   font-weight: bold;
   color: #222;
   width: 5em;
