@@ -402,7 +402,6 @@ a:hover {
 .timeline-date {
   min-width: 7em;
   text-align: right;
-
   color: #666;
   padding-right: 0.8em;
   white-space: nowrap;
@@ -413,6 +412,13 @@ a:hover {
   color: #222;
   white-space: normal;
 }
+.timeline-list {
+  width: 100%;
+  max-width: 440px;   /* ← 推奨は440～500px。お好みで調整 */
+  margin-left: 0;
+  margin-right: auto;
+}
+
 
 /* ===== セクション見出し（年代） ===== */
 .sub-colored {
