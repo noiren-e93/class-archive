@@ -51,6 +51,15 @@
   vertical-align: top;
   line-height: 1.1;
 }
+/* 日付列だけ狭く */
+.live .live-table td:first-child {
+  padding-left: 0.5em;
+  padding-right: 0.3em;    /* ← ここを詰める！ */
+  width: 3.5em;            /* ← 最小幅に。3.2em〜3.8emで調整OK */
+  min-width: 0;
+  white-space: nowrap;     /* 日付が折り返されないように */
+  text-align: right;       /* 日付は右寄せが一般的（左寄せ希望ならleftでもOK） */
+}
 
 .live .tour-note,
 .live .note {
