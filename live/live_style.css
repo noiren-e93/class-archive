@@ -19,7 +19,7 @@
 
 .live .sub-title {
   margin: 1.8em 0 0.9em 0;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   color: #222;
   border-left: 4px solid #bbb;
@@ -43,6 +43,7 @@
   margin: 0.4em 0 1.1em 0;
   background: #fff;
 }
+
 .live .live-table td {
   padding: 0.5em 1.1em;
   border-bottom: 1px solid #eee;    /* デフォは下線あり */
@@ -51,6 +52,7 @@
   vertical-align: top;
   line-height: 1.1;
 }
+
 /* 会場欄が空欄のとき、その行のすべてのセルから下線を消す */
 .live .live-table td.venue.empty,
 .live .live-table td.venue.empty + td,
@@ -62,6 +64,7 @@
   border-bottom: 1px solid #eee;
   /* display: none; ← これは絶対NG! */
 }
+
 /* 日付列だけ狭く */
 .live .live-table td:first-child {
   padding-left: 0.5em;
@@ -97,12 +100,12 @@
   letter-spacing: 0.04em;
   line-height: 1.3;
 }
+
 .live .setlist:empty { display: none; }
 }
+
 .live .live-table td:not(:first-child) {
   border-bottom: 1px solid #eee;  /* 本文側だけに線 */
-}
-
 
 @media (max-width: 600px) {
   .live .container { padding: 1.2em 0.8em; }
