@@ -92,7 +92,7 @@ ul.track li {
   font-size: 1.2em;
   margin: 2em 0 0 0;
   padding-bottom: 6em;
-  text-align: left;        /* ← 左右上に配置 */
+  text-align: left;
   color: #444;
 }
 
@@ -106,48 +106,49 @@ ul.track li {
 }
 
 h2.sub-title {
-  border-left: 4px solid #ccc;           /* グレーを薄く＋幅を控えめに */
-  background-color: #f5f5f5;             /* やや明るいグレー背景で柔らかく */
-  padding: 0.3em 0.6em;                  /* 上下の詰め感を強調 */
+  border-left: 4px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 0.3em 0.6em;
   margin-top: 1.2em;
   margin-bottom: 0.8em;
-  font-size: 1.05em;                     /* 少し控えめなサイズに調整 */
-  font-weight: 500;                      /* 太字すぎない中間の強調（やや優しい） */
-  color: #444;                           /* 黒に近すぎず、目に優しいグレー */
+  font-size: 1.05em;
+  font-weight: 500;
+  color: #444;
 }
 
 .sub-colored {
-  background-color: #f7f7f7;        /* もう少し明るめのグレー */
-  border-left: 4px solid #aaa;     /* 控えめで柔らかい印象のライン */
-  border-bottom: none;             /* 下線は削除しスッキリさせる（任意） */
+  background-color: #f7f7f7;
+  border-left: 4px solid #aaa;
+  border-bottom: none;
   padding: 0.3em 0.8em;
-  margin-top: 1.5em;               /* セクション間の空きも控えめに */
-  font-size: 1.1em;                /* 全体と馴染む適度な強調 */
-  font-weight: 500;                /* 太すぎず、柔らかい中間強調 */
-  color: #444;                     /* 黒に近いけど馴染む濃グレー */
+  margin-top: 1.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #444;
 }
 
 ul.work-list {
-  margin-left: 1.5em;      /* 親見出しとの階層差を明確に */
+  margin-left: 1.5em;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 1em;
-  line-height: 1.5;        /* 行間は詰めすぎず、読みやすく */
-  font-size: 0.95em;       /* やや控えめな文字サイズに調整 */
-  color: #444;             /* 真っ黒ではなく、柔らかめの濃グレーで統一感 */
+  line-height: 1.5;
+  font-size: 0.95em;
+  color: #444;
   list-style: none;
 }
-  .cover-artist {
-    margin-left: 1em;
-     font-size: 0.9em;
-    font-weight: 400;
-    background-color: #f3f3f3;
-    padding: 0.2em 0.6em;
-    display: inline-block;
-    margin-top: 1em;
-    margin-bottom: 0.3em;
-     color: #666;
-  }
+
+.cover-artist {
+  margin-left: 1em;
+  font-size: 0.9em;
+  font-weight: 400;
+  background-color: #f3f3f3;
+  padding: 0.2em 0.6em;
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  color: #666;
+}
 
 .jacket,
 .jacket-8cm {
@@ -172,9 +173,7 @@ ul.work-list {
   height: auto;
 }
 
-
-
-/* スマホ用：必ず後ろに書く */
+/* スマホ用：必ず後ろに書く！@media内はカッコ・インデント厳守 */
 @media screen and (max-width: 767px) {
   .jacket img {
     width: 111px !important;
@@ -182,7 +181,6 @@ ul.work-list {
     object-fit: cover;
     display: block;
   }
-}
   .jacket-8cm img {
     width: 125px;
     height: auto;
