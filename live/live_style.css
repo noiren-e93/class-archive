@@ -100,7 +100,7 @@
 
 .live .setlist {
   background: #fff;
-  border: 1px solid #eee;
+  border: 0.9px solid #eee;
   border-radius: 1.5px;
   padding: 0.7em 0.6em 0.5em 0.6em;
   margin: 1.1em 0 0 0;
@@ -125,7 +125,7 @@
   .live .container { padding: 1.2em 0.8em; }
   .live .page-title { font-size: 1.2em; margin-top: 1em; }
   .live .sub-title {
-    font-size: 1.04em;
+    font-size: 0.9em;
     padding-left: 0.3em;
     border-left-width: 3px;
     border-bottom-width: 1px;
