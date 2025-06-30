@@ -80,14 +80,14 @@
 }
 .profile-table th,
 .profile-table td {
-  font-size: 1em;
+  font-size: 0.95em;
   border: none;
   padding: 0.25em 1em 0.25em 0;
   text-align: left;
   font-weight: normal;
 }
 .profile-table th {
-  font-size: 1em;
+  font-size: 0.95em;
   font-weight: bold;
   color: #222;
   width: 5em;
@@ -100,6 +100,7 @@
 .bio-official {
   margin-top: 1.4em;
   font-size: 1em;
+  gap: 2em;
   line-height: 1.4;
   color: #222;
 }
@@ -243,7 +244,7 @@ body.days .page-title {
   text-align: left;
 }
 .profile-photo {
-  width: 120px;
+  width: 150px;
   max-height: auto;
   border-radius: 0.5em;
   object-fit: cover;
