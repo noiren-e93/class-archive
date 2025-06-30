@@ -136,12 +136,12 @@
 }
 .qa-line {
   margin: 0.3em 0;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 .qa-person {
   font-weight: bold;
   display: inline-block;
-  min-width: 4em;
+  min-width: 3em;
 }
 .qa-person.hiura {
   color: #c44;
