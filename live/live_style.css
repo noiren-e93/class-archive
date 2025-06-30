@@ -28,6 +28,7 @@
   font-weight: 500;
   color: #444;
   font-family: 'Noto Sans JP', 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+   font-weight: bold;
 }
 .sub-colored {
   background-color: #f7f7f7;
@@ -110,7 +111,7 @@
 .live .setlist-title {
   font-weight: bold;
   font-size: 0.9em;
-  margin-bottom: 0.35em;
+  margin-bottom: 1em;
   color: #222;
   letter-spacing: 0.04em;
   line-height: 1.3;
