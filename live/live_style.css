@@ -27,8 +27,19 @@
   font-size: 1.05em;
   font-weight: 500;
   color: #444;
-
 }
+.sub-colored {
+  background-color: #f7f7f7;
+  border-left: 4px solid #aaa;
+  border-bottom: none;
+  padding: 0.3em 0.8em;
+  margin-top: 1.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #444;
+}
+
+
 
 .live .tour-year {
   margin: 1em 0 0.9em 0;
