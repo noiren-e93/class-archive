@@ -237,7 +237,7 @@ body.days .page-title {
   display: flex;
   flex-direction: row;  /* 常に横並び */
   align-items: flex-start;
-  gap: 0.7em;
+  gap: 0.5em;
   margin: 1em 0 2em 0;
   width: 100%;
   min-width: 0;
