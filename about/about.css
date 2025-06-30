@@ -238,13 +238,13 @@ body.days .page-title {
   flex-direction: row;  /* 常に横並び */
   align-items: flex-start;
   gap: 0.7em;
-  margin: 2em 0 2.5em 0;
+  margin: 1em 0 2em 0;
   width: 100%;
   min-width: 0;
   text-align: left;
 }
 .profile-photo {
-  width: 150px;
+  width: 160px;
   max-height: auto;
   border-radius: 0.5em;
   object-fit: cover;
@@ -258,13 +258,12 @@ body.days .page-title {
   flex-direction: column;
   align-items: flex-start;
 }
-
-  .sub-colored,
-  .timeline-item,
-  .qa-section,
-  .bio-official {
+ .sub-colored,
+ .timeline-item,
+ .qa-section,
+ .bio-official {
   padding-left: 0.3em;
-padding-right: 0.3em;
+  padding-right: 0.3em;
   }
 }
 
