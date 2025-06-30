@@ -40,14 +40,16 @@
   color: #444;
 }
 
-
-
 .live .tour-year {
-  margin: 1em 0 0.9em 0;
-  font-weight: bold;
-  color: #444;
-  font-size: 1.1em;
-  line-height: 1.35;
+  margin-left: 1em;
+  font-size: 0.9em;
+  font-weight: 400;
+  background-color: #f3f3f3;
+  padding: 0.2em 0.6em;
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  color: #666;
 }
 
 .live .live-table {
