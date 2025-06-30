@@ -152,7 +152,7 @@ ul.work-list {
 
 /* ==== ジャケット画像幅（imgにjacketクラス直付け専用） ==== */
 img.jacket {
-  width: 170px;
+  width: 180px;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
