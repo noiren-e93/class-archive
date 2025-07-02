@@ -120,3 +120,56 @@ hr {
   margin: 0.8em 0 0 0;
   font-size: 0.97em;
 }
+.news-block {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #eee;
+  padding: 1.5em 1.3em 1.2em 1.3em;
+  margin: 2em auto;
+  max-width: 680px;
+  border: 1px solid #f0f0f0;
+}
+
+.news-title.class {
+  background: #4169e1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.11em;
+  padding: 0.7em 1.1em 0.6em 1.1em;
+  border-radius: 10px 10px 0 0;
+  letter-spacing: 0.04em;
+}
+
+.news-title.solo {
+  background: #03407a;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.11em;
+  padding: 0.7em 1.1em 0.6em 1.1em;
+  border-radius: 10px 10px 0 0;
+  letter-spacing: 0.04em;
+}
+
+.news-date {
+  color: #b23;
+  font-size: 0.97em;
+  margin: 0.9em 0 0.6em 0;
+  font-weight: bold;
+}
+
+.news-body {
+  font-size: 1em;
+  line-height: 1.75;
+  margin-bottom: 1.2em;
+  color: #222;
+}
+
+.news-quote {
+  background: #eaf6fd;
+  border-left: 3px solid #81b7e6;
+  border-radius: 7px;
+  padding: 0.85em 1em;
+  color: #125;
+  margin-top: 1em;
+  font-size: 0.97em;
+}
