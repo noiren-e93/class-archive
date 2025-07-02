@@ -19,3 +19,54 @@ hr {
   border-top: 1px dotted #ccc;
   margin: 1.2em 0;
 }
+.news-block {
+  margin-bottom: 2.5em;
+  padding: 1.2em 1.6em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #eee;
+  max-width: 720px;
+}
+
+.news-title {
+  background: #4169e1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.12em;
+  padding: 0.7em 1em;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0.5em;
+}
+
+.news-date {
+  color: #c33;
+  font-size: 0.98em;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+.news-body {
+  font-size: 1em;
+  line-height: 1.7;
+  margin-bottom: 0.8em;
+  color: #222;
+}
+
+.news-quote {
+  background: #e7f5ff;
+  border-left: 3px solid #81b7e6;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 1.2em 0 0.8em 0;
+  color: #125;
+  font-size: 0.97em;
+}
+.news-title.class {
+  background: #4169e1;   /* 明るめブルー（グループ色） */
+  color: #fff;
+}
+
+.news-title.solo {
+  background: #03407a;   /* 落ち着いた紺（ソロ色） */
+  color: #fff;
+}
