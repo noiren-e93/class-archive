@@ -70,3 +70,53 @@ hr {
   background: #03407a;   /* 落ち着いた紺（ソロ色） */
   color: #fff;
 }
+.news-block {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #e6e6e6;
+  padding: 1.2em 1.3em 1.2em 1.3em;
+  margin-bottom: 2.4em;
+  max-width: 720px;
+  /* 枠色は薄いグレーも可 */
+}
+
+.news-title.class {
+  background: #4169e1;  /* 青 */
+  color: #fff;
+  font-weight: bold;
+  padding: 0.7em 1em 0.6em 1em;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.13em;
+}
+
+.news-title.solo {
+  background: #03407a;  /* 紺 */
+  color: #fff;
+  font-weight: bold;
+  padding: 0.7em 1em 0.6em 1em;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.13em;
+}
+
+.news-date {
+  color: #c33;
+  font-size: 0.96em;
+  margin: 0.7em 0 0.5em 0;
+  font-weight: bold;
+}
+
+.news-body {
+  font-size: 1em;
+  line-height: 1.7;
+  margin-bottom: 1.1em;
+}
+
+.news-quote {
+  background: #e7f5ff;
+  border-left: 3px solid #81b7e6;
+  border-radius: 8px;
+  padding: 0.9em 1.1em;
+  color: #125;
+  margin: 0.8em 0 0 0;
+  font-size: 0.97em;
+}
