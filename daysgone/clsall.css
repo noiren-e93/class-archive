@@ -1,146 +1,16 @@
-<!--
- 
-BODY{
- font-size : x-small;
- color : #333333;
- background-image : url(news/bg_dots.gif);
- margin-top : 0px;
- margin-left : 0px;
- margin-right : 0px;
- margin-bottom : 0px;
- line-height : 120%;
- scrollbar-3d-light-color:#ffffff;
- scrollbar-arrow-color:#666666;
- scrollbar-base-color:#666666;
- scrollbar-face-color:#ffffff;
- scrollbar-highlight-color:#666666;
- scrollbar-shadow-color:#666666;
-}
-A:HOVER{
- text-decoration : underline;
- color : red;
-}
-A{
- text-decoration : none;
-}
-HR{
- color : gray;
- border-style : dotted;
- border-color : #cccccc;
-}
-TD{
- font-size : x-small;
- color : #333333;
- font-family : "ＭＳ Ｐゴシック",Osaka;
- line-height : 120%;
-}
-A:LINK{
- color : blue;
-}
-A:VISITED{
- color : #464646;
-}
-TH{
- padding-top : 10px;
- padding-left : 15px;
- padding-right : 5px;
- padding-bottom : 5px;
- text-align : left;
- list-style-type : square;
- font-size : medium;
- color : white;
-}
-.info_bar{
- font-size : 8pt;
- background-color : #f9f9f9;
- border-width : 1px;
- border-style : dotted;
- border-color : gray;
- padding-top : 5px;
- padding-left : 5px;
- padding-right : 5px;
- padding-bottom : 6px;
-}
-.top_update{
- padding-top : 10px;
- padding-left : 10px;
- padding-right : 10px;
- padding-bottom : 10px;
- border-style : double double double double;
- border-color : #cccccc #cccccc #cccccc #cccccc;
-}
-.top_release{
- font-size : 8pt;
-}
-.TD_padding{
- padding-top : 5px;
- padding-left : 15px;
- padding-right : 10px;
- padding-bottom : 5px;
-}
-.TD_koumoku{
- padding-top : 5px;
- padding-left : 20px;
- padding-right : 5px;
- padding-bottom : 5px;
- border-width : 1px 1px 1px 1px;
- border-style : solid solid solid solid;
- border-color : #666666 #666666 #666666 #666666;
-}
-.TD_list{
- padding-left : 8px;
-}
-.top_td{
- padding-left : 10px;
- padding-right : 5px;
-}
-.inyou{
- background-color : #e8e8ff;
- padding-top : 5px;
- padding-left : 5px;
- padding-right : 5px;
- padding-bottom : 5px;
- border-width : 1px;
- border-style : dotted;
- font-size : 8pt;
- border-color : blue;
- font-weight : bold;
-}
 body {
- scrollbar-3d-light-color:#ffffff;
- scrollbar-arrow-color:#666666;
- scrollbar-base-color:#666666;
- scrollbar-face-color:#ffffff;
- scrollbar-highlight-color:#666666;
- scrollbar-shadow-color:#666666;
+  font-size: 1em !important;
+  line-height: 1.7 !important;
+  font-family: "Noto Sans JP", "Yu Gothic", "MS PGothic", Osaka, sans-serif !important;
+  color: #222;
+  background: #fcfcfc;
+  margin: 0;
+  padding: 0 4vw;
 }
-.td_hiura{
- color : #0062c4;
+td, th {
+  font-size: 1em !important;
+  line-height: 1.7 !important;
+  padding: 8px 10px !important;
 }
-.TH_hiura{
- background-color : #0062c4;
- color : white;
-}
-.td_tsukui{
- color : #6090a8;
-}
-.TH_tsukui{
- background-color : #6090a8;
- color : white;
-}
-.td_news{
- color : #6060ff;
-}
-.TH_news{
- background-color : #6060ff;
- color : white;
- font-weight : bold;
- font-size : medium;
- list-style-type : lower-roman;
-}
-.date{
- color : red;
- font-weight : bold;
-}
--->
-
+a { color: #2c4a85; text-decoration: none; }
+a:hover { text-decoration: underline; color: #d33; }
