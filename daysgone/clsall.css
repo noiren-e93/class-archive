@@ -1,16 +1,21 @@
-body {
-  font-size: 1em !important;
-  line-height: 1.7 !important;
-  font-family: "Noto Sans JP", "Yu Gothic", "MS PGothic", Osaka, sans-serif !important;
+body, td, th {
+  font-size: 0.96em !important;     /* ここで全体を「やや小さめ」に */
+  line-height: 1.65 !important;     /* 行間はやや広めを維持 */
+  font-family: "Yu Gothic", "Noto Sans JP", "MS PGothic", Osaka, sans-serif !important;
   color: #222;
-  background: #fcfcfc;
-  margin: 0;
-  padding: 0 4vw;
 }
-td, th {
-  font-size: 1em !important;
-  line-height: 1.7 !important;
-  padding: 8px 10px !important;
+
+.top_update, .info_bar, .TD_padding, .TD_koumoku, .TD_list, .inyou {
+  font-size: 0.94em !important;     /* パーツごとにもう少し小さくも可能 */
 }
+
 a { color: #2c4a85; text-decoration: none; }
-a:hover { text-decoration: underline; color: #d33; }
+a:hover { color: #d33; text-decoration: underline; }
+
+th { font-weight: bold; }
+
+hr {
+  border: none;
+  border-top: 1px dotted #ccc;
+  margin: 1.2em 0;
+}
