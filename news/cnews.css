@@ -19,7 +19,15 @@
   padding: 0.5em 1em;
   letter-spacing: 0.03em;  
 margin-bottom: 0.3em;
+}
 
+/* 日浦見出し帯 */
+.news-title.solo {
+  background: #045194; /* 紺色など、お好みで */
+}
+/* 津久井見出し帯 */
+.news-title.solo_t {
+  background: #387889; 
 }
 
 /* 日付 */
@@ -33,7 +41,7 @@ margin-bottom: 0.3em;
 /* 本文 */
 .news-body {
   color: #222;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 0.9em;
   margin-bottom: 1.4em;
 }
@@ -48,14 +56,19 @@ margin-bottom: 0.3em;
   padding: 1em 1.3em 1em 1.1em;
   font-size: 0.9em;
   color: #222;
-  line-height: 1.5;
+  line-height: 1.6;
   font-style: normal;
 }
-
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3列→2列が理想 */
+  gap: 0.7em;
+  margin: 0.8em 0 1.2em 0;
+  
+}
 /* 訃報用の引用ブロック */
 .news-body cite.obituary,
 .news-quote.obituary {
-
   color: #f5f5f5;
   font-style: normal;
 }
@@ -73,13 +86,6 @@ margin-bottom: 0.3em;
 .news-title.obituary {
   background: #232324;   /* タイトルは黒 */
   color: #fff;
-}
-
-.news-title.solo {
-  background: #045194; /* 紺色など、お好みで */
-}
-.news-title.solo_t {
-  background: #387889; 
 }
 
 /* ニュースindex専用 見出し・リスト装飾 */
@@ -115,12 +121,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-.image-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* 3列→2列が理想 */
-  gap: 0.7em;
-  margin: 0.8em 0 1.2em 0;
 }
 
 @media (max-width: 600px) {
