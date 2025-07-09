@@ -150,6 +150,7 @@ a:hover {
  .news-title {
     font-size: 1em;
     padding: 0.5em 0.4em;
+    letter-spacing: 0.03em;  
   }
 .news-date {
     margin-bottom: 0.5em;
