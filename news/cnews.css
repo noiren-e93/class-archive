@@ -94,7 +94,7 @@ margin-bottom: 0.3em;
 .disc-nav {
   list-style: none;
   padding-left: 1.2em;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.8em;
 }
 
 .disc-nav li {
@@ -115,8 +115,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-.disc-nav li {
-  margin-bottom: 0.4em;
-  font-size: 1rem;
 }
