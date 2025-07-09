@@ -59,6 +59,42 @@
   line-height: 1.8;
   font-style: normal;
 }
+.news-category {
+  margin-bottom: 1.5em;
+}
+
+.category-icon {
+  display: inline-block;
+  font-size: 1.15em;
+  color: #111;
+  margin-right: 0.25em;
+}
+
+.category-title {
+  font-weight: bold;
+  font-size: 1.13em;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+}
+
+.category-list {
+  margin-left: 1.6em;
+  margin-top: 0.4em;
+}
+
+.category-list a {
+  display: block;
+  margin-bottom: 0.2em;
+  color: #234b7a;
+  font-size: 1.06em;
+  text-decoration: none;
+  line-height: 1.65;
+}
+
+.category-list a:hover {
+  text-decoration: underline;
+  color: #184086;
+}
 
 .image-gallery {
   display: grid;
