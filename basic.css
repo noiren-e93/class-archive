@@ -109,7 +109,8 @@ img {
 @media (max-width: 600px) {
   .page-title {
     font-size: 1.5em;
-    margin-top: 1.4em;
+    font-weight: bold;
+    margin-top: 1.5em;
     margin-bottom: 0.2em;
   }
 }
