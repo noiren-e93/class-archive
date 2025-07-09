@@ -59,12 +59,14 @@
   line-height: 1.8;
   font-style: normal;
 }
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  /* 3列→2列が理想 */
-  gap: 0.3em;
+  gap: 0.4em;
   margin: 0.8em 0 1.2em 0;
   }
+
  .image-gallery img {
     border-radius: 7px;
     width: 100%;
