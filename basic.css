@@ -113,4 +113,10 @@ img {
     margin-top: 1.5em;
     margin-bottom: 0.2em;
   }
+.page-sub {
+  font-size: 0.7em;
+  color: #666;
+  margin-top: 0.2em;
+  margin-bottom: 2em;
+}
 }
