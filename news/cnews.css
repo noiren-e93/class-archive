@@ -56,13 +56,13 @@
   padding: 1em 1.3em 1em 1.1em;
   font-size: 0.9em;
   color: #222;
-  line-height: 1.6;
+  line-height: 1.8;
   font-style: normal;
 }
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  /* 3列→2列が理想 */
-  gap: 0.2em;
+  gap: 0.3em;
   margin: 0.8em 0 1.2em 0;
   }
  .image-gallery img {
