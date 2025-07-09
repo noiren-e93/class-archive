@@ -8,14 +8,17 @@
   <link rel="stylesheet" href="cnews.css?v=20240630">
 </head>
 <body>
-  <div class="container">
-    <h1 class="page-title">ニュースアーカイブ</h1>
-    <p class="page-sub">class およびソロ活動の音源をカテゴリ別に掲載しています。</p>
+ <div class="container">
+  <h1 class="page-title">ニュースアーカイブ</h1>
+  <p class="page-sub">
+    classおよびソロ活動の活動記録・ニュース記事をカテゴリ別に掲載しています </p>
 
     <!-- class全体ニュース -->
-    <h2 class="disc-section"><strong>▶ class</strong></h2>
-    <ul class="disc-nav">
-      <li><a href="2003.html">2003年</a></li>
+    <div class="news-index-block">
+    <div class="news-category">
+      <span class="category-icon">▶</span><span class="category-title">class</span>
+      <div class="category-list">
+        <a href="2003.html">2003年</a>
       <li><a href="2004.html">2004年</a></li>
       <li><a href="2005.html">2005年</a></li>
       <li><a href="2006.html">2006年</a></li>
@@ -29,26 +32,24 @@
     </ul>
 
     <!-- 日浦孝則 -->
-    <h2 class="disc-section"><strong>▶ 日浦孝則ソロワークス</strong></h2>
-    <ul class="disc-nav">
-      <li><a href="hiura.html">1996年～2007年</a></li>
-    </ul>
-
-    <!-- 津久井克行 -->
-     <h2 class="disc-section"><strong>▶ 津久井克行ソロワークス</strong></h2>
-    <ul class="disc-nav">
-      <li><a href="hiura.html">1996年～2007年</a></li>
-    </ul>
-
-    <!-- フッターナビ（サイト内主要ページ） -->
-    <hr>
-    <nav class="quiet-menu" style="margin-top:1.2em;">
-      <a href="/class-archive/">トップ</a>
-      <a href="/class-archive/disc/index.html">ディスコグラフィ</a>
-      <a href="/class-archive/live/index.html">ライブ</a>
-      <a href="/class-archive/about/index.html">プロフィール</a>
-    </nav>
+    </div>
+    </div>
+    <div class="news-category">
+      <span class="category-icon">▶</span><span class="category-title">日浦孝則ソロワークス</span>
+      <div class="category-list">
+        <a href="hiura.html">1996年〜2007年</a>
+      </div>
+    </div>
+    <div class="news-category">
+      <span class="category-icon">▶</span><span class="category-title">津久井克行ソロワークス</span>
+      <div class="category-list">
+        <a href="tsukui.html">1996年〜2007年</a>
+      </div>
+    </div>
   </div>
-</body>
-</html>
-
+  <nav class="quiet-menu">
+    <a href="/class-archive/">トップ</a>
+    <a href="/class-archive/about/index.html">プロフィール</a>
+    <a href="/class-archive/live/index.html">ライブ</a>
+  </nav>
+</div>
