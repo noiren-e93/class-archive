@@ -1,5 +1,4 @@
 /* basic.css - プロジェクト共通の基本スタイル */
-
 body {
   font-family: "Yu Gothic", "游ゴシック Medium", "Noto Sans JP", sans-serif;
   font-size: 1rem;
@@ -84,7 +83,6 @@ img {
   font-size: 0.9em;
   color: #777;
 }
-
 
 .quiet-menu {
   display: flex;
