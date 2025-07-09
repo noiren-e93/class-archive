@@ -16,15 +16,16 @@ body {
 }
 
 .page-title {
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: bold;
-  text-align: left;
   line-height: 1.4;
+  text-align: left;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.3em;
   margin: 2em 0 0.2em 0;
   font-family: "Yu Gothic", "Noto Sans JP", sans-serif;
 }
+
 
 .page-sub {
   font-size: 0.85em;
@@ -104,4 +105,12 @@ img {
 .quiet-menu a:hover {
   color: #214c8a;
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.25em;
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+  }
 }
