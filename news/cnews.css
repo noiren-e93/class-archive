@@ -1,0 +1,83 @@
+/* ニュースブロック全体 */
+.news-block {
+  background: #fff;
+  border: 1.5px solid #e3e6ef;
+  border-radius: 15px;
+  margin: 2em auto;
+  max-width: 700px;
+  padding: 1.7em 2em 1.4em 1.8em;
+  box-shadow: 0 4px 16px 0 rgba(32,32,48,0.07);
+}
+
+/* 見出し帯 */
+.news-title {
+  font-weight: bold;
+  color: #fff;
+  background: #4169e1;
+  font-size: 1.1em;
+  border-radius: 7px;
+  padding: 0.6em 1em;
+  letter-spacing: 0.03em;  
+margin-bottom: 0.3em;
+
+}
+
+/* 日付 */
+.news-date {
+  color: #ff3333;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
+}
+
+/* 本文 */
+.news-body {
+  color: #222;
+  line-height: 1.5;
+  font-size: 0.9em;
+  margin-bottom: 1.4em;
+}
+
+/* 通常の引用ブロック */
+.news-body cite {
+  display: block;
+  background: #eaf2fb;
+  border-left: 3px solid #7ba7db;
+  border-radius: 10px;
+  margin: 1.1em 0 1.4em 0;
+  padding: 1em 1.3em 1em 1.1em;
+  font-size: 0.9em;
+  color: #222;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+/* 訃報用の引用ブロック */
+.news-body cite.obituary,
+.news-quote.obituary {
+
+  color: #f5f5f5;
+  font-style: normal;
+}
+
+/* 二重引用対応 */
+.news-body cite cite,
+.news-body cite.obituary cite,
+.news-quote.obituary cite {
+  background: #555557;
+  color: #fafafa;
+  margin-top: 0.5em;
+  padding-left: 1.5em;
+  font-style: normal;
+}
+.news-title.obituary {
+  background: #232324;   /* タイトルは黒 */
+  color: #fff;
+}
+
+.news-title.solo {
+  background: #045194; /* 紺色など、お好みで */
+}
+.news-title.solo_t {
+  background: #387889; 
+}
