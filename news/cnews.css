@@ -150,11 +150,11 @@ a:hover {
 @media (max-width: 600px) {
 .news-block {
     padding: 1.1em 0.6em 1em 0.6em;
-    margin-bottom: 1.2em; 
+    margin-bottom: 1.4em; 
 }
  .news-title {
     font-size: 1em;
-    padding: 0.7em 0.4em;
+    padding: 1.7em 0.4em;
     border-radius: 10px;
   }
 .news-date {
