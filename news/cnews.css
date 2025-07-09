@@ -128,3 +128,14 @@ a:hover {
   border-radius: 7px;
   box-shadow: 0 1px 4px #e2e6ef;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.8em 0.1em;
+    max-width: 100vw;
+  }
+  .page-title {
+    font-size: 1.18em;
+    margin-top: 1.1em;
+  }
+}
