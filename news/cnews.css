@@ -62,7 +62,7 @@
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  /* 3列→2列が理想 */
-  gap: 0.4em;
+  gap: 0.2em;
   margin: 0.8em 0 1.2em 0;
   
 }
