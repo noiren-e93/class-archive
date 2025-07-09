@@ -146,11 +146,11 @@ a:hover {
     font-size: 1.18em;
     margin-top: 1.1em;
   }
-}
-@media (max-width: 600px) {
-.news-block {
+  .news-block {
     padding: 1.1em 0.6em 1em 0.6em;
-    margin-bottom: 1.4em; 
+    margin-bottom: 1.4em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
 }
  .news-title {
     font-size: 1em;
@@ -159,14 +159,8 @@ a:hover {
 .news-date {
     margin-bottom: 0.5em;
   }
-}
-@media (max-width: 600px) {
   .disc-nav {
     margin-left: 0.2em;
     margin-right: 0.2em;
-  }
-  .news-block {
-    margin-left: 0.3em;
-    margin-right: 0.3em;
   }
 }
