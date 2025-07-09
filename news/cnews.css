@@ -156,10 +156,10 @@ a:hover {
     font-size: 1em;
     padding: 0.5em 0.4em;
     border-radius: 10px;
-   padding-left: 1.5em;
+    margin-left: 0.5em;
   }
 .news-date {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
   }
 }
 @media (max-width: 600px) {
